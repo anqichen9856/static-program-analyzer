@@ -1,0 +1,1580 @@
+1- Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d"_)
+1
+5000
+2- Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d/e"_)
+1
+5000
+3- Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d/e/f"_)
+1
+5000
+4- Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d/e/f*g"_)
+1
+5000
+5- Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d/e/f*g"_)
+1
+5000
+6- Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d/e/f*g"_)
+1
+5000
+7- Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h%i"_)
+1
+5000
+8- Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d/e/f*g+h%i"_)
+1
+5000
+9- Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"j*k"_)
+1
+5000
+10 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"j*k/l"_)
+1
+5000
+11 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"j*k/l+m"_)
+
+5000
+12 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"j*k/l+m-n"_)
+
+5000
+13 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d/e/f*g+h"_)
+
+5000
+14 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d/"_)
+
+5000
+15 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d"_)
+
+5000
+16 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c"_)
+
+5000
+17 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d/e/f"_)
+
+5000
+18 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g+h"_)
+
+5000
+19 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"m-n"_)
+
+5000
+20 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"k/l"_)
+
+5000
+21 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"k/l"_)
+
+5000
+22 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8"_)
+2,3
+5000
+23 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a3/9"_)
+2
+5000
+24 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a4%3"_)
+2
+5000
+25 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8 + a3/9"_)
+2
+5000
+26 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8 + a3/9 + a4%3"_)
+2
+5000
+27 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1"_)
+2
+5000
+28 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1 + 2"_)
+2
+5000
+29 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1 + 2 + 3"_)
+2
+5000
+30 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"1 + 2 + 3"_)
+7
+5000
+31 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"1 + 2"_)
+7,8
+5000
+32 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"1"_)
+2,7,8
+5000
+33 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"8 + a3"_)
+
+5000
+34 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"9 + a4"_)
+
+5000
+35 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"2 + 3"_)
+
+5000
+36 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a3/9 + a4%3"_)
+
+5000
+37 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"3 + 1 + 2 + 3"_)
+
+5000
+38 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b3/b4*b5"_)
+3
+5000
+39 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b3/b4"_)
+3,6
+5000
+40 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b2+b3/b4*b5"_)
+3
+5000
+41 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8"_)
+2,3
+5000
+42 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8/b6"_)
+3
+5000
+43 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b2+b3/b4*b5+a2*8/b6"_)
+3
+5000
+44 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b2"_)
+3
+5000
+45 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"8/b6"_)
+6
+5000
+46 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b2+b3"_)
+
+5000
+47 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b4*b5"_)
+
+5000
+48 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b5+a2*8"_)
+
+5000
+49 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b5+a2"_)
+
+5000
+50 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c2%c"_)
+4,5
+5000
+51 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c2%c*d"_)
+4,5
+5000
+52 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c2%c*d+c3"_)
+4,5
+5000
+53 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c4*h"_)
+4
+5000
+54 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c4*h%i"_)
+4
+5000
+55 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d+c3"_)
+
+5000
+56 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d+c3"_)
+
+5000
+57 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c3-c4"_)
+
+5000
+58 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c3-c4*h"_)
+
+5000
+59 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b3/b4"_)
+3,6
+5000
+60 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1*h1"_)
+6
+5000
+61 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1"_)
+6
+5000
+62 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1"_)
+6
+5000
+63 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1"_)
+6
+5000
+64 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5"_)
+6
+5000
+65 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2"_)
+6
+5000
+66 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"8/b6"_)
+6
+5000
+67 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2+8/b6"_)
+6
+5000
+68 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2+8"_)
+
+5000
+69 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2+8"_)
+
+5000
+70 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3"_)
+
+5000
+71 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b3/b4+h1*h1"_)
+
+5000
+72 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b4+h1"_)
+
+5000
+73 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+h1"_)
+
+5000
+74 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"1+2"_)
+7,8
+5000
+75 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"2+3"_)
+
+5000
+76 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a/a"_)
+9
+5000
+77 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a*a"_)
+9
+5000
+78 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a*a%a"_)
+9
+5000
+79 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a+a/a"_)
+9
+5000
+80 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a%a"_)
+
+5000
+81 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a+a"_)
+
+5000
+82 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a-a"_)
+
+5000
+83 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a-a*a"_)
+
+5000
+84 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4/4"_)
+10
+5000
+85 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4*4"_)
+10
+5000
+86 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4*4%4"_)
+10
+5000
+87 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4+4/4"_)
+10
+5000
+88 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4%4"_)
+
+5000
+89 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4+4"_)
+
+5000
+90 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4-4"_)
+
+5000
+91 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4-4*4"_)
+
+5000
+92 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d2%d3"_)
+11
+5000
+93 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d2%d3*d4"_)
+11
+5000
+94 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d2%d3*d4+d5"_)
+11
+5000
+95 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d6*d7"_)
+11
+5000
+96 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d6*d7%d8"_)
+11
+5000
+97 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d2%d3*d4+d5-d6*d7%d8"_)
+11
+5000
+98 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d3*d4"_)
+
+5000
+99 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d4+d5"_)
+
+5000
+100 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d5-d6"_)
+
+5000
+101 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d7%d8"_)
+
+5000
+102 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d3*d4+d5"_)
+
+5000
+103 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d4+d5-d6*d7%d8"_)
+
+5000
+104 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d5-d6*d7%d8"_)
+
+5000
+105 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e2/e3"_)
+12
+5000
+106 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e2/e3*e4"_)
+12
+5000
+107 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_" e1+e2/e3*e4"_)
+12
+5000
+108 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3*e4+e5"_)
+
+5000
+109 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e5*e6"_)
+12
+5000
+110 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e5*e6/e7"_)
+12
+5000
+111 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3*e4+e5*e6/e7"_)
+12
+5000
+112 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2"_)
+
+5000
+113 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e3*e4"_)
+
+5000
+114 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e4+e5"_)
+
+5000
+115 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e6/e7"_)
+
+5000
+116 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3"_)
+
+5000
+117 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3*e4"_)
+12
+5000
+118 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3*e4+e5"_)
+
+5000
+119 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3*e4+e5*e6"_)
+
+5000
+120 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g5/g6"_)
+13,14
+5000
+121 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g5/g6%g7"_)
+13,14
+5000
+122 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g4-g5/g6%g7"_)
+
+5000
+123 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g3+g4-g5/g6%g7"_)
+
+5000
+124 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g2+g3+g4-g5/g6%g7"_)
+13,14
+5000
+125 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g2+g3"_)
+13,14
+5000
+126 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g2+g3+g4"_)
+13,14
+5000
+127 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g2+g3+g4-g5"_)
+
+5000
+128 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g2+g3+g4-g5/g6"_)
+
+5000
+129 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g4-g5"_)
+
+5000
+130 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g3+g4"_)
+
+5000
+131 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g6%g7"_)
+
+5000
+132 - Valid pattern assign, wildcard on lhs and Exact matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,"d2%d3*d4+d5-d6*d7%d8")
+11
+5000
+133 - Valid pattern assign, wildcard on lhs and Exact matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,"e1+e2/e3*e4+e5*e6/e7")
+12
+5000
+134 - Valid pattern assign, wildcard on lhs and Exact matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,"g2+g3+g4-g5/g6%g7")
+13,14
+5000
+135 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d"_)
+1
+5000
+136 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d/e"_)
+1
+5000
+137 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d/e/f"_)
+1
+5000
+138 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d/e/f*g"_)
+1
+5000
+139 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d/e/f*g"_)
+1
+5000
+140 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d/e/f*g"_)
+1
+5000
+141 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h%i"_)
+1
+5000
+142 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d/e/f*g+h%i"_)
+1
+5000
+143 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"j*k"_)
+1
+5000
+144 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"j*k/l"_)
+1
+5000
+145 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"j*k/l+m"_)
+
+5000
+146 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"j*k/l+m-n"_)
+
+5000
+147 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d/e/f*g+h"_)
+
+5000
+148 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d/"_)
+
+5000
+149 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d"_)
+
+5000
+150 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c"_)
+
+5000
+151 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d/e/f"_)
+
+5000
+152 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"*k/l+m"_)
+
+5000
+153 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g+h"_)
+
+5000
+154 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"m-n"_)
+
+5000
+155 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"k/l"_)
+
+5000
+156 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"k/l"_)
+
+5000
+157 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8"_)
+2,3
+5000
+158 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a3/9"_)
+2
+5000
+159 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a4%3"_)
+2
+5000
+160 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8 + a3/9"_)
+2
+5000
+161 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8 + a3/9 + a4%3"_)
+2
+5000
+162 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1"_)
+2
+5000
+163 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1 + 2"_)
+2
+5000
+164 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1 + 2 + 3"_)
+2
+5000
+165 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"1 + 2 + 3"_)
+7
+5000
+166 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"1 + 2"_)
+7,8
+5000
+167 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"1"_)
+2,7,8
+5000
+168 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"8 + a3"_)
+
+5000
+169 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"9 + a4"_)
+
+5000
+170 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"2 + 3"_)
+
+5000
+171 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a3/9 + a4%3"_)
+
+5000
+172 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"3 + 1 + 2 + 3"_)
+
+5000
+173 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b3/b4*b5"_)
+3
+5000
+174 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b3/b4"_)
+3,6
+5000
+175 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b2+b3/b4*b5"_)
+3
+5000
+176 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8"_)
+2,3
+5000
+177 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2*8/b6"_)
+3
+5000
+178 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b2+b3/b4*b5+a2*8/b6"_)
+3
+5000
+179 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b2"_)
+3
+5000
+180 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"8/b6"_)
+6
+5000
+181 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b2+b3"_)
+
+5000
+182 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b4*b5"_)
+
+5000
+183 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b5+a2*8"_)
+
+5000
+184 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b5+a2"_)
+
+5000
+185 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c2%c"_)
+4,5
+5000
+186 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c2%c*d"_)
+4,5
+5000
+187 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c2%c*d+c3"_)
+4,5
+5000
+188 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c4*h"_)
+4
+5000
+189 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c4*h%i"_)
+4
+5000
+190 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d+c3"_)
+
+5000
+191 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c*d+c3"_)
+
+5000
+192 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c3-c4"_)
+
+5000
+193 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"c3-c4*h"_)
+
+5000
+194 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b3/b4"_)
+3,6
+5000
+195 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1*h1"_)
+6
+5000
+196 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1"_)
+6
+5000
+197 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1"_)
+6
+5000
+198 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1"_)
+6
+5000
+199 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5"_)
+6
+5000
+200 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2"_)
+6
+5000
+201 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"8/b6"_)
+6
+5000
+202 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2+8/b6"_)
+6
+5000
+203 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2+8"_)
+
+5000
+204 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a2+8"_)
+
+5000
+205 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+b3"_)
+
+5000
+206 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b3/b4+h1*h1"_)
+
+5000
+207 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b4+h1"_)
+
+5000
+208 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"h1+h1"_)
+
+5000
+209 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"1+2"_)
+7,8
+5000
+210 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"2+3"_)
+
+5000
+211 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a/a"_)
+9
+5000
+212 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a*a"_)
+9
+5000
+213 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a*a%a"_)
+9
+5000
+214 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a+a/a"_)
+9
+5000
+215 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a%a"_)
+
+5000
+216 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a+a"_)
+
+5000
+217 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a-a"_)
+
+5000
+218 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"a-a*a"_)
+
+5000
+219 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4/4"_)
+10
+5000
+220 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4*4"_)
+10
+5000
+221 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4*4%4"_)
+10
+5000
+222 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4+4/4"_)
+10
+5000
+223 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4%4"_)
+
+5000
+224 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4+4"_)
+
+5000
+225 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4-4"_)
+
+5000
+226 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"4-4*4"_)
+
+5000
+227 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d2%d3"_)
+11
+5000
+228 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d2%d3*d4"_)
+11
+5000
+229 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d2%d3*d4+d5"_)
+11
+5000
+230 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d6*d7"_)
+11
+5000
+231 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d6*d7%d8"_)
+11
+5000
+232 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d2%d3*d4+d5-d6*d7%d8"_)
+11
+5000
+233 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d3*d4"_)
+
+5000
+234 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d4+d5"_)
+
+5000
+235 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d5-d6"_)
+
+5000
+236 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d7%d8"_)
+
+5000
+237 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d3*d4+d5"_)
+
+5000
+238 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d4+d5-d6*d7%d8"_)
+
+5000
+239 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"d5-d6*d7%d8"_)
+
+5000
+240 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e2/e3"_)
+12
+5000
+241 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e2/e3*e4"_)
+12
+5000
+242 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_" e1+e2/e3*e4"_)
+12
+5000
+243 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3*e4+e5"_)
+
+5000
+244 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e5*e6"_)
+12
+5000
+245 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e5*e6/e7"_)
+12
+5000
+246 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3*e4+e5*e6/e7"_)
+12
+5000
+247 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2"_)
+
+5000
+248 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e3*e4"_)
+
+5000
+249 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e4+e5"_)
+
+5000
+250 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e6/e7"_)
+
+5000
+251 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3"_)
+
+5000
+252 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3*e4"_)
+12
+5000
+253 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3*e4+e5"_)
+
+5000
+254 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"e1+e2/e3*e4+e5*e6"_)
+
+5000
+255 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g5/g6"_)
+13,14
+5000
+256 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g5/g6%g7"_)
+13,14
+5000
+257 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g4-g5/g6%g7"_)
+
+5000
+258 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g3+g4-g5/g6%g7"_)
+
+5000
+259 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g2+g3+g4-g5/g6%g7"_)
+13,14
+5000
+260 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g2+g3"_)
+13,14
+5000
+261 - Valid pattern assign, wildcard on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g2+g3+g4"_)
+13,14
+5000
+262 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g2+g3+g4-g5"_)
+
+5000
+263 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g2+g3+g4-g5/g6"_)
+
+5000
+264 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g4-g5"_)
+
+5000
+265 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g3+g4"_)
+
+5000
+266 - Valid pattern assign, wildcard on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"g6%g7"_)
+
+5000
+267 - Valid pattern assign, syn on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v pattern a(v,_"c*d"_)
+a
+5000
+268 - Valid pattern assign, syn on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v pattern a(v,_"h%i"_)
+a
+5000
+269 - Valid pattern assign, syn on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v pattern a(v,_"a2*8"_)
+a1,b1
+5000
+270 - Valid pattern assign, syn on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v pattern a(v,_"c2%c"_)
+c1
+5000
+271 - Valid pattern assign, syn on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v pattern a(v,_"8/b6"_)
+h1
+5000
+272 - Valid pattern assign, syn on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v pattern a(v,_"1"_)
+a1,f1
+5000
+273 - Valid pattern assign, syn on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v pattern a(v,_"b5"_)
+b1,h1
+5000
+274 - Valid pattern assign, syn on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v pattern a(v,_"b5+a2"_)
+
+5000
+275 - Valid pattern assign, syn on lhs and partial matching on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(v,_"b5+a2"_)
+FALSE
+5000
+276 - Valid pattern assign, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v pattern a(v,_)
+a,a1,b1,c1,h1,f1,constants,d1,e1,g1
+5000
+277 - Valid pattern assign, IDENT on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a("a1",_"1"_)
+TRUE
+5000
+278 - Valid pattern assign, IDENT on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a("a1",_"a2*8"_)
+TRUE
+5000
+279 - Valid pattern assign, IDENT on lhs and partial matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a("b1",_"a2*8"_)
+TRUE
+5000
+280 - Valid pattern assign, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a("d1",_)
+TRUE
+5000
+281 - Valid pattern assign, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c pattern a("g1",_)
+8,9,3,1,2,4
+5000
+282 - Valid pattern assign, wildcard on lhs and Exact matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,"d2%d3*d4+d5-d6*d7%d8")
+11
+5000
+283 - Valid pattern assign, wildcard on lhs and Exact matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,"e1+e2/e3*e4+e5*e6/e7")
+12
+5000
+284 - Valid pattern assign, wildcard on lhs and Exact matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,"g2+g3+g4-g5/g6%g7")
+13,14
+5000
+285 - Valid pattern assign, syn on lhs and Exact matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(v,"1 + 2 + 3")
+7
+5000
+286 - Valid pattern assign, syn on lhs and Exact matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(v,"1 + 2")
+8
+5000
+287 - Valid pattern assign, syn on lhs and Exact matching on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(v,"e1+e2/e3*e4+e5*e6/e7")
+12
+5000
+288 - Valid pattern assign, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14
+5000
+289 - Valid pattern assign, wildcard lhs and exact match on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,"4+4/4-4*4%4")
+10
+5000
+290 - Valid pattern assign, wildcard lhs and exact match on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,"g2+g3+g4-g5/g6%g7")
+13,14
+5000
+291 - Valid pattern assign, wildcard lhs and partial match on rhs, with matching brackets
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"(c*d/e/f*g)"_)
+1
+5000
+292 - Valid pattern assign, wildcard lhs and partial match on rhs, with matching brackets
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"(((((((((c*d/e/f*g)))))))))"_)
+1
+5000
+293 - Valid pattern assign, wildcard lhs and partial match on rhs, with matching brackets
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"((a2*8))"_)
+2,3
+5000
+294 - Valid pattern assign, wildcard lhs and partial match on rhs, with matching brackets
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"(c2%c)"_)
+4,5
+5000
+295 - Valid pattern assign, wildcard lhs and partial match on rhs, with matching brackets
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"(a4%3)"_)
+2
+5000
+296 - Valid pattern assign, confusing assign name
+assign assign;
+Select assign pattern assign(_,_"c*d/e/f*g"_)
+1
+5000
+297 - Valid pattern assign, confusing assign name
+assign pattern;
+Select pattern pattern pattern(_,_"c*d/e/f*g"_)
+1
+5000
+298 - Valid pattern assign, confusing assign name
+assign Select;
+Select Select pattern Select(_,_"a2*8"_)
+2,3
+5000
+299 - Valid pattern assign, confusing assign name
+assign w;
+Select w pattern w(_,_"c2%c"_)
+4,5
+5000
+300 - Valid pattern assign, confusing assign name
+assign ifs;
+Select ifs pattern ifs(_,_"a4%3"_)
+2
+5000
+301 - Valid pattern assign, confusing assign name
+assign procedure;
+Select procedure pattern procedure(_,_"a4%3"_)
+2
+5000
+302- Valid pattern assign, weird but valid spaces or tab
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a          pattern a(_,_"c*d"_)
+1
+5000
+303 - Valid pattern assign, weird but valid spaces or tab
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern        a(_,_"c*d/e"_)
+1
+5000
+304 - Valid pattern assign, weird but valid spaces or tab
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a              (_,_"c*d/e/f"_)
+1
+5000
+305 - Valid pattern assign, weird but valid spaces or tab
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_     ,_"c*d/e/f*g"_)
+1
+5000
+306 - Valid pattern assign, weird but valid spaces or tab
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,            _"b + c*d/e/f*g"_)
+1
+5000
+307 - Valid pattern assign, weird but valid spaces or tab
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,   _"b + c*d/e/f*g"_)
+1
+5000
+308 - Valid pattern assign, weird but valid spaces or tab
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"         b + c*d/e/f*g"_)
+1
+5000
+309 - Valid pattern assign, weird but valid spaces or tab
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d/e/          f*g"_)
+1
+5000
+310 - Valid pattern assign, weird but valid spaces or tab
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"b + c*d/e/f*         g"_)
+1
+5000
+311 - Valid pattern assign, weird but valid spaces or tab
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"          b + c*d/e/f*g"          _)
+1
+5000
+312 - Valid pattern assign, no result
+assign a;
+Select BOOLEAN pattern a(_,"c*d")
+FALSE
+5000
+313 - Valid pattern assign, no result
+assign a;
+Select BOOLEAN pattern a(_,"b")
+FALSE
+5000
+314 - Valid pattern assign
+assign a;
+Select a pattern a(_,"1+2")
+8
+5000
+315 - Valid pattern assign
+assign a;
+Select a pattern a(_,"b + c*d/e/f*g+h%i-j*k/l+m-n")
+1
+5000
+316 - Valid pattern assign, no result
+assign a;
+Select a pattern a(_,"b3/b4")
+
+5000

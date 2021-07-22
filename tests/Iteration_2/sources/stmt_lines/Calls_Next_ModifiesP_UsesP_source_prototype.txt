@@ -1,0 +1,127 @@
+procedure KPOP {
+    kpop = love; // 1
+    read kpop; // 2
+    call groups; // 3
+    while (in == korea) { // 4
+        call performance; // 5
+        if (performance == love) then { // 6
+            performance = money * 1000; // 7
+            call BlackPink; // 8
+            call Twice; // 9
+        } else {
+            print die; // 10
+        }
+        read sing; //11
+        read dance; //12
+        count = count + 1 + (money - 1000);//13
+    }
+    print end; //14
+}
+
+procedure groups {
+    groups = 2; //15
+    if (groups == 2) then { //16
+        print blackpink; //17
+        print twice; //18
+    } else {
+        group = 0; //19
+        group = group + BTS; //20
+    }
+    call dance; //21
+    call sing; //22
+}
+
+procedure BlackPink {
+    playlist = 1000; //23
+    read songlist; //24
+    if (songlist >= 0) then { //25
+        if (category == edm) then { //26
+            ddudu = ddudu * 10 + remix; //27
+            kill = (this + love) - others; //28
+        } else {
+            song = not + edm; //29
+            if (category2 == cute) then{ //30
+                  read Icecream; //31
+                  print cuteSong; //32
+            } else {
+                call groups; // 33
+            }
+        }
+    } else {
+        call groups; //34
+    }
+    print end; //35
+    read ratings;//36
+    performance = ratings;//37
+}
+
+procedure Twice {
+    while((twice==love) && (boys>=2)) { // 38
+        fan = 10000000000000000000000000000; // 39
+        read Twice; // 40
+        print happiness; // 41
+    }
+    if (boys != happy) then { // 42
+        if (money >= 1000) then { // 43
+            call performance; // 44
+            money = money - 1000000 * 2000; // 45
+        } else {
+            read youtube; // 46
+            print money; // 47
+        }
+    } else {
+        crazy = level * 2 + 10/(11+very+happy);// 48
+    }
+    mood = happy;// 49
+}
+
+procedure dance {
+    complex = beginner + intermediate - advanced % pro;// 50
+    if (!(level==noob)) then{// 51
+        steps = a + b * c;// 52
+        call sing; // 53
+        steps = sing + dance; // 54
+    } else {
+        quit = 100; // 55
+        read sing; //56
+        print money;//57
+    }
+    call sing; //58
+}
+
+procedure sing {
+    if (gender == boy) then{ // 59
+        while(key < c4) { // 60
+            role = bass + tenor; //61
+        }
+        while (key >c4){ //62
+            role = alto; //63
+            if (alto == good) then { //64
+                role = role + sop + 2; //65
+            } else {
+                role = role + bass / tenor; //66
+            }
+        }
+    } else {
+        female = everything;  //67
+        call Twice;  //68
+    }
+    call performance;  //69
+    call Twice; // 70
+}
+
+procedure performance {
+    if (you == rich) then {  //71
+        while (money != 0) {  //72
+            ticket = 100; //73
+            drinks = coke + 10; // 74
+            merchandise = ticket + merchandise * 2; //75
+            gift = 200;//76
+        }
+    } else {
+        dream = crushed; //77
+        a = 300; //78
+        b = a + b;//79
+        c = c + 400;//80
+    }
+}

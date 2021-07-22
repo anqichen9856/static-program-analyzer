@@ -1,0 +1,55 @@
+procedure simple {
+    a = b + c; // 1
+    while (v1 == v2) { // 2
+        same = value - diferent; // 3
+    }
+    if (((easy)!=(what+4)) && (level==2)) then{ // 4
+        too = (easy + question) / mark; // 5
+        call complex; // 6
+    } else {
+        while(!(stage==superNoob)) { // 7
+            exit = 1; // 8
+            throw = error * 10000; // 9
+        }
+    }
+}
+
+procedure complex {
+    while((j <= (max*10)) || (j >= sum*2)) { //10
+        g1 = 1 + 2 + 3 + g2*8 + g3/9 + g4%3;//11
+        if (v100 == sum) then {//12
+            x = i-j+k/30*25 + l;//13
+        } else {
+            if ((x!=a) && (j==a)) then { //14
+                count = count + 15; // 15
+            } else {
+                while((!(i == 12)) && (j != 13)) { //16
+                    a = b%c; //17
+                    if = (while + ((d + sum) / f)) - 20; //18
+                }
+            }
+        }
+        while (((a<s)&&((d>f)||((55/aa       )<=66)))   && (((!(true==(a+2))) && (0==0)) && (11>=(q*(22+44)/w%e)))) { // 19
+            insideWhile = beforeWhile - 0; //20
+            while (left<=       right) { //21
+                if ((!(d==e   )) && ((f+g*2) != h)) then { //22
+                    while (i >= true) {//23
+                        exactLeft = exactRight; //24
+                        if (if==else) then { //25
+                            exactLeft1 = else / ((((2+3)-four)/five)*((six+six2)%seven));//26
+                            left = left % (middle -(right * (left + (middle/(left + (middle - right) * right)))));//27
+                        } else {
+                            else = else + 10; //28
+                        }
+                    }
+                    f = beforeWhile - 0;//29
+                } else {
+                    f = e + 12; //30
+                    g = (2+3)-4*(5+6)+8*(10%2);//31
+                }
+                afterWhile = (i*(i-(i/2))+i)+3;//32
+            }
+        }
+    }
+    add = complicated + here + ltr; //33
+}

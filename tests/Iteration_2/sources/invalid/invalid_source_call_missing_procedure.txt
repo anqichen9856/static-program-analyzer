@@ -1,0 +1,8 @@
+procedure a {
+    call b;
+}
+
+procedure b {
+    call nothing;
+}
+

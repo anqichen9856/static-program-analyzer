@@ -1,0 +1,597 @@
+procedure one{
+var1 = var2+1;
+var3 = var4+2*2;
+var5 = 3/3 + 3 * 3;
+var6 = 4*var7;
+call two;
+if((var8 == 6) && ((var9 != var10*6-var1) || (var11!=6))) then {
+var5 = var13-7 * 7 - var1*var6;
+var14 = var15-8;
+if(var16==9) then {
+var5 = 10%var3 + var17;
+var1 =11+ var3/var5*var6;
+var19 = 12/var6;
+read var20;
+print var21;
+var22 = (var3/var2) + 15 - 15 %15;
+if (var23!= 16) then {
+var5 = 17 / var20;
+var25 = 18 % var3;
+var26 = 19 + var6;
+var27 = 20 +var3+var3+var6;
+print var28;
+read var29;
+read var30;
+var31 = 24 + var3 * var5;
+var32 = 25;
+if (var33!=26) then {
+var1 = var35+27;
+var5 = 28 + var5/var1;
+var36 = 29 - var3;
+if(var37 == 30) then {
+if (var38==31) then {
+var5 = 32 * var1;
+var40 = 33 / var1000 * var19;
+var1 = var31 + var1;
+read var42;
+var43 = 36+var19-var1;
+var44 = 37;
+var45 = 38% (((var1-var3)*var5)/var6);
+} else {
+var46 = 39+ var1/var3-var5*var6+var19/var31;
+print var47;
+print var48;
+read var49;
+var50 = 43 * var1+var3-var5*var6+(var19/var31);
+var51 = 44 - var1/var3-var5*var6/var19/var31;
+}
+var52 = 45;
+} else {
+var53 = 46+var19/var1*var5;
+var54 = 47/var31-var6;
+}
+}
+else {
+var55 = 48+var1;
+var56 = 49/var3;
+var57 = 50;
+}
+var58 = 51 / var1;
+var59 = 52/var19%var19;
+var60 = 53;
+var61 = 54/var3;
+read var62;
+print var63;
+read var64;
+
+}
+else {
+read var65;
+var66 = 59;
+var67 = 60;
+}
+var68 = 61;
+var69 = 62;
+var70 = 63;
+
+}
+else {
+if(var71==64) then {
+var72 = 65;
+var73 = 66;
+} else {
+var74 = 67;
+var75 = 68;
+}
+}
+}
+else {
+var76=69;
+var77 = 70;
+var78 = 71;
+
+}
+}
+
+procedure two{
+
+while(var79==72){
+var80 = 73 + var83;
+read var81;
+read var82;
+var83 = 76;
+var84 = 77;
+var85 = 78;
+while(var86 == 79){
+while (var87==80){
+var88 = 81;
+var89 = 82;
+var90 = 83;
+var91 = 84;
+var92 = 85;
+var94 = 86;
+var95 = 87;
+var96 = 88;
+call three;
+while (var97 == 90){
+var98 = 91;
+var99 = 92;
+var100 = 93;
+var101 = 94;
+while(var102 == 95){
+var103 = 96;
+call four;
+while (var104 == 98){
+var105 = 99;
+read var106;
+read var107;
+var108 = 102;
+}
+while (var109 == 103){
+var110 = 104;
+while (var111 == 105){
+var112 = 106;
+var113 = 107;
+}
+var114 = 108;
+var115 = 109;
+
+}
+var116 = 110;
+var117 = 111;
+var118 = 112;
+}
+var119 = 113;
+var120 = 114;
+read var121;
+print var122;
+var123 = 117;
+}
+var124 = 118;
+var125 = 119;
+var126 = 120;
+}
+}
+var127 = 121;
+var128 = 122;
+var129 = 123;
+var130 = 124;
+}
+var131 = 125;
+var132 = 126;
+call three;
+var133 = 128;
+var134 = 129;
+while (var135 == 130){
+var136 = 131;
+var137 = 132;
+var138 = 133;
+while (var139 == 134){
+var140 = 135;
+var141 = 136;
+var142 = 137;
+var143 = 138;
+read var144;
+read var145;
+read var146;
+var147 = 142;
+var148 = 143;
+var149 = 144;
+}
+var150 = 145;
+while (var151==146){
+read var152;
+var153 = 148;
+var154 = 149;
+}
+while (var155 == 150){
+var156 = 151;
+var157 = 152;
+var158 = 153;
+}
+var159 = 154;
+while(var160 == 155){
+var161 = 156;
+var162 = 157;
+var163 = 158;
+}
+var164 = 159;
+var165 = 160;
+
+}
+var166 = 161;
+var167 = 162;
+call four;
+var168 = 164;
+var169 = 165;
+read var170;
+read var171;
+var172 = 168;
+
+}
+
+procedure three{
+var173 = 169;
+call four;
+var174 = 171;
+while (var175 == 172){
+var176 = 173;
+var177 = 174;
+var178 = 175;
+if (var179 == 176) then{
+var180 = 177;
+var181 = 178;
+var182 = 179;
+var183 = 180;
+while (var184 == 181){
+var185 = 182;
+var186 = 183;
+read var187;
+print var188;
+if(var189 == 186) then {
+var190 = 187;
+var191 = 188;
+var192 = 189;
+var193 = 190;
+
+}
+else {
+var194 = 191;
+var195 = 192;
+var196 = 193;
+while (var197 == 194){
+var198 = 195;
+var199 = 196;
+var200 = 197;
+while(var201 == 198){
+var202 = 199;
+var203 = 200;
+read var204;
+var205 = 202;
+var206 = 203;
+print var207;
+print var208;
+var209 = 206;
+}
+if(var210 == 207) then {
+var211 = 208;
+var212 = 209;
+var213 = 210;
+var214 = 211;
+var215 = 212;
+
+}
+else {
+var216 = 213;
+var217 = 214;
+var218 = 215;
+var219 = 216;
+}
+var220 = 217;
+var221 = 218;
+call five;
+var222 = 220;
+while(var223 == 221 ){
+var224 = 222;
+var225 = 223;
+var226 = 224;
+var227 = 225;
+}
+}
+var228 = 226;
+var229 = 227;
+var230 = 228;
+var231 = 229;
+var232 = 230;
+print var233;
+print var234;
+print var235;
+print var236;
+read var237;
+read var238;
+read var239;
+var240 = 238;
+}
+var241 = 239;
+var242 = 240;
+var243 = 241;
+var244 = 242;
+read var245;
+read var246;
+var247 = 245;
+}
+var248 = 246;
+var249 = 247;
+} else{
+if(var250 == 248) then {
+var251 = 249;
+var252 = 250;
+var253 = 251;
+var254 = 252;
+while(var255==253){
+var256 = 254;
+var257 = 255;
+while (var258 == 256){
+var259 = 257;
+var260 = 258;
+var261 = 259;
+var262 = 260;
+}
+}
+var263 = 261;
+var264 = 262;
+var265 = 263;
+} else {
+var266 = 264;
+var267 = 265;
+print var268;
+var269 = 267;
+print var270;
+var271 = 269;
+}
+var272 = 270;
+var273 = 271;
+var274 = 272;
+var275 = 273;
+}
+var276 = 274;
+var277 = 275;
+var278 = 276;
+}
+var279 = 277;
+var280 = 278;
+var281 = 279;
+read var282;
+read var283;
+print var284;
+print var285;
+print var286;
+print var287;
+read var288;
+read var289;
+var290 = 288;
+var291 = 289;
+var292 = 290;
+var293 = 291;
+}
+
+procedure four{
+var294 = 292;
+var295 = 293;
+if(var296 == 294) then {
+var297 = 295;
+var298 = 296;
+var299 =297;
+var300 = 298;
+var301 = 299;
+var302 = 300;
+var303 = 301;
+var304 = 302;
+read var305;
+} else {
+var306 = 304;
+var307 = 305;
+var308 = 306;
+var309 = 307;
+var310 = 308;
+var311 = 309;
+var312 = 310;
+var313 = 311;
+var314 = 312;
+}
+call five;
+var315 = 314;
+var316 = 315;
+while(var317 == 316){
+var318 = 317;
+var319 = 318;
+var320 = 319;
+var321 = 320;
+read var322;
+}
+var323 = 322;
+var324 = 323;
+var325 = 324;
+while(var326 == 325){
+var327 = 326;
+var328 = 327;
+var329 = 328;
+var330 = 329;
+if(var331 == var331*(var331+330)) then {
+var332 = 331;
+var333 = 332;
+var334=333;
+} else {
+var335 = 334;
+var336 = 335;
+var337 = 336;
+var338 = 337;
+print var339;
+var340 = 339;
+var341 = 340;
+}
+var342 = 341;
+var343 = 342;
+var344 = 343;
+}
+var345 = 344;
+var346 = 345;
+var347 = 346;
+var348 = 347;
+print var349;
+print var350;
+while(var351 == 350 ){
+var352 = 351;
+var353 = 352;
+var354 = 353;
+var355 = 354;
+var356 = 355;
+var357 = 356;
+var358 = 357;
+var359 = 358;
+var360 = 359;
+while(var361 == 360){
+var362 = 361;
+var363 = 362;
+var364 = 363;
+var365 = 364;
+var366 = 365;
+while(var367==366){
+var368 = 367;
+var369 = 368;
+var370 = 369;
+var371 = 370;
+var372 = 371;
+var373 = 372;
+var374 = 373;
+var375 = 374;
+var376 = 375;
+read var377;
+var378 = 377;
+var379 = 378;
+}
+var380 = 379;
+var381 = 380;
+var382 = 381;
+var383 = 382;
+var384 = 383;
+}
+var385 = 384;
+var386 = 385;
+var387 = 386;
+var388 = 387;
+}
+var389 = var388 - 388;
+var390 = 389;
+
+}
+
+procedure five{
+call six;
+var391 = 391;
+var392=392;
+var393 = 393;
+var394 = 394;
+var395 = 395;
+var396 = 396;
+while(var397==397){
+var398 = 398;
+var399 = 399;
+var400 = 400;
+var401 = 401;
+var402 = 402;
+print var403;
+print var404;
+var405 = 405;
+var406 = 406;
+var407 = 407;
+var408 = 408;
+var409 = 409;
+var410 = 410;
+var411 = 411;
+var412 = 412;
+var413 = 413;
+var414 = 414;
+var415 = 415;
+var416 = 416;
+var417 = 417;
+var418 = 418;
+var419 = 419;
+var420 = 420;
+var421 = 421;
+while (var422 == 422){
+var423 = 423;
+var424 = 424;
+var425 = 425;
+var426 = 426;
+var427 = 427;
+var428 = 428;
+var429 = 429;
+var430 = 430;
+var431 = 431;
+read var432;
+var433 = 433;
+var434 = 434;
+var435 = 435;
+var436 = 436;
+var437 = 437;
+var438 = 438;
+var439 = 439;
+var440 = 440;
+var441 = 441;
+}
+var442 = 442;
+var443 = 443;
+var444 = 444;
+var445 = 445;
+var446 = 446;
+while (var447 == 447){
+var448 = 448;
+var449 = 449;
+var450 = 450;
+var451 = 451;
+var452 = 452;
+var453 = 453;
+var454 = 454;
+var455 = 455;
+var456 = 456;
+var457 = 457;
+
+}
+while (var458==458){
+var459 = 459;
+var460 = 460;
+var461 = 461;
+var462 = 462;
+var463 = 463;
+}
+
+}
+if(var464==464) then {
+var465 = 465;
+var466 = 466;
+var467 = 467;
+var468 = 468;
+var469 = 469;
+read var470;
+print var471;
+} else {
+print var472;
+var473 = 473;
+var474 = 474;
+var475 = 475;
+var476 = 476;
+if(var477==477) then {
+var478 = 478;
+var479 = 479;
+var480 = 480;
+}
+else {
+var481 = 481;
+var482 = 482;
+var483 = 483;
+var484 = 484;
+var485 = 485;
+var486 = 486;
+}
+var487 = 487;
+var488 = 488;
+var489 = 489;
+}
+var490 = 490;
+var491 = 491;
+print var492;
+
+
+}
+
+procedure six{
+print var493;
+var494 = 494;
+var495 = 495;
+var496 = 496;
+var497 = 497;
+var498 = 498;
+var499 = 499;
+var500 = 500;
+}

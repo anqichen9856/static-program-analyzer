@@ -1,0 +1,53 @@
+procedure p1 {
+    read a; // 1
+    read x; // 2
+    call p2; } // 3
+
+procedure p2 {
+    a = 1; // 4
+    z = 2; // 5
+    while (z != 0) { // 6
+        a = a + 3*z; // 7
+        call p3; // 8
+        z = z - 4;} //9
+    if (a==5) then { // 10
+        a = a/6; } // 11
+    else {
+        x = 7; } // 12
+    x = x + a + 8; // 13
+    c = x * 9; // 14
+    a = a*c%x; } // 15
+
+procedure p3 {
+    x = 2; // 16
+    v = x; // 17
+    d = 10; // 18
+    d = d*11; // 19
+    while (z ==0) { // 20
+        d = d%12 + 13;}  // 21
+    while( f < 14) { //22
+        d = d - 15; }  // 23
+    d = d + 1; //24
+    print v; // 25
+    third = third-3; // 26
+    call p4; // 27
+    read z; // 28
+    g = third;}  // 29
+
+procedure p4 {
+    aa = ss; // 30
+    dd = aa; // 31
+    ff = dd; // 32
+    while (zz == 0) { // 33
+        if (zz == 1) then { // 34
+            ff = dd + 2; // 35
+        } else {
+            gg = dd; // 36
+            zxc = zxc; // 37
+        }
+        hh = ff; //38
+        jj = gg; // 39
+        while (kk == kk) { // 40
+            kk = jj + hh + aa; // 41
+            bb = dd + ff + kk; // 42
+            ff = hh + bb;}}} // 43

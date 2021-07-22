@@ -1,0 +1,37 @@
+procedure Bumblebee {
+    read x; // 1
+    y = 2 * z; // 2
+    call Megatron; // 3
+    z = p - y; // 4
+    if(q!=1)then { //5
+        z = x + 24; //6
+        call Ironhide;} // 7
+    else {
+        while (z>0) { // 8
+            y = x*q-5; // 9
+            z = z - 1;} // 10
+        y = x+y*z+p*q; //11
+        call Ironhide;} // 12
+    i = x + j + z; //13
+    call Barricade;} // 14
+
+procedure Megatron {
+    p = x * 10; // 15
+    q = y + y * 10; //16
+    while(t==0) { //17
+        a = 5*p-5; //18
+        print y;}//19
+    q = p *5;}//20
+
+procedure Ironhide {
+    i = x*10;//21
+    j = x+y*10;//22
+    if (i>j) then {//23
+        read x;//24
+        call Barricade;} //25
+    else {
+        y = i+x+y*z;}} //26
+
+procedure Barricade {
+    q = i *x*j+y+p*q;//27
+    print q;} //28

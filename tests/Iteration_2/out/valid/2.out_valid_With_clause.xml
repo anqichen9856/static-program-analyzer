@@ -1,0 +1,393 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>5.229000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, IDENT = IDENT">1</id><querystr><![CDATA[assign a; Select a with "a" = "a"]]></querystr>
+<stuans>1,12,21,22,23,24,6,7</stuans>
+<correct>1,6,7,12,21,22,23,24</correct>
+<time_taken>6.398000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" With="1" CondNum="2" RelNum="0" comment="Valid With, IDENT = IDENT, no result">2</id><querystr><![CDATA[ Select BOOLEAN with "else" = "two"]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.782000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" With="1" CondNum="2" RelNum="0" comment="Valid With, IDENT = IDENT">3</id><querystr><![CDATA[ Select BOOLEAN with "else" = "else"]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.799000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, INTEGER = INTEGER">4</id><querystr><![CDATA[stmt s; Select s.stmt# with 1 = 1]]></querystr>
+<stuans>1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,3,4,5,6,7,8,9</stuans>
+<correct>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</correct>
+<time_taken>6.565000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, INTEGER = INTEGER">5</id><querystr><![CDATA[stmt s; Select s.stmt# with 1 = 2]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.368000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, attrRef = attrRef">6</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; Select p.procName with p.procName = p.procName]]></querystr>
+<stuans>p1,p2,p3</stuans>
+<correct>p1,p2,p3</correct>
+<time_taken>9.498000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, attrRef = attrRef">7</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; Select v.varName with v.varName = v.varName]]></querystr>
+<stuans>a,b,c,d,e,else,f,g,h,i,j,k,p,p1,p2,p3,var1</stuans>
+<correct>a,b,c,d,var1,e,h,p,p1,p2,p3,g,f,i,j,k,else</correct>
+<time_taken>9.310000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, attrRef = attrRef">8</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; Select c.value with c.value = c.value]]></querystr>
+<stuans>0,1,10,2,20,3</stuans>
+<correct>2,10,0,20,1,3</correct>
+<time_taken>8.810000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, attrRef = attrRef">9</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; Select s.stmt# with s.stmt# = s.stmt#]]></querystr>
+<stuans>1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,3,4,5,6,7,8,9</stuans>
+<correct>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</correct>
+<time_taken>8.632000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, attrRef = attrRef">10</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; Select v.varName with p.procName = v.varName]]></querystr>
+<stuans>p1,p2,p3</stuans>
+<correct>p1,p2,p3</correct>
+<time_taken>10.031000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, attrRef = attrRef">11</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; Select s.stmt# with c.value = s.stmt#]]></querystr>
+<stuans>1,10,2,20,3</stuans>
+<correct>2,10,20,1,3</correct>
+<time_taken>9.369000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, attrRef = attrRef">12</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; assign a; Select s.stmt# with s.stmt# = a.stmt#]]></querystr>
+<stuans>1,12,21,22,23,24,6,7</stuans>
+<correct>1,6,7,12,21,22,23,24</correct>
+<time_taken>9.964000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, attrRef = attrRef">13</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r.stmt# with r.stmt# = r.stmt#]]></querystr>
+<stuans>13,14,2,20</stuans>
+<correct>2,13,14,20</correct>
+<time_taken>11.345000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, attrRef = attrRef">14</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr.stmt# with pr.stmt# = pr.stmt#]]></querystr>
+<stuans>15,17,8</stuans>
+<correct>8,15,17</correct>
+<time_taken>11.122000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, attrRef = attrRef">15</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp.stmt# with cp.stmt# = cp.stmt#]]></querystr>
+<stuans>10,16,3,5</stuans>
+<correct>3,5,10,16</correct>
+<time_taken>10.113000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, attrRef = attrRef">16</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w.stmt# with w.stmt# = w.stmt#]]></querystr>
+<stuans>11,9</stuans>
+<correct>9,11</correct>
+<time_taken>8.826000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, attrRef = attrRef">17</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs.stmt# with ifs.stmt# = ifs.stmt#]]></querystr>
+<stuans>18,19,4</stuans>
+<correct>4,18,19</correct>
+<time_taken>9.923000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, attrRef = attrRef">18</id><querystr><![CDATA[assign a, a1; Select a.stmt# with a.stmt# = a1.stmt#]]></querystr>
+<stuans>1,12,21,22,23,24,6,7</stuans>
+<correct>1,6,7,12,21,22,23,24</correct>
+<time_taken>6.766000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, attrRef = attrRef">19</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r.varName with r.varName = r.varName]]></querystr>
+<stuans>a,b,p3,var1</stuans>
+<correct>var1,a,b,p3</correct>
+<time_taken>9.234000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, attrRef = attrRef">20</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr.varName with pr.varName = pr.varName]]></querystr>
+<stuans>c,g,p1</stuans>
+<correct>g,c,p1</correct>
+<time_taken>10.532000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, attrRef = attrRef">21</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp.procName with cp.procName = cp.procName]]></querystr>
+<stuans>p2,p3</stuans>
+<correct>p2,p3</correct>
+<time_taken>9.830000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, syn = syn">22</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n with n = n]]></querystr>
+<stuans>1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,3,4,5,6,7,8,9</stuans>
+<correct>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</correct>
+<time_taken>8.480000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = syn / syn = INTEGER">23</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN with n = 0]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.468000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = syn / syn = INTEGER">24</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN with n = 25]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.683000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = syn / syn = INTEGER">25</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN with n = 24]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.929000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = IDENT">26</id><querystr><![CDATA[procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN with p.procName = "p3"]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.742000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = IDENT">27</id><querystr><![CDATA[procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p,q> with p.procName = "p2"]]></querystr>
+<stuans>p2 p1,p2 p2,p2 p3</stuans>
+<correct>p2 p1,p2 p2,p2 p3</correct>
+<time_taken>9.742000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = IDENT">28</id><querystr><![CDATA[procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p.procName,q.procName> with  "p3" = p.procName]]></querystr>
+<stuans>p3 p1,p3 p2,p3 p3</stuans>
+<correct>p3 p2,p3 p3,p3 p1</correct>
+<time_taken>10.750000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = IDENT">29</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN with  v.varName = "var1"]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.851000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = IDENT">30</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <v,v.varName> with  v.varName = "p1"]]></querystr>
+<stuans>p1 p1</stuans>
+<correct>p1 p1</correct>
+<time_taken>10.569000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = IDENT">31</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v with  v.varName = "e"]]></querystr>
+<stuans>e</stuans>
+<correct>e</correct>
+<time_taken>9.364000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = INTEGER">32</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c with  c.value = 20]]></querystr>
+<stuans>20</stuans>
+<correct>20</correct>
+<time_taken>8.577000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = INTEGER">33</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <c, v> with  c.value = 20]]></querystr>
+<stuans>20 a,20 b,20 c,20 d,20 e,20 else,20 f,20 g,20 h,20 i,20 j,20 k,20 p,20 p1,20 p2,20 p3,20 var1</stuans>
+<correct>20 a,20 b,20 c,20 d,20 var1,20 e,20 h,20 p1,20 p2,20 p3,20 g,20 f,20 i,20 j,20 k,20 else,20 p</correct>
+<time_taken>9.488000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = INTEGER">34</id><querystr><![CDATA[procedure p; variable v; constant c,c1; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <c, c1> with  c.value = 20]]></querystr>
+<stuans>20 0,20 1,20 10,20 2,20 20,20 3</stuans>
+<correct>20 2,20 10,20 0,20 20,20 3,20 1</correct>
+<time_taken>9.680000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = INTEGER">35</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s with  s.stmt# = 20]]></querystr>
+<stuans>20</stuans>
+<correct>20</correct>
+<time_taken>9.739000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = attrRef / attrRef = INTEGER">36</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN with c.value = 0]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.198000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = attrRef / attrRef = INTEGER">37</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c with c.value = 2]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>8.641000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = attrRef / attrRef = INTEGER">38</id><querystr><![CDATA[procedure p; variable v; constant c,c1; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <c,c1.value> with 20 = c.value]]></querystr>
+<stuans>20 0,20 1,20 10,20 2,20 20,20 3</stuans>
+<correct>20 2,20 10,20 0,20 20,20 1,20 3</correct>
+<time_taken>9.222000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = attrRef / attrRef = INTEGER">39</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <s,ifs.stmt#> with s.stmt# = 1]]></querystr>
+<stuans>1 18,1 19,1 4</stuans>
+<correct>1 4,1 18,1 19</correct>
+<time_taken>9.801000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = attrRef / attrRef = INTEGER">40</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <r.stmt#,r> with r.stmt# = 2]]></querystr>
+<stuans>2 2</stuans>
+<correct>2 2</correct>
+<time_taken>8.794000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = attrRef / attrRef = INTEGER">41</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr,pr1; call cp; while w; if ifs; assign a; prog_line n; Select <pr.stmt#, pr1> with 17 = pr.stmt#]]></querystr>
+<stuans>17 15,17 17,17 8</stuans>
+<correct>17 8,17 15,17 17</correct>
+<time_taken>10.377000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = attrRef / attrRef = INTEGER">42</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <pr, cp.stmt#> with              10 = cp.stmt#]]></querystr>
+<stuans>15 10,17 10,8 10</stuans>
+<correct>8 10,15 10,17 10</correct>
+<time_taken>9.601000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = attrRef / attrRef = INTEGER">43</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN with ifs.stmt# = 18]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.333000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = attrRef / attrRef = INTEGER, no result">44</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN with ifs.stmt# = 24]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.879000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = attrRef / attrRef = INTEGER">45</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN with a.stmt# = 6]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.157000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" With="1" CondNum="3" RelNum="0" comment="Valid With, INTEGER = attrRef / attrRef = INTEGER">46</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a,a1; prog_line n; Select <a,a1> with a.stmt# = 7]]></querystr>
+<stuans>7 1,7 12,7 21,7 22,7 23,7 24,7 6,7 7</stuans>
+<correct>7 1,7 6,7 7,7 12,7 21,7 22,7 23,7 24</correct>
+<time_taken>8.934000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, attrRef = attrRef">47</id><querystr><![CDATA[print pn; procedure p; Select <pn, p.procName> with pn.varName = p.procName]]></querystr>
+<stuans>17 p1</stuans>
+<correct>17 p1</correct>
+<time_taken>8.005000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, attrRef = attrRef">48</id><querystr><![CDATA[read r; procedure p; Select <r.varName, p.procName> with r.varName = p.procName]]></querystr>
+<stuans>p3 p3</stuans>
+<correct>p3 p3</correct>
+<time_taken>7.892000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, no result">49</id><querystr><![CDATA[print pr; call cp; Select <pr, cp> with pr.varName = cp.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.002000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, attrRef = attrRef">50</id><querystr><![CDATA[read r; call cp; Select <r, cp> with r.varName = cp.procName]]></querystr>
+<stuans>20 10,20 16,20 5</stuans>
+<correct>20 16,20 10,20 5</correct>
+<time_taken>7.447000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = IDENT">51</id><querystr><![CDATA[read r; Select r.varName with r.varName = "b"]]></querystr>
+<stuans>b</stuans>
+<correct>b</correct>
+<time_taken>5.811000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = IDENT">52</id><querystr><![CDATA[print pr; Select pr.varName with pr.varName = "g"]]></querystr>
+<stuans>g</stuans>
+<correct>g</correct>
+<time_taken>6.253000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = IDENT, no result">53</id><querystr><![CDATA[call cp; Select cp.procName with cp.procName = "p1"]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.764000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = IDENT">54</id><querystr><![CDATA[call cp; Select cp with cp.procName = "p3"]]></querystr>
+<stuans>10,16,5</stuans>
+<correct>5,10,16</correct>
+<time_taken>5.783000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Valid With, IDENT = attrRef / attrRef = IDENT, no result">55</id><querystr><![CDATA[assign a; Select a with a.varName = "b"]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.351000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

@@ -1,0 +1,750 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>19.758000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on both args">1</id><querystr><![CDATA[procedure p;variable v; Select p such that Modifies(p,v)]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,performance,sing</stuans>
+<correct>KPOP,groups,BlackPink,Twice,dance,sing,performance</correct>
+<time_taken>6.433000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, IDENT on lhs and wildcard on rhs">2</id><querystr><![CDATA[procedure p; variable v; Select v such that Modifies(p,v)]]></querystr>
+<stuans>Icecream,Twice,a,b,c,complex,count,crazy,dance,ddudu,dream,drinks,fan,female,gift,group,groups,kill,kpop,merchandise,money,mood,performance,playlist,quit,ratings,role,sing,song,songlist,steps,ticket,youtube</stuans>
+<correct>kpop,performance,sing,dance,count,groups,group,playlist,songlist,ddudu,kill,song,Icecream,ratings,fan,Twice,money,youtube,crazy,mood,complex,steps,quit,role,female,ticket,drinks,merchandise,gift,dream,a,b,c</correct>
+<time_taken>6.593000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, IDENT on lhs and wildcard on rhs">3</id><querystr><![CDATA[procedure p;variable v; Select <p.procName, v.varName> such that Modifies(p,v)]]></querystr>
+<stuans>BlackPink Icecream,BlackPink Twice,BlackPink a,BlackPink b,BlackPink c,BlackPink complex,BlackPink crazy,BlackPink ddudu,BlackPink dream,BlackPink drinks,BlackPink fan,BlackPink female,BlackPink gift,BlackPink group,BlackPink groups,BlackPink kill,BlackPink merchandise,BlackPink money,BlackPink mood,BlackPink performance,BlackPink playlist,BlackPink quit,BlackPink ratings,BlackPink role,BlackPink sing,BlackPink song,BlackPink songlist,BlackPink steps,BlackPink ticket,BlackPink youtube,KPOP Icecream,KPOP Twice,KPOP a,KPOP b,KPOP c,KPOP complex,KPOP count,KPOP crazy,KPOP dance,KPOP ddudu,KPOP dream,KPOP drinks,KPOP fan,KPOP female,KPOP gift,KPOP group,KPOP groups,KPOP kill,KPOP kpop,KPOP merchandise,KPOP money,KPOP mood,KPOP performance,KPOP playlist,KPOP quit,KPOP ratings,KPOP role,KPOP sing,KPOP song,KPOP songlist,KPOP steps,KPOP ticket,KPOP youtube,Twice Twice,Twice a,Twice b,Twice c,Twice crazy,Twice dream,Twice drinks,Twice fan,Twice gift,Twice merchandise,Twice money,Twice mood,Twice ticket,Twice youtube,dance Twice,dance a,dance b,dance c,dance complex,dance crazy,dance dream,dance drinks,dance fan,dance female,dance gift,dance merchandise,dance money,dance mood,dance quit,dance role,dance sing,dance steps,dance ticket,dance youtube,groups Twice,groups a,groups b,groups c,groups complex,groups crazy,groups dream,groups drinks,groups fan,groups female,groups gift,groups group,groups groups,groups merchandise,groups money,groups mood,groups quit,groups role,groups sing,groups steps,groups ticket,groups youtube,performance a,performance b,performance c,performance dream,performance drinks,performance gift,performance merchandise,performance ticket,sing Twice,sing a,sing b,sing c,sing crazy,sing dream,sing drinks,sing fan,sing female,sing gift,sing merchandise,sing money,sing mood,sing role,sing ticket,sing youtube</stuans>
+<correct>KPOP kpop,KPOP performance,KPOP sing,KPOP dance,KPOP count,KPOP groups,KPOP group,KPOP complex,KPOP steps,KPOP quit,KPOP role,KPOP female,KPOP ticket,KPOP drinks,KPOP merchandise,KPOP gift,KPOP dream,KPOP a,KPOP b,KPOP c,KPOP fan,KPOP Twice,KPOP money,KPOP youtube,KPOP crazy,KPOP mood,KPOP playlist,KPOP songlist,KPOP ddudu,KPOP kill,KPOP song,KPOP Icecream,KPOP ratings,groups groups,groups group,groups complex,groups steps,groups quit,groups sing,groups role,groups female,groups ticket,groups drinks,groups merchandise,groups gift,groups dream,groups a,groups b,groups c,groups fan,groups Twice,groups money,groups youtube,groups crazy,groups mood,BlackPink playlist,BlackPink songlist,BlackPink ddudu,BlackPink kill,BlackPink song,BlackPink Icecream,BlackPink ratings,BlackPink performance,BlackPink groups,BlackPink group,BlackPink complex,BlackPink steps,BlackPink quit,BlackPink sing,BlackPink role,BlackPink female,BlackPink ticket,BlackPink drinks,BlackPink merchandise,BlackPink gift,BlackPink dream,BlackPink a,BlackPink b,BlackPink c,BlackPink fan,BlackPink Twice,BlackPink money,BlackPink youtube,BlackPink crazy,BlackPink mood,Twice fan,Twice Twice,Twice money,Twice youtube,Twice crazy,Twice mood,Twice ticket,Twice drinks,Twice merchandise,Twice gift,Twice dream,Twice a,Twice b,Twice c,dance complex,dance steps,dance quit,dance sing,dance role,dance female,dance ticket,dance drinks,dance merchandise,dance gift,dance dream,dance a,dance b,dance c,dance fan,dance Twice,dance money,dance youtube,dance crazy,dance mood,sing role,sing female,sing ticket,sing drinks,sing merchandise,sing gift,sing dream,sing a,sing b,sing c,sing fan,sing Twice,sing money,sing youtube,sing crazy,sing mood,performance ticket,performance drinks,performance merchandise,performance gift,performance dream,performance a,performance b,performance c</correct>
+<time_taken>9.240000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid ModifiesP, syn on lhs and wildcard on rhs">4</id><querystr><![CDATA[procedure p; Select p such that Modifies(p,_)]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,performance,sing</stuans>
+<correct>KPOP,groups,BlackPink,Twice,dance,sing,performance</correct>
+<time_taken>5.343000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on both args">5</id><querystr><![CDATA[call cp; variable v; Select cp such that Modifies(cp,v)]]></querystr>
+<stuans>21,22,3,33,34,44,5,53,58,68,69,70,8,9</stuans>
+<correct>3,5,8,9,21,22,33,34,44,53,58,68,69,70</correct>
+<time_taken>6.762000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on both args">6</id><querystr><![CDATA[call cp; variable v; Select cp.procName such that Modifies(cp,v)]]></querystr>
+<stuans>BlackPink,Twice,dance,groups,performance,sing</stuans>
+<correct>groups,BlackPink,Twice,dance,sing,performance</correct>
+<time_taken>7.952000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on both args">7</id><querystr><![CDATA[call cp; variable v; Select v such that Modifies(cp,v)]]></querystr>
+<stuans>Icecream,Twice,a,b,c,complex,crazy,ddudu,dream,drinks,fan,female,gift,group,groups,kill,merchandise,money,mood,performance,playlist,quit,ratings,role,sing,song,songlist,steps,ticket,youtube</stuans>
+<correct>sing,groups,group,playlist,songlist,performance,ddudu,kill,song,Icecream,ratings,fan,Twice,money,youtube,crazy,mood,complex,steps,quit,role,female,ticket,drinks,merchandise,gift,dream,a,b,c</correct>
+<time_taken>6.790000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on both args">8</id><querystr><![CDATA[call cp; variable v; Select <cp.procName,v.varName> such that Modifies(cp,v)]]></querystr>
+<stuans>BlackPink Icecream,BlackPink Twice,BlackPink a,BlackPink b,BlackPink c,BlackPink complex,BlackPink crazy,BlackPink ddudu,BlackPink dream,BlackPink drinks,BlackPink fan,BlackPink female,BlackPink gift,BlackPink group,BlackPink groups,BlackPink kill,BlackPink merchandise,BlackPink money,BlackPink mood,BlackPink performance,BlackPink playlist,BlackPink quit,BlackPink ratings,BlackPink role,BlackPink sing,BlackPink song,BlackPink songlist,BlackPink steps,BlackPink ticket,BlackPink youtube,Twice Twice,Twice a,Twice b,Twice c,Twice crazy,Twice dream,Twice drinks,Twice fan,Twice gift,Twice merchandise,Twice money,Twice mood,Twice ticket,Twice youtube,dance Twice,dance a,dance b,dance c,dance complex,dance crazy,dance dream,dance drinks,dance fan,dance female,dance gift,dance merchandise,dance money,dance mood,dance quit,dance role,dance sing,dance steps,dance ticket,dance youtube,groups Twice,groups a,groups b,groups c,groups complex,groups crazy,groups dream,groups drinks,groups fan,groups female,groups gift,groups group,groups groups,groups merchandise,groups money,groups mood,groups quit,groups role,groups sing,groups steps,groups ticket,groups youtube,performance a,performance b,performance c,performance dream,performance drinks,performance gift,performance merchandise,performance ticket,sing Twice,sing a,sing b,sing c,sing crazy,sing dream,sing drinks,sing fan,sing female,sing gift,sing merchandise,sing money,sing mood,sing role,sing ticket,sing youtube</stuans>
+<correct>groups groups,groups group,groups complex,groups steps,groups quit,groups sing,groups role,groups female,groups ticket,groups drinks,groups merchandise,groups gift,groups dream,groups a,groups b,groups c,groups fan,groups Twice,groups money,groups youtube,groups crazy,groups mood,BlackPink playlist,BlackPink songlist,BlackPink ddudu,BlackPink kill,BlackPink song,BlackPink Icecream,BlackPink ratings,BlackPink performance,BlackPink groups,BlackPink group,BlackPink complex,BlackPink steps,BlackPink quit,BlackPink sing,BlackPink role,BlackPink female,BlackPink ticket,BlackPink drinks,BlackPink merchandise,BlackPink gift,BlackPink dream,BlackPink a,BlackPink b,BlackPink c,BlackPink fan,BlackPink Twice,BlackPink money,BlackPink youtube,BlackPink crazy,BlackPink mood,Twice fan,Twice Twice,Twice money,Twice youtube,Twice crazy,Twice mood,Twice ticket,Twice drinks,Twice merchandise,Twice gift,Twice dream,Twice a,Twice b,Twice c,dance complex,dance steps,dance quit,dance sing,dance role,dance female,dance ticket,dance drinks,dance merchandise,dance gift,dance dream,dance a,dance b,dance c,dance fan,dance Twice,dance money,dance youtube,dance crazy,dance mood,sing role,sing female,sing ticket,sing drinks,sing merchandise,sing gift,sing dream,sing a,sing b,sing c,sing fan,sing Twice,sing money,sing youtube,sing crazy,sing mood,performance ticket,performance drinks,performance merchandise,performance gift,performance dream,performance a,performance b,performance c</correct>
+<time_taken>10.273000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on both args">9</id><querystr><![CDATA[call cp; variable v; Select <cp,v> such that Modifies(cp,v)]]></querystr>
+<stuans>21 Twice,21 a,21 b,21 c,21 complex,21 crazy,21 dream,21 drinks,21 fan,21 female,21 gift,21 merchandise,21 money,21 mood,21 quit,21 role,21 sing,21 steps,21 ticket,21 youtube,22 Twice,22 a,22 b,22 c,22 crazy,22 dream,22 drinks,22 fan,22 female,22 gift,22 merchandise,22 money,22 mood,22 role,22 ticket,22 youtube,3 Twice,3 a,3 b,3 c,3 complex,3 crazy,3 dream,3 drinks,3 fan,3 female,3 gift,3 group,3 groups,3 merchandise,3 money,3 mood,3 quit,3 role,3 sing,3 steps,3 ticket,3 youtube,33 Twice,33 a,33 b,33 c,33 complex,33 crazy,33 dream,33 drinks,33 fan,33 female,33 gift,33 group,33 groups,33 merchandise,33 money,33 mood,33 quit,33 role,33 sing,33 steps,33 ticket,33 youtube,34 Twice,34 a,34 b,34 c,34 complex,34 crazy,34 dream,34 drinks,34 fan,34 female,34 gift,34 group,34 groups,34 merchandise,34 money,34 mood,34 quit,34 role,34 sing,34 steps,34 ticket,34 youtube,44 a,44 b,44 c,44 dream,44 drinks,44 gift,44 merchandise,44 ticket,5 a,5 b,5 c,5 dream,5 drinks,5 gift,5 merchandise,5 ticket,53 Twice,53 a,53 b,53 c,53 crazy,53 dream,53 drinks,53 fan,53 female,53 gift,53 merchandise,53 money,53 mood,53 role,53 ticket,53 youtube,58 Twice,58 a,58 b,58 c,58 crazy,58 dream,58 drinks,58 fan,58 female,58 gift,58 merchandise,58 money,58 mood,58 role,58 ticket,58 youtube,68 Twice,68 a,68 b,68 c,68 crazy,68 dream,68 drinks,68 fan,68 gift,68 merchandise,68 money,68 mood,68 ticket,68 youtube,69 a,69 b,69 c,69 dream,69 drinks,69 gift,69 merchandise,69 ticket,70 Twice,70 a,70 b,70 c,70 crazy,70 dream,70 drinks,70 fan,70 gift,70 merchandise,70 money,70 mood,70 ticket,70 youtube,8 Icecream,8 Twice,8 a,8 b,8 c,8 complex,8 crazy,8 ddudu,8 dream,8 drinks,8 fan,8 female,8 gift,8 group,8 groups,8 kill,8 merchandise,8 money,8 mood,8 performance,8 playlist,8 quit,8 ratings,8 role,8 sing,8 song,8 songlist,8 steps,8 ticket,8 youtube,9 Twice,9 a,9 b,9 c,9 crazy,9 dream,9 drinks,9 fan,9 gift,9 merchandise,9 money,9 mood,9 ticket,9 youtube</stuans>
+<correct>3 groups,3 group,3 complex,3 steps,3 quit,3 sing,3 role,3 female,3 ticket,3 drinks,3 merchandise,3 gift,3 dream,3 a,3 b,3 c,3 fan,3 Twice,3 money,3 youtube,3 crazy,3 mood,5 ticket,5 drinks,5 merchandise,5 gift,5 dream,5 a,5 b,5 c,8 playlist,8 songlist,8 ddudu,8 kill,8 song,8 Icecream,8 ratings,8 performance,8 groups,8 group,8 complex,8 steps,8 quit,8 sing,8 role,8 female,8 ticket,8 drinks,8 merchandise,8 gift,8 dream,8 a,8 b,8 c,8 fan,8 Twice,8 money,8 youtube,8 crazy,8 mood,9 fan,9 Twice,9 money,9 youtube,9 crazy,9 mood,9 ticket,9 drinks,9 merchandise,9 gift,9 dream,9 a,9 b,9 c,21 complex,21 steps,21 quit,21 sing,21 role,21 female,21 ticket,21 drinks,21 merchandise,21 gift,21 dream,21 a,21 b,21 c,21 fan,21 Twice,21 money,21 youtube,21 crazy,21 mood,22 role,22 female,22 ticket,22 drinks,22 merchandise,22 gift,22 dream,22 a,22 b,22 c,22 fan,22 Twice,22 money,22 youtube,22 crazy,22 mood,33 groups,33 group,33 complex,33 steps,33 quit,33 sing,33 role,33 female,33 ticket,33 drinks,33 merchandise,33 gift,33 dream,33 a,33 b,33 c,33 fan,33 Twice,33 money,33 youtube,33 crazy,33 mood,34 groups,34 group,34 complex,34 steps,34 quit,34 sing,34 role,34 female,34 ticket,34 drinks,34 merchandise,34 gift,34 dream,34 a,34 b,34 c,34 fan,34 Twice,34 money,34 youtube,34 crazy,34 mood,44 ticket,44 drinks,44 merchandise,44 gift,44 dream,44 a,44 b,44 c,53 role,53 female,53 ticket,53 drinks,53 merchandise,53 gift,53 dream,53 a,53 b,53 c,53 fan,53 Twice,53 money,53 youtube,53 crazy,53 mood,58 role,58 female,58 ticket,58 drinks,58 merchandise,58 gift,58 dream,58 a,58 b,58 c,58 fan,58 Twice,58 money,58 youtube,58 crazy,58 mood,68 fan,68 Twice,68 money,68 youtube,68 crazy,68 mood,68 ticket,68 drinks,68 merchandise,68 gift,68 dream,68 a,68 b,68 c,69 ticket,69 drinks,69 merchandise,69 gift,69 dream,69 a,69 b,69 c,70 fan,70 Twice,70 money,70 youtube,70 crazy,70 mood,70 ticket,70 drinks,70 merchandise,70 gift,70 dream,70 a,70 b,70 c</correct>
+<time_taken>7.902000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid ModifiesP, syn on lhs and wildcard on rhs">10</id><querystr><![CDATA[call cp; Select cp such that Modifies(cp,_)]]></querystr>
+<stuans>21,22,3,33,34,44,5,53,58,68,69,70,8,9</stuans>
+<correct>3,5,8,9,21,22,33,34,44,53,58,68,69,70</correct>
+<time_taken>5.907000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, IDENT on both args, no result">11</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("KPOP","love")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.009000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args, no result">12</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("KPOP","kpop")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.041000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args">13</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("KPOP","performance")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.848000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args">14</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("KPOP","count")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.905000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args">15</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("groups","groups")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.445000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args">16</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("groups","group")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.593000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args">17</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("BlackPink","playlist")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.457000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args, no result">18</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("groups","ddudu")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.015000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args, no result">19</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("groups","kill")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.522000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args, no result">20</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("groups","song")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.194000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args, no result">21</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("groups","performance")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.602000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args">22</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("groups","groups")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.670000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args">23</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("groups","group")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.063000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args">24</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("BlackPink","playlist")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.597000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args">25</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("BlackPink","songlist")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.931000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, IDENT on both args">26</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("BlackPink","ratings")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.553000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on both args">27</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("BlackPink","fan")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.638000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, IDENT on both args">28</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("Twice","fan")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.833000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, IDENT on both args">29</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("Twice","Twice")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.061000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, IDENT on both args">30</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("Twice","youtube")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.641000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, IDENT on both args">31</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("dance","money")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.167000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid ModifiesP, IDENT on lhs and wildcard on rhs">32</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("sing",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.720000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid ModifiesP, IDENT on lhs and wildcard on rhs">33</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("performance",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.208000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, IDENT on lhs and syn on rhs">34</id><querystr><![CDATA[variable v; Select v such that Modifies("KPOP",v)]]></querystr>
+<stuans>Icecream,Twice,a,b,c,complex,count,crazy,dance,ddudu,dream,drinks,fan,female,gift,group,groups,kill,kpop,merchandise,money,mood,performance,playlist,quit,ratings,role,sing,song,songlist,steps,ticket,youtube</stuans>
+<correct>kpop,performance,sing,dance,count,groups,group,complex,steps,quit,role,female,ticket,drinks,merchandise,gift,dream,a,b,c,fan,Twice,money,youtube,crazy,mood,playlist,songlist,ddudu,kill,song,Icecream,ratings</correct>
+<time_taken>5.833000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP,IDENT on lhs and syn on rhs">35</id><querystr><![CDATA[variable v; Select v such that Modifies("groups",v)]]></querystr>
+<stuans>Twice,a,b,c,complex,crazy,dream,drinks,fan,female,gift,group,groups,merchandise,money,mood,quit,role,sing,steps,ticket,youtube</stuans>
+<correct>groups,group,complex,steps,quit,sing,role,female,ticket,drinks,merchandise,gift,dream,a,b,c,fan,Twice,money,youtube,crazy,mood</correct>
+<time_taken>5.930000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesS, INTEGER on lhs and IDENT on rhs">36</id><querystr><![CDATA[variable v; Select BOOLEAN such that Modifies(3,"group")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.294000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesS, INTEGER on lhs and IDENT on rhs">37</id><querystr><![CDATA[variable v; Select BOOLEAN such that Modifies(8,"playlist")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.544000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on lhs and IDENT on rhs">38</id><querystr><![CDATA[procedure p; Select p such that Modifies(p,"playlist")]]></querystr>
+<stuans>BlackPink,KPOP</stuans>
+<correct>BlackPink,KPOP</correct>
+<time_taken>6.062000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on lhs and IDENT on rhs">39</id><querystr><![CDATA[procedure p; Select p such that Modifies(p,"Twice")]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,sing</stuans>
+<correct>Twice,KPOP,sing,dance,groups,BlackPink</correct>
+<time_taken>6.437000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on lhs and IDENT on rhs">40</id><querystr><![CDATA[procedure p; Select p such that Modifies(p,"sing")]]></querystr>
+<stuans>BlackPink,KPOP,dance,groups</stuans>
+<correct>dance,groups,KPOP,BlackPink</correct>
+<time_taken>5.812000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on lhs and IDENT on rhs">41</id><querystr><![CDATA[procedure p; Select p such that Modifies(p,"role")]]></querystr>
+<stuans>BlackPink,KPOP,dance,groups,sing</stuans>
+<correct>sing,groups,dance,BlackPink,KPOP</correct>
+<time_taken>5.879000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on lhs and IDENT on rhs">42</id><querystr><![CDATA[procedure p; Select p such that Modifies(p,"ticket")]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,performance,sing</stuans>
+<correct>performance,KPOP,Twice,sing,groups,BlackPink,dance</correct>
+<time_taken>6.185000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on lhs and IDENT on rhs">43</id><querystr><![CDATA[call cp; Select cp such that Modifies(cp,"role")]]></querystr>
+<stuans>21,22,3,33,34,53,58,8</stuans>
+<correct>22,53,58,21,3,33,34,8</correct>
+<time_taken>6.403000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on lhs and IDENT on rhs">44</id><querystr><![CDATA[call cp; Select cp.procName such that Modifies(cp,"role")]]></querystr>
+<stuans>BlackPink,dance,groups,sing</stuans>
+<correct>sing,dance,groups,BlackPink</correct>
+<time_taken>6.580000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on lhs and IDENT on rhs">45</id><querystr><![CDATA[call cp; Select cp.stmt# such that Modifies(cp,"ticket")]]></querystr>
+<stuans>21,22,3,33,34,44,5,53,58,68,69,70,8,9</stuans>
+<correct>3,5,8,9,21,22,33,34,44,53,58,68,69,70</correct>
+<time_taken>7.207000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on lhs and IDENT on rhs">46</id><querystr><![CDATA[call cp; Select cp.stmt# such that Modifies(cp,"kpop")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.294000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on lhs and IDENT on rhs">47</id><querystr><![CDATA[call cp; Select cp.stmt# such that Modifies(cp,"sing")]]></querystr>
+<stuans>21,3,33,34,8</stuans>
+<correct>21,3,33,34,8</correct>
+<time_taken>6.883000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid ModifiesP, syn on lhs and IDENT on rhs">48</id><querystr><![CDATA[call cp; Select cp.procName such that Modifies(cp,"sing")]]></querystr>
+<stuans>BlackPink,dance,groups</stuans>
+<correct>dance,groups,BlackPink</correct>
+<time_taken>8.058000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid ModifiesS, syn on both args">49</id><querystr><![CDATA[call cp; procedure p; Select BOOLEAN such that Modifies(1,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>8.078000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP,  syn on both args">50</id><querystr><![CDATA[procedure p; variable v; Select p such that Uses(p,v)]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,performance,sing</stuans>
+<correct>KPOP,groups,BlackPink,Twice,dance,sing,performance</correct>
+<time_taken>8.603000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP,  syn on both args">51</id><querystr><![CDATA[procedure p; variable v; Select v such that Uses(p,v)]]></querystr>
+<stuans>BTS,a,advanced,alto,b,bass,beginner,blackpink,boy,boys,c,c4,category,category2,coke,count,crushed,cute,cuteSong,dance,ddudu,die,edm,end,everything,gender,good,group,groups,happiness,happy,in,intermediate,key,korea,level,love,merchandise,money,noob,not,others,performance,pro,ratings,remix,rich,role,sing,songlist,sop,tenor,this,ticket,twice,very,you</stuans>
+<correct>love,in,korea,performance,money,die,count,end,groups,blackpink,twice,group,BTS,songlist,category,edm,ddudu,remix,this,others,not,category2,cute,cuteSong,ratings,boys,happiness,happy,level,very,beginner,intermediate,advanced,pro,noob,a,b,c,sing,dance,gender,key,c4,bass,tenor,alto,good,role,sop,everything,you,rich,coke,ticket,merchandise,crushed,boy</correct>
+<time_taken>9.643000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on both args">52</id><querystr><![CDATA[procedure p;variable v; Select <p.procName, v.varName> such that Uses(p,v)]]></querystr>
+<stuans>BlackPink BTS,BlackPink a,BlackPink advanced,BlackPink alto,BlackPink b,BlackPink bass,BlackPink beginner,BlackPink blackpink,BlackPink boy,BlackPink boys,BlackPink c,BlackPink c4,BlackPink category,BlackPink category2,BlackPink coke,BlackPink crushed,BlackPink cute,BlackPink cuteSong,BlackPink dance,BlackPink ddudu,BlackPink edm,BlackPink end,BlackPink everything,BlackPink gender,BlackPink good,BlackPink group,BlackPink groups,BlackPink happiness,BlackPink happy,BlackPink intermediate,BlackPink key,BlackPink level,BlackPink love,BlackPink merchandise,BlackPink money,BlackPink noob,BlackPink not,BlackPink others,BlackPink pro,BlackPink ratings,BlackPink remix,BlackPink rich,BlackPink role,BlackPink sing,BlackPink songlist,BlackPink sop,BlackPink tenor,BlackPink this,BlackPink ticket,BlackPink twice,BlackPink very,BlackPink you,KPOP BTS,KPOP a,KPOP advanced,KPOP alto,KPOP b,KPOP bass,KPOP beginner,KPOP blackpink,KPOP boy,KPOP boys,KPOP c,KPOP c4,KPOP category,KPOP category2,KPOP coke,KPOP count,KPOP crushed,KPOP cute,KPOP cuteSong,KPOP dance,KPOP ddudu,KPOP die,KPOP edm,KPOP end,KPOP everything,KPOP gender,KPOP good,KPOP group,KPOP groups,KPOP happiness,KPOP happy,KPOP in,KPOP intermediate,KPOP key,KPOP korea,KPOP level,KPOP love,KPOP merchandise,KPOP money,KPOP noob,KPOP not,KPOP others,KPOP performance,KPOP pro,KPOP ratings,KPOP remix,KPOP rich,KPOP role,KPOP sing,KPOP songlist,KPOP sop,KPOP tenor,KPOP this,KPOP ticket,KPOP twice,KPOP very,KPOP you,Twice a,Twice b,Twice boys,Twice c,Twice coke,Twice crushed,Twice happiness,Twice happy,Twice level,Twice love,Twice merchandise,Twice money,Twice rich,Twice ticket,Twice twice,Twice very,Twice you,dance a,dance advanced,dance alto,dance b,dance bass,dance beginner,dance boy,dance boys,dance c,dance c4,dance coke,dance crushed,dance dance,dance everything,dance gender,dance good,dance happiness,dance happy,dance intermediate,dance key,dance level,dance love,dance merchandise,dance money,dance noob,dance pro,dance rich,dance role,dance sing,dance sop,dance tenor,dance ticket,dance twice,dance very,dance you,groups BTS,groups a,groups advanced,groups alto,groups b,groups bass,groups beginner,groups blackpink,groups boy,groups boys,groups c,groups c4,groups coke,groups crushed,groups dance,groups everything,groups gender,groups good,groups group,groups groups,groups happiness,groups happy,groups intermediate,groups key,groups level,groups love,groups merchandise,groups money,groups noob,groups pro,groups rich,groups role,groups sing,groups sop,groups tenor,groups ticket,groups twice,groups very,groups you,performance a,performance b,performance c,performance coke,performance crushed,performance merchandise,performance money,performance rich,performance ticket,performance you,sing a,sing alto,sing b,sing bass,sing boy,sing boys,sing c,sing c4,sing coke,sing crushed,sing everything,sing gender,sing good,sing happiness,sing happy,sing key,sing level,sing love,sing merchandise,sing money,sing rich,sing role,sing sop,sing tenor,sing ticket,sing twice,sing very,sing you</stuans>
+<correct>KPOP love,KPOP in,KPOP korea,KPOP performance,KPOP money,KPOP die,KPOP count,KPOP end,KPOP blackpink,KPOP twice,KPOP group,KPOP BTS,KPOP groups,KPOP beginner,KPOP intermediate,KPOP advanced,KPOP pro,KPOP level,KPOP noob,KPOP a,KPOP b,KPOP c,KPOP sing,KPOP dance,KPOP gender,KPOP boy,KPOP key,KPOP c4,KPOP bass,KPOP tenor,KPOP alto,KPOP good,KPOP role,KPOP sop,KPOP everything,KPOP boys,KPOP happiness,KPOP happy,KPOP very,KPOP you,KPOP rich,KPOP coke,KPOP ticket,KPOP merchandise,KPOP crushed,KPOP songlist,KPOP category,KPOP edm,KPOP ddudu,KPOP remix,KPOP this,KPOP others,KPOP not,KPOP category2,KPOP cute,KPOP cuteSong,KPOP ratings,groups blackpink,groups twice,groups group,groups BTS,groups groups,groups beginner,groups intermediate,groups advanced,groups pro,groups level,groups noob,groups sing,groups dance,groups money,groups you,groups rich,groups coke,groups ticket,groups merchandise,groups crushed,groups a,groups b,groups c,groups love,groups boys,groups happiness,groups happy,groups very,groups gender,groups boy,groups key,groups c4,groups bass,groups tenor,groups alto,groups good,groups role,groups sop,groups everything,BlackPink songlist,BlackPink category,BlackPink edm,BlackPink ddudu,BlackPink remix,BlackPink this,BlackPink love,BlackPink others,BlackPink not,BlackPink category2,BlackPink cute,BlackPink cuteSong,BlackPink end,BlackPink ratings,BlackPink blackpink,BlackPink twice,BlackPink group,BlackPink BTS,BlackPink groups,BlackPink beginner,BlackPink intermediate,BlackPink advanced,BlackPink pro,BlackPink level,BlackPink noob,BlackPink a,BlackPink b,BlackPink c,BlackPink sing,BlackPink dance,BlackPink money,BlackPink gender,BlackPink boy,BlackPink key,BlackPink c4,BlackPink bass,BlackPink tenor,BlackPink alto,BlackPink good,BlackPink role,BlackPink sop,BlackPink everything,BlackPink you,BlackPink rich,BlackPink coke,BlackPink ticket,BlackPink merchandise,BlackPink crushed,BlackPink boys,BlackPink happiness,BlackPink happy,BlackPink very,Twice twice,Twice love,Twice boys,Twice happiness,Twice happy,Twice money,Twice level,Twice very,Twice you,Twice rich,Twice coke,Twice ticket,Twice merchandise,Twice crushed,Twice a,Twice b,Twice c,dance beginner,dance intermediate,dance advanced,dance pro,dance level,dance noob,dance a,dance b,dance c,dance sing,dance dance,dance money,dance gender,dance boy,dance key,dance c4,dance bass,dance tenor,dance alto,dance good,dance role,dance sop,dance everything,dance you,dance rich,dance coke,dance ticket,dance merchandise,dance crushed,dance twice,dance love,dance boys,dance happiness,dance happy,dance very,sing gender,sing boy,sing key,sing c4,sing bass,sing tenor,sing alto,sing good,sing role,sing sop,sing everything,sing you,sing rich,sing money,sing coke,sing ticket,sing merchandise,sing crushed,sing a,sing b,sing c,sing twice,sing love,sing boys,sing happiness,sing happy,sing level,sing very,performance you,performance rich,performance money,performance coke,performance ticket,performance merchandise,performance crushed,performance a,performance b,performance c</correct>
+<time_taken>14.387000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on both args">53</id><querystr><![CDATA[call cp; variable v; Select cp such that Uses(cp,v)]]></querystr>
+<stuans>21,22,3,33,34,44,5,53,58,68,69,70,8,9</stuans>
+<correct>3,5,8,9,21,22,33,34,44,53,58,68,69,70</correct>
+<time_taken>10.004000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on both args">54</id><querystr><![CDATA[call cp; variable v; Select cp.procName such that Uses(cp,v)]]></querystr>
+<stuans>BlackPink,Twice,dance,groups,performance,sing</stuans>
+<correct>groups,BlackPink,Twice,dance,sing,performance</correct>
+<time_taken>12.068000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on both args">55</id><querystr><![CDATA[call cp; variable v; Select v such that Uses(cp,v)]]></querystr>
+<stuans>BTS,a,advanced,alto,b,bass,beginner,blackpink,boy,boys,c,c4,category,category2,coke,crushed,cute,cuteSong,dance,ddudu,edm,end,everything,gender,good,group,groups,happiness,happy,intermediate,key,level,love,merchandise,money,noob,not,others,pro,ratings,remix,rich,role,sing,songlist,sop,tenor,this,ticket,twice,very,you</stuans>
+<correct>love,money,end,groups,blackpink,twice,group,BTS,songlist,category,edm,ddudu,remix,this,others,not,category2,cute,cuteSong,ratings,boys,happiness,happy,level,very,beginner,intermediate,advanced,pro,noob,a,b,c,sing,dance,gender,key,c4,bass,tenor,alto,good,role,sop,everything,you,rich,coke,ticket,merchandise,crushed,boy</correct>
+<time_taken>9.888000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on both args">56</id><querystr><![CDATA[call cp; variable v; Select <cp.procName,v.varName> such that Uses(cp,v)]]></querystr>
+<stuans>BlackPink BTS,BlackPink a,BlackPink advanced,BlackPink alto,BlackPink b,BlackPink bass,BlackPink beginner,BlackPink blackpink,BlackPink boy,BlackPink boys,BlackPink c,BlackPink c4,BlackPink category,BlackPink category2,BlackPink coke,BlackPink crushed,BlackPink cute,BlackPink cuteSong,BlackPink dance,BlackPink ddudu,BlackPink edm,BlackPink end,BlackPink everything,BlackPink gender,BlackPink good,BlackPink group,BlackPink groups,BlackPink happiness,BlackPink happy,BlackPink intermediate,BlackPink key,BlackPink level,BlackPink love,BlackPink merchandise,BlackPink money,BlackPink noob,BlackPink not,BlackPink others,BlackPink pro,BlackPink ratings,BlackPink remix,BlackPink rich,BlackPink role,BlackPink sing,BlackPink songlist,BlackPink sop,BlackPink tenor,BlackPink this,BlackPink ticket,BlackPink twice,BlackPink very,BlackPink you,Twice a,Twice b,Twice boys,Twice c,Twice coke,Twice crushed,Twice happiness,Twice happy,Twice level,Twice love,Twice merchandise,Twice money,Twice rich,Twice ticket,Twice twice,Twice very,Twice you,dance a,dance advanced,dance alto,dance b,dance bass,dance beginner,dance boy,dance boys,dance c,dance c4,dance coke,dance crushed,dance dance,dance everything,dance gender,dance good,dance happiness,dance happy,dance intermediate,dance key,dance level,dance love,dance merchandise,dance money,dance noob,dance pro,dance rich,dance role,dance sing,dance sop,dance tenor,dance ticket,dance twice,dance very,dance you,groups BTS,groups a,groups advanced,groups alto,groups b,groups bass,groups beginner,groups blackpink,groups boy,groups boys,groups c,groups c4,groups coke,groups crushed,groups dance,groups everything,groups gender,groups good,groups group,groups groups,groups happiness,groups happy,groups intermediate,groups key,groups level,groups love,groups merchandise,groups money,groups noob,groups pro,groups rich,groups role,groups sing,groups sop,groups tenor,groups ticket,groups twice,groups very,groups you,performance a,performance b,performance c,performance coke,performance crushed,performance merchandise,performance money,performance rich,performance ticket,performance you,sing a,sing alto,sing b,sing bass,sing boy,sing boys,sing c,sing c4,sing coke,sing crushed,sing everything,sing gender,sing good,sing happiness,sing happy,sing key,sing level,sing love,sing merchandise,sing money,sing rich,sing role,sing sop,sing tenor,sing ticket,sing twice,sing very,sing you</stuans>
+<correct>groups blackpink,groups twice,groups group,groups BTS,groups groups,groups beginner,groups intermediate,groups advanced,groups pro,groups level,groups noob,groups sing,groups dance,groups money,groups you,groups rich,groups coke,groups ticket,groups merchandise,groups crushed,groups a,groups b,groups c,groups love,groups boys,groups happiness,groups happy,groups very,groups gender,groups boy,groups key,groups c4,groups bass,groups tenor,groups alto,groups good,groups role,groups sop,groups everything,BlackPink songlist,BlackPink category,BlackPink edm,BlackPink ddudu,BlackPink remix,BlackPink this,BlackPink love,BlackPink others,BlackPink not,BlackPink category2,BlackPink cute,BlackPink cuteSong,BlackPink end,BlackPink ratings,BlackPink blackpink,BlackPink twice,BlackPink group,BlackPink BTS,BlackPink groups,BlackPink beginner,BlackPink intermediate,BlackPink advanced,BlackPink pro,BlackPink level,BlackPink noob,BlackPink a,BlackPink b,BlackPink c,BlackPink sing,BlackPink dance,BlackPink money,BlackPink gender,BlackPink boy,BlackPink key,BlackPink c4,BlackPink bass,BlackPink tenor,BlackPink alto,BlackPink good,BlackPink role,BlackPink sop,BlackPink everything,BlackPink you,BlackPink rich,BlackPink coke,BlackPink ticket,BlackPink merchandise,BlackPink crushed,BlackPink boys,BlackPink happiness,BlackPink happy,BlackPink very,Twice twice,Twice love,Twice boys,Twice happiness,Twice happy,Twice money,Twice level,Twice very,Twice you,Twice rich,Twice coke,Twice ticket,Twice merchandise,Twice crushed,Twice a,Twice b,Twice c,dance beginner,dance intermediate,dance advanced,dance pro,dance level,dance noob,dance a,dance b,dance c,dance sing,dance dance,dance money,dance gender,dance boy,dance key,dance c4,dance bass,dance tenor,dance alto,dance good,dance role,dance sop,dance everything,dance you,dance rich,dance coke,dance ticket,dance merchandise,dance crushed,dance twice,dance love,dance boys,dance happiness,dance happy,dance very,sing gender,sing boy,sing key,sing c4,sing bass,sing tenor,sing alto,sing good,sing role,sing sop,sing everything,sing you,sing rich,sing money,sing coke,sing ticket,sing merchandise,sing crushed,sing a,sing b,sing c,sing twice,sing love,sing boys,sing happiness,sing happy,sing level,sing very,performance you,performance rich,performance money,performance coke,performance ticket,performance merchandise,performance crushed,performance a,performance b,performance c</correct>
+<time_taken>15.358000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on both args">57</id><querystr><![CDATA[call cp; variable v; Select <cp,v> such that Uses(cp,v)]]></querystr>
+<stuans>21 a,21 advanced,21 alto,21 b,21 bass,21 beginner,21 boy,21 boys,21 c,21 c4,21 coke,21 crushed,21 dance,21 everything,21 gender,21 good,21 happiness,21 happy,21 intermediate,21 key,21 level,21 love,21 merchandise,21 money,21 noob,21 pro,21 rich,21 role,21 sing,21 sop,21 tenor,21 ticket,21 twice,21 very,21 you,22 a,22 alto,22 b,22 bass,22 boy,22 boys,22 c,22 c4,22 coke,22 crushed,22 everything,22 gender,22 good,22 happiness,22 happy,22 key,22 level,22 love,22 merchandise,22 money,22 rich,22 role,22 sop,22 tenor,22 ticket,22 twice,22 very,22 you,3 BTS,3 a,3 advanced,3 alto,3 b,3 bass,3 beginner,3 blackpink,3 boy,3 boys,3 c,3 c4,3 coke,3 crushed,3 dance,3 everything,3 gender,3 good,3 group,3 groups,3 happiness,3 happy,3 intermediate,3 key,3 level,3 love,3 merchandise,3 money,3 noob,3 pro,3 rich,3 role,3 sing,3 sop,3 tenor,3 ticket,3 twice,3 very,3 you,33 BTS,33 a,33 advanced,33 alto,33 b,33 bass,33 beginner,33 blackpink,33 boy,33 boys,33 c,33 c4,33 coke,33 crushed,33 dance,33 everything,33 gender,33 good,33 group,33 groups,33 happiness,33 happy,33 intermediate,33 key,33 level,33 love,33 merchandise,33 money,33 noob,33 pro,33 rich,33 role,33 sing,33 sop,33 tenor,33 ticket,33 twice,33 very,33 you,34 BTS,34 a,34 advanced,34 alto,34 b,34 bass,34 beginner,34 blackpink,34 boy,34 boys,34 c,34 c4,34 coke,34 crushed,34 dance,34 everything,34 gender,34 good,34 group,34 groups,34 happiness,34 happy,34 intermediate,34 key,34 level,34 love,34 merchandise,34 money,34 noob,34 pro,34 rich,34 role,34 sing,34 sop,34 tenor,34 ticket,34 twice,34 very,34 you,44 a,44 b,44 c,44 coke,44 crushed,44 merchandise,44 money,44 rich,44 ticket,44 you,5 a,5 b,5 c,5 coke,5 crushed,5 merchandise,5 money,5 rich,5 ticket,5 you,53 a,53 alto,53 b,53 bass,53 boy,53 boys,53 c,53 c4,53 coke,53 crushed,53 everything,53 gender,53 good,53 happiness,53 happy,53 key,53 level,53 love,53 merchandise,53 money,53 rich,53 role,53 sop,53 tenor,53 ticket,53 twice,53 very,53 you,58 a,58 alto,58 b,58 bass,58 boy,58 boys,58 c,58 c4,58 coke,58 crushed,58 everything,58 gender,58 good,58 happiness,58 happy,58 key,58 level,58 love,58 merchandise,58 money,58 rich,58 role,58 sop,58 tenor,58 ticket,58 twice,58 very,58 you,68 a,68 b,68 boys,68 c,68 coke,68 crushed,68 happiness,68 happy,68 level,68 love,68 merchandise,68 money,68 rich,68 ticket,68 twice,68 very,68 you,69 a,69 b,69 c,69 coke,69 crushed,69 merchandise,69 money,69 rich,69 ticket,69 you,70 a,70 b,70 boys,70 c,70 coke,70 crushed,70 happiness,70 happy,70 level,70 love,70 merchandise,70 money,70 rich,70 ticket,70 twice,70 very,70 you,8 BTS,8 a,8 advanced,8 alto,8 b,8 bass,8 beginner,8 blackpink,8 boy,8 boys,8 c,8 c4,8 category,8 category2,8 coke,8 crushed,8 cute,8 cuteSong,8 dance,8 ddudu,8 edm,8 end,8 everything,8 gender,8 good,8 group,8 groups,8 happiness,8 happy,8 intermediate,8 key,8 level,8 love,8 merchandise,8 money,8 noob,8 not,8 others,8 pro,8 ratings,8 remix,8 rich,8 role,8 sing,8 songlist,8 sop,8 tenor,8 this,8 ticket,8 twice,8 very,8 you,9 a,9 b,9 boys,9 c,9 coke,9 crushed,9 happiness,9 happy,9 level,9 love,9 merchandise,9 money,9 rich,9 ticket,9 twice,9 very,9 you</stuans>
+<correct>3 love,3 money,3 blackpink,3 twice,3 group,3 BTS,3 groups,3 beginner,3 intermediate,3 advanced,3 pro,3 level,3 noob,3 a,3 b,3 c,3 sing,3 dance,3 gender,3 boy,3 key,3 c4,3 bass,3 tenor,3 alto,3 good,3 role,3 sop,3 everything,3 boys,3 happiness,3 happy,3 very,3 you,3 rich,3 coke,3 ticket,3 merchandise,3 crushed,5 you,5 rich,5 money,5 coke,5 ticket,5 merchandise,5 crushed,5 a,5 b,5 c,8 songlist,8 category,8 edm,8 ddudu,8 remix,8 this,8 love,8 others,8 not,8 category2,8 cute,8 cuteSong,8 end,8 ratings,8 blackpink,8 twice,8 group,8 BTS,8 groups,8 beginner,8 intermediate,8 advanced,8 pro,8 level,8 noob,8 a,8 b,8 c,8 sing,8 dance,8 money,8 gender,8 boy,8 key,8 c4,8 bass,8 tenor,8 alto,8 good,8 role,8 sop,8 everything,8 you,8 rich,8 coke,8 ticket,8 merchandise,8 crushed,8 boys,8 happiness,8 happy,8 very,9 twice,9 love,9 boys,9 happiness,9 happy,9 money,9 level,9 very,9 you,9 rich,9 coke,9 ticket,9 merchandise,9 crushed,9 a,9 b,9 c,21 beginner,21 intermediate,21 advanced,21 pro,21 level,21 noob,21 a,21 b,21 c,21 sing,21 dance,21 money,21 gender,21 boy,21 key,21 c4,21 bass,21 tenor,21 alto,21 good,21 role,21 sop,21 everything,21 you,21 rich,21 coke,21 ticket,21 merchandise,21 crushed,21 twice,21 love,21 boys,21 happiness,21 happy,21 very,22 gender,22 boy,22 key,22 c4,22 bass,22 tenor,22 alto,22 good,22 role,22 sop,22 everything,22 you,22 rich,22 money,22 coke,22 ticket,22 merchandise,22 crushed,22 a,22 b,22 c,22 twice,22 love,22 boys,22 happiness,22 happy,22 level,22 very,33 blackpink,33 twice,33 group,33 BTS,33 groups,33 beginner,33 intermediate,33 advanced,33 pro,33 level,33 noob,33 sing,33 dance,33 money,33 you,33 rich,33 coke,33 ticket,33 merchandise,33 crushed,33 a,33 b,33 c,33 love,33 boys,33 happiness,33 happy,33 very,33 gender,33 boy,33 key,33 c4,33 bass,33 tenor,33 alto,33 good,33 role,33 sop,33 everything,34 blackpink,34 twice,34 group,34 BTS,34 groups,34 beginner,34 intermediate,34 advanced,34 pro,34 level,34 noob,34 sing,34 dance,34 money,34 you,34 rich,34 coke,34 ticket,34 merchandise,34 crushed,34 a,34 b,34 c,34 love,34 boys,34 happiness,34 happy,34 very,34 gender,34 boy,34 key,34 c4,34 bass,34 tenor,34 alto,34 good,34 role,34 sop,34 everything,44 you,44 rich,44 money,44 coke,44 ticket,44 merchandise,44 crushed,44 a,44 b,44 c,53 gender,53 boy,53 key,53 c4,53 bass,53 tenor,53 alto,53 good,53 role,53 sop,53 everything,53 you,53 rich,53 money,53 coke,53 ticket,53 merchandise,53 crushed,53 a,53 b,53 c,53 twice,53 love,53 boys,53 happiness,53 happy,53 level,53 very,58 gender,58 boy,58 key,58 c4,58 bass,58 tenor,58 alto,58 good,58 role,58 sop,58 everything,58 you,58 rich,58 money,58 coke,58 ticket,58 merchandise,58 crushed,58 a,58 b,58 c,58 twice,58 love,58 boys,58 happiness,58 happy,58 level,58 very,68 twice,68 love,68 boys,68 happiness,68 happy,68 money,68 level,68 very,68 you,68 rich,68 coke,68 ticket,68 merchandise,68 crushed,68 a,68 b,68 c,69 you,69 rich,69 money,69 coke,69 ticket,69 merchandise,69 crushed,69 a,69 b,69 c,70 twice,70 love,70 boys,70 happiness,70 happy,70 money,70 level,70 very,70 you,70 rich,70 coke,70 ticket,70 merchandise,70 crushed,70 a,70 b,70 c</correct>
+<time_taken>9.393000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid UsesP, syn on lhs and wildcard on rhs">58</id><querystr><![CDATA[procedure p; Select p such that Uses(p,_)]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,performance,sing</stuans>
+<correct>KPOP,groups,BlackPink,Twice,dance,sing,performance</correct>
+<time_taken>5.568000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on both args">59</id><querystr><![CDATA[ Select BOOLEAN such that Uses("KPOP","love")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.824000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on both args">60</id><querystr><![CDATA[ Select BOOLEAN such that Uses("KPOP","money")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.261000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on both args">61</id><querystr><![CDATA[ Select BOOLEAN such that Uses("Twice","money")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.964000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on both args">62</id><querystr><![CDATA[ Select BOOLEAN such that Uses("groups","group")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.092000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on both args">63</id><querystr><![CDATA[ Select BOOLEAN such that Uses("sing","key")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.771000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on both args">64</id><querystr><![CDATA[ Select BOOLEAN such that Uses("BlackPink","cuteSong")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.828000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on both args">65</id><querystr><![CDATA[ Select BOOLEAN such that Uses("KPOP","groups")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.104000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on both args">66</id><querystr><![CDATA[ Select BOOLEAN such that Uses("KPOP","sing")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.135000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on both args">67</id><querystr><![CDATA[ Select BOOLEAN such that Uses("KPOP","rich")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.973000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on both args, no result">68</id><querystr><![CDATA[ Select BOOLEAN such that Uses("performance","dream")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.604000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid UsesP, IDENT on lhs and wildcard on rhs">69</id><querystr><![CDATA[ Select BOOLEAN such that Uses("KPOP",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.297000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid UsesP, IDENT on lhs and wildcard on rhs">70</id><querystr><![CDATA[ Select BOOLEAN such that Uses("groups",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.715000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid UsesP, IDENT on lhs and wildcard on rhs">71</id><querystr><![CDATA[ Select BOOLEAN such that Uses("BlackPink",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.926000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid UsesP, IDENT on lhs and wildcard on rhs">72</id><querystr><![CDATA[ Select BOOLEAN such that Uses("Twice",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.836000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid UsesP, IDENT on lhs and wildcard on rhs">73</id><querystr><![CDATA[ Select BOOLEAN such that Uses("dance",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.485000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid UsesP, IDENT on lhs and wildcard on rhs">74</id><querystr><![CDATA[ Select BOOLEAN such that Uses("sing",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.467000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid UsesP, IDENT on lhs and wildcard on rhs">75</id><querystr><![CDATA[ Select BOOLEAN such that Uses("performance",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.863000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on lhs and syn on rhs">76</id><querystr><![CDATA[variable v; Select v such that Uses("KPOP",v)]]></querystr>
+<stuans>BTS,a,advanced,alto,b,bass,beginner,blackpink,boy,boys,c,c4,category,category2,coke,count,crushed,cute,cuteSong,dance,ddudu,die,edm,end,everything,gender,good,group,groups,happiness,happy,in,intermediate,key,korea,level,love,merchandise,money,noob,not,others,performance,pro,ratings,remix,rich,role,sing,songlist,sop,tenor,this,ticket,twice,very,you</stuans>
+<correct>love,in,korea,performance,money,die,count,end,blackpink,twice,group,BTS,groups,beginner,intermediate,advanced,pro,level,noob,a,b,c,sing,dance,gender,boy,key,c4,bass,tenor,alto,good,role,sop,everything,boys,happiness,happy,very,you,rich,coke,ticket,merchandise,crushed,songlist,category,edm,ddudu,remix,this,others,not,category2,cute,cuteSong,ratings</correct>
+<time_taken>6.437000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on lhs and syn on rhs">77</id><querystr><![CDATA[variable v; Select v such that Uses("groups",v)]]></querystr>
+<stuans>BTS,a,advanced,alto,b,bass,beginner,blackpink,boy,boys,c,c4,coke,crushed,dance,everything,gender,good,group,groups,happiness,happy,intermediate,key,level,love,merchandise,money,noob,pro,rich,role,sing,sop,tenor,ticket,twice,very,you</stuans>
+<correct>blackpink,twice,group,BTS,groups,beginner,intermediate,advanced,pro,level,noob,sing,dance,money,you,rich,coke,ticket,merchandise,crushed,a,b,c,love,boys,happiness,happy,very,gender,boy,key,c4,bass,tenor,alto,good,role,sop,everything</correct>
+<time_taken>5.881000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on lhs and syn on rhs">78</id><querystr><![CDATA[variable v; Select v such that Uses("BlackPink",v)]]></querystr>
+<stuans>BTS,a,advanced,alto,b,bass,beginner,blackpink,boy,boys,c,c4,category,category2,coke,crushed,cute,cuteSong,dance,ddudu,edm,end,everything,gender,good,group,groups,happiness,happy,intermediate,key,level,love,merchandise,money,noob,not,others,pro,ratings,remix,rich,role,sing,songlist,sop,tenor,this,ticket,twice,very,you</stuans>
+<correct>songlist,category,edm,ddudu,remix,this,love,others,not,category2,cute,cuteSong,end,ratings,blackpink,twice,group,BTS,groups,beginner,intermediate,advanced,pro,level,noob,a,b,c,sing,dance,money,gender,boy,key,c4,bass,tenor,alto,good,role,sop,everything,you,rich,coke,ticket,merchandise,crushed,boys,happiness,happy,very</correct>
+<time_taken>6.615000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on lhs and syn on rhs">79</id><querystr><![CDATA[variable v; Select v such that Uses("Twice",v)]]></querystr>
+<stuans>a,b,boys,c,coke,crushed,happiness,happy,level,love,merchandise,money,rich,ticket,twice,very,you</stuans>
+<correct>twice,love,boys,happiness,happy,money,level,very,you,rich,coke,ticket,merchandise,crushed,a,b,c</correct>
+<time_taken>5.791000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on lhs and syn on rhs">80</id><querystr><![CDATA[variable v; Select v such that Uses("dance",v)]]></querystr>
+<stuans>a,advanced,alto,b,bass,beginner,boy,boys,c,c4,coke,crushed,dance,everything,gender,good,happiness,happy,intermediate,key,level,love,merchandise,money,noob,pro,rich,role,sing,sop,tenor,ticket,twice,very,you</stuans>
+<correct>beginner,intermediate,advanced,pro,level,noob,a,b,c,sing,dance,money,gender,boy,key,c4,bass,tenor,alto,good,role,sop,everything,you,rich,coke,ticket,merchandise,crushed,twice,love,boys,happiness,happy,very</correct>
+<time_taken>6.131000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on lhs and syn on rhs">81</id><querystr><![CDATA[variable v; Select v such that Uses("sing",v)]]></querystr>
+<stuans>a,alto,b,bass,boy,boys,c,c4,coke,crushed,everything,gender,good,happiness,happy,key,level,love,merchandise,money,rich,role,sop,tenor,ticket,twice,very,you</stuans>
+<correct>gender,boy,key,c4,bass,tenor,alto,good,role,sop,everything,you,rich,money,coke,ticket,merchandise,crushed,a,b,c,twice,love,boys,happiness,happy,level,very</correct>
+<time_taken>6.149000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on lhs and syn on rhs">82</id><querystr><![CDATA[variable v; Select v such that Uses("performance",v)]]></querystr>
+<stuans>a,b,c,coke,crushed,merchandise,money,rich,ticket,you</stuans>
+<correct>you,rich,money,coke,ticket,merchandise,crushed,a,b,c</correct>
+<time_taken>6.213000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on lhs and syn on rhs, no result">83</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses("twice",v)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>5.747000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, IDENT on lhs and syn on rhs, no result">84</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses("sinG",v)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.180000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, INTEGER on lhs and IDENT on rhs, no result">85</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(0,"love")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>5.758000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, INTEGER on lhs and IDENT on rhs">86</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(1,"love")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.053000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, INTEGER on lhs and IDENT on rhs, no result">87</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(2,"BTS")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.303000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, INTEGER on lhs and IDENT on rhs">88</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(32,"cuteSong")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.887000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, INTEGER on lhs and IDENT on rhs">89</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(38,"twice")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.810000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, INTEGER on lhs and IDENT on rhs">90</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(50,"intermediate")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.898000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, INTEGER on lhs and IDENT on rhs">91</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(59,"gender")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.963000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, INTEGER on lhs and IDENT on rhs">92</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(3,"blackpink")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.094000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, INTEGER on lhs and IDENT on rhs">93</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(8,"remix")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.352000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, INTEGER on lhs and IDENT on rhs">94</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(9,"money")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.797000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, INTEGER on lhs and IDENT on rhs">95</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(53,"alto")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.760000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on lhs and IDENT on rhs">96</id><querystr><![CDATA[procedure p; Select p such that Uses(p,"money")]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,performance,sing</stuans>
+<correct>performance,Twice,KPOP,groups,sing,BlackPink,dance</correct>
+<time_taken>6.285000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on lhs and IDENT on rhs">97</id><querystr><![CDATA[procedure p; Select p such that Uses(p,"die")]]></querystr>
+<stuans>KPOP</stuans>
+<correct>KPOP</correct>
+<time_taken>5.712000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on lhs and IDENT on rhs">98</id><querystr><![CDATA[procedure p; Select p such that Uses(p,"rich")]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,performance,sing</stuans>
+<correct>performance,KPOP,groups,Twice,BlackPink,dance,sing</correct>
+<time_taken>5.680000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on lhs and IDENT on rhs">99</id><querystr><![CDATA[call cp; Select cp such that Uses(cp,"rich")]]></querystr>
+<stuans>21,22,3,33,34,44,5,53,58,68,69,70,8,9</stuans>
+<correct>3,5,8,9,21,22,33,34,44,53,58,68,69,70</correct>
+<time_taken>6.020000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on lhs and IDENT on rhs">100</id><querystr><![CDATA[call cp; Select cp such that Uses(cp,"role")]]></querystr>
+<stuans>21,22,3,33,34,53,58,8</stuans>
+<correct>3,8,21,22,33,34,53,58</correct>
+<time_taken>6.346000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on lhs and IDENT on rhs">101</id><querystr><![CDATA[call cp; Select cp.procName such that Uses(cp,"role")]]></querystr>
+<stuans>BlackPink,dance,groups,sing</stuans>
+<correct>sing,groups,BlackPink,dance</correct>
+<time_taken>7.176000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on lhs and IDENT on rhs">102</id><querystr><![CDATA[call cp; Select cp.stmt# such that Uses(cp,"ticket")]]></querystr>
+<stuans>21,22,3,33,34,44,5,53,58,68,69,70,8,9</stuans>
+<correct>3,5,8,9,21,22,33,34,44,53,58,68,69,70</correct>
+<time_taken>7.778000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on lhs and IDENT on rhs, no result">103</id><querystr><![CDATA[call cp; Select cp.stmt# such that Uses(cp,"kpop")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.626000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on lhs and IDENT on rhs, no result">104</id><querystr><![CDATA[call cp; Select cp.stmt# such that Uses(cp,"KPOP")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.950000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on lhs and IDENT on rhs">105</id><querystr><![CDATA[call cp; Select cp.stmt# such that Uses(cp,"sing")]]></querystr>
+<stuans>21,3,33,34,8</stuans>
+<correct>3,8,21,33,34</correct>
+<time_taken>6.876000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid UsesP, syn on lhs and IDENT on rhs">106</id><querystr><![CDATA[call cp; Select cp.procName such that Uses(cp,"sing")]]></querystr>
+<stuans>BlackPink,dance,groups</stuans>
+<correct>dance,groups,BlackPink</correct>
+<time_taken>6.493000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

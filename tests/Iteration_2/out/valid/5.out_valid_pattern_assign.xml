@@ -1,0 +1,2220 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>4.941000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">1</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.321000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">2</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d/e"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>8.851000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">3</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d/e/f"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.834000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">4</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.680000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">5</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>10.002000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">6</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.806000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">7</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h%i"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.257000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">8</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d/e/f*g+h%i"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>10.105000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">9</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"j*k"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.197000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">10</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"j*k/l"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>8.924000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">11</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"j*k/l+m"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.592000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">12</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"j*k/l+m-n"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.150000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">13</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d/e/f*g+h"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.868000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">14</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d/"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.671000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">15</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.076000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">16</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.936000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">17</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d/e/f"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.759000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">18</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g+h"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.772000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">19</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"m-n"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.249000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">20</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"k/l"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.562000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">21</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"k/l"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.444000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">22</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8"_)]]></querystr>
+<stuans>2,3</stuans>
+<correct>2,3</correct>
+<time_taken>9.616000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">23</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a3/9"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>8.851000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">24</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a4%3"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>9.282000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">25</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8 + a3/9"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>9.791000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">26</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8 + a3/9 + a4%3"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>10.512000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">27</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>10.475000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">28</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1 + 2"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>11.580000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">29</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1 + 2 + 3"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>11.781000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">30</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"1 + 2 + 3"_)]]></querystr>
+<stuans>7</stuans>
+<correct>7</correct>
+<time_taken>10.085000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">31</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"1 + 2"_)]]></querystr>
+<stuans>7,8</stuans>
+<correct>7,8</correct>
+<time_taken>9.041000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">32</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"1"_)]]></querystr>
+<stuans>2,7,8</stuans>
+<correct>2,7,8</correct>
+<time_taken>8.865000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">33</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"8 + a3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.113000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">34</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"9 + a4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.125000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">35</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"2 + 3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.882000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">36</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a3/9 + a4%3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.735000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">37</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"3 + 1 + 2 + 3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.121000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">38</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b3/b4*b5"_)]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>9.094000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">39</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b3/b4"_)]]></querystr>
+<stuans>3,6</stuans>
+<correct>3,6</correct>
+<time_taken>10.071000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">40</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b2+b3/b4*b5"_)]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>9.231000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">41</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8"_)]]></querystr>
+<stuans>2,3</stuans>
+<correct>2,3</correct>
+<time_taken>9.217000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">42</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8/b6"_)]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>9.332000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">43</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b2+b3/b4*b5+a2*8/b6"_)]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>10.825000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">44</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b2"_)]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>8.839000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">45</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"8/b6"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>9.561000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">46</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b2+b3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.634000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">47</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b4*b5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.320000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">48</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b5+a2*8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.473000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">49</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b5+a2"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.564000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">50</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c2%c"_)]]></querystr>
+<stuans>4,5</stuans>
+<correct>4,5</correct>
+<time_taken>8.880000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">51</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c2%c*d"_)]]></querystr>
+<stuans>4,5</stuans>
+<correct>4,5</correct>
+<time_taken>9.611000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">52</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c2%c*d+c3"_)]]></querystr>
+<stuans>4,5</stuans>
+<correct>4,5</correct>
+<time_taken>10.427000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">53</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c4*h"_)]]></querystr>
+<stuans>4</stuans>
+<correct>4</correct>
+<time_taken>9.477000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">54</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c4*h%i"_)]]></querystr>
+<stuans>4</stuans>
+<correct>4</correct>
+<time_taken>9.000000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">55</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d+c3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.717000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">56</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d+c3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.478000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">57</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c3-c4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.355000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">58</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c3-c4*h"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.881000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">59</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b3/b4"_)]]></querystr>
+<stuans>3,6</stuans>
+<correct>3,6</correct>
+<time_taken>9.338000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">60</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1*h1"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>9.134000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">61</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>9.933000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">62</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>10.426000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">63</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>10.460000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">64</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>10.268000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">65</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>11.146000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">66</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"8/b6"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>8.981000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">67</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2+8/b6"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>11.430000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">68</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2+8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.197000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">69</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2+8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.728000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">70</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.340000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">71</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b3/b4+h1*h1"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.296000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">72</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b4+h1"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.903000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">73</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+h1"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.979000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">74</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"1+2"_)]]></querystr>
+<stuans>7,8</stuans>
+<correct>7,8</correct>
+<time_taken>8.917000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">75</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"2+3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.050000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">76</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a/a"_)]]></querystr>
+<stuans>9</stuans>
+<correct>9</correct>
+<time_taken>9.212000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">77</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a*a"_)]]></querystr>
+<stuans>9</stuans>
+<correct>9</correct>
+<time_taken>8.761000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">78</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a*a%a"_)]]></querystr>
+<stuans>9</stuans>
+<correct>9</correct>
+<time_taken>9.630000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">79</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a+a/a"_)]]></querystr>
+<stuans>9</stuans>
+<correct>9</correct>
+<time_taken>10.274000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">80</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a%a"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.946000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">81</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a+a"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.782000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">82</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a-a"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.934000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">83</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a-a*a"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.193000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">84</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4/4"_)]]></querystr>
+<stuans>10</stuans>
+<correct>10</correct>
+<time_taken>9.232000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">85</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4*4"_)]]></querystr>
+<stuans>10</stuans>
+<correct>10</correct>
+<time_taken>8.902000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">86</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4*4%4"_)]]></querystr>
+<stuans>10</stuans>
+<correct>10</correct>
+<time_taken>9.408000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">87</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4+4/4"_)]]></querystr>
+<stuans>10</stuans>
+<correct>10</correct>
+<time_taken>9.230000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">88</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4%4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.739000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">89</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4+4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.752000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">90</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4-4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.608000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">91</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4-4*4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.353000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">92</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d2%d3"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>8.894000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">93</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d2%d3*d4"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.954000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">94</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d2%d3*d4+d5"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.389000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">95</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d6*d7"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.973000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">96</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d6*d7%d8"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>11.064000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">97</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d2%d3*d4+d5-d6*d7%d8"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>10.417000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">98</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d3*d4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.852000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">99</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d4+d5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.389000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">100</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d5-d6"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.968000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">101</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d7%d8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.153000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">102</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d3*d4+d5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.764000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">103</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d4+d5-d6*d7%d8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.588000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">104</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d5-d6*d7%d8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.426000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">105</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e2/e3"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>9.040000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">106</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e2/e3*e4"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>9.824000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">107</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_" e1+e2/e3*e4"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>11.252000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">108</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3*e4+e5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.902000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">109</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e5*e6"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>9.810000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">110</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e5*e6/e7"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>10.930000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">111</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3*e4+e5*e6/e7"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>10.527000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">112</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.160000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">113</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e3*e4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.095000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">114</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e4+e5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.238000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">115</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e6/e7"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.825000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">116</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.503000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">117</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3*e4"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>9.316000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">118</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3*e4+e5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.020000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">119</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3*e4+e5*e6"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.794000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">120</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g5/g6"_)]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>9.298000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">121</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g5/g6%g7"_)]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>9.560000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">122</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g4-g5/g6%g7"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.853000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">123</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g3+g4-g5/g6%g7"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.648000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">124</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g2+g3+g4-g5/g6%g7"_)]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>10.000000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">125</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g2+g3"_)]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>8.885000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">126</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g2+g3+g4"_)]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>9.496000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">127</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g2+g3+g4-g5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.547000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">128</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g2+g3+g4-g5/g6"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.967000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">129</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g4-g5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.967000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">130</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g3+g4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.900000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">131</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g6%g7"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.399000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and Exact matching on rhs">132</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,"d2%d3*d4+d5-d6*d7%d8")]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>10.298000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and Exact matching on rhs">133</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,"e1+e2/e3*e4+e5*e6/e7")]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>10.778000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and Exact matching on rhs">134</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,"g2+g3+g4-g5/g6%g7")]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>9.765000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">135</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.708000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">136</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d/e"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.008000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">137</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d/e/f"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.842000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">138</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.159000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">139</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.897000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">140</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.822000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">141</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h%i"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>8.855000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">142</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d/e/f*g+h%i"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>10.581000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">143</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"j*k"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.026000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">144</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"j*k/l"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.097000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">145</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"j*k/l+m"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.649000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">146</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"j*k/l+m-n"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.458000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">147</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d/e/f*g+h"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.814000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">148</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d/"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.736000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">149</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.538000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">150</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.861000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">151</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d/e/f"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.463000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">152</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"*k/l+m"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.966000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">153</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g+h"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.301000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">154</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"m-n"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.691000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">155</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"k/l"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.797000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">156</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"k/l"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.938000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">157</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8"_)]]></querystr>
+<stuans>2,3</stuans>
+<correct>2,3</correct>
+<time_taken>9.101000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">158</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a3/9"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>11.217000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">159</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a4%3"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>10.730000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">160</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8 + a3/9"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>10.487000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">161</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8 + a3/9 + a4%3"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>10.174000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">162</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>10.969000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">163</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1 + 2"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>11.107000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">164</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8 + a3/9 + a4%3 + 1 + 2 + 3"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>11.827000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">165</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"1 + 2 + 3"_)]]></querystr>
+<stuans>7</stuans>
+<correct>7</correct>
+<time_taken>9.487000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">166</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"1 + 2"_)]]></querystr>
+<stuans>7,8</stuans>
+<correct>7,8</correct>
+<time_taken>9.140000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">167</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"1"_)]]></querystr>
+<stuans>2,7,8</stuans>
+<correct>2,7,8</correct>
+<time_taken>8.836000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">168</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"8 + a3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.397000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">169</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"9 + a4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.155000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">170</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"2 + 3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.509000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">171</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a3/9 + a4%3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.564000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">172</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"3 + 1 + 2 + 3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.145000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">173</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b3/b4*b5"_)]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>9.826000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">174</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b3/b4"_)]]></querystr>
+<stuans>3,6</stuans>
+<correct>3,6</correct>
+<time_taken>10.871000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">175</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b2+b3/b4*b5"_)]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>9.837000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">176</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8"_)]]></querystr>
+<stuans>2,3</stuans>
+<correct>2,3</correct>
+<time_taken>10.868000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">177</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2*8/b6"_)]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>12.342000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">178</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b2+b3/b4*b5+a2*8/b6"_)]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>10.887000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">179</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b2"_)]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>9.986000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">180</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"8/b6"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>9.314000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">181</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b2+b3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.278000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">182</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b4*b5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.960000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">183</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b5+a2*8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.479000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">184</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b5+a2"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.952000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">185</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c2%c"_)]]></querystr>
+<stuans>4,5</stuans>
+<correct>4,5</correct>
+<time_taken>9.527000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">186</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c2%c*d"_)]]></querystr>
+<stuans>4,5</stuans>
+<correct>4,5</correct>
+<time_taken>9.285000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">187</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c2%c*d+c3"_)]]></querystr>
+<stuans>4,5</stuans>
+<correct>4,5</correct>
+<time_taken>9.662000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">188</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c4*h"_)]]></querystr>
+<stuans>4</stuans>
+<correct>4</correct>
+<time_taken>9.117000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">189</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c4*h%i"_)]]></querystr>
+<stuans>4</stuans>
+<correct>4</correct>
+<time_taken>9.616000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">190</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d+c3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.972000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">191</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c*d+c3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.280000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">192</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c3-c4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.976000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">193</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"c3-c4*h"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.148000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">194</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b3/b4"_)]]></querystr>
+<stuans>3,6</stuans>
+<correct>3,6</correct>
+<time_taken>9.008000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">195</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1*h1"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>9.240000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">196</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>9.619000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">197</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>10.538000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">198</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>10.755000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">199</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>11.547000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">200</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>11.266000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">201</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"8/b6"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>8.791000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">202</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2+8/b6"_)]]></querystr>
+<stuans>6</stuans>
+<correct>6</correct>
+<time_taken>11.619000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">203</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3/b4+h1*h1+h1+h1+b5+a2+8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.992000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">204</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a2+8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.176000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">205</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+b3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.853000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">206</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b3/b4+h1*h1"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.508000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">207</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b4+h1"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.917000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">208</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"h1+h1"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.303000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">209</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"1+2"_)]]></querystr>
+<stuans>7,8</stuans>
+<correct>7,8</correct>
+<time_taken>8.926000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">210</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"2+3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.140000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">211</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a/a"_)]]></querystr>
+<stuans>9</stuans>
+<correct>9</correct>
+<time_taken>9.001000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">212</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a*a"_)]]></querystr>
+<stuans>9</stuans>
+<correct>9</correct>
+<time_taken>10.260000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">213</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a*a%a"_)]]></querystr>
+<stuans>9</stuans>
+<correct>9</correct>
+<time_taken>10.270000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">214</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a+a/a"_)]]></querystr>
+<stuans>9</stuans>
+<correct>9</correct>
+<time_taken>9.196000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">215</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a%a"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.682000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">216</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a+a"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.148000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">217</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a-a"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.484000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">218</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"a-a*a"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.224000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">219</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4/4"_)]]></querystr>
+<stuans>10</stuans>
+<correct>10</correct>
+<time_taken>8.564000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">220</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4*4"_)]]></querystr>
+<stuans>10</stuans>
+<correct>10</correct>
+<time_taken>9.120000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">221</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4*4%4"_)]]></querystr>
+<stuans>10</stuans>
+<correct>10</correct>
+<time_taken>8.873000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">222</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4+4/4"_)]]></querystr>
+<stuans>10</stuans>
+<correct>10</correct>
+<time_taken>9.362000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">223</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4%4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.761000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">224</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4+4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.924000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">225</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4-4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.849000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">226</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"4-4*4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.683000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">227</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d2%d3"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.367000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">228</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d2%d3*d4"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.349000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">229</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d2%d3*d4+d5"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>10.066000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">230</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d6*d7"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.130000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">231</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d6*d7%d8"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.359000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">232</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d2%d3*d4+d5-d6*d7%d8"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>10.444000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">233</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d3*d4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.886000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">234</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d4+d5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.196000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">235</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d5-d6"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.477000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">236</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d7%d8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.468000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">237</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d3*d4+d5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.270000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">238</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d4+d5-d6*d7%d8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.876000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">239</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"d5-d6*d7%d8"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.377000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">240</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e2/e3"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>9.654000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">241</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e2/e3*e4"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>9.279000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">242</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_" e1+e2/e3*e4"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>10.305000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">243</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3*e4+e5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.454000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">244</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e5*e6"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>9.509000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">245</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e5*e6/e7"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>8.966000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">246</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3*e4+e5*e6/e7"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>11.683000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">247</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.872000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">248</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e3*e4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.201000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">249</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e4+e5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.862000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">250</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e6/e7"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.434000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">251</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.135000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">252</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3*e4"_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>10.272000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">253</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3*e4+e5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.971000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">254</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"e1+e2/e3*e4+e5*e6"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.474000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">255</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g5/g6"_)]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>8.789000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">256</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g5/g6%g7"_)]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>9.697000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">257</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g4-g5/g6%g7"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.658000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">258</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g3+g4-g5/g6%g7"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.495000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">259</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g2+g3+g4-g5/g6%g7"_)]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>10.163000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">260</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g2+g3"_)]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>9.197000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs">261</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g2+g3+g4"_)]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>9.247000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">262</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g2+g3+g4-g5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.977000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">263</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g2+g3+g4-g5/g6"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.019000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">264</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g4-g5"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.969000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">265</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g3+g4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.085000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and partial matching on rhs, no result">266</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"g6%g7"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.974000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and partial matching on rhs">267</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v,_"c*d"_)]]></querystr>
+<stuans>a</stuans>
+<correct>a</correct>
+<time_taken>8.840000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and partial matching on rhs">268</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v,_"h%i"_)]]></querystr>
+<stuans>a</stuans>
+<correct>a</correct>
+<time_taken>9.265000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and partial matching on rhs">269</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v,_"a2*8"_)]]></querystr>
+<stuans>a1,b1</stuans>
+<correct>a1,b1</correct>
+<time_taken>8.927000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and partial matching on rhs">270</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v,_"c2%c"_)]]></querystr>
+<stuans>c1</stuans>
+<correct>c1</correct>
+<time_taken>9.467000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and partial matching on rhs">271</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v,_"8/b6"_)]]></querystr>
+<stuans>h1</stuans>
+<correct>h1</correct>
+<time_taken>8.831000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and partial matching on rhs">272</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v,_"1"_)]]></querystr>
+<stuans>a1,f1</stuans>
+<correct>a1,f1</correct>
+<time_taken>9.336000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and partial matching on rhs">273</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v,_"b5"_)]]></querystr>
+<stuans>b1,h1</stuans>
+<correct>b1,h1</correct>
+<time_taken>8.725000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and partial matching on rhs, no result">274</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v,_"b5+a2"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.184000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and partial matching on rhs, no result">275</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(v,_"b5+a2"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.107000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and wildcard on rhs">276</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v,_)]]></querystr>
+<stuans>a,a1,b1,c1,constants,d1,e1,f1,g1,h1</stuans>
+<correct>a,a1,b1,c1,h1,f1,constants,d1,e1,g1</correct>
+<time_taken>8.589000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, IDENT on lhs and partial matching on rhs">277</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a("a1",_"1"_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.175000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, IDENT on lhs and partial matching on rhs">278</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a("a1",_"a2*8"_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.905000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, IDENT on lhs and partial matching on rhs">279</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a("b1",_"a2*8"_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.256000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and wildcard on rhs">280</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a("d1",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>10.393000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, syn on lhs and wildcard on rhs">281</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c pattern a("g1",_)]]></querystr>
+<stuans>1,2,3,4,8,9</stuans>
+<correct>8,9,3,1,2,4</correct>
+<time_taken>9.742000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and Exact matching on rhs">282</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,"d2%d3*d4+d5-d6*d7%d8")]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>10.178000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and Exact matching on rhs">283</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,"e1+e2/e3*e4+e5*e6/e7")]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>10.056000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on lhs and Exact matching on rhs">284</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,"g2+g3+g4-g5/g6%g7")]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>10.213000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign, syn on lhs and Exact matching on rhs">285</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(v,"1 + 2 + 3")]]></querystr>
+<stuans>7</stuans>
+<correct>7</correct>
+<time_taken>9.001000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign, syn on lhs and Exact matching on rhs">286</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(v,"1 + 2")]]></querystr>
+<stuans>8</stuans>
+<correct>8</correct>
+<time_taken>9.056000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign, syn on lhs and Exact matching on rhs">287</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(v,"e1+e2/e3*e4+e5*e6/e7")]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>10.661000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard on both args">288</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_)]]></querystr>
+<stuans>1,10,11,12,13,14,2,3,4,5,6,7,8,9</stuans>
+<correct>1,2,3,4,5,6,7,8,9,10,11,12,13,14</correct>
+<time_taken>9.379000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard lhs and exact match on rhs">289</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,"4+4/4-4*4%4")]]></querystr>
+<stuans>10</stuans>
+<correct>10</correct>
+<time_taken>9.955000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, wildcard lhs and exact match on rhs">290</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,"g2+g3+g4-g5/g6%g7")]]></querystr>
+<stuans>13,14</stuans>
+<correct>13,14</correct>
+<time_taken>10.005000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard lhs and partial match on rhs, with matching brackets">291</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"(c*d/e/f*g)"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.640000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard lhs and partial match on rhs, with matching brackets">292</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"(((((((((c*d/e/f*g)))))))))"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>11.334000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard lhs and partial match on rhs, with matching brackets">293</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"((a2*8))"_)]]></querystr>
+<stuans>2,3</stuans>
+<correct>2,3</correct>
+<time_taken>9.603000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard lhs and partial match on rhs, with matching brackets">294</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"(c2%c)"_)]]></querystr>
+<stuans>4,5</stuans>
+<correct>4,5</correct>
+<time_taken>8.968000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, wildcard lhs and partial match on rhs, with matching brackets">295</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"(a4%3)"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>9.926000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign, confusing assign name">296</id><querystr><![CDATA[assign assign; Select assign pattern assign(_,_"c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>7.303000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="3" CondNum="5" RelNum="0" comment="Valid pattern assign, confusing assign name">297</id><querystr><![CDATA[assign pattern; Select pattern pattern pattern(_,_"c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>7.762000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign, confusing assign name">298</id><querystr><![CDATA[assign Select; Select Select pattern Select(_,_"a2*8"_)]]></querystr>
+<stuans>2,3</stuans>
+<correct>2,3</correct>
+<time_taken>6.927000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign, confusing assign name">299</id><querystr><![CDATA[assign w; Select w pattern w(_,_"c2%c"_)]]></querystr>
+<stuans>4,5</stuans>
+<correct>4,5</correct>
+<time_taken>5.731000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign, confusing assign name">300</id><querystr><![CDATA[assign ifs; Select ifs pattern ifs(_,_"a4%3"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>6.238000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign, confusing assign name">301</id><querystr><![CDATA[assign procedure; Select procedure pattern procedure(_,_"a4%3"_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>8.800000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, weird but valid spaces or tab">302</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a          pattern a(_,_"c*d"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>8.754000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, weird but valid spaces or tab">303</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern        a(_,_"c*d/e"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.467000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern assign, weird but valid spaces or tab">304</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a              (_,_"c*d/e/f"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.104000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, weird but valid spaces or tab">305</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_     ,_"c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>10.148000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid pattern assign, weird but valid spaces or tab">306</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,            _"b + c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.683000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid pattern assign, weird but valid spaces or tab">307</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,   _"b + c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>10.522000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, weird but valid spaces or tab">308</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"         b + c*d/e/f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>10.059000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, weird but valid spaces or tab">309</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d/e/          f*g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>10.355000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, weird but valid spaces or tab">310</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"b + c*d/e/f*         g"_)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>9.859000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid pattern assign, weird but valid spaces or tab">311</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_,_"          b + c*d/e/f*g"          _)]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>10.445000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign, no result">312</id><querystr><![CDATA[assign a; Select BOOLEAN pattern a(_,"c*d")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>5.695000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign, no result">313</id><querystr><![CDATA[assign a; Select BOOLEAN pattern a(_,"b")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.047000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign">314</id><querystr><![CDATA[assign a; Select a pattern a(_,"1+2")]]></querystr>
+<stuans>8</stuans>
+<correct>8</correct>
+<time_taken>5.461000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign">315</id><querystr><![CDATA[assign a; Select a pattern a(_,"b + c*d/e/f*g+h%i-j*k/l+m-n")]]></querystr>
+<stuans>1</stuans>
+<correct>1</correct>
+<time_taken>7.955000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern assign, no result">316</id><querystr><![CDATA[assign a; Select a pattern a(_,"b3/b4")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.769000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

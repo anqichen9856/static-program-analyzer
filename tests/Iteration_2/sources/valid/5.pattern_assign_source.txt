@@ -1,0 +1,19 @@
+procedure assign {
+	a = b + c*d/e/f*g+h%i-j*k/l+m-n;
+	a1 = a2*8 + a3/9 + a4%3 + 1 + 2 + 3;
+	b1 = b2+b3/b4*b5+a2*8/b6;
+    c1 = c2%c*d+c3-c4*h%i;
+    c1 = c2%c*d+c3;
+    h1 = h1+b3/b4+h1*h1+h1+h1+b5+a2+8/b6;
+    f1 = 1 + 2 + 3;
+    f1 = 1 + 2;
+
+    a = a+a/a-a*a%a;
+    constants = 4+4/4-4*4%4;
+
+    d1 = d2%d3*d4+d5-d6*d7%d8;
+    e1 = e1+e2/e3*e4+e5*e6/e7;
+
+    g1 = g2+g3+g4-g5/g6%g7;
+    g1 = g2+g3+g4-g5/g6%g7;
+}

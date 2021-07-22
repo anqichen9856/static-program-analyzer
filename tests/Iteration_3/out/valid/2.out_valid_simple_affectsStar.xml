@@ -1,0 +1,2857 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>8.105000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">1</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,s)]]></querystr>
+<stuans>21,23,37,38,41,42,43,7</stuans>
+<correct>7,21,23,37,41,42,43,38</correct>
+<time_taken>11.359000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">2</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,a)]]></querystr>
+<stuans>21,23,37,38,41,42,43,7</stuans>
+<correct>7,21,23,37,41,42,43,38</correct>
+<time_taken>9.166000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">3</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,n)]]></querystr>
+<stuans>21,23,37,38,41,42,43,7</stuans>
+<correct>7,21,23,37,41,42,43,38</correct>
+<time_taken>9.145000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Affects*, syn on both args">4</id><querystr><![CDATA[stmt s,s1; Select s such that Affects*(s,s1)]]></querystr>
+<stuans>11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,4,41,42,43,5,7,9</stuans>
+<correct>4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>7.411000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Affects*, syn on both args">5</id><querystr><![CDATA[stmt s,s1; Select s1.stmt# such that Affects*(s,s1)]]></querystr>
+<stuans>11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43,7</stuans>
+<correct>7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>9.084000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Affects*, syn on both args">6</id><querystr><![CDATA[stmt s,s1; Select <s,s1> such that Affects*(s,s1)]]></querystr>
+<stuans>11 13,11 14,11 15,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 32,30 35,30 36,30 38,30 39,30 41,30 42,30 43,31 32,31 35,31 36,31 38,31 39,31 41,31 42,31 43,32 38,32 41,32 42,32 43,35 38,35 41,35 42,35 43,36 38,36 39,36 41,36 42,36 43,37 37,38 38,38 41,38 42,38 43,39 38,39 41,39 42,39 43,4 11,4 13,4 14,4 15,4 7,41 38,41 41,41 42,41 43,42 38,42 41,42 42,42 43,43 38,43 41,43 42,43 43,5 11,5 13,5 14,5 15,5 7,7 11,7 13,7 14,7 15,7 7,9 11,9 13,9 14,9 15,9 7</stuans>
+<correct>4 7,4 11,4 13,4 14,4 15,5 7,5 11,5 13,5 14,5 15,7 7,7 11,7 13,7 14,7 15,9 7,9 11,9 13,9 14,9 15,11 13,11 15,11 14,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 41,30 32,30 35,30 36,30 38,30 39,30 42,30 43,31 32,31 35,31 36,31 42,31 41,31 43,31 39,31 38,32 38,32 42,32 41,32 43,35 38,35 42,35 41,35 43,36 39,36 41,36 42,36 43,36 38,37 37,38 41,38 43,38 38,38 42,39 41,39 42,39 43,39 38,43 38,43 43,41 41,41 42,41 43,41 38,42 42,42 41,42 43,42 38,43 41,43 42</correct>
+<time_taken>9.310000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Affects*, syn on both args">7</id><querystr><![CDATA[assign a,a1; Select a such that Affects*(a,a1)]]></querystr>
+<stuans>11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,4,41,42,43,5,7,9</stuans>
+<correct>4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>7.408000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Affects*, syn on both args">8</id><querystr><![CDATA[assign a,a1; Select a1 such that Affects*(a,a1)]]></querystr>
+<stuans>11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43,7</stuans>
+<correct>7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>7.569000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Affects*, syn on both args">9</id><querystr><![CDATA[assign a,a1; Select <a,a1> such that Affects*(a,a1)]]></querystr>
+<stuans>11 13,11 14,11 15,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 32,30 35,30 36,30 38,30 39,30 41,30 42,30 43,31 32,31 35,31 36,31 38,31 39,31 41,31 42,31 43,32 38,32 41,32 42,32 43,35 38,35 41,35 42,35 43,36 38,36 39,36 41,36 42,36 43,37 37,38 38,38 41,38 42,38 43,39 38,39 41,39 42,39 43,4 11,4 13,4 14,4 15,4 7,41 38,41 41,41 42,41 43,42 38,42 41,42 42,42 43,43 38,43 41,43 42,43 43,5 11,5 13,5 14,5 15,5 7,7 11,7 13,7 14,7 15,7 7,9 11,9 13,9 14,9 15,9 7</stuans>
+<correct>4 7,4 11,4 13,4 14,4 15,5 7,5 11,5 13,5 14,5 15,7 7,7 11,7 13,7 14,7 15,9 7,9 11,9 13,9 14,9 15,11 13,11 15,11 14,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 41,30 32,30 35,30 36,30 38,30 39,30 42,30 43,31 32,31 35,31 36,31 42,31 41,31 43,31 39,31 38,32 38,32 42,32 41,32 43,35 38,35 42,35 41,35 43,36 39,36 41,36 42,36 43,36 38,37 37,38 41,38 43,38 38,38 42,39 41,39 42,39 43,39 38,43 38,43 43,41 41,41 42,41 43,41 38,42 42,42 41,42 43,42 38,43 41,43 42</correct>
+<time_taken>7.629000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">10</id><querystr><![CDATA[prog_line n,n1; Select n such that Affects*(n,n1)]]></querystr>
+<stuans>11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,4,41,42,43,5,7,9</stuans>
+<correct>4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>7.820000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">11</id><querystr><![CDATA[prog_line n,n1; Select n1 such that Affects*(n,n1)]]></querystr>
+<stuans>11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43,7</stuans>
+<correct>7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>7.995000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">12</id><querystr><![CDATA[prog_line n,n1; Select <n,n1> such that Affects*(n,n1)]]></querystr>
+<stuans>11 13,11 14,11 15,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 32,30 35,30 36,30 38,30 39,30 41,30 42,30 43,31 32,31 35,31 36,31 38,31 39,31 41,31 42,31 43,32 38,32 41,32 42,32 43,35 38,35 41,35 42,35 43,36 38,36 39,36 41,36 42,36 43,37 37,38 38,38 41,38 42,38 43,39 38,39 41,39 42,39 43,4 11,4 13,4 14,4 15,4 7,41 38,41 41,41 42,41 43,42 38,42 41,42 42,42 43,43 38,43 41,43 42,43 43,5 11,5 13,5 14,5 15,5 7,7 11,7 13,7 14,7 15,7 7,9 11,9 13,9 14,9 15,9 7</stuans>
+<correct>4 7,4 11,4 13,4 14,4 15,5 7,5 11,5 13,5 14,5 15,7 7,7 11,7 13,7 14,7 15,9 7,9 11,9 13,9 14,9 15,11 13,11 15,11 14,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 41,30 32,30 35,30 36,30 38,30 39,30 42,30 43,31 32,31 35,31 36,31 42,31 41,31 43,31 39,31 38,32 38,32 42,32 41,32 43,35 38,35 42,35 41,35 43,36 39,36 41,36 42,36 43,36 38,37 37,38 41,38 43,38 38,38 42,39 41,39 42,39 43,39 38,43 38,43 43,41 41,41 42,41 43,41 38,42 42,42 41,42 43,42 38,43 41,43 42</correct>
+<time_taken>8.476000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">13</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,a)]]></querystr>
+<stuans>11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,4,41,42,43,5,7,9</stuans>
+<correct>4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>10.212000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">14</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(s,a)]]></querystr>
+<stuans>11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43,7</stuans>
+<correct>7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>10.895000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">15</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <s,a> such that Affects*(s,a)]]></querystr>
+<stuans>11 13,11 14,11 15,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 32,30 35,30 36,30 38,30 39,30 41,30 42,30 43,31 32,31 35,31 36,31 38,31 39,31 41,31 42,31 43,32 38,32 41,32 42,32 43,35 38,35 41,35 42,35 43,36 38,36 39,36 41,36 42,36 43,37 37,38 38,38 41,38 42,38 43,39 38,39 41,39 42,39 43,4 11,4 13,4 14,4 15,4 7,41 38,41 41,41 42,41 43,42 38,42 41,42 42,42 43,43 38,43 41,43 42,43 43,5 11,5 13,5 14,5 15,5 7,7 11,7 13,7 14,7 15,7 7,9 11,9 13,9 14,9 15,9 7</stuans>
+<correct>4 7,4 11,4 13,4 14,4 15,5 7,5 11,5 13,5 14,5 15,7 7,7 11,7 13,7 14,7 15,9 7,9 11,9 13,9 14,9 15,11 13,11 15,11 14,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 41,30 32,30 35,30 36,30 38,30 39,30 42,30 43,31 32,31 35,31 36,31 42,31 41,31 43,31 39,31 38,32 38,32 42,32 41,32 43,35 38,35 42,35 41,35 43,36 39,36 41,36 42,36 43,36 38,37 37,38 41,38 43,38 38,38 42,39 41,39 42,39 43,39 38,43 38,43 43,41 41,41 42,41 43,41 38,42 42,42 41,42 43,42 38,43 41,43 42</correct>
+<time_taken>10.815000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">16</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,n)]]></querystr>
+<stuans>11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,4,41,42,43,5,7,9</stuans>
+<correct>4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>10.776000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">17</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(s,n)]]></querystr>
+<stuans>11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43,7</stuans>
+<correct>7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>10.212000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on both args">18</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <s,n> such that Affects*(s,n)]]></querystr>
+<stuans>11 13,11 14,11 15,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 32,30 35,30 36,30 38,30 39,30 41,30 42,30 43,31 32,31 35,31 36,31 38,31 39,31 41,31 42,31 43,32 38,32 41,32 42,32 43,35 38,35 41,35 42,35 43,36 38,36 39,36 41,36 42,36 43,37 37,38 38,38 41,38 42,38 43,39 38,39 41,39 42,39 43,4 11,4 13,4 14,4 15,4 7,41 38,41 41,41 42,41 43,42 38,42 41,42 42,42 43,43 38,43 41,43 42,43 43,5 11,5 13,5 14,5 15,5 7,7 11,7 13,7 14,7 15,7 7,9 11,9 13,9 14,9 15,9 7</stuans>
+<correct>4 7,4 11,4 13,4 14,4 15,5 7,5 11,5 13,5 14,5 15,7 7,7 11,7 13,7 14,7 15,9 7,9 11,9 13,9 14,9 15,11 13,11 15,11 14,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 41,30 32,30 35,30 36,30 38,30 39,30 42,30 43,31 32,31 35,31 36,31 42,31 41,31 43,31 39,31 38,32 38,32 42,32 41,32 43,35 38,35 42,35 41,35 43,36 39,36 41,36 42,36 43,36 38,37 37,38 41,38 43,38 38,38 42,39 41,39 42,39 43,39 38,43 38,43 43,41 41,41 42,41 43,41 38,42 42,42 41,42 43,42 38,43 41,43 42</correct>
+<time_taken>11.449000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, syn on lhs and wildcard on rhs">19</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,_)]]></querystr>
+<stuans>11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,4,41,42,43,5,7,9</stuans>
+<correct>4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>9.346000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, syn on lhs and wildcard on rhs">20</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,_)]]></querystr>
+<stuans>11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,4,41,42,43,5,7,9</stuans>
+<correct>4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>9.407000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, syn on lhs and wildcard on rhs">21</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,_)]]></querystr>
+<stuans>11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,4,41,42,43,5,7,9</stuans>
+<correct>4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>8.944000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">22</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,4)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.387000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">23</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,5)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.565000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">24</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,7)]]></querystr>
+<stuans>4,5,7,9</stuans>
+<correct>4,7,5,9</correct>
+<time_taken>9.529000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">25</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,9)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.629000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">26</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,11)]]></querystr>
+<stuans>4,5,7,9</stuans>
+<correct>4,7,5,9</correct>
+<time_taken>9.493000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">27</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,12)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.785000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">28</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,13)]]></querystr>
+<stuans>11,12,4,5,7,9</stuans>
+<correct>12,11,9,7,5,4</correct>
+<time_taken>9.355000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">29</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,14)]]></querystr>
+<stuans>11,12,13,4,5,7,9</stuans>
+<correct>12,13,11,9,7,5,4</correct>
+<time_taken>11.593000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">30</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,15)]]></querystr>
+<stuans>11,12,13,14,4,5,7,9</stuans>
+<correct>12,13,11,9,7,5,4,14</correct>
+<time_taken>11.054000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">31</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,16)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.248000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">32</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,17)]]></querystr>
+<stuans>16</stuans>
+<correct>16</correct>
+<time_taken>9.565000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">33</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,18)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.038000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">34</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,19)]]></querystr>
+<stuans>18</stuans>
+<correct>18</correct>
+<time_taken>9.210000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">35</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,21)]]></querystr>
+<stuans>18,19,21</stuans>
+<correct>18,19,21</correct>
+<time_taken>9.279000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">36</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,23)]]></querystr>
+<stuans>18,19,21,23</stuans>
+<correct>18,19,21,23</correct>
+<time_taken>9.268000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">37</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,24)]]></querystr>
+<stuans>18,19,21,23</stuans>
+<correct>18,19,21,23</correct>
+<time_taken>8.974000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">38</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,26)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.307000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">39</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,29)]]></querystr>
+<stuans>26</stuans>
+<correct>26</correct>
+<time_taken>8.760000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">40</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,30)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.179000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">41</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,31)]]></querystr>
+<stuans>30</stuans>
+<correct>30</correct>
+<time_taken>9.029000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">42</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,32)]]></querystr>
+<stuans>30,31</stuans>
+<correct>30,31</correct>
+<time_taken>12.236000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">43</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,35)]]></querystr>
+<stuans>30,31</stuans>
+<correct>30,31</correct>
+<time_taken>10.880000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">44</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,36)]]></querystr>
+<stuans>30,31</stuans>
+<correct>30,31</correct>
+<time_taken>9.774000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">45</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,37)]]></querystr>
+<stuans>37</stuans>
+<correct>37</correct>
+<time_taken>9.102000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">46</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,38)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,35,39,41,42,43,38,36</correct>
+<time_taken>9.278000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">47</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,39)]]></querystr>
+<stuans>30,31,36</stuans>
+<correct>30,31,36</correct>
+<time_taken>9.587000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">48</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,41)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,38,39,35,36,41,42,43</correct>
+<time_taken>9.000000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">49</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,42)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,35,36,38,39,41,42,43</correct>
+<time_taken>10.609000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">50</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(s,43)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,35,36,38,39,41,42,43</correct>
+<time_taken>9.331000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">51</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,4)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.514000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">52</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,5)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.115000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">53</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,7)]]></querystr>
+<stuans>4,5,7,9</stuans>
+<correct>4,7,5,9</correct>
+<time_taken>10.867000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">54</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,9)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.798000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">55</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,11)]]></querystr>
+<stuans>4,5,7,9</stuans>
+<correct>4,7,5,9</correct>
+<time_taken>10.093000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">56</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,12)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.900000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">57</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,13)]]></querystr>
+<stuans>11,12,4,5,7,9</stuans>
+<correct>12,11,9,7,5,4</correct>
+<time_taken>9.501000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">58</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,14)]]></querystr>
+<stuans>11,12,13,4,5,7,9</stuans>
+<correct>12,13,11,9,7,5,4</correct>
+<time_taken>9.086000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">59</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,15)]]></querystr>
+<stuans>11,12,13,14,4,5,7,9</stuans>
+<correct>12,13,11,9,7,5,4,14</correct>
+<time_taken>9.654000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">60</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,16)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.862000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">61</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,17)]]></querystr>
+<stuans>16</stuans>
+<correct>16</correct>
+<time_taken>10.683000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">62</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,18)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.962000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">63</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,19)]]></querystr>
+<stuans>18</stuans>
+<correct>18</correct>
+<time_taken>9.394000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">64</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,21)]]></querystr>
+<stuans>18,19,21</stuans>
+<correct>18,19,21</correct>
+<time_taken>9.266000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">65</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,23)]]></querystr>
+<stuans>18,19,21,23</stuans>
+<correct>18,19,21,23</correct>
+<time_taken>9.017000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">66</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,24)]]></querystr>
+<stuans>18,19,21,23</stuans>
+<correct>18,19,21,23</correct>
+<time_taken>9.454000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">67</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,26)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.836000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">68</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,29)]]></querystr>
+<stuans>26</stuans>
+<correct>26</correct>
+<time_taken>9.210000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">69</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,30)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.807000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">70</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,31)]]></querystr>
+<stuans>30</stuans>
+<correct>30</correct>
+<time_taken>10.604000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">71</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,32)]]></querystr>
+<stuans>30,31</stuans>
+<correct>30,31</correct>
+<time_taken>9.191000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">72</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,35)]]></querystr>
+<stuans>30,31</stuans>
+<correct>30,31</correct>
+<time_taken>8.945000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">73</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,36)]]></querystr>
+<stuans>30,31</stuans>
+<correct>30,31</correct>
+<time_taken>9.419000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">74</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,37)]]></querystr>
+<stuans>37</stuans>
+<correct>37</correct>
+<time_taken>9.140000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">75</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,38)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,35,39,41,42,43,38,36</correct>
+<time_taken>9.583000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">76</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,39)]]></querystr>
+<stuans>30,31,36</stuans>
+<correct>30,31,36</correct>
+<time_taken>9.225000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">77</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,41)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,38,39,35,36,41,42,43</correct>
+<time_taken>10.872000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">78</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,42)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,35,36,38,39,41,42,43</correct>
+<time_taken>10.595000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">79</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(a,43)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,35,36,38,39,41,42,43</correct>
+<time_taken>9.452000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">80</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,4)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.710000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">81</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,5)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.964000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">82</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,7)]]></querystr>
+<stuans>4,5,7,9</stuans>
+<correct>4,7,5,9</correct>
+<time_taken>10.868000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">83</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,9)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.824000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">84</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,11)]]></querystr>
+<stuans>4,5,7,9</stuans>
+<correct>4,7,5,9</correct>
+<time_taken>9.247000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">85</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,12)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.338000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">86</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,13)]]></querystr>
+<stuans>11,12,4,5,7,9</stuans>
+<correct>12,11,9,7,5,4</correct>
+<time_taken>9.109000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">87</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,14)]]></querystr>
+<stuans>11,12,13,4,5,7,9</stuans>
+<correct>12,13,11,9,7,5,4</correct>
+<time_taken>9.348000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">88</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,15)]]></querystr>
+<stuans>11,12,13,14,4,5,7,9</stuans>
+<correct>12,13,11,9,7,5,4,14</correct>
+<time_taken>9.309000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">89</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,16)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.901000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">90</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,17)]]></querystr>
+<stuans>16</stuans>
+<correct>16</correct>
+<time_taken>8.723000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">91</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,18)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.422000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">92</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,19)]]></querystr>
+<stuans>18</stuans>
+<correct>18</correct>
+<time_taken>8.925000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">93</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,21)]]></querystr>
+<stuans>18,19,21</stuans>
+<correct>18,19,21</correct>
+<time_taken>9.650000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">94</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,23)]]></querystr>
+<stuans>18,19,21,23</stuans>
+<correct>18,19,21,23</correct>
+<time_taken>8.869000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">95</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,24)]]></querystr>
+<stuans>18,19,21,23</stuans>
+<correct>18,19,21,23</correct>
+<time_taken>9.525000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">96</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,26)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.704000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">97</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,29)]]></querystr>
+<stuans>26</stuans>
+<correct>26</correct>
+<time_taken>9.348000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs, no result">98</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,30)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.583000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">99</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,31)]]></querystr>
+<stuans>30</stuans>
+<correct>30</correct>
+<time_taken>8.870000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">100</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,32)]]></querystr>
+<stuans>30,31</stuans>
+<correct>30,31</correct>
+<time_taken>9.216000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">101</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,35)]]></querystr>
+<stuans>30,31</stuans>
+<correct>30,31</correct>
+<time_taken>9.150000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">102</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,36)]]></querystr>
+<stuans>30,31</stuans>
+<correct>30,31</correct>
+<time_taken>9.240000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">103</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,37)]]></querystr>
+<stuans>37</stuans>
+<correct>37</correct>
+<time_taken>9.039000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">104</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,38)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,35,39,41,42,43,38,36</correct>
+<time_taken>9.441000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">105</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,39)]]></querystr>
+<stuans>30,31,36</stuans>
+<correct>30,31,36</correct>
+<time_taken>9.706000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">106</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,41)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,38,39,35,36,41,42,43</correct>
+<time_taken>9.753000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">107</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,42)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,35,36,38,39,41,42,43</correct>
+<time_taken>9.907000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, syn on lhs and INTEGER on rhs">108</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(n,43)]]></querystr>
+<stuans>30,31,32,35,36,38,39,41,42,43</stuans>
+<correct>30,31,32,35,36,38,39,41,42,43</correct>
+<time_taken>9.545000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and syn on rhs">109</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(_,s)]]></querystr>
+<stuans>11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43,7</stuans>
+<correct>7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>11.407000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and syn on rhs">110</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(_,a)]]></querystr>
+<stuans>11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43,7</stuans>
+<correct>7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>11.323000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and syn on rhs">111</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects*(_,n)]]></querystr>
+<stuans>11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43,7</stuans>
+<correct>7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43</correct>
+<time_taken>11.439000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on both args">112</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(_,_)]]></querystr>
+<stuans>1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,5,6,7,8,9</stuans>
+<correct>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43</correct>
+<time_taken>9.078000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on both args">113</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Affects*(_,_)]]></querystr>
+<stuans>p1,p2,p3,p4</stuans>
+<correct>p1,p2,p3,p4</correct>
+<time_taken>9.457000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on both args">114</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p,cp,c> such that Affects*(_,_)]]></querystr>
+<stuans>p1 27 0,p1 27 1,p1 27 10,p1 27 11,p1 27 12,p1 27 13,p1 27 14,p1 27 15,p1 27 2,p1 27 3,p1 27 4,p1 27 5,p1 27 6,p1 27 7,p1 27 8,p1 27 9,p1 3 0,p1 3 1,p1 3 10,p1 3 11,p1 3 12,p1 3 13,p1 3 14,p1 3 15,p1 3 2,p1 3 3,p1 3 4,p1 3 5,p1 3 6,p1 3 7,p1 3 8,p1 3 9,p1 8 0,p1 8 1,p1 8 10,p1 8 11,p1 8 12,p1 8 13,p1 8 14,p1 8 15,p1 8 2,p1 8 3,p1 8 4,p1 8 5,p1 8 6,p1 8 7,p1 8 8,p1 8 9,p2 27 0,p2 27 1,p2 27 10,p2 27 11,p2 27 12,p2 27 13,p2 27 14,p2 27 15,p2 27 2,p2 27 3,p2 27 4,p2 27 5,p2 27 6,p2 27 7,p2 27 8,p2 27 9,p2 3 0,p2 3 1,p2 3 10,p2 3 11,p2 3 12,p2 3 13,p2 3 14,p2 3 15,p2 3 2,p2 3 3,p2 3 4,p2 3 5,p2 3 6,p2 3 7,p2 3 8,p2 3 9,p2 8 0,p2 8 1,p2 8 10,p2 8 11,p2 8 12,p2 8 13,p2 8 14,p2 8 15,p2 8 2,p2 8 3,p2 8 4,p2 8 5,p2 8 6,p2 8 7,p2 8 8,p2 8 9,p3 27 0,p3 27 1,p3 27 10,p3 27 11,p3 27 12,p3 27 13,p3 27 14,p3 27 15,p3 27 2,p3 27 3,p3 27 4,p3 27 5,p3 27 6,p3 27 7,p3 27 8,p3 27 9,p3 3 0,p3 3 1,p3 3 10,p3 3 11,p3 3 12,p3 3 13,p3 3 14,p3 3 15,p3 3 2,p3 3 3,p3 3 4,p3 3 5,p3 3 6,p3 3 7,p3 3 8,p3 3 9,p3 8 0,p3 8 1,p3 8 10,p3 8 11,p3 8 12,p3 8 13,p3 8 14,p3 8 15,p3 8 2,p3 8 3,p3 8 4,p3 8 5,p3 8 6,p3 8 7,p3 8 8,p3 8 9,p4 27 0,p4 27 1,p4 27 10,p4 27 11,p4 27 12,p4 27 13,p4 27 14,p4 27 15,p4 27 2,p4 27 3,p4 27 4,p4 27 5,p4 27 6,p4 27 7,p4 27 8,p4 27 9,p4 3 0,p4 3 1,p4 3 10,p4 3 11,p4 3 12,p4 3 13,p4 3 14,p4 3 15,p4 3 2,p4 3 3,p4 3 4,p4 3 5,p4 3 6,p4 3 7,p4 3 8,p4 3 9,p4 8 0,p4 8 1,p4 8 10,p4 8 11,p4 8 12,p4 8 13,p4 8 14,p4 8 15,p4 8 2,p4 8 3,p4 8 4,p4 8 5,p4 8 6,p4 8 7,p4 8 8,p4 8 9</stuans>
+<correct>p1 3 1,p1 3 2,p1 3 0,p1 3 3,p1 3 4,p1 3 5,p1 3 6,p1 3 7,p1 3 8,p1 3 9,p1 3 10,p1 3 11,p1 3 12,p1 3 13,p1 3 14,p1 3 15,p1 8 1,p1 8 2,p1 8 0,p1 8 3,p1 8 4,p1 8 5,p1 8 6,p1 8 7,p1 8 8,p1 8 9,p1 8 10,p1 8 11,p1 8 12,p1 8 13,p1 8 14,p1 8 15,p1 27 1,p1 27 2,p1 27 0,p1 27 3,p1 27 4,p1 27 5,p1 27 6,p1 27 7,p1 27 8,p1 27 9,p1 27 10,p1 27 11,p1 27 12,p1 27 13,p1 27 14,p1 27 15,p2 3 1,p2 3 2,p2 3 0,p2 3 3,p2 3 4,p2 3 5,p2 3 6,p2 3 7,p2 3 8,p2 3 9,p2 3 10,p2 3 11,p2 3 12,p2 3 13,p2 3 14,p2 3 15,p2 8 1,p2 8 2,p2 8 0,p2 8 3,p2 8 4,p2 8 5,p2 8 6,p2 8 7,p2 8 8,p2 8 9,p2 8 10,p2 8 11,p2 8 12,p2 8 13,p2 8 14,p2 8 15,p2 27 1,p2 27 2,p2 27 0,p2 27 3,p2 27 4,p2 27 5,p2 27 6,p2 27 7,p2 27 8,p2 27 9,p2 27 10,p2 27 11,p2 27 12,p2 27 13,p2 27 14,p2 27 15,p3 3 1,p3 3 2,p3 3 0,p3 3 3,p3 3 4,p3 3 5,p3 3 6,p3 3 7,p3 3 8,p3 3 9,p3 3 10,p3 3 11,p3 3 12,p3 3 13,p3 3 14,p3 3 15,p3 8 1,p3 8 2,p3 8 0,p3 8 3,p3 8 4,p3 8 5,p3 8 6,p3 8 7,p3 8 8,p3 8 9,p3 8 10,p3 8 11,p3 8 12,p3 8 13,p3 8 14,p3 8 15,p3 27 1,p3 27 2,p3 27 0,p3 27 3,p3 27 4,p3 27 5,p3 27 6,p3 27 7,p3 27 8,p3 27 9,p3 27 10,p3 27 11,p3 27 12,p3 27 13,p3 27 14,p3 27 15,p4 3 1,p4 3 2,p4 3 0,p4 3 3,p4 3 4,p4 3 5,p4 3 6,p4 3 7,p4 3 8,p4 3 9,p4 3 10,p4 3 11,p4 3 12,p4 3 13,p4 3 14,p4 3 15,p4 8 1,p4 8 2,p4 8 0,p4 8 3,p4 8 4,p4 8 5,p4 8 6,p4 8 7,p4 8 8,p4 8 9,p4 8 10,p4 8 11,p4 8 12,p4 8 13,p4 8 14,p4 8 15,p4 27 1,p4 27 2,p4 27 0,p4 27 3,p4 27 4,p4 27 5,p4 27 6,p4 27 7,p4 27 8,p4 27 9,p4 27 10,p4 27 11,p4 27 12,p4 27 13,p4 27 14,p4 27 15</correct>
+<time_taken>11.147000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">115</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,1)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.738000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">116</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,2)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.698000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">117</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,3)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.035000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">118</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,4)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.510000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">119</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,5)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.927000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">120</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,7)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.233000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">121</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,9)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.056000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">122</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,11)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.574000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">123</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,12)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.886000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">124</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,13)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.258000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">125</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,14)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.344000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">126</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,15)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.392000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs, no result">127</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,16)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.945000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">128</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,17)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.153000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs, no result">129</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,18)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.185000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">130</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,19)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.297000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">131</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,21)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.393000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">132</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,23)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.107000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">133</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,24)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.492000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs, no result">134</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,26)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.666000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">135</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(_,29)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>10.844000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Affects*, wildcard on lhs and INTEGER on rhs">136</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <cp,cp.procName,w,ifs> such that Affects*(_,29)]]></querystr>
+<stuans>27 p4 20 10,27 p4 20 34,27 p4 22 10,27 p4 22 34,27 p4 33 10,27 p4 33 34,27 p4 40 10,27 p4 40 34,27 p4 6 10,27 p4 6 34,3 p2 20 10,3 p2 20 34,3 p2 22 10,3 p2 22 34,3 p2 33 10,3 p2 33 34,3 p2 40 10,3 p2 40 34,3 p2 6 10,3 p2 6 34,8 p3 20 10,8 p3 20 34,8 p3 22 10,8 p3 22 34,8 p3 33 10,8 p3 33 34,8 p3 40 10,8 p3 40 34,8 p3 6 10,8 p3 6 34</stuans>
+<correct>3 p2 6 10,3 p2 6 34,3 p2 20 10,3 p2 20 34,3 p2 22 10,3 p2 22 34,3 p2 33 10,3 p2 33 34,3 p2 40 10,3 p2 40 34,8 p3 6 10,8 p3 6 34,8 p3 20 10,8 p3 20 34,8 p3 22 10,8 p3 22 34,8 p3 33 10,8 p3 33 34,8 p3 40 10,8 p3 40 34,27 p4 6 10,27 p4 6 34,27 p4 20 10,27 p4 20 34,27 p4 22 10,27 p4 22 34,27 p4 33 10,27 p4 33 34,27 p4 40 10,27 p4 40 34</correct>
+<time_taken>11.949000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">137</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(4,7)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.190000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">138</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(4,11)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.397000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">139</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(4,13)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>8.937000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">140</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(4,14)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.259000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">141</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(4,15)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>8.968000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">142</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(5,7)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.581000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">143</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(5,11)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>8.859000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">144</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(5,13)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.439000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">145</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(5,14)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>8.974000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">146</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(5,15)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.592000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">147</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(7,7)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.188000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">148</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(7,11)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.313000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">149</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(7,13)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>8.913000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">150</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(7,14)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.532000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">151</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(7,15)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.216000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">152</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(11,13)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.312000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">153</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(11,15)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.193000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">154</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(11,14)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.630000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">155</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(12,13)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>10.163000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">156</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(12,14)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>11.137000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">157</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(12,15)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.161000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">158</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(13,14)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>10.635000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">159</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(13,15)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.155000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">160</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(14,15)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.438000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">161</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(16,17)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.687000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">162</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(18,19)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>11.171000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">163</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(18,21)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>12.171000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">164</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(18,23)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>11.593000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">165</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(18,24)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.771000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">166</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(19,21)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.392000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">167</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(19,23)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.544000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">168</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(19,24)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.281000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">169</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(21,21)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.533000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">170</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(21,23)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.139000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">171</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(21,24)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.773000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">172</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(23,23)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.394000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">173</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(23,24)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.469000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">174</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(26,29)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>10.595000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">175</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(30,31)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>11.181000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">176</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(30,41)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.639000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">177</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(30,32)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.815000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">178</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(30,35)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.100000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">179</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(30,36)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.863000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">180</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(30,38)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.261000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">181</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(30,39)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>10.082000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">182</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(30,42)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.175000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">183</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(30,43)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.632000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">184</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(31,32)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.563000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">185</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(31,35)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.453000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">186</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(31,36)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.311000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">187</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(31,42)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.325000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">188</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(31,41)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.080000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">189</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(31,43)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.734000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">190</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(31,39)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.209000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">191</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(31,38)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.511000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">192</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(32,38)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.410000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">193</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(32,42)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.619000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">194</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(32,41)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.146000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">195</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(32,43)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.602000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">196</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(35,38)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.325000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">197</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(35,42)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.406000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">198</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(35,41)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.754000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">199</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(35,43)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.756000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">200</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(36,39)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.261000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">201</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(36,41)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.603000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">202</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(36,42)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.484000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">203</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(36,43)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.728000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">204</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(36,38)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.034000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">205</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(37,37)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>10.042000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">206</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(38,41)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.069000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">207</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(38,42)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.442000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">208</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(38,43)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.436000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">209</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(38,38)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.478000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">210</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,41)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>8.922000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">211</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,42)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.819000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">212</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,43)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.419000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">213</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,38)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>11.524000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">214</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(41,41)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>12.353000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">215</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(41,42)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>11.233000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">216</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(41,43)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.435000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">217</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(41,38)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.318000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">218</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(42,42)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.568000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">219</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(42,41)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.101000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">220</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(42,43)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.157000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">221</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(42,38)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.320000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">222</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(43,38)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.301000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">223</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(43,43)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.119000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">224</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(4,5)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.065000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">225</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(9,9)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.155000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">226</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(5,9)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.420000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args,">227</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(9,11)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>8.951000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">228</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(9,12)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.265000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">229</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(9,13)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.190000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">230</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(9,14)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>10.945000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">231</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(9,15)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>10.732000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">232</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(13,12)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.470000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">233</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(14,13)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.994000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">234</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(16,18)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.577000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">235</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(16,19)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.356000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">236</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(17,18)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.919000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">237</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(17,21)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.946000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">238</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(16,21)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.793000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">239</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(21,18)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.196000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">240</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(21,19)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.365000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">241</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(24,26)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.871000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">242</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(26,16)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.722000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args">243</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(30,36)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>9.183000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">244</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(30,37)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.631000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">245</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(31,37)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.942000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">246</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(32,37)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.022000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">247</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(32,35)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.865000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">248</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(32,36)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.696000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">249</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(32,37)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.912000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">250</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(36,37)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.608000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">251</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(37,38)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.315000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">252</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(37,35)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.542000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">253</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(37,36)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.186000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">254</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(37,39)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.367000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">255</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(37,41)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.219000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">256</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(37,42)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.435000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">257</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(37,43)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.233000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">258</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(38,35)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.272000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">259</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(38,36)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.086000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">260</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(38,30)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.230000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">261</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(38,31)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.240000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">262</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(38,32)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.647000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">263</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,30)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.788000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">264</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,31)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.379000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">265</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,32)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.302000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">266</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,35)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.454000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">267</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,36)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.098000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">268</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,37)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.870000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">269</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,39)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.419000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">270</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(39,39)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.909000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">271</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(41,30)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.007000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">272</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(41,31)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.642000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">273</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(41,32)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.068000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">274</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(41,35)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.441000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">275</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(41,36)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.292000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">276</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(41,37)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.364000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">277</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(41,39)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.190000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">278</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(42,30)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.243000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">279</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(42,31)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.474000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">280</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(42,32)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.534000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">281</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(42,35)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.871000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">282</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(42,36)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.215000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">283</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(42,37)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.208000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">284</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(42,39)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.449000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">285</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(43,30)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.068000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">286</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(43,31)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.363000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">287</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(43,32)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.627000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">288</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(43,35)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.525000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">289</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(43,36)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.235000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">290</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(43,37)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.130000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on both args, no result">291</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects*(43,39)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.307000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">292</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(4,s)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>9.073000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">293</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(5,s)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>8.802000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">294</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(7,s)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>9.075000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">295</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(9,s)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>9.066000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">296</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(11,s)]]></querystr>
+<stuans>13,14,15</stuans>
+<correct>13,14,15</correct>
+<time_taken>9.419000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">297</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(12,s)]]></querystr>
+<stuans>13,14,15</stuans>
+<correct>13,14,15</correct>
+<time_taken>8.895000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">298</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(13,s)]]></querystr>
+<stuans>14,15</stuans>
+<correct>14,15</correct>
+<time_taken>9.128000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">299</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(14,s)]]></querystr>
+<stuans>15</stuans>
+<correct>15</correct>
+<time_taken>9.244000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">300</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(15,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.081000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">301</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(16,s)]]></querystr>
+<stuans>17</stuans>
+<correct>17</correct>
+<time_taken>9.471000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">302</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(17,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.145000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">303</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(18,s)]]></querystr>
+<stuans>19,21,23,24</stuans>
+<correct>19,21,23,24</correct>
+<time_taken>9.340000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">304</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(19,s)]]></querystr>
+<stuans>21,23,24</stuans>
+<correct>21,23,24</correct>
+<time_taken>8.706000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">305</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(21,s)]]></querystr>
+<stuans>21,23,24</stuans>
+<correct>21,23,24</correct>
+<time_taken>9.361000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">306</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(23,s)]]></querystr>
+<stuans>23,24</stuans>
+<correct>23,24</correct>
+<time_taken>9.803000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">307</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(24,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.554000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">308</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(26,s)]]></querystr>
+<stuans>29</stuans>
+<correct>29</correct>
+<time_taken>8.932000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">309</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(29,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.627000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">310</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(30,s)]]></querystr>
+<stuans>31,32,35,36,38,39,41,42,43</stuans>
+<correct>31,41,32,35,36,38,39,42,43</correct>
+<time_taken>9.118000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">311</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(31,s)]]></querystr>
+<stuans>32,35,36,38,39,41,42,43</stuans>
+<correct>32,35,36,42,41,43,39,38</correct>
+<time_taken>9.382000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">312</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(32,s)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>38,42,41,43</correct>
+<time_taken>8.991000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">313</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(35,s)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>38,42,41,43</correct>
+<time_taken>9.668000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">314</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(36,s)]]></querystr>
+<stuans>38,39,41,42,43</stuans>
+<correct>39,41,42,43,38</correct>
+<time_taken>10.430000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">315</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(37,s)]]></querystr>
+<stuans>37</stuans>
+<correct>37</correct>
+<time_taken>10.035000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">316</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(38,s)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,43,38,42</correct>
+<time_taken>9.136000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">317</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(39,s)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,42,43,38</correct>
+<time_taken>9.146000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">318</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(41,s)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,42,43,38</correct>
+<time_taken>8.968000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">319</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(42,s)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>42,41,43,38</correct>
+<time_taken>9.563000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">320</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects*(43,s)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,42,38,43</correct>
+<time_taken>9.275000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">321</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(4,a)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>9.389000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">322</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(5,a)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>8.746000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">323</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(7,a)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>9.414000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">324</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(9,a)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>8.716000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">325</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(11,a)]]></querystr>
+<stuans>13,14,15</stuans>
+<correct>13,15,14</correct>
+<time_taken>9.103000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">326</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(12,a)]]></querystr>
+<stuans>13,14,15</stuans>
+<correct>13,15,14</correct>
+<time_taken>8.753000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">327</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(13,a)]]></querystr>
+<stuans>14,15</stuans>
+<correct>15,14</correct>
+<time_taken>9.207000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">328</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(14,a)]]></querystr>
+<stuans>15</stuans>
+<correct>15</correct>
+<time_taken>9.027000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">329</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(15,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.250000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">330</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(16,a)]]></querystr>
+<stuans>17</stuans>
+<correct>17</correct>
+<time_taken>9.349000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">331</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(17,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.165000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">332</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(18,a)]]></querystr>
+<stuans>19,21,23,24</stuans>
+<correct>19,21,23,24</correct>
+<time_taken>8.744000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">333</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(19,a)]]></querystr>
+<stuans>21,23,24</stuans>
+<correct>21,23,24</correct>
+<time_taken>9.413000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">334</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(21,a)]]></querystr>
+<stuans>21,23,24</stuans>
+<correct>21,23,24</correct>
+<time_taken>8.670000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">335</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(23,a)]]></querystr>
+<stuans>23,24</stuans>
+<correct>23,24</correct>
+<time_taken>9.207000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">336</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(24,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.980000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">337</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(26,a)]]></querystr>
+<stuans>29</stuans>
+<correct>29</correct>
+<time_taken>9.169000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">338</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(29,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.834000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">339</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(30,a)]]></querystr>
+<stuans>31,32,35,36,38,39,41,42,43</stuans>
+<correct>31,41,32,35,36,38,39,42,43</correct>
+<time_taken>9.355000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">340</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(31,a)]]></querystr>
+<stuans>32,35,36,38,39,41,42,43</stuans>
+<correct>32,35,36,42,41,43,39,38</correct>
+<time_taken>8.927000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">341</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(32,a)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>38,42,41,43</correct>
+<time_taken>9.201000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">342</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(35,a)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>38,42,41,43</correct>
+<time_taken>8.815000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">343</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(36,a)]]></querystr>
+<stuans>38,39,41,42,43</stuans>
+<correct>39,41,42,43,38</correct>
+<time_taken>9.276000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">344</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(37,a)]]></querystr>
+<stuans>37</stuans>
+<correct>37</correct>
+<time_taken>9.177000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">345</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(38,a)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,43,38,42</correct>
+<time_taken>9.180000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">346</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(39,a)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,42,43,38</correct>
+<time_taken>9.322000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">347</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(41,a)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,42,43,38</correct>
+<time_taken>8.948000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">348</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(42,a)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,42,43,38</correct>
+<time_taken>9.301000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">349</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects*(43,a)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,42,43,38</correct>
+<time_taken>9.189000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">350</id><querystr><![CDATA[prog_line n; Select n such that Affects*(4,n)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>6.150000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">351</id><querystr><![CDATA[prog_line n; Select n such that Affects*(5,n)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>6.916000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">352</id><querystr><![CDATA[prog_line n; Select n such that Affects*(7,n)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>5.834000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">353</id><querystr><![CDATA[prog_line n; Select n such that Affects*(9,n)]]></querystr>
+<stuans>11,13,14,15,7</stuans>
+<correct>7,11,13,14,15</correct>
+<time_taken>6.252000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">354</id><querystr><![CDATA[prog_line n; Select n such that Affects*(11,n)]]></querystr>
+<stuans>13,14,15</stuans>
+<correct>13,14,15</correct>
+<time_taken>5.823000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">355</id><querystr><![CDATA[prog_line n; Select n such that Affects*(12,n)]]></querystr>
+<stuans>13,14,15</stuans>
+<correct>13,14,15</correct>
+<time_taken>6.157000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">356</id><querystr><![CDATA[prog_line n; Select n such that Affects*(13,n)]]></querystr>
+<stuans>14,15</stuans>
+<correct>14,15</correct>
+<time_taken>6.259000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">357</id><querystr><![CDATA[prog_line n; Select n such that Affects*(14,n)]]></querystr>
+<stuans>15</stuans>
+<correct>15</correct>
+<time_taken>5.663000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">358</id><querystr><![CDATA[prog_line n; Select n such that Affects*(15,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.990000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">359</id><querystr><![CDATA[prog_line n; Select n such that Affects*(16,n)]]></querystr>
+<stuans>17</stuans>
+<correct>17</correct>
+<time_taken>6.399000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">360</id><querystr><![CDATA[prog_line n; Select n such that Affects*(17,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.628000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">361</id><querystr><![CDATA[prog_line n; Select n such that Affects*(18,n)]]></querystr>
+<stuans>19,21,23,24</stuans>
+<correct>19,21,23,24</correct>
+<time_taken>5.833000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">362</id><querystr><![CDATA[prog_line n; Select n such that Affects*(19,n)]]></querystr>
+<stuans>21,23,24</stuans>
+<correct>21,23,24</correct>
+<time_taken>6.539000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">363</id><querystr><![CDATA[prog_line n; Select n such that Affects*(21,n)]]></querystr>
+<stuans>21,23,24</stuans>
+<correct>21,23,24</correct>
+<time_taken>5.833000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">364</id><querystr><![CDATA[prog_line n; Select n such that Affects*(23,n)]]></querystr>
+<stuans>23,24</stuans>
+<correct>23,24</correct>
+<time_taken>5.735000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">365</id><querystr><![CDATA[prog_line n; Select n such that Affects*(24,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.390000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">366</id><querystr><![CDATA[prog_line n; Select n such that Affects*(26,n)]]></querystr>
+<stuans>29</stuans>
+<correct>29</correct>
+<time_taken>5.922000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">367</id><querystr><![CDATA[prog_line n; Select n such that Affects*(29,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.092000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">368</id><querystr><![CDATA[prog_line n; Select n such that Affects*(30,n)]]></querystr>
+<stuans>31,32,35,36,38,39,41,42,43</stuans>
+<correct>31,41,32,35,36,38,39,42,43</correct>
+<time_taken>6.241000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">369</id><querystr><![CDATA[prog_line n; Select n such that Affects*(31,n)]]></querystr>
+<stuans>32,35,36,38,39,41,42,43</stuans>
+<correct>32,35,36,42,41,43,39,38</correct>
+<time_taken>6.273000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">370</id><querystr><![CDATA[prog_line n; Select n such that Affects*(32,n)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>38,42,41,43</correct>
+<time_taken>5.703000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">371</id><querystr><![CDATA[prog_line n; Select n such that Affects*(35,n)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>38,42,41,43</correct>
+<time_taken>6.172000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">372</id><querystr><![CDATA[prog_line n; Select n such that Affects*(36,n)]]></querystr>
+<stuans>38,39,41,42,43</stuans>
+<correct>39,41,42,43,38</correct>
+<time_taken>5.806000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">373</id><querystr><![CDATA[prog_line n; Select n such that Affects*(37,n)]]></querystr>
+<stuans>37</stuans>
+<correct>37</correct>
+<time_taken>6.348000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">374</id><querystr><![CDATA[prog_line n; Select n such that Affects*(38,n)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,43,38,42</correct>
+<time_taken>6.111000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">375</id><querystr><![CDATA[prog_line n; Select n such that Affects*(39,n)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,42,43,38</correct>
+<time_taken>6.134000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">376</id><querystr><![CDATA[prog_line n; Select n such that Affects*(41,n)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,42,43,38</correct>
+<time_taken>5.725000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">377</id><querystr><![CDATA[prog_line n; Select n such that Affects*(42,n)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,42,43,38</correct>
+<time_taken>6.213000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">378</id><querystr><![CDATA[prog_line n; Select n such that Affects*(43,n)]]></querystr>
+<stuans>38,41,42,43</stuans>
+<correct>41,42,43,38</correct>
+<time_taken>5.993000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">379</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(4,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.791000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">380</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(5,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.960000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">381</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(7,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.786000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">382</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(9,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.641000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">383</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(11,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.997000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">384</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(12,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.931000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">385</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(13,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.872000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">386</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(14,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.864000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">387</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(15,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.032000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">388</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(16,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.704000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">389</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(17,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.056000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">390</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(18,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.778000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">391</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(19,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.822000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">392</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(21,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.880000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">393</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(23,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.240000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">394</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(24,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>5.822000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">395</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(26,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.308000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs, no result">396</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(29,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.671000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">397</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(30,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.793000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">398</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(31,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.696000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">399</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(32,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.687000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">400</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(35,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.679000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">401</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(36,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.591000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">402</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(37,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.833000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">403</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(38,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.790000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">404</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(39,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.777000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">405</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(41,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>6.201000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">406</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(42,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.873000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affectsstar="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Affects*, INTEGER on lhs and syn on rhs">407</id><querystr><![CDATA[ Select BOOLEAN such that Affects*(43,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>5.798000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

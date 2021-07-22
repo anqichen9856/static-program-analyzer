@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -O3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/autotester.dir/src/TestWrapper.cpp.o -o autotester  ../spa/libspa.a ../../../lib/autotester/apple/release/libautotester.a -lpthread 

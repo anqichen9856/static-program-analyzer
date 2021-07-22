@@ -1,0 +1,95 @@
+1 - Valid Calls, syn on both args
+procedure p, q;
+Select p such that Calls(p,q)
+procedures,a,b,c,e,d,f
+5000
+2 - Valid Calls, syn on both args
+procedure p, q;
+Select q such that Calls(p,q)
+a,g,c,e,b,d,f
+5000
+3 - Valid Calls, syn on lhs and wildcard on rhs
+procedure p, q;
+Select p such that Calls(p,_)
+procedures,a,b,c,e,d,f
+5000
+4 - Valid Calls, syn on lhs and ident on rhs
+procedure p, q;
+Select p such that Calls(p,"g")
+procedures,a,e,b,d,f
+5000
+5 - Valid Calls, syn on lhs and ident on rhs, no result
+procedure p, q;
+Select p such that Calls(p,"z")
+
+5000
+6 - Valid Calls, syn on lhs and ident on rhs, no result
+procedure p, q;
+Select p such that Calls(p,"x")
+
+5000
+7 - Valid Calls, wildcard on both args
+procedure p, q;
+Select BOOLEAN such that Calls(_,_)
+TRUE
+5000
+8 - Valid Calls, wildcard on lhs and syn on rhs
+procedure p, q;
+Select p such that Calls(_,p)
+a,g,c,e,b,d,f
+5000
+9 - Valid Calls, wildcard on lhs and syn on rhs
+procedure p, q;
+Select p such that Calls(_,"c")
+procedures, a,g,c,e,b,d,f,z,x
+5000
+10 - Valid Calls, ident on both args
+procedure p, q;
+Select BOOLEAN such that Calls("b","c")
+TRUE
+5000
+11 - Valid Calls, ident on both args
+procedure p, q;
+Select BOOLEAN such that Calls("a","d")
+TRUE
+5000
+12 - Valid Calls, ident on both args, no result
+procedure p, q;
+Select BOOLEAN such that Calls("g","a")
+FALSE
+5000
+13 - Valid Calls, ident on lhs and wildcard on rhs, no result
+procedure p, q;
+Select BOOLEAN such that Calls("g",_)
+FALSE
+5000
+14 - Valid Calls, ident on lhs and wildcard on rhs, no result
+procedure p, q;
+Select BOOLEAN such that Calls("x",_)
+FALSE
+5000
+15 - Valid Calls, ident on lhs and wildcard on rhs
+procedure p, q;
+Select BOOLEAN such that Calls("c",_)
+TRUE
+5000
+16 - Valid Calls, ident on lhs and wildcard on rhs
+procedure p, q;
+Select BOOLEAN such that Calls("f",_)
+TRUE
+5000
+17 - Valid Calls, ident on lhs and syn on rhs
+procedure p, q;
+Select p such that Calls("f",p)
+g,e
+5000
+18 - Valid Calls, ident on lhs and syn on rhs
+procedure p, q;
+Select p such that Calls("d",p)
+g,f
+5000
+19 - Valid Calls, ident on lhs and syn on rhs
+procedure p, q;
+Select p such that Calls("procedures",p)
+a,g,c,e
+5000

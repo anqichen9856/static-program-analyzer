@@ -1,0 +1,25 @@
+1 - Valid multiclauses
+variable v; assign a; while w;
+Select v such that Uses(a,v) and Next*(w,a)
+x,dist,ro,rd,depth,count,y
+5000
+2 - Valid multiclauses
+variable v; assign a; while w;
+Select v such that Uses(a,v) and Next(w,a)
+x
+5000
+3 - Valid multiclauses
+assign a; read re;
+Select a such that Affects(a,a) and Next*(re,a)
+14,21
+5000
+4 - Valid multiclauses
+assign a,a1; while w;
+Select <a,a1> such that Parent*(w,a1) and Affects*(a,a1)
+4 9,5 9,14 14,15 20,16 20,15 21,16 21,21 21,13 9,21 20
+5000
+5 - Valid multiclauses
+assign a,a1; while w;
+Select <a,a1> such that Parent(w,a1) and Affects*(a,a1)
+15 20,16 20,15 21,16 21,21 21,13 9,21 20,14 14,4 9,5 9
+5000

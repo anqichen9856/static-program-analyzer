@@ -1,0 +1,230 @@
+1 - selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4; assign a1,a2;
+Select s1 such that Affects(s1,s2) and Affects(s2,s3)
+2, 11, 16, 60, 85, 110, 170, 172
+5000
+2 - selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4; assign a1,a2;
+Select s1 such that Affects(s1,s2) and Affects(s2,s2)
+11, 16, 60, 85, 110, 170, 172
+5000
+3 - selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4; assign a1,a2;
+Select s2 such that Affects(s1,s2) and Affects(s2,s3)
+8, 16, 60, 85, 110, 172
+5000
+4 - selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4; assign a1,a2;
+Select s3 such that Affects(s1,s2) and Affects(s2,s3)
+23,16, 60, 85, 110, 172
+5000
+5 - selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4; assign a1,a2;
+Select s1 such that Affects*(s1,s2) and Affects*(s2,s3)
+2,11, 16, 60, 85, 110, 170, 172
+5000
+6 - selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4; assign a1,a2;
+Select s2 such that Affects*(s1,s2) and Affects*(s2,s3)
+8, 16, 60, 85, 110, 172
+5000
+7 - selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4; assign a1,a2;
+Select s3 such that Affects*(s1,s2) and Affects*(s2,s3)
+16, 23, 60, 85, 110, 172
+5000
+8 - selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5; assign a1,a2;
+Select s1 such that Affects(s1,s2) and Affects(s2,s3) and Affects*(s4,s5)
+2,11, 16, 60, 85, 110, 170, 172
+5000
+9 -  selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5; assign a1,a2;
+Select s1 such that Affects*(s1,s2) and Affects*(s2,s3) and Affects*(s4,s5)
+2,11, 16, 60, 85, 110, 170, 172
+5000
+10 -  selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4; assign a1,a2;
+Select s1 such that Affects(s1,s2) and Affects(s2,s3) and Affects*(s4,a1)
+2,11, 16, 60, 85, 110, 170, 172
+5000
+11 -  selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5; assign a1,a2;
+Select s1 such that Affects(s1,s2) and Affects(s2,s3) and Affects*(s4,s5) and Affects*(a1,a2)
+2,11, 16, 60, 85, 110, 170, 172
+5000
+12 -  selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5; assign a1,a2;
+Select s2 such that Affects(s1,s2) and Affects(s2,s3) and Affects*(s4,s5) and Affects*(a1,a2)
+8, 16, 60, 85, 110, 172
+5000
+13 -  selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5; assign a1,a2;
+Select s2 such that Affects(s1,s2) and Affects*(s2,s3) and Affects*(s4,s5) and Affects*(a1,a2)
+8, 16, 60, 85, 110, 172
+5000
+14 -  selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5; assign a1,a2;
+Select s3 such that Affects(s1,s2) and Affects(s2,s3) and Affects*(s4,s5) and Affects*(a1,a2)
+16, 23, 60, 85, 110, 172
+5000
+15 -  non-selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5; assign a1,a2;
+Select BOOLEAN such that Affects(s1,s2) and Affects(s2,s3) and Affects*(s4,s5) and Affects*(a1,a2)
+TRUE
+5000
+16 - non-selected 1 connected syn, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14; procedure p1,p2,p3; if ifs1; while w1,w2,w3; variable v; prog_line n1,pl2,n3,n4,n5;
+Select n1 such that Calls*(p1,p2) and Uses(s1,v) such that Affects(s2,s3) such that Follows(s4,s5) and Parent(ifs1,s6) and Parent(w1,s7) such that Parent*(s8,s9) such that Parent*(w2,s10) and Affects(s11,s12) and Calls*("sing",p2)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,
+5000
+17 - non-selected 2 connected syn, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14; procedure p1,p2,p3; if ifs1; while w1,w2,w3; variable v; prog_line n1,pl2,n3,n4,n5;
+Select n1 such that Calls*(p1,p2) and Uses(s1,v) such that Affects(s2,s3) such that Follows(s4,s5) and Parent(ifs1,s5) and Parent(w1,s7) such that Parent*(s8,s9) such that Parent*(w2,s10) and Affects(s5,s12) and Calls*("sing",p2)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,
+5000
+18 -  non-selected 2 connected syn, same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14; procedure p1,p2,p3; if ifs1; while w1,w2,w3; variable v; prog_line n1,pl2,n3,n4,n5;
+Select s5 such that Calls*(p1,p2) and Uses(s1,v) such that Affects(s2,s3) such that Follows(s4,s5) and Parent(ifs1,s5) and Parent(w1,s7) such that Parent*(s8,s9) such that Parent*(w2,s10) and Affects(s5,s12) and Calls*("sing",p2)
+18,175
+5000
+19 -  selected 2 connected synonym, same group of clauses with connected synonyms
+procedure p, p1;
+Select p such that Calls*("KPOP", p) and Calls*("groups", p1) and Calls*(p, p1)
+groups,BlackPink,Twice,dance,sing
+5000
+20 -  selected 2 connected synonym, same group of clauses with connected synonyms
+procedure p, p1;
+Select p such that Calls*("groups", p1) and Calls*(p, p1)
+BlackPink,KPOP,Twice,dance,groups,sing
+5000
+21 -  selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s, s1; assign a;
+Select s such that Next*(s, s1) and Next*(s1, a)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,52,53,54,55,56,59,60,61,62,65,66,67,68,69,70,71,72,73,74,75,76,77,82,83,84,85,86,87,88,89,90,91,92,98,99,100,101,102,103,104,105,106,107,108,109,110,112,113,120,121,122,123,124,125,126,127,128,129,130,131,132,135,136,137,138,139,140,141,143,147,148,149,156,157,158,159,160,161,162,163,168,169,170,171,172,173,174,175
+5000
+22 -  selected 1 connected synonym, same group of clauses with connected synonyms
+stmt s, s1; assign a;
+Select s1 such that Next*(s, s1) and Next*(s1, a)
+2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,53,54,55,56,57,59,60,61,62,65,66,67,68,69,70,71,72,74,75,76,77,78,82,83,84,85,86,87,88,89,91,92,93,95,99,100,101,102,103,104,105,106,107,108,109,110,113,116,121,122,123,124,125,126,127,128,129,130,131,132,133,135,136,137,138,139,140,141,142,143,144,145,148,149,150,157,158,159,160,161,162,163,169,170,171,172,173,174,175,176
+5000
+23 -  select connected syn v, same group of clauses with connected synonyms
+stmt s1, s2; assign a; while w; if ifs; procedure p; variable v; read r;
+Select v such that Calls(p, "dance") and Modifies(a, v) and Uses(w, v)
+a,b,boolean,c,count,d,ddudu,end,g,group,groups,h,i,insideWhile,k,merchandise,money,nested,p1,p3,performance,role,ticket,true,while,x,y
+5000
+24 -  select connected syn w, same group of clauses with connected synonyms
+stmt s1, s2; assign a; while w; if ifs; procedure p; variable v; read r;
+Select w such that Calls(p, "dance") and Modifies(a, v) and Uses(w, v) and Parent(w, ifs)
+12,101,159
+5000
+25 -  select connected syn w, same group of clauses with connected synonyms
+stmt s1, s2; assign a; while w; if ifs; procedure p; variable v; read r;
+Select w such that Calls(p, "dance") and Modifies(a, v) and Uses(w, v) and Parent(w, ifs) and Follows(w, s1)
+101
+5000
+26 -  select connected syn s1, same group of clauses with connected synonyms
+stmt s1, s2; assign a; while w; if ifs; procedure p; variable v; read r;
+Select s1 such that Calls(p, "dance") and Modifies(a, v) and Uses(w, v) and Parent(w, ifs) and Follows(w, s1)
+111
+5000
+27 -   select connected syn s1, no result, same group of clauses with connected synonyms
+stmt s1, s2; assign a; while w; if ifs; procedure p; variable v; read r;
+Select s1 such that Calls(p, "dance") and Modifies(a, v) and Uses(w, v) and Parent(w, ifs) and Follows(w, s1) and Next*(s1, s2)
+
+5000
+28 - select multiple connected syn, same group of clauses with connected synonyms
+stmt s1, s2; assign a; while w; if ifs; procedure p; variable v; read r;
+Select <w,s1> such that Calls(p, "dance") and Modifies(a, v) and Uses(w, v) and Parent(w, ifs) and Next(w, s1)
+12 13,101 102,159 160,159 166,12 10,101 111
+5000
+29 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4;
+Select BOOLEAN such that Follows(s1,s2) and Follows(s2,s3)
+TRUE
+5000
+30 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4;
+Select BOOLEAN such that Follows(s1,s2) and Follows(s2,s3) and Follows(s3,s4)
+TRUE
+5000
+31 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5;
+Select BOOLEAN such that Follows(s1,s2) and Follows(s2,s3) and Follows(s3,s4) and Follows(s4,s5)
+TRUE
+5000
+32 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4;
+Select BOOLEAN such that Follows*(s1,s2) and Follows*(s2,s3)
+TRUE
+5000
+33 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4;
+Select BOOLEAN such that Follows*(s1,s2) and Follows*(s2,s3) and Follows*(s3,s4)
+TRUE
+5000
+34 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5;
+Select BOOLEAN such that Parent(s1,s2) and Parent(s2,s3) and Parent(s3,s4) and Parent(s4,s5)
+TRUE
+5000
+35 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5;
+Select BOOLEAN such that Parent*(s1,s2) and Parent*(s2,s3) and Parent*(s3,s4) and Parent*(s4,s5)
+TRUE
+5000
+36 - same group of clauses with connected synonyms
+procedure s1,s2,s3,s4,s5;
+Select BOOLEAN such that Calls(s1,s2) and Calls(s2,s3) and Calls(s3,s4) and Calls(s4,s5)
+TRUE
+5000
+37 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5;
+Select BOOLEAN such that Affects(s1,s2) and Affects(s2,s3) and Affects(s3,s4) and Affects(s4,s5)
+TRUE
+5000
+38 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5;
+Select BOOLEAN such that Affects*(s1,s2) and Affects*(s2,s3) and Affects*(s3,s4) and Affects*(s4,s5)
+TRUE
+5000
+39 - same group of clauses with connected synonyms
+stmt s1, s2; assign a; while w; if ifs; procedure p; variable v; read r;
+Select <p,a,v,w,ifs,s1> such that Calls(p, "dance") and Modifies(a, v) and Uses(w, v) and Parent(w, ifs) and Next(w, s1)
+groups 104 performance 101 103 102,groups 104 performance 101 103 111,groups 11 h 12 14 10,groups 11 h 12 14 13,groups 110 count 101 103 102,groups 110 count 101 103 111,groups 112 groups 101 103 102,groups 112 groups 101 103 111,groups 116 group 101 103 102,groups 116 group 101 103 111,groups 117 group 101 103 102,groups 117 group 101 103 111,groups 124 ddudu 101 103 102,groups 124 ddudu 101 103 111,groups 134 performance 101 103 102,groups 134 performance 101 103 111,groups 142 money 101 103 102,groups 142 money 101 103 111,groups 158 role 101 103 102,groups 158 role 101 103 111,groups 158 role 159 161 160,groups 158 role 159 161 166,groups 16 h 12 14 10,groups 16 h 12 14 13,groups 160 role 101 103 102,groups 160 role 101 103 111,groups 160 role 159 161 160,groups 160 role 159 161 166,groups 162 role 101 103 102,groups 162 role 101 103 111,groups 162 role 159 161 160,groups 162 role 159 161 166,groups 163 role 101 103 102,groups 163 role 101 103 111,groups 163 role 159 161 160,groups 163 role 159 161 166,groups 17 c 101 103 102,groups 17 c 101 103 111,groups 170 ticket 101 103 102,groups 170 ticket 101 103 111,groups 172 merchandise 101 103 102,groups 172 merchandise 101 103 111,groups 175 a 101 103 102,groups 175 a 101 103 111,groups 175 a 12 14 10,groups 175 a 12 14 13,groups 176 b 101 103 102,groups 176 b 101 103 111,groups 177 c 101 103 102,groups 177 c 101 103 111,groups 2 b 101 103 102,groups 2 b 101 103 111,groups 22 b 101 103 102,groups 22 b 101 103 111,groups 23 c 101 103 102,groups 23 c 101 103 111,groups 69 end 101 103 102,groups 69 end 101 103 111,groups 72 end 101 103 102,groups 72 end 101 103 111,groups 73 a 101 103 102,groups 73 a 101 103 111,groups 73 a 12 14 10,groups 73 a 12 14 13,groups 79 h 12 14 10,groups 79 h 12 14 13,groups 8 a 101 103 102,groups 8 a 101 103 111,groups 8 a 12 14 10,groups 8 a 12 14 13,groups 9 g 12 14 10,groups 9 g 12 14 13,groups 95 a 101 103 102,groups 95 a 101 103 111,groups 95 a 12 14 10,groups 95 a 12 14 13,groups 96 c 101 103 102,groups 96 c 101 103 111
+5000
+40 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5;
+Select BOOLEAN such that Follows*(s1,s2) and Follows*(s2,s3) and Follows*(s3,s4) and Follows*(s4,s5)
+TRUE
+5000
+41 - same group of clauses with connected synonyms
+procedure s1,s2,s3,s4,s5;
+Select BOOLEAN such that Calls*(s1,s2) and Calls*(s2,s3) and Calls*(s3,s4) and Calls*(s4,s5)
+TRUE
+5000
+42 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5;
+Select BOOLEAN such that Next(s1,s2) and Next(s2,s3) and Next(s3,s4) and Next(s4,s5)
+TRUE
+5000
+43 - same group of clauses with connected synonyms
+stmt s1,s2,s3,s4,s5;
+Select BOOLEAN such that Next*(s1,s2) and Next*(s2,s3) and Next*(s3,s4) and Next*(s4,s5)
+TRUE
+5000
+44 - same group of clauses with connected synonyms
+stmt s1, s2; assign a; while w; if ifs; procedure p; variable v; read r;
+Select <s1,s2> such that Calls(p, "dance") and Modifies(a, v) and Uses(w, v) and Parent(w, ifs) and Next(w, s1) and Follows(s1, s2)
+13 14,102 103,160 161,166 167,10 18
+5000
+45 - same group of clauses with connected synonyms
+stmt s1, s2; assign a; while w; if ifs; procedure p; variable v; read r;
+Select <w,s1> such that Calls(p, "dance") and Modifies(a, v) and Uses(w, v) and Parent(w, ifs) and Next*(w, s1)
+12 13,12 14,12 15,12 16,12 17,12 10,12 11,12 12,12 18,12 19,12 20,12 21,12 22,12 23,101 101,101 102,101 103,101 104,101 105,101 106,101 107,101 108,101 109,101 110,101 111,159 159,159 160,159 161,159 162,159 163,159 166,159 167
+5000
+46 - same group of clauses with connected synonyms
+stmt s1, s2; assign a; while w; if ifs; procedure p; variable v; read r;
+Select <s1,s2> such that Calls(p, "dance") and Modifies(a, v) and Uses(w, v) and Parent(w, ifs) and Next*(w, s1) and Follows(s1, s2)
+13 14,14 17,10 18,11 12,18 19,20 21,21 22,22 23,101 111,102 103,103 108,104 105,105 106,108 109,109 110,160 161,166 167
+5000

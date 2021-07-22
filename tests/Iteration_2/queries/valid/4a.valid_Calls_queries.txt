@@ -1,0 +1,290 @@
+1 - Valid Calls, args on both args
+procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls(p,q)
+KPOP, groups, BlackPink, Twice, dance, sing
+5000
+2 - Valid Calls, args on both args
+procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select q.procName such that Calls(p,q)
+groups, BlackPink, Twice, dance, sing, performance
+5000
+3 - Valid Calls, args on both args
+procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p.procName, q.procName> such that Calls(p,q)
+KPOP groups, KPOP performance, KPOP BlackPink, KPOP Twice, groups dance, groups sing, BlackPink groups, Twice performance, dance sing, sing Twice, sing performance
+5000
+4 - Valid Calls, syn on lhs and wildcard on rhs
+procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p.procName, q.procName> such that Calls(p,_)
+KPOP KPOP,KPOP groups,KPOP BlackPink,KPOP Twice,KPOP dance,KPOP sing,KPOP performance,groups KPOP,groups groups,groups BlackPink,groups Twice,groups dance,groups sing,groups performance,BlackPink KPOP,BlackPink groups,BlackPink BlackPink,BlackPink Twice,BlackPink dance,BlackPink sing,BlackPink performance,Twice KPOP,Twice groups,Twice BlackPink,Twice Twice,Twice dance,Twice sing,Twice performance,dance KPOP,dance groups,dance BlackPink,dance Twice,dance dance,dance sing,dance performance,sing KPOP,sing groups,sing BlackPink,sing Twice,sing dance,sing sing,sing performance
+5000
+5 - Valid Calls, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls(p,_)
+TRUE
+5000
+6 - Valid Calls, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls(p,_)
+KPOP, groups, BlackPink, Twice, dance, sing
+5000
+7 - Valid Calls, syn on lhs and IDENT on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls(p,"sing")
+groups, dance
+5000
+8 - Valid Calls, syn on lhs and IDENT on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls(p,"performance")
+KPOP, Twice, sing
+5000
+9 - Valid Calls, syn on lhs and IDENT on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls(p,"twice")
+
+5000
+10 - Valid Calls, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls(_,_)
+KPOP, groups, BlackPink, Twice, dance, sing, performance
+5000
+11- Valid Calls, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Calls(_,_)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80
+5000
+12- Valid Calls, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p.procName> such that Calls(_,p)
+groups, performance, BlackPink, Twice, dance, sing
+5000
+13- Valid Calls, wildcard on lhs and IDENT on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls(_,"performance")
+TRUE
+5000
+14- Valid Calls, wildcard on lhs and IDENT on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a.stmt#> such that Calls(_,"sing")
+1,7,13,15,19,20,23,27,28,29,37,39,45,48,49,50,52,54,55,61,63,65,66,67,73,74,75,76,77,78,79,80
+5000
+15- Valid Calls, IDENT on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a.stmt# such that Calls("performance","sing")
+
+5000
+16- Valid Calls, IDENT on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v.varName such that Calls("dance","sing")
+kpop, love, in, korea, performance, money, die, sing, dance,count, end, groups, blackpink,twice,group, BTS,playlist,songlist,category,ddudu,remix,kill,this,others,song,not,edm,category2,cute,Icecream,cuteSong,ratings,Twice,happiness,boys,happy,youtube,crazy,level,very,mood,complex,beginner,intermediate,advanced,pro,noob,steps,a,b,c,gender,boy,key,c4,role,bass,tenor,alto,good,sop,female,everything,you,rich,ticket,drinks,coke,merchandise,gift,dream,crushed,fan,quit
+5000
+17- Valid Calls, IDENT on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls("kpop","sing")
+FALSE
+5000
+18- Valid Calls, IDENT on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Calls("groups","dance")
+1000,1,2,0,10,10000000000000000000000000000,1000000,2000,11,100,200,300,400
+5000
+19- Valid Calls, IDENT on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Calls("groups", p)
+dance, sing
+5000
+20- Valid Calls, IDENT on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Calls("KPOP", p)
+groups,Twice,BlackPink,performance
+5000
+21- Valid Calls, IDENT on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Calls("Twice", p)
+performance
+5000
+22- Valid Calls, IDENT on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls("BlackPink", p)
+groups
+5000
+23- Valid Calls, IDENT on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls("dance", p)
+sing
+5000
+24- Valid Calls, IDENT on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p.procName> such that Calls("sing", p)
+Twice,performance
+5000
+25- Valid Calls, IDENT on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Calls("performance", p)
+
+5000
+26- Valid Calls, IDENT on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.varName such that Calls("KPOP", _)
+kpop,sing,dance,songlist,Icecream,ratings,Twice,youtube
+5000
+27- Valid Calls, IDENT on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp.stmt# such that Calls("groups", _)
+3,5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+28- Valid Calls, IDENT on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w.stmt# such that Calls("BlackPink", _)
+4,38,60,62,72
+5000
+29- Valid Calls*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls*(p,_)
+TRUE
+5000
+30- Valid Calls*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Calls*(p,_)
+KPOP, groups, Twice, BlackPink, dance, sing
+5000
+31- Valid Calls*, syn on lhs and IDENT on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Calls*(p,    "performance")
+KPOP,groups,Twice,BlackPink,dance,sing
+5000
+32- Valid Calls*, syn on lhs and IDENT on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*(p,    "sing")
+dance,groups,KPOP,BlackPink
+5000
+33- Valid Calls*, syn on lhs and IDENT on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*(p,    "dance")
+groups,KPOP,BlackPink
+5000
+34- Valid Calls*, syn on lhs and IDENT on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*(p,    "BlackPink")
+KPOP
+5000
+35- Valid Calls*, syn on lhs and IDENT on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*(p,    "Twice")
+KPOP, sing, dance, groups, BlackPink
+5000
+36- Valid Calls*, syn on lhs and IDENT on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select          p.procName such that Calls*(p,"groups")
+KPOP, BlackPink
+5000
+37- Valid Calls*, syn on lhs and IDENT on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*(p,"KPOP")
+
+5000
+38- Valid Calls*, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs.stmt# such that Calls*(_,_)
+6,16,25,26,30,42,43,51,59,64,71
+5000
+39- Valid Calls*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*(_,p)
+groups,Twice,BlackPink, dance, sing , performance
+5000
+40- Valid Calls*, IDENT on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Calls*("KPOP", "sing")
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80
+5000
+41- Valid Calls*, IDENT on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p.procName, c.value> such that Calls*("groups", "performance")
+KPOP 1000,KPOP 1,KPOP 2,KPOP 0,KPOP 10,KPOP 10000000000000000000000000000,KPOP 1000000,KPOP 2000,KPOP 11,KPOP 100,KPOP 200,KPOP 300,KPOP 400,groups 1000,groups 1,groups 2,groups 0,groups 10,groups 10000000000000000000000000000,groups 1000000,groups 2000,groups 11,groups 100,groups 200,groups 300,groups 400,Twice 1000,Twice 1,Twice 2,Twice 0,Twice 10,Twice 10000000000000000000000000000,Twice 1000000,Twice 2000,Twice 11,Twice 100,Twice 200,Twice 300,Twice 400, BlackPink 1000,BlackPink 1,BlackPink 2,BlackPink 0,BlackPink 10,BlackPink 10000000000000000000000000000,BlackPink 1000000,BlackPink 2000,BlackPink 11,BlackPink 100,BlackPink 200,BlackPink 300,BlackPink 400,dance 1000,dance 1,dance 2,dance 0,dance 10,dance 10000000000000000000000000000,dance 1000000,dance 2000,dance 11,dance 100,dance 200,dance 300,dance 400,sing 1000,sing 1,sing 2,sing 0,sing 10,sing 10000000000000000000000000000,sing 1000000,sing 2000,sing 11,sing 100,sing 200,sing 300,sing 400,performance 1000,performance 1,performance 2,performance 0,performance 10,performance 10000000000000000000000000000,performance 1000000,performance 2000,performance 11,performance 100,performance 200,performance 300,performance 400
+5000
+42- Valid Calls*, IDENT on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr.varName such that Calls*("dance", "Twice")
+die, end,blackpink,twice,cuteSong,happiness,money
+5000
+43- Valid Calls*, IDENT on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.stmt# such that Calls*("performance", "sing")
+
+5000
+44- Valid Calls*, IDENT on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls*("groups", "BlackPink")
+FALSE
+5000
+45- Valid Calls*, IDENT on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*("KPOP", p)
+groups,Twice,BlackPink,performance,dance, sing
+5000
+46- Valid Calls*, IDENT on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*("groups", p)
+dance, sing,Twice,performance
+5000
+47- Valid Calls*, IDENT on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*("Twice", p)
+performance
+5000
+48- Valid Calls*, IDENT on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*("BlackPink", p)
+groups,dance, sing,Twice, performance
+5000
+49- Valid Calls*, IDENT on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*("dance", p)
+sing, Twice, performance
+5000
+50- Valid Calls*, IDENT on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*("sing", p)
+Twice, performance
+5000
+51- Valid Calls*, IDENT on lhs and wildcard on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r.varName,pr.varName> such that Calls*("KPOP", _)
+kpop die,sing die,dance die,songlist die,Icecream die,ratings die,Twice die,youtube die, kpop end,sing end,dance end,songlist end,Icecream end,ratings end,Twice end,youtube end,kpop blackpink,sing blackpink,dance blackpink,songlist blackpink,Icecream blackpink,ratings blackpink,Twice blackpink,youtube blackpink,kpop twice,sing twice,dance twice,songlist twice,Icecream twice,ratings twice,Twice twice,youtube twice,kpop cuteSong,sing cuteSong,dance cuteSong,songlist cuteSong,Icecream cuteSong,ratings cuteSong,Twice cuteSong,youtube cuteSong,kpop happiness,sing happiness,dance happiness,songlist happiness,Icecream happiness,ratings happiness,Twice happiness,youtube happiness,kpop money,sing money,dance money,songlist money,Icecream money,ratings money,Twice money,youtube money,
+5000
+52- Valid Calls*, IDENT on lhs and wildcard on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <w.stmt#,ifs.stmt#> such that Calls*("groups", _)
+4 6,4 16,4 25,4 26,4 30,4 42,4 43,4 51,4 59,4 64,4 71,38 6,38 16,38 25,38 26,38 30,38 42,38 43,38 51,38 59,38 64,38 71,60 6,60 16,60 25,60 26,60 30,60 42,60 43,60 51,60 59,60 64,60 71,62 6,62 16,62 25,62 26,62 30,62 42,62 43,62 51,62 59,62 64,62 71,72 6,72 16,72 25,72 26,72 30,72 42,72 43,72 51,72 59,72 64,72 71
+5000
+53- Valid Calls*, IDENT on lhs and wildcard on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls*("Twice", _)
+TRUE
+5000
+54- Valid Calls*, IDENT on lhs and wildcard on RHS
+procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p.procName,q.procName> such that Calls*("BlackPink", _)
+KPOP KPOP, groups KPOP, Twice KPOP, BlackPink KPOP, dance KPOP, sing KPOP, performance KPOP,KPOP groups, groups groups, Twice groups, BlackPink groups, dance groups, sing groups, performance groups,KPOP Twice, groups Twice, Twice Twice, BlackPink Twice, dance Twice, sing Twice, performance Twice,KPOP BlackPink, groups BlackPink, Twice BlackPink, BlackPink BlackPink, dance BlackPink, sing BlackPink, performance BlackPink,KPOP dance, groups dance, Twice dance, BlackPink dance, dance dance, sing dance, performance dance,KPOP sing, groups sing, Twice sing, BlackPink sing, dance sing, sing sing, performance sing,KPOP performance, groups performance, Twice performance, BlackPink performance, dance performance, sing performance, performance performance,
+5000
+55- Valid Calls*, IDENT on lhs and wildcard on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p.procName, p.procName> such that Calls*("dance", _)
+KPOP KPOP, groups groups, Twice Twice, BlackPink BlackPink, dance dance, sing sing, performance performance
+5000
+56- Valid Calls*, IDENT on lhs and wildcard on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s> such that Calls*("sing", _)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80
+5000
+57- Valid Calls*, IDENT on lhs and wildcard on RHS, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*("performance", _)
+
+5000
+58 - Valid Calls*, args on both args
+procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p.procName, q.procName> such that Calls*(p,q)
+KPOP groups, KPOP Twice, KPOP BlackPink, KPOP performance, KPOP dance, KPOP sing,groups dance, groups sing, groups Twice,groups performance,Twice performance,BlackPink groups, BlackPink dance, BlackPink sing, BlackPink Twice, BlackPink performance,dance sing, dance Twice, dance performance,sing Twice, sing performance
+5000

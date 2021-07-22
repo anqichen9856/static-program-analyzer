@@ -1,0 +1,435 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>22.816000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on both args, semantically invalid">1</id><querystr><![CDATA[procedure p; constant c; Select p such that Modifies(p,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.483000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on both args, semantically invalid">2</id><querystr><![CDATA[procedure p; constant c; Select p such that Modifies(p,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.005000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on both args, syntactically valid but semantically invalid">3</id><querystr><![CDATA[call cp; procedure p; Select p such that Modifies(cp,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.948000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on both args, syntactically valid but semantically invalid">4</id><querystr><![CDATA[procedure p, q; Select p such that Modifies(p,q)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.174000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid ModifiesP, wildcard on lhs and syn on rhs, syntactically valid but semantically invalid">5</id><querystr><![CDATA[variable v; Select p such that Modifies(_,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.134000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">6</id><querystr><![CDATA[assign a; procedure p; Select p such that Modifies(p,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.646000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid ModifiesP, wildcard on lhs and syn on rhs, syntactically valid but semantically invalid">7</id><querystr><![CDATA[variable v; Select v such that Modifies(_,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.999000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">8</id><querystr><![CDATA[constant c; procedure p; Select <p,c> such that Modifies(p,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.940000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">9</id><querystr><![CDATA[procedure p; while w; Select <p,w> such that Modifies(p,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.181000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">10</id><querystr><![CDATA[procedure p; if ifs; Select <p,ifs> such that Modifies(p,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.113000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">11</id><querystr><![CDATA[procedure p; read r; Select BOOLEAN such that Modifies(p,r)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.292000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">12</id><querystr><![CDATA[procedure p; print pr; Select BOOLEAN such that Modifies(p,pr)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.040000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">13</id><querystr><![CDATA[procedure p; stmt s; Select BOOLEAN such that Modifies(p,s)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.124000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">14</id><querystr><![CDATA[procedure p; prog_line n; Select BOOLEAN such that Modifies(p,n)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.059000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">15</id><querystr><![CDATA[call cp; procedure p; Select BOOLEAN such that Modifies(cp,p)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.834000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">16</id><querystr><![CDATA[constant c; call cp; Select BOOLEAN such that Modifies(cp,c)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.199000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">17</id><querystr><![CDATA[call cp; while w; Select BOOLEAN such that Modifies(cp,w)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.738000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">18</id><querystr><![CDATA[call cp; if ifs; Select BOOLEAN such that Modifies(cp,ifs)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.444000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">19</id><querystr><![CDATA[call cp; read r; Select BOOLEAN such that Modifies(cp,r)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.903000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">20</id><querystr><![CDATA[call cp; print pr; Select BOOLEAN such that Modifies(cp,pr)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.852000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">21</id><querystr><![CDATA[call cp; stmt s; Select BOOLEAN such that Modifies(cp,s)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.186000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">22</id><querystr><![CDATA[call cp; prog_line n; Select BOOLEAN such that Modifies(cp,n)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.108000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP,IDENT on both args, syntactically invalid as IDENT cannot be INTEGER">23</id><querystr><![CDATA[ Select BOOLEAN such that Modifies("KPOP","1000")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.386000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP,IDENT on lhs and syn on rhs, syntactically invalid">24</id><querystr><![CDATA[variable v; Select v such that Modifies("groups",v.varName)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.083000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP,IDENT on lhs and syn on rhs, syntactically invalid">25</id><querystr><![CDATA[variable v; Select BOOLEAN such that Modifies("groups",v.varName)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.143000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP,IDENT on lhs and syn on rhs, semantically invalid">26</id><querystr><![CDATA[constant c; Select v such that Modifies("groups",c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.838000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, IDENT on lhs and syn on rhs, semantically invalid">27</id><querystr><![CDATA[assign a; Select v such that Modifies("groups",a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.785000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, IDENT on lhs and INTEGER on rhs, syntactically invalid">28</id><querystr><![CDATA[variable v; Select v such that Modifies("groups",15)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>3.996000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP,IDENT on lhs and INTEGER on rhs, syntactically invalid">29</id><querystr><![CDATA[variable v; Select BOOLEAN such that Modifies("BlackPink",28)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.152000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on both args, syntactically invalid">30</id><querystr><![CDATA[call cp; procedure p; Select BOOLEAN such that Modifies(cp,1)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.374000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid ModifiesP, syn on both args, syntactically invalid">31</id><querystr><![CDATA[call cp; procedure p; Select BOOLEAN such that Modifies(p,1)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.441000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on both args, semantically invalid">32</id><querystr><![CDATA[procedure p; constant c; Select p such that Uses(p,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.705000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on both args, syntactically valid but semantically invalid">33</id><querystr><![CDATA[call cp; procedure p; Select BOOLEAN such that Uses(cp,p)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.543000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on both args, syntactically valid but semantically invalid">34</id><querystr><![CDATA[procedure p, q; Select BOOLEAN such that Uses(p,q)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.760000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">35</id><querystr><![CDATA[assign a; procedure p; Select BOOLEAN such that Uses(p,a)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.743000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">36</id><querystr><![CDATA[constant c; procedure p; Select BOOLEAN such that Uses(p,c)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.018000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">37</id><querystr><![CDATA[procedure p; while w; Select BOOLEAN such that Uses(p,w)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.459000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">38</id><querystr><![CDATA[procedure p; if ifs; Select BOOLEAN such that Uses(p,ifs)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.061000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">39</id><querystr><![CDATA[procedure p; read r; Select BOOLEAN such that Uses(p,r)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.535000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">40</id><querystr><![CDATA[procedure p; print pr; Select BOOLEAN such that Uses(p,pr)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.776000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">41</id><querystr><![CDATA[procedure p; stmt s; Select BOOLEAN such that Uses(p,s)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.603000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">42</id><querystr><![CDATA[procedure p; prog_line n; Select BOOLEAN such that Uses(p,n)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.453000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">43</id><querystr><![CDATA[call cp; procedure p; Select BOOLEAN such that Uses(cp,p)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.745000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">44</id><querystr><![CDATA[constant c; call cp; Select BOOLEAN such that Uses(cp,c)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.719000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">45</id><querystr><![CDATA[call cp; while w; Select BOOLEAN such that Uses(cp,w)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.789000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">46</id><querystr><![CDATA[call cp; if ifs; Select BOOLEAN such that Uses(cp,ifs)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.852000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">47</id><querystr><![CDATA[call cp; read r; Select BOOLEAN such that Uses(cp,r)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.928000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">48</id><querystr><![CDATA[call cp; print pr; Select BOOLEAN such that Uses(cp,pr)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.803000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">49</id><querystr><![CDATA[call cp; stmt s; Select BOOLEAN such that Uses(cp,s)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.948000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid">50</id><querystr><![CDATA[call cp; prog_line n; Select BOOLEAN such that Uses(cp,n)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.029000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid UsesP, wildcard on lhs and syn on rhs">51</id><querystr><![CDATA[variable v; Select BOOLEAN such that Uses(_,v)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.105000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, IDENT on lhs and syn on rhs, syntactically valid but semantically invalid">52</id><querystr><![CDATA[procedure p; Select BOOLEAN such that Uses("performance",p)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.455000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid">53</id><querystr><![CDATA[call cp; Select BOOLEAN such that Uses("performance",cp)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.599000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid">54</id><querystr><![CDATA[stmt s; Select BOOLEAN such that Uses("performance",s)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.140000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid">55</id><querystr><![CDATA[constant c; Select BOOLEAN such that Uses("performance",c)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.459000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid">56</id><querystr><![CDATA[while w; Select BOOLEAN such that Uses("performance",w)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.099000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid">57</id><querystr><![CDATA[if ifs; Select BOOLEAN such that Uses("dance",ifs)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.781000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid">58</id><querystr><![CDATA[read r; Select BOOLEAN such that Uses("dance",r)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.084000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid">59</id><querystr><![CDATA[print pr; Select BOOLEAN such that Uses("dance",pr)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.742000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid">60</id><querystr><![CDATA[assign a; Select BOOLEAN such that Uses("sing",a)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.098000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid">61</id><querystr><![CDATA[prog_line n; Select BOOLEAN such that Uses("Twice",n)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.999000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

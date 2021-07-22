@@ -1,0 +1,275 @@
+1 - Valid With, IDENT = IDENT
+assign a;
+Select a with "a" = "a"
+1,6,7,12,21,22,23,24
+5000
+2 - Valid With, IDENT = IDENT, no result
+
+Select BOOLEAN with "else" = "two"
+FALSE
+5000
+3 - Valid With, IDENT = IDENT
+
+Select BOOLEAN with "else" = "else"
+TRUE
+5000
+4 - Valid With, INTEGER = INTEGER
+stmt s;
+Select s.stmt# with 1 = 1
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24
+5000
+5 - Valid With, INTEGER = INTEGER
+stmt s;
+Select s.stmt# with 1 = 2
+
+5000
+6 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s;
+Select p.procName with p.procName = p.procName
+p1,p2,p3
+5000
+7 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s;
+Select v.varName with v.varName = v.varName
+a,b,c,d,var1,e,h,p,p1,p2,p3,g,f,i,j,k,else
+5000
+8 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s;
+Select c.value with c.value = c.value
+2,10,0,20,1,3
+5000
+9 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s;
+Select s.stmt# with s.stmt# = s.stmt#
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24
+5000
+10 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s;
+Select v.varName with p.procName = v.varName
+p1,p2,p3
+5000
+11 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s;
+Select s.stmt# with c.value = s.stmt#
+2,10,20,1,3
+5000
+12 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; assign a;
+Select s.stmt# with s.stmt# = a.stmt#
+1,6,7,12,21,22,23,24
+5000
+13 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.stmt# with r.stmt# = r.stmt#
+2,13,14,20
+5000
+14 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr.stmt# with pr.stmt# = pr.stmt#
+8,15,17
+5000
+15 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp.stmt# with cp.stmt# = cp.stmt#
+3,5,10,16
+5000
+16 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w.stmt# with w.stmt# = w.stmt#
+9,11
+5000
+17 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs.stmt# with ifs.stmt# = ifs.stmt#
+4,18,19
+5000
+18 - Valid With, attrRef = attrRef
+assign a, a1;
+Select a.stmt# with a.stmt# = a1.stmt#
+1,6,7,12,21,22,23,24
+5000
+19 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.varName with r.varName = r.varName
+var1,a,b,p3
+5000
+20 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr.varName with pr.varName = pr.varName
+g,c,p1
+5000
+21 - Valid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp.procName with cp.procName = cp.procName
+p2,p3
+5000
+22 - Valid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n with n = n
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24
+5000
+23 - Valid With, INTEGER = syn / syn = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with n = 0
+FALSE
+5000
+24 - Valid With, INTEGER = syn / syn = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with n = 25
+FALSE
+5000
+25 - Valid With, INTEGER = syn / syn = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with n = 24
+TRUE
+5000
+26 - Valid With, IDENT = attrRef / attrRef = IDENT
+procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with p.procName = "p3"
+TRUE
+5000
+27 - Valid With, IDENT = attrRef / attrRef = IDENT
+procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p,q> with p.procName = "p2"
+p2 p1, p2 p2, p2 p3
+5000
+28 - Valid With, IDENT = attrRef / attrRef = IDENT
+procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p.procName,q.procName> with  "p3" = p.procName
+p3 p2, p3 p3, p3 p1
+5000
+29 - Valid With, IDENT = attrRef / attrRef = IDENT
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with  v.varName = "var1"
+TRUE
+5000
+30 - Valid With, IDENT = attrRef / attrRef = IDENT
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <v,v.varName> with  v.varName = "p1"
+p1 p1
+5000
+31 - Valid With, IDENT = attrRef / attrRef = IDENT
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v with  v.varName = "e"
+e
+5000
+32 - Valid With, IDENT = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c with  c.value = 20
+20
+5000
+33 - Valid With, IDENT = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <c, v> with  c.value = 20
+20 a,20 b,20 c,20 d,20 var1,20 e,20 h,20 p1,20 p2,20 p3,20 g,20 f,20 i,20 j,20 k,20 else,20 p
+5000
+34 - Valid With, IDENT = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c,c1; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <c, c1> with  c.value = 20
+20 2,20 10,20 0,20 20,20 3,20 1
+5000
+35 - Valid With, IDENT = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s with  s.stmt# = 20
+20
+5000
+36 - Valid With, INTEGER = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with c.value = 0
+TRUE
+5000
+37 - Valid With, INTEGER = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c with c.value = 2
+2
+5000
+38 - Valid With, INTEGER = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c,c1; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <c,c1.value> with 20 = c.value
+20 2,20 10,20 0,20 20,20 1,20 3
+5000
+39 - Valid With, INTEGER = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s,ifs.stmt#> with s.stmt# = 1
+1 4, 1 18, 1 19
+5000
+40 - Valid With, INTEGER = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r.stmt#,r> with r.stmt# = 2
+2 2
+5000
+41 - Valid With, INTEGER = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr,pr1; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.stmt#, pr1> with 17 = pr.stmt#
+17 8, 17 15, 17 17
+5000
+42 - Valid With, INTEGER = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr, cp.stmt#> with              10 = cp.stmt#
+8 10, 15 10, 17 10
+5000
+43 - Valid With, INTEGER = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with ifs.stmt# = 18
+TRUE
+5000
+44 - Valid With, INTEGER = attrRef / attrRef = INTEGER, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with ifs.stmt# = 24
+FALSE
+5000
+45 - Valid With, INTEGER = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with a.stmt# = 6
+TRUE
+5000
+46 - Valid With, INTEGER = attrRef / attrRef = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a,a1; prog_line n;
+Select <a,a1> with a.stmt# = 7
+7 1,7 6,7 7, 7 12,7 21,7 22,7 23,7 24
+5000
+47 - Valid With, attrRef = attrRef
+print pn; procedure p;
+Select <pn, p.procName> with pn.varName = p.procName
+17 p1
+5000
+48 - Valid With, attrRef = attrRef
+read r; procedure p;
+Select <r.varName, p.procName> with r.varName = p.procName
+p3 p3
+5000
+49 - Valid With, no result
+print pr; call cp;
+Select <pr, cp> with pr.varName = cp.procName
+
+5000
+50 - Valid With, attrRef = attrRef
+read r; call cp;
+Select <r, cp> with r.varName = cp.procName
+20 16, 20 10, 20 5
+5000
+51 - Valid With, IDENT = attrRef / attrRef = IDENT
+read r;
+Select r.varName with r.varName = "b"
+b
+5000
+52 - Valid With, IDENT = attrRef / attrRef = IDENT
+print pr;
+Select pr.varName with pr.varName = "g"
+g
+5000
+53 - Valid With, IDENT = attrRef / attrRef = IDENT, no result
+call cp;
+Select cp.procName with cp.procName = "p1"
+
+5000
+54 - Valid With, IDENT = attrRef / attrRef = IDENT
+call cp;
+Select cp with cp.procName = "p3"
+5,10,16
+5000
+55 - Valid With, IDENT = attrRef / attrRef = IDENT, no result
+assign a;
+Select a with a.varName = "b"
+
+5000

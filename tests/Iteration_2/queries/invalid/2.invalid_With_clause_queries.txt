@@ -1,0 +1,385 @@
+1 - Invalid With, attrRef = attrRef, semantically invalid
+procedure p; variable v; constant c; stmt s;
+Select v.varName with v.varName = c.value
+
+5000
+2 - Invalid With, attrRef = attrRef, semantically invalid
+procedure p; variable v; constant c; stmt s;
+Select s.stmt# with s.stmt# = p.procName
+
+5000
+3 - Invalid With, attrRef = attrRef, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n.stmt# with n.stmt# = n.stmt#
+
+5000
+4 - Invalid With, attrRef = attrRef, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with n.stmt# = n.stmt#
+FALSE
+5000
+5 - Invalid With, attrRef = attrRef, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.procName with r.procName = r.procName
+
+5000
+6 - Invalid With, attrRef = attrRef, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.value with r.value = r.value
+
+5000
+7 - Invalid With, attrRef = attrRef, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr.procName with pr.procName = pr.procName
+
+5000
+8 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr.value with pr.value = pr.value
+
+5000
+9 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp.varName with cp.varName = cp.varName
+
+5000
+10 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp.value with cp.value = cp.value
+
+5000
+11 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w.procName with w.procName = w.procName
+
+5000
+12 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w.varName with w.varName = w.varName
+
+5000
+13 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w.value with w.value = w.value
+
+5000
+14 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs.procName with ifs.procName = ifs.procName
+
+5000
+15 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs.varName with ifs.varName = ifs.varName
+
+5000
+16 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs.value with ifs.value = ifs.value
+
+5000
+17 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a.procName with a.procName = a.procName
+
+5000
+18 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a.varName with a.varName = a.varName
+
+5000
+19 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a.value with a.value = a.value
+
+5000
+20 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n.procName with n.procName = n.procName
+
+5000
+21 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n.varName with n.varName = n.varName
+
+5000
+22 - Invalid With, attrRef = attrRef
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n.value with n.value = n.value
+
+5000
+23 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p with p = p
+
+5000
+24 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v with v = v
+
+5000
+25 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c with c = c
+
+5000
+26 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s with s = s
+
+5000
+27 - Invalid, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.stmt# with r = r
+
+5000
+28 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr with pr = pr
+
+5000
+29 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp with cp = cp
+
+5000
+30 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w with w = w
+
+5000
+31 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs with ifs = ifs
+
+5000
+32 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a with a = a
+
+5000
+33 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s with s = a
+
+5000
+34 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s with r = s
+
+5000
+35 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with s = n
+FALSE
+5000
+36 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n with n = a
+
+5000
+37 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with s = w
+FALSE
+5000
+38 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with s = ifs
+FALSE
+5000
+39 - Invalid With, syn = syn
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with n = a
+FALSE
+5000
+40 - Invalid With, IDENT = INTEGER / INTEGER = IDENT
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with "a" = 1
+FALSE
+5000
+41 - Invalid With, IDENT = INTEGER / INTEGER = IDENT
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s,v> with 1 = "a"
+
+5000
+42 - Invalid With, IDENT = syn / syn = IDENT
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with "a" = v
+FALSE
+5000
+43 - Invalid With, IDENT = syn / syn = IDENT
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s,v> with v = "var1"
+
+5000
+44 - Invalid With, IDENT = syn / syn = IDENT
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with "two" = c
+FALSE
+5000
+45 - Invalid With, IDENT = syn / syn = IDENT
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s,v> with c = "twenty"
+
+5000
+46 - Invalid With, INTEGER = syn / syn = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with 2 = c
+FALSE
+5000
+47 - Invalid With, INTEGER = syn / syn = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s,v> with c = 20
+
+5000
+48 - Valid With, INTEGER = syn / syn = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with 20 = n
+TRUE
+5000
+49 - Invalid With, INTEGER = syn / syn = INTEGER
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with a = 1
+FALSE
+5000
+50 - Invalid With, IDENT = attrRef / attrRef = IDENT, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s with  s.stmt# = "a"
+
+5000
+51 - Invalid With, IDENT = attrRef / attrRef = IDENT, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s.stmt# with s.stmt# = "p3"
+
+5000
+52 - Invalid With, IDENT = attrRef / attrRef = IDENT, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a with  a.stmt# = "1"
+
+5000
+53 - Invalid With, IDENT = attrRef / attrRef = IDENT, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with  a.stmt# = "1"
+
+5000
+54 - Invalid With, IDENT = attrRef / attrRef = IDENT, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r with  r.stmt# = "var1"
+
+5000
+55 - Invalid With, IDENT = attrRef / attrRef = IDENT, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with  r.stmt# = "var1"
+FALSE
+5000
+56 - Invalid With, IDENT = attrRef / attrRef = IDENT, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr with  pr.stmt# = "c"
+
+5000
+57 - Invalid With, IDENT = attrRef / attrRef = IDENT, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with  pr.stmt# = "c"
+FALSE
+5000
+58 - Invalid With, IDENT = attrRef / attrRef = IDENT, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp with  cp.stmt# = "p2"
+
+5000
+59 - Invalid With, IDENT = attrRef / attrRef = IDENT, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w with  w.stmt# = "f"
+
+5000
+60 - Invalid With, IDENT = attrRef / attrRef = IDENT, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs with  ifs.stmt# = "e"
+
+5000
+61 - Invalid With, INTEGER = attrRef / attrRef = INTEGER, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName with p.procName = 0
+
+5000
+62 - Invalid With, INTEGER = attrRef / attrRef = INTEGER, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v.varName with v.varName = 0
+
+5000
+63 - Invalid With, INTEGER = attrRef / attrRef = INTEGER, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a,a1; prog_line n;
+Select BOOLEAN with n.stmt# = 3
+FALSE
+5000
+64 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a,a1; prog_line n;
+Select BOOLEAN with p.procName = p
+FALSE
+5000
+65 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a,a1; prog_line n;
+Select s with s.stmt# = p
+
+5000
+66 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a,a1; prog_line n;
+Select v with v.varName = v
+
+5000
+67 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a,a1; prog_line n;
+Select c with c = c.value
+
+5000
+68 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a,a1; prog_line n;
+Select s with s = s.stmt#
+
+5000
+69 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a,a1; prog_line n;
+Select r with r.stmt# = r
+
+5000
+70 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a,a1; prog_line n;
+Select pr with pr.stmt# = pr
+
+5000
+71 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp with cp.stmt# = cp
+
+5000
+72 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w with w.stmt# = w
+
+5000
+73 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with ifs = ifs.stmt#
+FALSE
+5000
+74 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN with a = a.stmt#
+FALSE
+5000
+75 - Invalid With, syn = attrRef / attrRef = syn, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p,n> with n = n.stmt#
+
+5000
+76 - Invalid With, IDENT = attrRef / attrRef = IDENT, syntactically invalid
+constant c;
+Select c with c.varName = "20"
+
+5000
+77 - Invalid With, IDENT = attrRef / attrRef = IDENT, syntactically invalid
+constant c;
+Select BOOLEAN with c.varName = "20"
+
+5000

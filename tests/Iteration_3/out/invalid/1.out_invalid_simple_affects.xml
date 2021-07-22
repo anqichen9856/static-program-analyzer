@@ -1,0 +1,1205 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>4.517000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">1</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.333000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">2</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(v,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.076000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">3</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Affects(c,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.307000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">4</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Affects(c,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.175000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">5</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(pr,pr)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>12.278000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">6</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(w,w)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.769000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">7</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(ifs,ifs)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.711000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">8</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <s,r> such that Affects(r,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.635000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">9</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <s,cp> such that Affects(cp,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.526000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">10</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.241000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">11</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.847000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">12</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.537000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">13</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.811000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">14</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,pr)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.590000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">15</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.700000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">16</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.417000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">17</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.099000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">18</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.535000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">19</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.061000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">20</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(v,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.027000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">21</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(v,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.274000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">22</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(v,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.836000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">23</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(v,pr)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.266000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">24</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(v,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.165000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">25</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(v,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.593000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">26</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(v,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.034000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">27</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(v,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.059000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">28</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(v,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.301000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">29</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Affects(c,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.886000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">30</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Affects(c,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.995000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">31</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Affects(c,pr)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.376000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">32</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Affects(c,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.711000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">33</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Affects(c,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.697000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">34</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Affects(c,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.396000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">35</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Affects(c,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.993000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">36</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(s,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.266000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">37</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(s,pr)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.006000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">38</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(s,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.992000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">39</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(s,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.252000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">40</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(s,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.302000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">41</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Affects(r,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.279000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">42</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Affects(r,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.742000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">43</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Affects(r,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.015000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">44</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Affects(r,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.749000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">45</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r.varName such that Affects(r,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.671000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">46</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(r,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.632000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">47</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <r,s> such that Affects(r,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.603000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">48</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <r.varName,s> such that Affects(r,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.943000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">49</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Affects(r,pr)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.532000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">50</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Affects(r,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.166000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">51</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Affects(r,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.899000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">52</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Affects(r,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.187000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">53</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects(r,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.005000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">54</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <r,a> such that Affects(r,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.897000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">55</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(r,cp)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>11.209000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">56</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Affects(r,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.435000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">57</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr such that Affects(pr,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.384000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">58</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(pr,v)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.558000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">59</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr such that Affects(pr,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.533000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">60</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(pr,s)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.383000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">61</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr such that Affects(pr,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.366000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">62</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr such that Affects(pr,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.703000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">63</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr such that Affects(pr,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.869000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">64</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr such that Affects(pr,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.128000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">65</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr such that Affects(pr,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.736000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">66</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr such that Affects(pr,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.250000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">67</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.319000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">68</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.180000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">69</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.079000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">70</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.269000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">71</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,pr)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.133000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">72</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.179000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">73</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.037000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">74</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.270000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">75</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.362000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">76</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.431000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">77</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.194000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">78</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(w,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.127000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">79</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(w,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.933000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">80</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(w,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.176000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">81</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(w,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.129000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">82</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(w,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.852000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">83</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(w,pr)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.239000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">84</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(w,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.920000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">85</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(w,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.557000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">86</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(w,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.322000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">87</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(w,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.692000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">88</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(ifs,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.533000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">89</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(ifs,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.555000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">90</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(ifs,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.235000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">91</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(ifs,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.450000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">92</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(ifs,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.551000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">93</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(ifs,pr)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.341000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">94</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(ifs,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.170000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">95</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(ifs,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.232000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">96</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(ifs,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.598000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on both args, semantically invalid">97</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(ifs,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.332000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid">98</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(p,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.344000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid">99</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(v,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.722000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid">100</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Affects(c,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.354000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid">101</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr such that Affects(pr,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.215000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid">102</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(cp,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.453000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid">103</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(w,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.045000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid">104</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(ifs,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.378000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs">105</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(s,3)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.131000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">106</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(s,5)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.337000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">107</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(s,9)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.221000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">108</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(s,12)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.867000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">109</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(s,17)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.164000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">110</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(s,24)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.928000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">111</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects(a,3)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.755000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">112</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects(a,5)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.343000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">113</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects(a,9)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.966000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">114</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects(a,12)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.239000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">115</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects(a,17)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.805000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">116</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a such that Affects(a,24)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.048000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">117</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(n,3)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.617000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">118</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(n,5)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.357000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">119</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(n,9)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.666000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">120</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(n,12)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.831000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">121</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(n,17)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.693000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid">122</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(n,24)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.409000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid">123</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(_,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.962000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid">124</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Affects(_,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.269000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid">125</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Affects(_,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.947000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid">126</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Affects(_,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.096000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid">127</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr such that Affects(_,pr)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.244000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid">128</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(_,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.049000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid">129</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Affects(_,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.142000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid">130</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Affects(_,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.033000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid">131</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(_,3)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.240000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid">132</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(_,5)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.167000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid">133</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(_,9)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.921000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid">134</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(_,12)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.517000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid">135</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(_,17)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.763000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid">136</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Affects(_,24)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.733000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on both args, semantically invalid">137</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(1,3)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.680000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on both args, semantically invalid">138</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(1,12)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.936000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on both args, semantically invalid">139</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(3,3)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.413000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on both args, semantically invalid">140</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(6,9)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.981000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on both args, semantically invalid">141</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(5,5)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.108000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on both args, semantically invalid">142</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(6,5)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.934000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on both args, semantically invalid">143</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(8,23)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.409000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on both args, semantically invalid">144</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(24,26)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.079000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on both args, semantically invalid">145</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(16,26)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.353000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on both args, semantically invalid">146</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(21,15)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.116000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid">147</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(3,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.238000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid">148</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(5,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.683000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid">149</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(9,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.959000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid">150</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(19,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.905000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid">151</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(23,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.982000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid">152</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s such that Affects(27,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.748000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid">153</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Affects(1,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.234000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid">154</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(1,pr)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.219000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid">155</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Affects(1,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.663000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid">156</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(3,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.758000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid">157</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(5,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.227000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid">158</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(12,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.074000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid">159</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(17,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.473000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid">160</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(19,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.673000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid">161</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(23,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.319000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid">162</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(24,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.041000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid">163</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(27,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.096000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syntactically invalid">164</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(6,"6")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.794000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syntactically invalid">165</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(6,"10")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.789000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syntactically invalid">166</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(10,"7")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.888000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syntactically invalid">167</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects("snow",15)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.576000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Affects, syntactically invalid">168</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects("beauty",15)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.825000</time_taken>
+<passed/>
+</query>
+<query>
+<id Affects="1" ReturnBoolean="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Affects, syntactically invalid">169</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Affects(a,_"disney"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.628000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" SuchThat="1" CondNum="2" RelNum="0" comment="Valid Affects, syntactically invalid, wrong design abstraction name">170</id><querystr><![CDATA[assign a,a1; Select a such that affects(a,a1)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.570000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" CondNum="2" RelNum="1" comment="Valid Affects, syntactically invalid">171</id><querystr><![CDATA[assign a,a1; Select a Affects(a,a1)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>3.777000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

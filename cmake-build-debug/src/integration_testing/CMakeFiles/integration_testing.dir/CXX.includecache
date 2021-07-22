@@ -1,0 +1,1030 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/catch.hpp
+TargetConditionals.h
+-
+iosfwd
+-
+string
+-
+cstdint
+-
+vector
+-
+memory
+-
+cstddef
+-
+string
+-
+iosfwd
+-
+vector
+-
+cstddef
+-
+type_traits
+-
+string
+-
+iosfwd
+-
+cstddef
+-
+ostream
+-
+Foundation/Foundation.h
+-
+utility
+-
+tuple
+-
+ctime
+-
+ratio
+-
+chrono
+-
+iosfwd
+-
+string
+-
+string
+-
+cstddef
+-
+string
+-
+cstdint
+-
+string
+-
+cstdint
+-
+string
+-
+string
+-
+memory
+-
+exception
+-
+string
+-
+vector
+-
+type_traits
+-
+stdexcept
+-
+string
+-
+iosfwd
+-
+string
+-
+vector
+-
+type_traits
+-
+cmath
+-
+functional
+-
+string
+-
+string
+-
+algorithm
+-
+string
+-
+vector
+-
+memory
+-
+objc/runtime.h
+-
+string
+-
+string
+-
+vector
+-
+memory
+-
+string
+-
+iosfwd
+-
+string
+-
+vector
+-
+memory
+-
+memory
+-
+vector
+-
+string
+-
+string
+-
+string
+-
+iosfwd
+-
+map
+-
+set
+-
+memory
+-
+algorithm
+-
+cstring
+-
+cfloat
+-
+cstdio
+-
+cassert
+-
+memory
+-
+ostream
+-
+vector
+-
+string
+-
+vector
+-
+memory
+-
+cmath
+-
+limits
+-
+memory
+-
+signal.h
+-
+AfxWin.h
+-
+windows.h
+-
+signal.h
+-
+string
+-
+optional
+-
+cassert
+-
+ostream
+-
+sstream
+-
+vector
+-
+memory
+-
+set
+-
+algorithm
+-
+fstream
+-
+ctime
+-
+cstring
+-
+ostream
+-
+stdexcept
+-
+sstream
+-
+unistd.h
+-
+string
+-
+assert.h
+-
+stdbool.h
+-
+sys/types.h
+-
+unistd.h
+-
+sys/sysctl.h
+-
+cstddef
+-
+ostream
+-
+fstream
+-
+string
+-
+cerrno
+-
+vector
+-
+string
+-
+memory
+-
+Foundation/Foundation.h
+../lib/Foundation/Foundation.h
+crtdbg.h
+-
+set
+-
+limits
+-
+algorithm
+-
+iomanip
+-
+string
+-
+cstdlib
+-
+cstdint
+-
+cstring
+-
+stdexcept
+-
+regex
+-
+cstdio
+-
+iosfwd
+-
+string
+-
+cstdio
+-
+cstring
+-
+fstream
+-
+sstream
+-
+stdexcept
+-
+io.h
+-
+unistd.h
+-
+algorithm
+-
+random
+-
+vector
+-
+set
+-
+algorithm
+-
+ios
+-
+map
+-
+string
+-
+map
+-
+vector
+-
+exception
+-
+cassert
+-
+algorithm
+-
+sstream
+-
+memory
+-
+iosfwd
+-
+cstdlib
+-
+iomanip
+-
+cstdio
+-
+iostream
+-
+fstream
+-
+sstream
+-
+vector
+-
+memory
+-
+algorithm
+-
+ostream
+-
+cstring
+-
+cctype
+-
+ostream
+-
+cstring
+-
+cstdint
+-
+sstream
+-
+cctype
+-
+exception
+-
+algorithm
+-
+sstream
+-
+sstream
+-
+algorithm
+-
+cassert
+-
+stdexcept
+-
+memory
+-
+sstream
+-
+algorithm
+-
+string
+-
+vector
+-
+memory
+-
+chrono
+-
+cmath
+-
+iomanip
+-
+exception
+-
+ostream
+-
+sstream
+-
+iomanip
+-
+cstring
+-
+cfloat
+-
+cstdio
+-
+cassert
+-
+memory
+-
+cfloat
+-
+cstdio
+-
+cassert
+-
+sstream
+-
+ctime
+-
+algorithm
+-
+cassert
+-
+
+../src/spa/src/clauses/AffectsClause.h
+NextStarClause.h
+../src/spa/src/clauses/NextStarClause.h
+
+../src/spa/src/clauses/AffectsStarClause.h
+NextStarClause.h
+../src/spa/src/clauses/NextStarClause.h
+
+../src/spa/src/clauses/CallsClause.h
+RelClause.h
+../src/spa/src/clauses/RelClause.h
+
+../src/spa/src/clauses/CallsStarClause.h
+RelClause.h
+../src/spa/src/clauses/RelClause.h
+
+../src/spa/src/clauses/Clause.h
+vector
+-
+set
+-
+string
+-
+unordered_set
+-
+unordered_map
+-
+regex
+-
+program_knowledge_base/pkb_storage/PKB.h
+../src/spa/src/clauses/program_knowledge_base/pkb_storage/PKB.h
+utils/SPAEnums.h
+../src/spa/src/clauses/utils/SPAEnums.h
+exceptions/SPAException.h
+../src/spa/src/clauses/exceptions/SPAException.h
+query_processor/query_preprocessor/QueryParser.h
+../src/spa/src/clauses/query_processor/query_preprocessor/QueryParser.h
+query_processor/query_evaluator/QueryResult.h
+../src/spa/src/clauses/query_processor/query_evaluator/QueryResult.h
+
+../src/spa/src/clauses/FollowsClause.h
+IntRelClause.h
+../src/spa/src/clauses/IntRelClause.h
+
+../src/spa/src/clauses/FollowsStarClause.h
+MultiStatementRelClause.h
+../src/spa/src/clauses/MultiStatementRelClause.h
+
+../src/spa/src/clauses/IntRelClause.h
+RelClause.h
+../src/spa/src/clauses/RelClause.h
+
+../src/spa/src/clauses/ModifiesClause.h
+NamesRelClause.h
+../src/spa/src/clauses/NamesRelClause.h
+
+../src/spa/src/clauses/MultiStatementRelClause.h
+RelClause.h
+../src/spa/src/clauses/RelClause.h
+
+../src/spa/src/clauses/NamesRelClause.h
+RelClause.h
+../src/spa/src/clauses/RelClause.h
+
+../src/spa/src/clauses/NextClause.h
+MultiStatementRelClause.h
+../src/spa/src/clauses/MultiStatementRelClause.h
+
+../src/spa/src/clauses/NextStarClause.h
+MultiStatementRelClause.h
+../src/spa/src/clauses/MultiStatementRelClause.h
+
+../src/spa/src/clauses/ParentClause.h
+IntRelClause.h
+../src/spa/src/clauses/IntRelClause.h
+
+../src/spa/src/clauses/ParentStarClause.h
+MultiStatementRelClause.h
+../src/spa/src/clauses/MultiStatementRelClause.h
+
+../src/spa/src/clauses/PatternAssign.h
+clauses/PatternClause.h
+../src/spa/src/clauses/clauses/PatternClause.h
+
+../src/spa/src/clauses/PatternClause.h
+clauses/Clause.h
+../src/spa/src/clauses/clauses/Clause.h
+query_processor/Query.h
+../src/spa/src/clauses/query_processor/Query.h
+
+../src/spa/src/clauses/PatternIf.h
+clauses/PatternClause.h
+../src/spa/src/clauses/clauses/PatternClause.h
+
+../src/spa/src/clauses/PatternWhile.h
+clauses/PatternClause.h
+../src/spa/src/clauses/clauses/PatternClause.h
+
+../src/spa/src/clauses/RelClause.h
+clauses/Clause.h
+../src/spa/src/clauses/clauses/Clause.h
+query_processor/Query.h
+../src/spa/src/clauses/query_processor/Query.h
+exceptions/SPAException.h
+../src/spa/src/clauses/exceptions/SPAException.h
+query_processor/query_evaluator/QueryResult.h
+../src/spa/src/clauses/query_processor/query_evaluator/QueryResult.h
+
+../src/spa/src/clauses/UsesClause.h
+clauses/NamesRelClause.h
+../src/spa/src/clauses/clauses/NamesRelClause.h
+
+../src/spa/src/clauses/WithClause.h
+clauses/Clause.h
+../src/spa/src/clauses/clauses/Clause.h
+query_processor/Query.h
+../src/spa/src/clauses/query_processor/Query.h
+query_processor/query_evaluator/QueryResult.h
+../src/spa/src/clauses/query_processor/query_evaluator/QueryResult.h
+functional
+-
+
+../src/spa/src/exceptions/SPAException.h
+string
+-
+stdexcept
+-
+
+../src/spa/src/front_end/parser/Parser.h
+TNode.h
+../src/spa/src/front_end/parser/TNode.h
+front_end/tokenizer/Token.h
+../src/spa/src/front_end/parser/front_end/tokenizer/Token.h
+exceptions/SPAException.h
+../src/spa/src/front_end/parser/exceptions/SPAException.h
+vector
+-
+memory
+-
+unordered_map
+-
+
+../src/spa/src/front_end/parser/TNode.h
+utils/SPAEnums.h
+../src/spa/src/front_end/parser/utils/SPAEnums.h
+exceptions/SPAException.h
+../src/spa/src/front_end/parser/exceptions/SPAException.h
+string
+-
+vector
+-
+memory
+-
+stdexcept
+-
+optional
+-
+
+../src/spa/src/front_end/tokenizer/Token.h
+vector
+-
+iostream
+-
+string
+-
+regex
+-
+utils/Constants.h
+../src/spa/src/front_end/tokenizer/utils/Constants.h
+exceptions/SPAException.h
+../src/spa/src/front_end/tokenizer/exceptions/SPAException.h
+
+../src/spa/src/front_end/tokenizer/Tokenizer.h
+string
+-
+iostream
+-
+fstream
+-
+vector
+-
+unordered_set
+-
+Token.h
+../src/spa/src/front_end/tokenizer/Token.h
+utils/Constants.h
+../src/spa/src/front_end/tokenizer/utils/Constants.h
+
+../src/spa/src/program_knowledge_base/pkb_storage/PKB.h
+stdio.h
+-
+iostream
+-
+string
+-
+vector
+-
+unordered_map
+-
+unordered_set
+-
+utils/SPAEnums.h
+../src/spa/src/program_knowledge_base/pkb_storage/utils/SPAEnums.h
+
+../src/spa/src/query_processor/Query.h
+unordered_map
+-
+vector
+-
+string
+-
+utils/SPAEnums.h
+../src/spa/src/query_processor/utils/SPAEnums.h
+clauses/Clause.h
+../src/spa/src/query_processor/clauses/Clause.h
+
+../src/spa/src/query_processor/query_evaluator/QueryEvaluator.h
+vector
+-
+string
+-
+query_processor/Query.h
+../src/spa/src/query_processor/query_evaluator/query_processor/Query.h
+QueryResult.h
+../src/spa/src/query_processor/query_evaluator/QueryResult.h
+query_processor/query_preprocessor/QueryParser.h
+../src/spa/src/query_processor/query_evaluator/query_processor/query_preprocessor/QueryParser.h
+query_processor/query_optimizer/QueryOptimizer.h
+../src/spa/src/query_processor/query_evaluator/query_processor/query_optimizer/QueryOptimizer.h
+
+../src/spa/src/query_processor/query_evaluator/QueryResult.h
+string
+-
+unordered_map
+-
+unordered_set
+-
+list
+-
+functional
+-
+utils/SPAEnums.h
+../src/spa/src/query_processor/query_evaluator/utils/SPAEnums.h
+exceptions/SPAException.h
+../src/spa/src/query_processor/query_evaluator/exceptions/SPAException.h
+vector
+-
+iostream
+-
+
+../src/spa/src/query_processor/query_optimizer/QueryOptimizer.h
+query_processor/Query.h
+../src/spa/src/query_processor/query_optimizer/query_processor/Query.h
+query_processor/query_preprocessor/QueryParser.h
+../src/spa/src/query_processor/query_optimizer/query_processor/query_preprocessor/QueryParser.h
+unordered_map
+-
+set
+-
+
+../src/spa/src/query_processor/query_preprocessor/QueryParser.h
+vector
+-
+string
+-
+regex
+-
+utils/Constants.h
+../src/spa/src/query_processor/query_preprocessor/utils/Constants.h
+
+../src/spa/src/utils/Constants.h
+string
+-
+unordered_set
+-
+
+../src/spa/src/utils/SPAEnums.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/frontend_pkb/TestFrontEndPKB.cpp
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/frontend_pkb/catch.hpp
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/frontend_pkb/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/frontend_pkb/front_end/parser/Parser.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/frontend_pkb/program_knowledge_base/pkb_storage/PKB.h
+../pkb_pql/utils/CompareVectors.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/utils/CompareVectors.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/main.cpp
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/catch.hpp
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/TestPatternAssignEval.cpp
+vector
+-
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/front_end/parser/Parser.h
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/catch.hpp
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/utils/SPAEnums.h
+clauses/PatternAssign.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/clauses/PatternAssign.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/program_knowledge_base/pkb_storage/PKB.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/query_processor/query_evaluator/QueryEvaluator.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/TestPatternIfEval.cpp
+vector
+-
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/front_end/parser/Parser.h
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/catch.hpp
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/utils/SPAEnums.h
+clauses/PatternIf.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/clauses/PatternIf.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/program_knowledge_base/pkb_storage/PKB.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/query_processor/query_evaluator/QueryEvaluator.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/TestPatternWhileEval.cpp
+vector
+-
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/front_end/parser/Parser.h
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/catch.hpp
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/utils/SPAEnums.h
+clauses/PatternWhile.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/clauses/PatternWhile.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/program_knowledge_base/pkb_storage/PKB.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/query_processor/query_evaluator/QueryEvaluator.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestAffectsEval.cpp
+vector
+-
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/parser/Parser.h
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/catch.hpp
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/Query.h
+query_processor/query_evaluator/QueryResult.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/query_evaluator/QueryResult.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/utils/SPAEnums.h
+clauses/AffectsClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/AffectsClause.h
+clauses/AffectsStarClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/AffectsStarClause.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/program_knowledge_base/pkb_storage/PKB.h
+../utils/CompareVectors.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/utils/CompareVectors.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestCalls.cpp
+vector
+-
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/catch.hpp
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/parser/Parser.h
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/utils/SPAEnums.h
+clauses/CallsClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/CallsClause.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/query_evaluator/QueryEvaluator.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/program_knowledge_base/pkb_storage/PKB.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestCallsStar.cpp
+vector
+-
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/catch.hpp
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/parser/Parser.h
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/utils/SPAEnums.h
+clauses/CallsStarClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/CallsStarClause.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/query_evaluator/QueryEvaluator.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/program_knowledge_base/pkb_storage/PKB.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestFollowsEval.cpp
+vector
+-
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/catch.hpp
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/parser/Parser.h
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/utils/SPAEnums.h
+clauses/FollowsClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/FollowsClause.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/query_evaluator/QueryEvaluator.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/program_knowledge_base/pkb_storage/PKB.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestFollowsStarEval.cpp
+vector
+-
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/catch.hpp
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/parser/Parser.h
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/utils/SPAEnums.h
+clauses/FollowsStarClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/FollowsStarClause.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/query_evaluator/QueryEvaluator.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/program_knowledge_base/pkb_storage/PKB.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestModifiesEval.cpp
+vector
+-
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/catch.hpp
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/parser/Parser.h
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/utils/SPAEnums.h
+clauses/ModifiesClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/ModifiesClause.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/query_evaluator/QueryEvaluator.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/program_knowledge_base/pkb_storage/PKB.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestNextEval.cpp
+vector
+-
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/catch.hpp
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/parser/Parser.h
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/utils/SPAEnums.h
+clauses/NextClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/NextClause.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/query_evaluator/QueryEvaluator.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/program_knowledge_base/pkb_storage/PKB.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestNextStarEval.cpp
+vector
+-
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/catch.hpp
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/parser/Parser.h
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/utils/SPAEnums.h
+clauses/NextStarClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/NextStarClause.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/query_evaluator/QueryEvaluator.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/program_knowledge_base/pkb_storage/PKB.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestParentEval.cpp
+vector
+-
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/catch.hpp
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/parser/Parser.h
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/utils/SPAEnums.h
+clauses/ParentClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/ParentClause.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/query_evaluator/QueryEvaluator.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/program_knowledge_base/pkb_storage/PKB.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestParentStarEval.cpp
+vector
+-
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/catch.hpp
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/parser/Parser.h
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/utils/SPAEnums.h
+clauses/ParentStarClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/ParentStarClause.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/query_evaluator/QueryEvaluator.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/program_knowledge_base/pkb_storage/PKB.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestUsesEval.cpp
+vector
+-
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/catch.hpp
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/front_end/parser/Parser.h
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/Query.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/utils/SPAEnums.h
+clauses/UsesClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/clauses/UsesClause.h
+query_processor/query_evaluator/QueryEvaluator.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/query_processor/query_evaluator/QueryEvaluator.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/program_knowledge_base/pkb_storage/PKB.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_with_clauses/TestWithEval.cpp
+vector
+-
+front_end/tokenizer/Tokenizer.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_with_clauses/front_end/tokenizer/Tokenizer.h
+front_end/parser/Parser.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_with_clauses/front_end/parser/Parser.h
+catch.hpp
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_with_clauses/catch.hpp
+query_processor/Query.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_with_clauses/query_processor/Query.h
+query_processor/query_evaluator/QueryResult.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_with_clauses/query_processor/query_evaluator/QueryResult.h
+utils/SPAEnums.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_with_clauses/utils/SPAEnums.h
+clauses/WithClause.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_with_clauses/clauses/WithClause.h
+program_knowledge_base/pkb_storage/PKB.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_with_clauses/program_knowledge_base/pkb_storage/PKB.h
+../utils/CompareVectors.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/utils/CompareVectors.h
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/utils/CompareVector.cpp
+CompareVectors.h
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/utils/CompareVectors.h
+algorithm
+-
+
+/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/utils/CompareVectors.h
+string
+-
+vector
+-
+

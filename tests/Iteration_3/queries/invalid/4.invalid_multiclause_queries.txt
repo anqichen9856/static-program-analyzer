@@ -1,0 +1,45 @@
+1 - Invalid multiclause, incorrect and connection placement, syntactically invalid
+assign a; while w;
+Select a such that Parent* (w, a) and Modifies (a, "insideWhile") and such that Next* (45, a)
+
+5000
+2 - Invalid multiclause, incorrect and connection placement, syntactically invalid
+assign a; while w;
+Select a such that Parent* (w, a) and pattern a ("afterWhile", _) such that Next* (45, a)
+
+5000
+3 - Invalid multiclause, incorrect and connection placement, syntactically invalid
+assign a; while w;
+Select a such that Parent* (w, a) pattern a ("afterWhile", _) and Next* (45, a)
+
+5000
+4 - Invalid multiclause, incorrect and connection placement, syntactically invalid
+assign a; while w;
+Select BOOLEAN such that Parent* (w, a) and Modifies (a, "insideWhile") and such that Next* (45, a)
+
+5000
+5 - Invalid multiclause, incorrect and connection placement, syntactically invalid
+assign a; while w;
+Select BOOLEAN such that Parent* (w, a) and pattern a ("afterWhile", _) such that Next* (45, a)
+
+5000
+6 - Invalid multiclause, incorrect and connection placement, syntactically invalid
+assign a; while w;
+Select BOOLEAN such that Parent* (w, a) pattern a ("afterWhile", _) and Next* (45, a)
+
+5000
+7 - Invalid multiclause, incorrect and connection placement, syntactically invalid
+assign a; while w; stmt s;
+Select BOOLEAN such that Parent* (w, a) pattern a ("afterWhile", _) such that Next* (45, a) and with s.stmt# = 1
+
+5000
+8 - Invalid multiclause, incorrect and connection placement, syntactically invalid
+assign a; while w; stmt s;
+Select BOOLEAN such that Parent* (w, a) pattern a ("afterWhile", _) Next* (45, a) with s.stmt# == 1
+
+5000
+9 - Invalid multiclause, incorrect and connection placement, syntactically invalid
+assign a; while w; stmt s;
+Select BOOLEAN such that Parent* (w, a) pattern a ("afterWhile", _) and pattern w("left",_) such that Next* (45, a) with s.stmt# = 1
+
+5000

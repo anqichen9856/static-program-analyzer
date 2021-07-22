@@ -1,0 +1,305 @@
+1 - Invalid ModifiesP, syn on both args, semantically invalid
+procedure p; constant c;
+Select p such that Modifies(p,c)
+
+5000
+2 - Invalid ModifiesP, syn on both args, semantically invalid
+procedure p; constant c;
+Select p such that Modifies(p,c)
+
+5000
+3 - Invalid ModifiesP, syn on both args, syntactically valid but semantically invalid
+call cp; procedure p;
+Select p such that Modifies(cp,p)
+
+5000
+4 - Invalid ModifiesP, syn on both args, syntactically valid but semantically invalid
+procedure p, q;
+Select p such that Modifies(p,q)
+
+5000
+5 - Invalid ModifiesP, wildcard on lhs and syn on rhs, syntactically valid but semantically invalid
+variable v;
+Select p such that Modifies(_,v)
+
+5000
+6 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+assign a; procedure p;
+Select p such that Modifies(p,a)
+
+5000
+7 - Invalid ModifiesP, wildcard on lhs and syn on rhs, syntactically valid but semantically invalid
+variable v;
+Select v such that Modifies(_,v)
+
+5000
+8 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+constant c; procedure p;
+Select <p,c> such that Modifies(p,c)
+
+5000
+9 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; while w;
+Select <p,w> such that Modifies(p,w)
+
+5000
+10 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; if ifs;
+Select <p,ifs> such that Modifies(p,ifs)
+
+5000
+11 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; read r;
+Select BOOLEAN such that Modifies(p,r)
+FALSE
+5000
+12 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; print pr;
+Select BOOLEAN such that Modifies(p,pr)
+FALSE
+5000
+13 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; stmt s;
+Select BOOLEAN such that Modifies(p,s)
+FALSE
+5000
+14 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; prog_line n;
+Select BOOLEAN such that Modifies(p,n)
+FALSE
+5000
+15 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; procedure p;
+Select BOOLEAN such that Modifies(cp,p)
+FALSE
+5000
+16 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+constant c; call cp;
+Select BOOLEAN such that Modifies(cp,c)
+FALSE
+5000
+17 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; while w;
+Select BOOLEAN such that Modifies(cp,w)
+FALSE
+5000
+18 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; if ifs;
+Select BOOLEAN such that Modifies(cp,ifs)
+FALSE
+5000
+19 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; read r;
+Select BOOLEAN such that Modifies(cp,r)
+FALSE
+5000
+20 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; print pr;
+Select BOOLEAN such that Modifies(cp,pr)
+FALSE
+5000
+21 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; stmt s;
+Select BOOLEAN such that Modifies(cp,s)
+FALSE
+5000
+22 - Invalid ModifiesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; prog_line n;
+Select BOOLEAN such that Modifies(cp,n)
+FALSE
+5000
+23 - Invalid ModifiesP,IDENT on both args, syntactically invalid as IDENT cannot be INTEGER
+
+Select BOOLEAN such that Modifies("KPOP","1000")
+
+5000
+24 - Invalid ModifiesP,IDENT on lhs and syn on rhs, syntactically invalid
+variable v;
+Select v such that Modifies("groups",v.varName)
+
+5000
+25 - Invalid ModifiesP,IDENT on lhs and syn on rhs, syntactically invalid
+variable v;
+Select BOOLEAN such that Modifies("groups",v.varName)
+
+5000
+26 - Invalid ModifiesP,IDENT on lhs and syn on rhs, semantically invalid
+constant c;
+Select v such that Modifies("groups",c)
+
+5000
+27 - Invalid ModifiesP, IDENT on lhs and syn on rhs, semantically invalid
+assign a;
+Select v such that Modifies("groups",a)
+
+5000
+28 - Invalid ModifiesP, IDENT on lhs and INTEGER on rhs, syntactically invalid
+variable v;
+Select v such that Modifies("groups",15)
+
+5000
+29 - Invalid ModifiesP,IDENT on lhs and INTEGER on rhs, syntactically invalid
+variable v;
+Select BOOLEAN such that Modifies("BlackPink",28)
+
+5000
+30 - Invalid ModifiesP, syn on both args, syntactically invalid
+call cp; procedure p;
+Select BOOLEAN such that Modifies(cp,1)
+
+5000
+31 - Invalid ModifiesP, syn on both args, syntactically invalid
+call cp; procedure p;
+Select BOOLEAN such that Modifies(p,1)
+
+5000
+32 - Invalid UsesP, syn on both args, semantically invalid
+procedure p; constant c;
+Select p such that Uses(p,c)
+
+5000
+33 - Invalid UsesP, syn on both args, syntactically valid but semantically invalid
+call cp; procedure p;
+Select BOOLEAN such that Uses(cp,p)
+FALSE
+5000
+34 - Invalid UsesP, syn on both args, syntactically valid but semantically invalid
+procedure p, q;
+Select BOOLEAN such that Uses(p,q)
+FALSE
+5000
+35 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+assign a; procedure p;
+Select BOOLEAN such that Uses(p,a)
+FALSE
+5000
+36 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+constant c; procedure p;
+Select BOOLEAN such that Uses(p,c)
+FALSE
+5000
+37 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; while w;
+Select BOOLEAN such that Uses(p,w)
+FALSE
+5000
+38 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; if ifs;
+Select BOOLEAN such that Uses(p,ifs)
+FALSE
+5000
+39 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; read r;
+Select BOOLEAN such that Uses(p,r)
+FALSE
+5000
+40 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; print pr;
+Select BOOLEAN such that Uses(p,pr)
+FALSE
+5000
+41 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; stmt s;
+Select BOOLEAN such that Uses(p,s)
+FALSE
+5000
+42 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p; prog_line n;
+Select BOOLEAN such that Uses(p,n)
+FALSE
+5000
+43 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; procedure p;
+Select BOOLEAN such that Uses(cp,p)
+FALSE
+5000
+44 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+constant c; call cp;
+Select BOOLEAN such that Uses(cp,c)
+FALSE
+5000
+45 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; while w;
+Select BOOLEAN such that Uses(cp,w)
+FALSE
+5000
+46 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; if ifs;
+Select BOOLEAN such that Uses(cp,ifs)
+FALSE
+5000
+47 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; read r;
+Select BOOLEAN such that Uses(cp,r)
+FALSE
+5000
+48 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; print pr;
+Select BOOLEAN such that Uses(cp,pr)
+FALSE
+5000
+49 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; stmt s;
+Select BOOLEAN such that Uses(cp,s)
+FALSE
+5000
+50 - Invalid UsesP, syn on lhs and syn on rhs, syntactically valid but semantically invalid
+call cp; prog_line n;
+Select BOOLEAN such that Uses(cp,n)
+FALSE
+5000
+51 - Invalid UsesP, wildcard on lhs and syn on rhs
+variable v;
+Select BOOLEAN such that Uses(_,v)
+FALSE
+5000
+52 - Invalid UsesP, IDENT on lhs and syn on rhs, syntactically valid but semantically invalid
+procedure p;
+Select BOOLEAN such that Uses("performance",p)
+FALSE
+5000
+53 - Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid
+call cp;
+Select BOOLEAN such that Uses("performance",cp)
+FALSE
+5000
+54 - Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid
+stmt s;
+Select BOOLEAN such that Uses("performance",s)
+FALSE
+5000
+55 - Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid
+constant c;
+Select BOOLEAN such that Uses("performance",c)
+FALSE
+5000
+56 - Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid
+while w;
+Select BOOLEAN such that Uses("performance",w)
+FALSE
+5000
+57 - Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid
+if ifs;
+Select BOOLEAN such that Uses("dance",ifs)
+FALSE
+5000
+58 - Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid
+read r;
+Select BOOLEAN such that Uses("dance",r)
+FALSE
+5000
+59 - Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid
+print pr;
+Select BOOLEAN such that Uses("dance",pr)
+FALSE
+5000
+60 - Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid
+assign a;
+Select BOOLEAN such that Uses("sing",a)
+FALSE
+5000
+61 - Invalid UsesP, IDENT on lhs and syn on rhs, semantically invalid
+prog_line n;
+Select BOOLEAN such that Uses("Twice",n)
+FALSE
+5000

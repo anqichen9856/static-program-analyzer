@@ -1,0 +1,148 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>4.012000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" Uses="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Multiclauses">1</id><querystr><![CDATA[variable v; Select v such that Uses ("raymarch", v)]]></querystr>
+<stuans>count,depth,dist,epsilon,p,rd,ro,steps,x,y,z</stuans>
+<correct>count,steps,depth,ro,rd,x,y,z,dist,p,epsilon</correct>
+<time_taken>6.113000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parent="1" Uses="1" SuchThat="1" CondNum="4" RelNum="2" comment="Valid Multiclauses">2</id><querystr><![CDATA[variable v; if ifs; while w; Select <v, ifs.stmt#> such that Uses (ifs, v) and Parent (w, ifs)]]></querystr>
+<stuans>depth 11,dist 11,epsilon 11</stuans>
+<correct>dist 11,epsilon 11,depth 11</correct>
+<time_taken>9.574000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Multiclauses">3</id><querystr><![CDATA[stmt s; Select s such that Parent* (7, s)]]></querystr>
+<stuans>10,11,12,13,14,8,9</stuans>
+<correct>8,9,10,11,12,13,14</correct>
+<time_taken>5.475000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Multiclauses">4</id><querystr><![CDATA[stmt s; Select s such that Modifies (s, "depth")]]></querystr>
+<stuans>10,11,13,17,2,6,7</stuans>
+<correct>6,7,10,11,2,13,17</correct>
+<time_taken>6.186000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" Uses="1" SuchThat="1" CondNum="4" RelNum="2" comment="Valid Multiclauses">5</id><querystr><![CDATA[assign a; variable v;while w; Select v such that Uses (a, v) and Next (w, a)]]></querystr>
+<stuans>x</stuans>
+<correct>x</correct>
+<time_taken>8.285000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" With="1" CondNum="5" RelNum="1" comment="Valid Multiclauses">6</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select p such that Calls* (p, q) with q.procName = "spheresdf"]]></querystr>
+<stuans>main,raymarch</stuans>
+<correct>main,raymarch</correct>
+<time_taken>13.326000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Nextstar="1" UnnamedVar="1" Uses="1" SuchThat="1" With="1" CondNum="6" RelNum="2" comment="Valid Multiclauses">7</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select c.value such that Uses (a, "depth") and Next* (a, w) with a.stmt# = c.value]]></querystr>
+<stuans>13</stuans>
+<correct>13</correct>
+<time_taken>15.403000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Nextstar="1" UnnamedVar="1" Uses="1" SuchThat="1" With="1" CondNum="6" RelNum="2" comment="Valid Multiclauses">8</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select a.stmt# such that Uses (a, "depth") and Next* (a, w) with a.stmt# = c.value]]></querystr>
+<stuans>13</stuans>
+<correct>13</correct>
+<time_taken>15.352000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Multiclauses">9</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select s such that Uses (s, c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.522000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="5" RelNum="2" comment="Valid Multiclauses">10</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select pn such that Modifies (s, v) and Next (s, pn)]]></querystr>
+<stuans>3,8</stuans>
+<correct>3,8</correct>
+<time_taken>11.857000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="5" RelNum="2" comment="Valid Multiclauses">11</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select pn such that Modifies (s, v) and Uses (pn, v)]]></querystr>
+<stuans>3,8</stuans>
+<correct>3,8</correct>
+<time_taken>12.516000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="5" RelNum="2" comment="Valid Multiclauses">12</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select pn such that Next (s, pn) and Uses (pn, v)]]></querystr>
+<stuans>3,8</stuans>
+<correct>3,8</correct>
+<time_taken>13.033000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" Next="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="6" RelNum="3" comment="Valid Multiclauses">13</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select pn such that Modifies (s, v) and Next (s, pn) and Uses (pn, v)]]></querystr>
+<stuans>3,8</stuans>
+<correct>3,8</correct>
+<time_taken>13.411000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" Next="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="6" RelNum="3" comment="Valid Multiclauses">14</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select pn such that Next (s, pn) and Uses (pn, v) and Modifies (s, v)]]></querystr>
+<stuans>3,8</stuans>
+<correct>3,8</correct>
+<time_taken>13.187000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" Next="1" UnnamedVar="1" Uses="1" SuchThat="1" CondNum="6" RelNum="3" comment="Valid Multiclauses">15</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select pn such that Uses (pn, v) and Modifies (s, v) and Next (s, pn)]]></querystr>
+<stuans>3,8</stuans>
+<correct>3,8</correct>
+<time_taken>13.518000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Parentstar="1" UnnamedVar="1" SuchThat="1" With="1" CondNum="5" RelNum="1" comment="Valid Multiclauses">16</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select BOOLEAN such that Parent* (n, a) with n = c.value]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>12.139000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid Multiclauses">17</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select a pattern a(_,_"y*y+z*z"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.788000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" UnnamedVar="2" Pattern="1" SuchThat="1" CondNum="6" RelNum="1" comment="Valid Multiclauses">18</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select cl.procName pattern w (v, _) such that Modifies (cl, v)]]></querystr>
+<stuans>raymarch,spheresdf</stuans>
+<correct>raymarch,spheresdf</correct>
+<time_taken>13.960000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Followsstar="1" Parent="1" UnnamedVar="1" SuchThat="1" CondNum="5" RelNum="2" comment="Valid Multiclauses">19</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select <a, a1> such that Parent (w, a1) and Follows* (a, a1)]]></querystr>
+<stuans>20 21,9 14</stuans>
+<correct>20 21,9 14</correct>
+<time_taken>11.471000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" Uses="2" SuchThat="1" CondNum="6" RelNum="3" comment="Valid Multiclauses">20</id><querystr><![CDATA[stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n; Select <s, s1> such that Uses (s, v) and Uses (s1, v) and Next (s, s1)]]></querystr>
+<stuans>10 11,11 12,11 13,14 7,19 20,19 22,2 3,20 21,21 19,22 23,7 8,8 9,9 10</stuans>
+<correct>2 3,7 8,8 9,9 10,10 11,11 12,11 13,19 20,20 21,19 22,22 23,14 7,21 19</correct>
+<time_taken>14.482000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

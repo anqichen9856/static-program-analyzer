@@ -1,0 +1,141 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>4.090000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" Calls="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Calls, syn on both args">1</id><querystr><![CDATA[procedure p, q; Select p such that Calls(p,q)]]></querystr>
+<stuans>a,b,c,d,e,f,procedures</stuans>
+<correct>procedures,a,b,c,e,d,f</correct>
+<time_taken>7.798000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Calls, syn on both args">2</id><querystr><![CDATA[procedure p, q; Select q such that Calls(p,q)]]></querystr>
+<stuans>a,b,c,d,e,f,g</stuans>
+<correct>a,g,c,e,b,d,f</correct>
+<time_taken>7.915000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, syn on lhs and wildcard on rhs">3</id><querystr><![CDATA[procedure p, q; Select p such that Calls(p,_)]]></querystr>
+<stuans>a,b,c,d,e,f,procedures</stuans>
+<correct>procedures,a,b,c,e,d,f</correct>
+<time_taken>7.543000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Calls, syn on lhs and ident on rhs">4</id><querystr><![CDATA[procedure p, q; Select p such that Calls(p,"g")]]></querystr>
+<stuans>a,b,d,e,f,procedures</stuans>
+<correct>procedures,a,e,b,d,f</correct>
+<time_taken>7.624000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Calls, syn on lhs and ident on rhs, no result">5</id><querystr><![CDATA[procedure p, q; Select p such that Calls(p,"z")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.524000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Calls, syn on lhs and ident on rhs, no result">6</id><querystr><![CDATA[procedure p, q; Select p such that Calls(p,"x")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.138000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, wildcard on both args">7</id><querystr><![CDATA[procedure p, q; Select BOOLEAN such that Calls(_,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>8.331000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, wildcard on lhs and syn on rhs">8</id><querystr><![CDATA[procedure p, q; Select p such that Calls(_,p)]]></querystr>
+<stuans>a,b,c,d,e,f,g</stuans>
+<correct>a,g,c,e,b,d,f</correct>
+<time_taken>7.410000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, wildcard on lhs and syn on rhs">9</id><querystr><![CDATA[procedure p, q; Select p such that Calls(_,"c")]]></querystr>
+<stuans>a,b,c,d,e,f,g,procedures,x,z</stuans>
+<correct>procedures,a,g,c,e,b,d,f,z,x</correct>
+<time_taken>7.487000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Calls, ident on both args">10</id><querystr><![CDATA[procedure p, q; Select BOOLEAN such that Calls("b","c")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>7.772000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Calls, ident on both args">11</id><querystr><![CDATA[procedure p, q; Select BOOLEAN such that Calls("a","d")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>7.911000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Calls, ident on both args, no result">12</id><querystr><![CDATA[procedure p, q; Select BOOLEAN such that Calls("g","a")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.930000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, ident on lhs and wildcard on rhs, no result">13</id><querystr><![CDATA[procedure p, q; Select BOOLEAN such that Calls("g",_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.656000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, ident on lhs and wildcard on rhs, no result">14</id><querystr><![CDATA[procedure p, q; Select BOOLEAN such that Calls("x",_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.854000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, ident on lhs and wildcard on rhs">15</id><querystr><![CDATA[procedure p, q; Select BOOLEAN such that Calls("c",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>8.254000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, ident on lhs and wildcard on rhs">16</id><querystr><![CDATA[procedure p, q; Select BOOLEAN such that Calls("f",_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>8.122000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Calls, ident on lhs and syn on rhs">17</id><querystr><![CDATA[procedure p, q; Select p such that Calls("f",p)]]></querystr>
+<stuans>e,g</stuans>
+<correct>g,e</correct>
+<time_taken>7.820000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Calls, ident on lhs and syn on rhs">18</id><querystr><![CDATA[procedure p, q; Select p such that Calls("d",p)]]></querystr>
+<stuans>f,g</stuans>
+<correct>g,f</correct>
+<time_taken>7.636000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" SuchThat="1" CondNum="3" RelNum="1" comment="Valid Calls, ident on lhs and syn on rhs">19</id><querystr><![CDATA[procedure p, q; Select p such that Calls("procedures",p)]]></querystr>
+<stuans>a,c,e,g</stuans>
+<correct>a,g,c,e</correct>
+<time_taken>8.713000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

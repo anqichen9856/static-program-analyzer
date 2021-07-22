@@ -1,0 +1,2035 @@
+1 - Valid Affects*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,s)
+7,21,23,37,41,42,43,38
+5000
+2 - Valid Affects*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,a)
+7,21,23,37,41,42,43,38
+5000
+3 - Valid Affects*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,n)
+7,21,23,37,41,42,43,38
+5000
+4 - Valid Affects*, syn on both args
+stmt s,s1;
+Select s such that Affects*(s,s1)
+4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43
+5000
+5 - Valid Affects*, syn on both args
+stmt s,s1;
+Select s1.stmt# such that Affects*(s,s1)
+7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43
+5000
+6 - Valid Affects*, syn on both args
+stmt s,s1;
+Select <s,s1> such that Affects*(s,s1)
+4 7,4 11,4 13,4 14,4 15,5 7,5 11,5 13,5 14,5 15,7 7,7 11,7 13,7 14,7 15,9 7,9 11,9 13,9 14,9 15,11 13,11 15,11 14,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 41,30 32,30 35,30 36,30 38,30 39,30 42,30 43,31 32,31 35,31 36,31 42,31 41,31 43,31 39,31 38,32 38,32 42,32 41,32 43,35 38,35 42,35 41,35 43,36 39,36 41,36 42,36 43,36 38,37 37,38 41,38 43,38 38,38 42,39 41,39 42,39 43,39 38,43 38,43 43,41 41,41 42,41 43,41 38,42 42,42 41,42 43,42 38,43 41,43 42
+5000
+7 - Valid Affects*, syn on both args
+assign a,a1;
+Select a such that Affects*(a,a1)
+4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43
+5000
+8 - Valid Affects*, syn on both args
+assign a,a1;
+Select a1 such that Affects*(a,a1)
+7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43
+5000
+9 - Valid Affects*, syn on both args
+assign a,a1;
+Select <a,a1> such that Affects*(a,a1)
+4 7,4 11,4 13,4 14,4 15,5 7,5 11,5 13,5 14,5 15,7 7,7 11,7 13,7 14,7 15,9 7,9 11,9 13,9 14,9 15,11 13,11 15,11 14,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 41,30 32,30 35,30 36,30 38,30 39,30 42,30 43,31 32,31 35,31 36,31 42,31 41,31 43,31 39,31 38,32 38,32 42,32 41,32 43,35 38,35 42,35 41,35 43,36 39,36 41,36 42,36 43,36 38,37 37,38 41,38 43,38 38,38 42,39 41,39 42,39 43,39 38,43 38,43 43,41 41,41 42,41 43,41 38,42 42,42 41,42 43,42 38,43 41,43 42
+5000
+10 - Valid Affects*, syn on both args
+prog_line n,n1;
+Select n such that Affects*(n,n1)
+4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43
+5000
+11 - Valid Affects*, syn on both args
+prog_line n,n1;
+Select n1 such that Affects*(n,n1)
+7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43
+5000
+12 - Valid Affects*, syn on both args
+prog_line n,n1;
+Select <n,n1> such that Affects*(n,n1)
+4 7,4 11,4 13,4 14,4 15,5 7,5 11,5 13,5 14,5 15,7 7,7 11,7 13,7 14,7 15,9 7,9 11,9 13,9 14,9 15,11 13,11 15,11 14,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 41,30 32,30 35,30 36,30 38,30 39,30 42,30 43,31 32,31 35,31 36,31 42,31 41,31 43,31 39,31 38,32 38,32 42,32 41,32 43,35 38,35 42,35 41,35 43,36 39,36 41,36 42,36 43,36 38,37 37,38 41,38 43,38 38,38 42,39 41,39 42,39 43,39 38,43 38,43 43,41 41,41 42,41 43,41 38,42 42,42 41,42 43,42 38,43 41,43 42
+5000
+13 - Valid Affects*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,a)
+4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43
+5000
+14 - Valid Affects*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(s,a)
+7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43
+5000
+15 - Valid Affects*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s,a> such that Affects*(s,a)
+4 7,4 11,4 13,4 14,4 15,5 7,5 11,5 13,5 14,5 15,7 7,7 11,7 13,7 14,7 15,9 7,9 11,9 13,9 14,9 15,11 13,11 15,11 14,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 41,30 32,30 35,30 36,30 38,30 39,30 42,30 43,31 32,31 35,31 36,31 42,31 41,31 43,31 39,31 38,32 38,32 42,32 41,32 43,35 38,35 42,35 41,35 43,36 39,36 41,36 42,36 43,36 38,37 37,38 41,38 43,38 38,38 42,39 41,39 42,39 43,39 38,43 38,43 43,41 41,41 42,41 43,41 38,42 42,42 41,42 43,42 38,43 41,43 42
+5000
+16 - Valid Affects*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,n)
+4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43
+5000
+17 - Valid Affects*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(s,n)
+7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43
+5000
+18 - Valid Affects*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s,n> such that Affects*(s,n)
+4 7,4 11,4 13,4 14,4 15,5 7,5 11,5 13,5 14,5 15,7 7,7 11,7 13,7 14,7 15,9 7,9 11,9 13,9 14,9 15,11 13,11 15,11 14,12 13,12 14,12 15,13 14,13 15,14 15,16 17,18 19,18 21,18 23,18 24,19 21,19 23,19 24,21 21,21 23,21 24,23 23,23 24,26 29,30 31,30 41,30 32,30 35,30 36,30 38,30 39,30 42,30 43,31 32,31 35,31 36,31 42,31 41,31 43,31 39,31 38,32 38,32 42,32 41,32 43,35 38,35 42,35 41,35 43,36 39,36 41,36 42,36 43,36 38,37 37,38 41,38 43,38 38,38 42,39 41,39 42,39 43,39 38,43 38,43 43,41 41,41 42,41 43,41 38,42 42,42 41,42 43,42 38,43 41,43 42
+5000
+19 - Valid Affects*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,_)
+4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43
+5000
+20 - Valid Affects*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,_)
+4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43
+5000
+21 - Valid Affects*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,_)
+4,5,7,9,11,12,13,14,16,18,19,21,23,26,30,31,32,35,36,37,38,39,41,42,43
+5000
+22 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,4)
+
+5000
+23 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,5)
+
+5000
+24 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,7)
+4,7,5,9
+5000
+25 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,9)
+
+5000
+26 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,11)
+4,7,5,9
+5000
+27 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,12)
+
+5000
+28 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,13)
+12,11,9,7,5,4
+5000
+29 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,14)
+12,13,11,9,7,5,4
+5000
+30 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,15)
+12,13,11,9,7,5,4,14
+5000
+31 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,16)
+
+5000
+32 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,17)
+16
+5000
+33 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,18)
+
+5000
+34 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,19)
+18
+5000
+35 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,21)
+18,19,21
+5000
+36 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,23)
+18,19,21,23
+5000
+37 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,24)
+18,19,21,23
+5000
+38 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,26)
+
+5000
+39 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,29)
+26
+5000
+40 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,30)
+
+5000
+41 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,31)
+30
+5000
+42 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,32)
+30,31
+5000
+43 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,35)
+30,31
+5000
+44 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,36)
+30,31
+5000
+45 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,37)
+37
+5000
+46 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,38)
+30,31,32,35,39,41,42,43,38,36
+5000
+47 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,39)
+30,31,36
+5000
+48 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,41)
+30,31,32,38,39,35,36,41,42,43
+5000
+49 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,42)
+30,31,32,35,36,38,39,41,42,43
+5000
+50 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(s,43)
+30,31,32,35,36,38,39,41,42,43
+5000
+51 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,4)
+
+5000
+52 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,5)
+
+5000
+53 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,7)
+4,7,5,9
+5000
+54 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,9)
+
+5000
+55 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,11)
+4,7,5,9
+5000
+56 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,12)
+
+5000
+57 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,13)
+12,11,9,7,5,4
+5000
+58 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,14)
+12,13,11,9,7,5,4
+5000
+59 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,15)
+12,13,11,9,7,5,4,14
+5000
+60 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,16)
+
+5000
+61 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,17)
+16
+5000
+62 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,18)
+
+5000
+63 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,19)
+18
+5000
+64 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,21)
+18,19,21
+5000
+65 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,23)
+18,19,21,23
+5000
+66 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,24)
+18,19,21,23
+5000
+67 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,26)
+
+5000
+68 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,29)
+26
+5000
+69 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,30)
+
+5000
+70 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,31)
+30
+5000
+71 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,32)
+30,31
+5000
+72 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,35)
+30,31
+5000
+73 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,36)
+30,31
+5000
+74 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,37)
+37
+5000
+75 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,38)
+30,31,32,35,39,41,42,43,38,36
+5000
+76 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,39)
+30,31,36
+5000
+77 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,41)
+30,31,32,38,39,35,36,41,42,43
+5000
+78 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,42)
+30,31,32,35,36,38,39,41,42,43
+5000
+79 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(a,43)
+30,31,32,35,36,38,39,41,42,43
+5000
+80 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,4)
+
+5000
+81 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,5)
+
+5000
+82 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,7)
+4,7,5,9
+5000
+83 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,9)
+
+5000
+84 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,11)
+4,7,5,9
+5000
+85 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,12)
+
+5000
+86 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,13)
+12,11,9,7,5,4
+5000
+87 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,14)
+12,13,11,9,7,5,4
+5000
+88 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,15)
+12,13,11,9,7,5,4,14
+5000
+89 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,16)
+
+5000
+90 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,17)
+16
+5000
+91 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,18)
+
+5000
+92 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,19)
+18
+5000
+93 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,21)
+18,19,21
+5000
+94 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,23)
+18,19,21,23
+5000
+95 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,24)
+18,19,21,23
+5000
+96 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,26)
+
+5000
+97 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,29)
+26
+5000
+98 - Valid Affects*, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,30)
+
+5000
+99 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,31)
+30
+5000
+100 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,32)
+30,31
+5000
+101 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,35)
+30,31
+5000
+102 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,36)
+30,31
+5000
+103 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,37)
+37
+5000
+104 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,38)
+30,31,32,35,39,41,42,43,38,36
+5000
+105 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,39)
+30,31,36
+5000
+106 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,41)
+30,31,32,38,39,35,36,41,42,43
+5000
+107 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,42)
+30,31,32,35,36,38,39,41,42,43
+5000
+108 - Valid Affects*, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(n,43)
+30,31,32,35,36,38,39,41,42,43
+5000
+109 - Valid Affects*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(_,s)
+7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43
+5000
+110 - Valid Affects*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(_,a)
+7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43
+5000
+111 - Valid Affects*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects*(_,n)
+7,11,13,14,15,17,19,21,23,24,29,31,32,35,36,37,38,39,41,42,43
+5000
+112 - Valid Affects*, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(_,_)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43
+5000
+113 - Valid Affects*, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Affects*(_,_)
+p1,p2,p3,p4
+5000
+114 - Valid Affects*, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p,cp,c> such that Affects*(_,_)
+p1 3 1,p1 3 2,p1 3 0,p1 3 3,p1 3 4,p1 3 5,p1 3 6,p1 3 7,p1 3 8,p1 3 9,p1 3 10,p1 3 11,p1 3 12,p1 3 13,p1 3 14,p1 3 15,p1 8 1,p1 8 2,p1 8 0,p1 8 3,p1 8 4,p1 8 5,p1 8 6,p1 8 7,p1 8 8,p1 8 9,p1 8 10,p1 8 11,p1 8 12,p1 8 13,p1 8 14,p1 8 15,p1 27 1,p1 27 2,p1 27 0,p1 27 3,p1 27 4,p1 27 5,p1 27 6,p1 27 7,p1 27 8,p1 27 9,p1 27 10,p1 27 11,p1 27 12,p1 27 13,p1 27 14,p1 27 15,p2 3 1,p2 3 2,p2 3 0,p2 3 3,p2 3 4,p2 3 5,p2 3 6,p2 3 7,p2 3 8,p2 3 9,p2 3 10,p2 3 11,p2 3 12,p2 3 13,p2 3 14,p2 3 15,p2 8 1,p2 8 2,p2 8 0,p2 8 3,p2 8 4,p2 8 5,p2 8 6,p2 8 7,p2 8 8,p2 8 9,p2 8 10,p2 8 11,p2 8 12,p2 8 13,p2 8 14,p2 8 15,p2 27 1,p2 27 2,p2 27 0,p2 27 3,p2 27 4,p2 27 5,p2 27 6,p2 27 7,p2 27 8,p2 27 9,p2 27 10,p2 27 11,p2 27 12,p2 27 13,p2 27 14,p2 27 15,p3 3 1,p3 3 2,p3 3 0,p3 3 3,p3 3 4,p3 3 5,p3 3 6,p3 3 7,p3 3 8,p3 3 9,p3 3 10,p3 3 11,p3 3 12,p3 3 13,p3 3 14,p3 3 15,p3 8 1,p3 8 2,p3 8 0,p3 8 3,p3 8 4,p3 8 5,p3 8 6,p3 8 7,p3 8 8,p3 8 9,p3 8 10,p3 8 11,p3 8 12,p3 8 13,p3 8 14,p3 8 15,p3 27 1,p3 27 2,p3 27 0,p3 27 3,p3 27 4,p3 27 5,p3 27 6,p3 27 7,p3 27 8,p3 27 9,p3 27 10,p3 27 11,p3 27 12,p3 27 13,p3 27 14,p3 27 15,p4 3 1,p4 3 2,p4 3 0,p4 3 3,p4 3 4,p4 3 5,p4 3 6,p4 3 7,p4 3 8,p4 3 9,p4 3 10,p4 3 11,p4 3 12,p4 3 13,p4 3 14,p4 3 15,p4 8 1,p4 8 2,p4 8 0,p4 8 3,p4 8 4,p4 8 5,p4 8 6,p4 8 7,p4 8 8,p4 8 9,p4 8 10,p4 8 11,p4 8 12,p4 8 13,p4 8 14,p4 8 15,p4 27 1,p4 27 2,p4 27 0,p4 27 3,p4 27 4,p4 27 5,p4 27 6,p4 27 7,p4 27 8,p4 27 9,p4 27 10,p4 27 11,p4 27 12,p4 27 13,p4 27 14,p4 27 15,
+5000
+115 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,1)
+FALSE
+5000
+116 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,2)
+FALSE
+5000
+117 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,3)
+FALSE
+5000
+118 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,4)
+FALSE
+5000
+119 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,5)
+FALSE
+5000
+120 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,7)
+TRUE
+5000
+121 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,9)
+FALSE
+5000
+122 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,11)
+TRUE
+5000
+123 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,12)
+FALSE
+5000
+124 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,13)
+TRUE
+5000
+125 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,14)
+TRUE
+5000
+126 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,15)
+TRUE
+5000
+127 - Valid Affects*, wildcard on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,16)
+FALSE
+5000
+128 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,17)
+TRUE
+5000
+129 - Valid Affects*, wildcard on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,18)
+FALSE
+5000
+130 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,19)
+TRUE
+5000
+131 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,21)
+TRUE
+5000
+132 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,23)
+TRUE
+5000
+133 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,24)
+TRUE
+5000
+134 - Valid Affects*, wildcard on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,26)
+FALSE
+5000
+135 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(_,29)
+TRUE
+5000
+136 - Valid Affects*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp,cp.procName,w,ifs> such that Affects*(_,29)
+3 p2 6 10,3 p2 6 34,3 p2 20 10,3 p2 20 34,3 p2 22 10,3 p2 22 34,3 p2 33 10,3 p2 33 34,3 p2 40 10,3 p2 40 34,8 p3 6 10,8 p3 6 34,8 p3 20 10,8 p3 20 34,8 p3 22 10,8 p3 22 34,8 p3 33 10,8 p3 33 34,8 p3 40 10,8 p3 40 34,27 p4 6 10,27 p4 6 34,27 p4 20 10,27 p4 20 34,27 p4 22 10,27 p4 22 34,27 p4 33 10,27 p4 33 34,27 p4 40 10,27 p4 40 34,
+5000
+137 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(4,7)
+TRUE
+5000
+138 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(4,11)
+TRUE
+5000
+139 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(4,13)
+TRUE
+5000
+140 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(4,14)
+TRUE
+5000
+141 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(4,15)
+TRUE
+5000
+142 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(5,7)
+TRUE
+5000
+143 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(5,11)
+TRUE
+5000
+144 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(5,13)
+TRUE
+5000
+145 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(5,14)
+TRUE
+5000
+146 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(5,15)
+TRUE
+5000
+147 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(7,7)
+TRUE
+5000
+148 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(7,11)
+TRUE
+5000
+149 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(7,13)
+TRUE
+5000
+150 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(7,14)
+TRUE
+5000
+151 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(7,15)
+TRUE
+5000
+152 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(11,13)
+TRUE
+5000
+153 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(11,15)
+TRUE
+5000
+154 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(11,14)
+TRUE
+5000
+155 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(12,13)
+TRUE
+5000
+156 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(12,14)
+TRUE
+5000
+157 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(12,15)
+TRUE
+5000
+158 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(13,14)
+TRUE
+5000
+159 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(13,15)
+TRUE
+5000
+160 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(14,15)
+TRUE
+5000
+161 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(16,17)
+TRUE
+5000
+162 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(18,19)
+TRUE
+5000
+163 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(18,21)
+TRUE
+5000
+164 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(18,23)
+TRUE
+5000
+165 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(18,24)
+TRUE
+5000
+166 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(19,21)
+TRUE
+5000
+167 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(19,23)
+TRUE
+5000
+168 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(19,24)
+TRUE
+5000
+169 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(21,21)
+TRUE
+5000
+170 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(21,23)
+TRUE
+5000
+171 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(21,24)
+TRUE
+5000
+172 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(23,23)
+TRUE
+5000
+173 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(23,24)
+TRUE
+5000
+174 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(26,29)
+TRUE
+5000
+175 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(30,31)
+TRUE
+5000
+176 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(30,41)
+TRUE
+5000
+177 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(30,32)
+TRUE
+5000
+178 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(30,35)
+TRUE
+5000
+179 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(30,36)
+TRUE
+5000
+180 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(30,38)
+TRUE
+5000
+181 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(30,39)
+TRUE
+5000
+182 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(30,42)
+TRUE
+5000
+183 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(30,43)
+TRUE
+5000
+184 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(31,32)
+TRUE
+5000
+185 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(31,35)
+TRUE
+5000
+186 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(31,36)
+TRUE
+5000
+187 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(31,42)
+TRUE
+5000
+188 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(31,41)
+TRUE
+5000
+189 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(31,43)
+TRUE
+5000
+190 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(31,39)
+TRUE
+5000
+191 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(31,38)
+TRUE
+5000
+192 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(32,38)
+TRUE
+5000
+193 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(32,42)
+TRUE
+5000
+194 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(32,41)
+TRUE
+5000
+195 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(32,43)
+TRUE
+5000
+196 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(35,38)
+TRUE
+5000
+197 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(35,42)
+TRUE
+5000
+198 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(35,41)
+TRUE
+5000
+199 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(35,43)
+TRUE
+5000
+200 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(36,39)
+TRUE
+5000
+201 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(36,41)
+TRUE
+5000
+202 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(36,42)
+TRUE
+5000
+203 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(36,43)
+TRUE
+5000
+204 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(36,38)
+TRUE
+5000
+205 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(37,37)
+TRUE
+5000
+206 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(38,41)
+TRUE
+5000
+207 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(38,42)
+TRUE
+5000
+208 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(38,43)
+TRUE
+5000
+209 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(38,38)
+TRUE
+5000
+210 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,41)
+TRUE
+5000
+211 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,42)
+TRUE
+5000
+212 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,43)
+TRUE
+5000
+213 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,38)
+TRUE
+5000
+214 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(41,41)
+TRUE
+5000
+215 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(41,42)
+TRUE
+5000
+216 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(41,43)
+TRUE
+5000
+217 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(41,38)
+TRUE
+5000
+218 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(42,42)
+TRUE
+5000
+219 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(42,41)
+TRUE
+5000
+220 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(42,43)
+TRUE
+5000
+221 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(42,38)
+TRUE
+5000
+222 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(43,38)
+TRUE
+5000
+223 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(43,43)
+TRUE
+5000
+224 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(4,5)
+FALSE
+5000
+225 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(9,9)
+FALSE
+5000
+226 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(5,9)
+FALSE
+5000
+227 - Valid Affects*, INTEGER on both args,
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(9,11)
+TRUE
+5000
+228 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(9,12)
+FALSE
+5000
+229 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(9,13)
+TRUE
+5000
+230 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(9,14)
+TRUE
+5000
+231 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(9,15)
+TRUE
+5000
+232 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(13,12)
+FALSE
+5000
+233 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(14,13)
+FALSE
+5000
+234 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(16,18)
+FALSE
+5000
+235 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(16,19)
+FALSE
+5000
+236 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(17,18)
+FALSE
+5000
+237 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(17,21)
+FALSE
+5000
+238 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(16,21)
+FALSE
+5000
+239 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(21,18)
+FALSE
+5000
+240 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(21,19)
+FALSE
+5000
+241 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(24,26)
+FALSE
+5000
+242 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(26,16)
+FALSE
+5000
+243 - Valid Affects*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(30,36)
+TRUE
+5000
+244 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(30,37)
+FALSE
+5000
+245 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(31,37)
+FALSE
+5000
+246 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(32,37)
+FALSE
+5000
+247 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(32,35)
+FALSE
+5000
+248 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(32,36)
+FALSE
+5000
+249 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(32,37)
+FALSE
+5000
+250 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(36,37)
+FALSE
+5000
+251 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(37,38)
+FALSE
+5000
+252 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(37,35)
+FALSE
+5000
+253 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(37,36)
+FALSE
+5000
+254 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(37,39)
+FALSE
+5000
+255 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(37,41)
+FALSE
+5000
+256 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(37,42)
+FALSE
+5000
+257 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(37,43)
+FALSE
+5000
+258 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(38,35)
+FALSE
+5000
+259 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(38,36)
+FALSE
+5000
+260 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(38,30)
+FALSE
+5000
+261 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(38,31)
+FALSE
+5000
+262 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(38,32)
+FALSE
+5000
+263 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,30)
+FALSE
+5000
+264 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,31)
+FALSE
+5000
+265 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,32)
+FALSE
+5000
+266 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,35)
+FALSE
+5000
+267 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,36)
+FALSE
+5000
+268 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,37)
+FALSE
+5000
+269 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,39)
+FALSE
+5000
+270 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(39,39)
+FALSE
+5000
+271 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(41,30)
+FALSE
+5000
+272 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(41,31)
+FALSE
+5000
+273 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(41,32)
+FALSE
+5000
+274 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(41,35)
+FALSE
+5000
+275 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(41,36)
+FALSE
+5000
+276 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(41,37)
+FALSE
+5000
+277 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(41,39)
+FALSE
+5000
+278 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(42,30)
+FALSE
+5000
+279 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(42,31)
+FALSE
+5000
+280 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(42,32)
+FALSE
+5000
+281 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(42,35)
+FALSE
+5000
+282 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(42,36)
+FALSE
+5000
+283 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(42,37)
+FALSE
+5000
+284 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(42,39)
+FALSE
+5000
+285 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(43,30)
+FALSE
+5000
+286 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(43,31)
+FALSE
+5000
+287 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(43,32)
+FALSE
+5000
+288 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(43,35)
+FALSE
+5000
+289 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(43,36)
+FALSE
+5000
+290 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(43,37)
+FALSE
+5000
+291 - Valid Affects*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects*(43,39)
+FALSE
+5000
+292 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(4,s)
+7,11,13,14,15
+5000
+293 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(5,s)
+7,11,13,14,15
+5000
+294 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(7,s)
+7,11,13,14,15
+5000
+295 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(9,s)
+7,11,13,14,15
+5000
+296 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(11,s)
+13,14,15
+5000
+297 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(12,s)
+13,14,15
+5000
+298 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(13,s)
+14,15
+5000
+299 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(14,s)
+15
+5000
+300 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(15,s)
+
+5000
+301 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(16,s)
+17
+5000
+302 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(17,s)
+
+5000
+303 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(18,s)
+19,21,23,24
+5000
+304 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(19,s)
+21,23,24
+5000
+305 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(21,s)
+21,23,24
+5000
+306 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(23,s)
+23,24
+5000
+307 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(24,s)
+
+5000
+308 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(26,s)
+29
+5000
+309 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(29,s)
+
+5000
+310 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(30,s)
+31,41,32,35,36,38,39,42,43
+5000
+311 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(31,s)
+32,35,36,42,41,43,39,38
+5000
+312 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(32,s)
+38,42,41,43
+5000
+313 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(35,s)
+38,42,41,43
+5000
+314 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(36,s)
+39,41,42,43,38
+5000
+315 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(37,s)
+37
+5000
+316 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(38,s)
+41,43,38,42
+5000
+317 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(39,s)
+41,42,43,38
+5000
+318 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(41,s)
+ 41, 42, 43, 38
+5000
+319 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(42,s)
+ 42, 41, 43, 38,
+5000
+320 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects*(43,s)
+ 41, 42, 38, 43,
+5000
+321 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(4,a)
+7,11,13,14,15
+5000
+322 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(5,a)
+7,11,13,14,15
+5000
+323 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(7,a)
+7,11,13,14,15
+5000
+324 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(9,a)
+7,11,13,14,15
+5000
+325 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(11,a)
+13,15,14
+5000
+326 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(12,a)
+13,15,14
+5000
+327 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(13,a)
+15,14
+5000
+328 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(14,a)
+15
+5000
+329 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(15,a)
+
+5000
+330 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(16,a)
+17
+5000
+331 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(17,a)
+
+5000
+332 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(18,a)
+19,21,23,24
+5000
+333 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(19,a)
+21,23,24
+5000
+334 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(21,a)
+21,23,24
+5000
+335 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(23,a)
+23,24
+5000
+336 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(24,a)
+
+5000
+337 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(26,a)
+29
+5000
+338 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(29,a)
+
+5000
+339 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(30,a)
+31,41,32,35,36,38,39,42,43
+5000
+340 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(31,a)
+32,35,36,42,41,43,39,38
+5000
+341 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(32,a)
+38,42,41,43
+5000
+342 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(35,a)
+38,42,41,43
+5000
+343 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(36,a)
+39,41,42,43,38
+5000
+344 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(37,a)
+37
+5000
+345 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(38,a)
+41,43,38,42
+5000
+346 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(39,a)
+41,42,43,38
+5000
+347 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(41,a)
+ 41, 42, 43, 38
+5000
+348 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(42,a)
+ 41, 42, 43, 38
+5000
+349 - Valid Affects*, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects*(43,a)
+ 41, 42, 43, 38
+5000
+350 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+prog_line n;
+Select n such that Affects*(4,n)
+7,11,13,14,15
+5000
+351 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+prog_line n;
+Select n such that Affects*(5,n)
+7,11,13,14,15
+5000
+352 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+prog_line n;
+Select n such that Affects*(7,n)
+7,11,13,14,15
+5000
+353 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+prog_line n;
+Select n such that Affects*(9,n)
+7,11,13,14,15
+5000
+354 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(11,n)
+13,14,15
+5000
+355 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(12,n)
+13,14,15
+5000
+356 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(13,n)
+14,15
+5000
+357 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(14,n)
+15
+5000
+358 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+prog_line n;
+Select n such that Affects*(15,n)
+
+5000
+359 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(16,n)
+17
+5000
+360 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+prog_line n;
+Select n such that Affects*(17,n)
+
+5000
+361 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(18,n)
+19,21,23,24
+5000
+362 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(19,n)
+21,23,24
+5000
+363 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(21,n)
+21,23,24
+5000
+364 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(23,n)
+23,24
+5000
+365 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+prog_line n;
+Select n such that Affects*(24,n)
+
+5000
+366 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(26,n)
+29
+5000
+367 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+prog_line n;
+Select n such that Affects*(29,n)
+
+5000
+368 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(30,n)
+31,41,32,35,36,38,39,42,43
+5000
+369 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(31,n)
+32,35,36,42,41,43,39,38
+5000
+370 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(32,n)
+38,42,41,43
+5000
+371 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(35,n)
+38,42,41,43
+5000
+372 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(36,n)
+39,41,42,43,38
+5000
+373 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(37,n)
+37
+5000
+374 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(38,n)
+41,43,38,42
+5000
+375 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(39,n)
+41,42,43,38
+5000
+376 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(41,n)
+41,42,43,38
+5000
+377 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(42,n)
+41,42,43,38
+5000
+378 - Valid Affects*, INTEGER on lhs and syn on rhs
+prog_line n;
+Select n such that Affects*(43,n)
+41,42,43,38
+5000
+379 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(4,_)
+TRUE
+5000
+380 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(5,_)
+TRUE
+5000
+381 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(7,_)
+TRUE
+5000
+382 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(9,_)
+TRUE
+5000
+383 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(11,_)
+TRUE
+5000
+384 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(12,_)
+TRUE
+5000
+385 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(13,_)
+TRUE
+5000
+386 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(14,_)
+TRUE
+5000
+387 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+
+Select BOOLEAN such that Affects*(15,_)
+FALSE
+5000
+388 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(16,_)
+TRUE
+5000
+389 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+
+Select BOOLEAN such that Affects*(17,_)
+FALSE
+5000
+390 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(18,_)
+TRUE
+5000
+391 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(19,_)
+TRUE
+5000
+392 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(21,_)
+TRUE
+5000
+393 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(23,_)
+TRUE
+5000
+394 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+
+Select BOOLEAN such that Affects*(24,_)
+FALSE
+5000
+395 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(26,_)
+TRUE
+5000
+396 - Valid Affects*, INTEGER on lhs and syn on rhs, no result
+
+Select BOOLEAN such that Affects*(29,_)
+FALSE
+5000
+397 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(30,_)
+TRUE
+5000
+398 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(31,_)
+TRUE
+5000
+399 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(32,_)
+TRUE
+5000
+400 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(35,_)
+TRUE
+5000
+401 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(36,_)
+TRUE
+5000
+402 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(37,_)
+TRUE
+5000
+403 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(38,_)
+TRUE
+5000
+404 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(39,_)
+TRUE
+5000
+405 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(41,_)
+TRUE
+5000
+406 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(42,_)
+TRUE
+5000
+407 - Valid Affects*, INTEGER on lhs and syn on rhs
+
+Select BOOLEAN such that Affects*(43,_)
+TRUE
+5000

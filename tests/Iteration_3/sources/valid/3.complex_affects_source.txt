@@ -1,0 +1,77 @@
+procedure Naruto {
+	anime = cartoon + japanese;
+	call OnePiece;
+	naruto = anime + shinobi;
+	read shinobi;
+	hokage = shinobi + jounin + protecc + attacc;
+	call OnePiece;
+	naruto = hokage * shippuden;
+	while (konoha > gakure) {
+		jiraiya = jiraiya * 6789;
+		boruto = naruto + hinata;
+		blue = purple / red;
+		purple = blue * red;
+		call OnePiece;
+		bluelightning = chidori - 123;
+		while (rasengan > chidori) {
+			rasenshuriken = wind + style + rotation + rasengan + shuriken + chakra + blue + naruto - fire - earth / water;
+			genin = noob;
+			chuunin = genin + stillnoob;
+			kaiten = byakugan + spinspin;
+			if (itachi == sasuke) then {
+				chidori = lightning + chakra + blue;
+			} else {
+				chidori = chidori;
+				if (tobi == madara) then {
+					amaterasu = fire + black;
+					blackflames = jutsu * amaterasu;
+					call OnePiece;
+					amaterasu = blackflames / 7;
+					while (chidori == chidori) {
+						jutsu = skill;
+						gokyaku = 2 * fireball + 3;
+						call OnePiece;
+						fireball = fire * jutsu + breath;
+					}
+				} else {
+					blackflames = amaterasu;
+					susaano = big + skeleton + purple;
+					susaano = big + skeleton + blue;
+					susaano = big + skeleton + red;
+				}
+			}
+			purplesusaano = susaano + sasuke;
+			byakugan = white * eyes;
+		}
+		jounin = chuunin * skills;
+		kagebunshin = replicate * jutsu;
+		taajukagebunshin = kagebunshin * manymany;
+	}
+	noob = genin;
+	blackflames = amaterasu;
+}
+
+procedure OnePiece {
+	anime = cartoon + japanese;
+	purple = fabulous;
+	blackbeard = blackflames + missingtooth;
+	ace = fireball + rip;
+	luffy = pirate;
+	nami = luffy;
+	sanji = nami;
+	zoro = sanji;
+	chopper = zoro;
+	robin = chopper;
+	brook = robin;
+	frank = brook;
+	usopp = frank;
+	while (four == emperors) {
+		shanks = whitebeard;
+		while (grand == line) {
+			whitebeard = bigmom;
+			while (red == line) {
+				bigmom = kaido;
+			}
+		}
+	}
+}

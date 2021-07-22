@@ -1,0 +1,455 @@
+1 - Invalid pattern while, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w pattern w(p,_)
+
+5000
+2 - Invalid pattern while, syn on lhs and wildcard on rhs, syntactically valid but semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern w(c,_)
+FALSE
+5000
+3 - Invalid pattern while, syn on lhs and wildcard on rhs, syntactically valid but semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern w(c,_)
+FALSE
+5000
+4 - Invalid pattern while, syn on lhs and wildcard on rhs, syntactically valid but semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern w(c,_)
+FALSE
+5000
+5 - Invalid pattern while, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w pattern w(r,_)
+
+5000
+6 - Invalid pattern while, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w pattern w(pr,_)
+
+5000
+7 - Invalid pattern while, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w pattern w(cp,_)
+
+5000
+8 - Invalid pattern while, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w pattern w(w,_)
+
+5000
+9 - Invalid pattern while, syn on lhs and wildcard on rhs
+while w;while w1;
+Select w pattern w(w1,_)
+
+5000
+10 - Invalid pattern while, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w pattern w(ifs,_)
+
+5000
+11 - Invalid pattern while, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w pattern w(a,_)
+
+5000
+12 - Invalid pattern while, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w pattern w(n,_)
+
+5000
+13 - Invalid pattern while, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w.varName pattern w(_,_)
+
+5000
+14 - Invalid pattern while, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w patternw(_,_)
+
+5000
+15 - Invalid pattern while, ident on lhs and wildcard on rhs
+while w;
+Select BOOLEAN pattern w("noVar",_)
+FALSE
+5000
+16 - Invalid pattern while, ident on lhs and wildcard on rhs, syntactically incorrect as ident can only be name
+while w;
+Select BOOLEAN pattern w("_",_)
+
+5000
+17 - Invalid pattern while, ident on lhs and wildcard on rhs,syntactically incorrect as ident can only be name
+while w;
+Select BOOLEAN pattern w("4",_)
+
+5000
+18 - Invalid pattern while, wildcard on lhs and syn on rhs
+while w; assign a;
+Select BOOLEAN pattern w(_,a)
+
+5000
+19 - Invalid pattern while, wildcard on lhs and syn on rhs
+while w; variable v;
+Select BOOLEAN pattern w(_,v)
+
+5000
+20 - Invalid pattern while, wildcard on lhs and syn on rhs
+while w; constant c;
+Select BOOLEAN pattern w(_,c)
+
+5000
+21 - Invalid pattern while, wildcard on lhs and syn on rhs
+while w; stmt s;
+Select BOOLEAN pattern w(_,s)
+
+5000
+22 - Invalid pattern while, syn on both args
+while w; stmt s; prog_line n;
+Select BOOLEAN pattern w(s,n)
+
+5000
+23 - Invalid pattern while, syn on lhs and ident on rhs, syntactically invalid
+while w; stmt s; prog_line n; variable v;
+Select BOOLEAN pattern w(v,"v1")
+
+5000
+24 - Invalid pattern while, syn on lhs and ident on rhs on both args, syntactically invalid
+while w; stmt s; prog_line n; variable v;
+Select BOOLEAN pattern w(v,"superNoob")
+
+5000
+25 - Invalid pattern while, integer on lhs and wildcard on rhs, syntactically invalid
+while w; stmt s; prog_line n;
+Select BOOLEAN pattern w(1,_)
+
+5000
+26 - Invalid pattern while, integer on lhs and wildcard on rhs, syntactically invalid
+while w; stmt s; prog_line n;
+Select BOOLEAN pattern w(2,_)
+
+5000
+27 - Invalid pattern while, integer on lhs and wildcard on rhs, syntactically invalid
+while w; stmt s; prog_line n;
+Select BOOLEAN pattern w(4,_)
+
+5000
+28 - Invalid pattern if, syn,wildcard,wilcard on args, syntactically valid but semantically invalid
+if ifs; constant c;
+Select c.value pattern ifs(c,_,_)
+
+5000
+29 - Invalid pattern if, syn,wildcard,wilcard on args, syntactically valid but semantically invalid
+if ifs; constant c;
+Select BOOLEAN pattern ifs(c,_,_)
+FALSE
+5000
+30 - Invalid pattern if, syn,wildcard,wilcard on args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs,c.value> pattern ifs(c,_,_)
+
+5000
+31 - Invalid pattern if, syn,wildcard,wilcard on args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs pattern ifs(p,_,_)
+
+5000
+32 - Invalid pattern if, syn,wildcard,wilcard on args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs pattern ifs(s,_,_)
+
+5000
+33 - Invalid pattern if, syn,wildcard,wilcard on args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs pattern ifs(r,_,_)
+
+5000
+34 - Invalid pattern if, syn,wildcard,wilcard on args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs.varName pattern ifs(pr,_,_)
+
+5000
+35 - Invalid pattern if, syn,wildcard,wilcard on args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs(cp,_,_)
+FALSE
+5000
+36 - Invalid pattern if, syn,wildcard,wilcard on args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs(w,_,_)
+FALSE
+5000
+37 - Invalid pattern if, syn,wildcard,wilcard on args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs(ifs,_,_)
+FALSE
+5000
+38 - Invalid pattern if, syn,wildcard,wilcard on args
+if ifs1,ifs2;
+Select BOOLEAN pattern ifs(ifs2,_,_)
+FALSE
+5000
+39 - Invalid pattern if, syn,wildcard,wilcard on args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs(a,_,_)
+FALSE
+5000
+40 - Invalid pattern if, syn,wildcard,wilcard on args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs(n,_,_)
+FALSE
+5000
+41 - Valid pattern if, wildcard on all args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs> pattern ifs(_,_,_)
+4,12,14,22,25
+5000
+42 - Invalid pattern if, wildcard on all args, syntactically invalid as IDENT should only be name
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs("_",_,_)
+
+5000
+43 - Invalid pattern if, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs(_,"_",_)
+
+5000
+44 - Invalid pattern if, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs(_,_,"_")
+
+5000
+45 - Invalid pattern if, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs(_,"easy","level")
+
+5000
+46 - Invalid pattern if, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs(_,"easy",_)
+
+5000
+47 - Invalid pattern if, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs(_,_,"level")
+
+5000
+48 - Invalid pattern if, syn,wildcard,wilcard on args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs pattern ifs("while",_,_)
+
+5000
+49 - Invalid pattern if, syn,wildcard,wilcard on args, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs("4",_,_)
+
+5000
+50 - Invalid pattern if, syn,wildcard,wilcard on args, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs("2",_,_)
+
+5000
+51 - Invalid pattern if, syn,wildcard,wilcard on args, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern ifs(2,_,_)
+
+5000
+52 - Invalid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS
+assign a;
+Select a pattern a(_, "b")
+
+5000
+53 - Invalid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS
+assign a;
+Select a pattern a(_, "b")
+
+5000
+54 - Invalid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS
+assign a;
+Select a pattern a(_, "c")
+
+5000
+55 - Invalid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS
+assign a;
+Select a pattern a(_, "b")
+
+5000
+56 - Invalid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS
+assign a;
+Select a pattern a(_, "complicated")
+
+5000
+57 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p pattern a(p, "complicated + here + ltr")
+
+5000
+58 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c pattern a(c, "complicated + here + ltr")
+
+5000
+59 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s pattern a(s, "complicated + here + ltr")
+
+5000
+60 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r pattern a(r, "complicated + here + ltr")
+
+5000
+61 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr pattern a(pr, "complicated + here + ltr")
+
+5000
+62 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp pattern a(cp, "complicated + here + ltr")
+
+5000
+63 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w pattern a(w, "complicated + here + ltr")
+
+5000
+64 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs pattern a(ifs, "complicated + here + ltr")
+
+5000
+65 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(a, "complicated + here + ltr")
+
+5000
+66 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS
+assign a, a1;
+Select a1 pattern a(a1, "complicated + here + ltr")
+
+5000
+67 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n pattern a(n, "complicated + here + ltr")
+
+5000
+68 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_, "easy + question) / mark")
+
+5000
+69 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_, "while + ((d + sum) / f)) - 20")
+
+5000
+70 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_, "else / ((((2+3)-four)/five)*((six+six2)%seven")
+
+5000
+71 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_, "left % (middle -(right * (left + (middle/(left + (middle - right) * right")
+
+5000
+72 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_, "left % (middle -(right * (left + (middle/(left + (middle - right) * right)")
+
+5000
+73 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_, "left % (middle -(right * (left + (middle/(left + (middle - right) * right))")
+
+5000
+74 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_, "left % (middle -(right * (left + (middle/(left + (middle - right) * right)))")
+
+5000
+75 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_, "left % (middle -(right * (left + (middle/(left + (middle - right) * right))))")
+
+5000
+76 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_, "2+3)-4*(5+6)+8*(10%2)")
+
+5000
+77 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_, "(2+3)-4*(5+6)+8*(10%2")
+
+5000
+78 - Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_, "i*(i-(i/2))+i)+3")
+
+5000
+79 - Invalid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_, _"while + ((d + sum) / f"_)
+
+5000
+80 - Invalid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_, _"while + ((d + sum)"_)
+
+5000
+81 - Invalid Pattern Assign: syn on LHS, Partial Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a,v> pattern a(v, _"((2+3)-four)/five)"_)
+
+5000
+82 - Invalid Pattern Assign: syn on LHS, Partial Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(v, _"2+3)-four)/five"_)
+
+5000
+83 - Invalid Pattern Assign: syn on LHS, Partial Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(v, _"six+six2)%seven"_)
+
+5000
+84 - Invalid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(v, _"four)/five)*((six+six2"_)
+
+5000
+85 - Invalid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(v, _"four)/five)*((six+six2"_)
+
+5000
+86 - Invalid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(v, _"else / ((((2+3)-four)/five)"_)
+
+5000
+87 - Invalid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a("left", _"left % (middle -(right * (left + (middle/(left + (middle - right) * right)"_)
+
+5000
+88 - Invalid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a("left", _"middle/(left + (middle - right) * right"_)
+
+5000
+89 - Invalid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS,  syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a("left", _"middle/(left + (middle - right) * right)))"_)
+
+5000
+90 - Invalid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a("left", _"middle/(left + (middle - right) * right))))))))))))))))))))))"_)
+
+5000
+91 - Invalid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a("g", _"2+3)-4*(5+6)+8*(10%2"_)
+
+5000

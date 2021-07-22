@@ -1,0 +1,38 @@
+procedure DISNEY {
+    disney = 100; //1
+    excitement = 0; //2
+    while((new+movie) == disney) { //3
+        hype = 1000; //4
+        read hype; //5
+        excitement =  excitement + hype; //6
+        snow = snow%1+ 2*white; //7
+        white = apple + die; //8
+        call ratings;//9
+        snow = excitement + 101;//10
+    }
+    beautiful = very; // 11
+    if(princess==beautiful) then {//12
+        snow = 3 - white;//13
+    } else {
+        beauty = beast; //14
+    }
+    beauty = beauty + snow + white;//15
+    end = evil + queen; //16
+    call marvels;//17
+    disney = end;//18
+    end = disney;//19
+}
+
+procedure ratings {
+    reviews = good / bad;//20
+    snow = ok;//21
+    beauty = bad;//22
+    bad = white;//23
+}
+
+procedure marvels {
+    read end; //24
+    avengers = 200;//25
+    last = scene + end;//26
+    avengers = avengers + 100000;//27
+}

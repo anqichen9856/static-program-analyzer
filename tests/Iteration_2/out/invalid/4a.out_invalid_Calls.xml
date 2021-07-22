@@ -1,0 +1,183 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>26.977000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, args on both args, semantically invalid">1</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Calls(p,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.310000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, args on both args, semantically invalid">2</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Calls(v,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.518000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, args on both args, semantically invalid">3</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls(c,c)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>12.023000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, args on both args, semantically invalid">4</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls(s,s)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>12.634000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, args on both args, semantically invalid">5</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls(r,r)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>13.045000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, args on both args, semantically invalid">6</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls(pr,pr)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>12.432000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, args on both args, semantically invalid">7</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls(cp,cp)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>12.089000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, args on both args, semantically invalid">8</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls(p,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.780000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, args on both args, semantically invalid">9</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls(p,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>14.456000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, args on both args, semantically invalid">10</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls(p,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.998000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Calls, wildcard on lhs and syn on rhs, semantically invalid">11</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Calls(_,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.246000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, semantically invalid, no declaration of syn q">12</id><querystr><![CDATA[procedure p; Select BOOLEAN such that Calls(_,q)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.405000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Calls, wildcard on lhs and syn on rhs, semantically invalid">13</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Calls(_,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.122000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Calls, wildcard on lhs and syn on rhs, semantically invalid">14</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls(_,s)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>13.823000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Calls, wildcard on lhs and syn on rhs, semantically invalid">15</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Calls(_,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.114000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Calls, wildcard on lhs and syn on rhs, semantically invalid">16</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls(_,pr)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>13.963000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls, syntactically invalid">17</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls(1,2)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.414000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Calls, syntactically invalid">18</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls(1,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.665000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls*, args on both args, semantically invalid">20</id><querystr><![CDATA[procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p.procName, q.procName> such that Calls*(p,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>15.796000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls*, args on both args, semantically invalid">21</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls*(p,s)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>13.916000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls*, args on both args, semantically invalid">22</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls*(p,n)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>13.697000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Calls*, syn on lhs and wildcard on rhs, semantically invalid">23</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Calls*(a,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.095000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Calls*, wildcard on lhs and syn on rhs, semantically invalid">24</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp.stmt# such that Calls*(_,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.937000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls*, IDENT on lhs and syn on RHS, semantically invalid">25</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*("sing", cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>14.737000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Calls*, syntactically invalid">26</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls*(1, 2)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.391000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

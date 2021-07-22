@@ -1,0 +1,50 @@
+1 - Invalid pattern assign, wildcard on lhs and partial matching on rhs, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a pattern a(_,_"*k/l+m"_)
+
+5000
+2 - Invalid pattern assign, wildcard on lhs and partial matching on rhs, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(1,_"c*d"_)
+
+5000
+3 - Invalid pattern assign, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(1,_"c*d_)
+
+5000
+4 - Invalid pattern assign, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN pattern a(_,v)
+
+5000
+5 - Invalid pattern assign, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN Pattern a(_,_)
+
+5000
+6 - Invalid pattern assign, syntactically invalid
+assign a_1;
+Select BOOLEAN pattern a_1(_,_)
+
+5000
+7 - Invalid pattern assign, syntactically invalid
+assign a1;
+Select BOOLEAN patttern a1(_,_)
+
+5000
+8 - Invalid pattern assign, syntactically invalid
+assign a1;
+Select BOOLEAN pattern a   1(_,_)
+
+5000
+9 - Invalid pattern assign, syntactically invalid
+assign a1;
+Selec     t BOOLEAN pattern a1(_,_)
+
+5000
+9 - Invalid pattern assign, syntactically invalid
+assign a;
+Select BOOLEAN patterna(_,_)
+
+5000

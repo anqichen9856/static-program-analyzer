@@ -1,0 +1,49 @@
+procedure procedures {
+call a;
+call g;
+call c;
+call e;
+}
+
+procedure a {
+call g;
+call b;
+call c;
+call d;
+}
+
+procedure g {
+g1 = true;
+}
+
+procedure c {
+call e;
+}
+
+procedure e {
+call g;
+}
+
+procedure b {
+call g;
+call d;
+call c;
+}
+
+procedure d {
+call g;
+call f;
+}
+
+procedure f {
+call g;
+call e;
+}
+
+procedure z {
+z1 = 0;
+}
+
+procedure x {
+x1 = false;
+}

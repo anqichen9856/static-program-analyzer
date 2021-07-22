@@ -1,0 +1,10 @@
+#ifndef AUTOTESTER_TESTPKB_H
+#define AUTOTESTER_TESTPKB_H
+
+
+class TestPKB {
+
+};
+
+
+#endif //AUTOTESTER_TESTPKB_H

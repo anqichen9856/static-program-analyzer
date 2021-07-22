@@ -1,0 +1,77 @@
+procedure Naruto {
+	anime = cartoon + japanese; //1
+	call OnePiece; //2
+	naruto = anime + shinobi; //3
+	read shinobi; //4
+	hokage = shinobi + jounin + protecc + attacc; //5
+	call OnePiece; //6
+	naruto = hokage * shippuden; //7
+	while (konoha > gakure) { //8
+		jiraiya = jiraiya * 6789; //9
+		boruto = naruto + hinata; //10
+		blue = purple / red; //11
+		purple = blue * red; //12
+		call OnePiece; //13
+		bluelightning = chidori - 123; //14
+		while (rasengan > chidori) { //15
+			rasenshuriken = wind + style + rotation + rasengan + shuriken + chakra + blue + naruto - fire - earth / water; //16
+			genin = noob; //17
+			chuunin = genin + stillnoob; //18
+			kaiten = byakugan + spinspin; //19
+			if (itachi == sasuke) then { //20
+				chidori = lightning + chakra + blue; //21
+			} else {
+				chidori = chidori; //22
+				if (tobi == madara) then { //23
+					amaterasu = fire + black; //24
+					blackflames = jutsu * amaterasu; //25
+					call OnePiece; //26
+					amaterasu = blackflames / 7; //27
+					while (chidori == chidori) { //28
+						jutsu = skills; //29
+						gokyaku = 2 * fireball + 3; //30
+						call OnePiece; //31
+						fireball = fire * jutsu + breath; //32
+					}
+				} else {
+					blackflames = amaterasu; //33
+					susaano = big + skeleton + purple; //34
+					susaano = big + skeleton + blue; //35
+					susaano = big + skeleton + red; //36
+				}
+			}
+			purplesusaano = susaano + sasuke; //37
+			byakugan = white * eyes; //38
+		}
+		jounin = chuunin * skills; //39
+		kagebunshin = replicate * jutsu; //40
+		taajukagebunshin = kagebunshin * manymany; //41
+	}
+	noob = genin; //42
+	blackflames = amaterasu; //43
+}
+
+procedure OnePiece {
+	anime = cartoon + japanese; //44
+	purple = fabulous; //45
+	blackbeard = blackflames + missingtooth; //46
+	ace = fireball + rip; //47
+	luffy = pirate; //48
+	nami = luffy; //49
+	sanji = nami; //50
+	zoro = sanji; //51
+	chopper = zoro; //52
+	robin = chopper; //53
+	brook = robin; //54
+	frank = brook; //55
+	usopp = frank; //56
+	while (four == emperors) { //57
+		shanks = whitebeard; //58
+		while (grand == line) { //59
+			whitebeard = bigmom; //60
+			while (red == line) { //61
+				bigmom = kaido; //62
+			}
+		}
+	}
+}

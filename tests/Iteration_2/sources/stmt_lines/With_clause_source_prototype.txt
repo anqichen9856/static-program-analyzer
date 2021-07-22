@@ -1,0 +1,40 @@
+procedure p1 {
+    a = (b + 2) / c * d; // 1
+    read var1; // 2
+    call p2; // 3
+    if (var1 > e) then { // 4
+        call p3; // 5
+        h = 10; // 6
+    } else {
+        p1 = p2 + p3; // 7
+    }
+    print g; // 8
+}
+
+procedure p2 {
+    while (f != 0) { // 9
+        call p3; // 10
+        while (i <= j) { // 11
+            k = k + 20; // 12
+            read a; // 13
+            read b; // 14
+            print c; // 15
+            call p3; // 16
+        }
+    }
+}
+
+procedure p3 {
+    print p1; // 17
+    if (a==a) then { // 18
+        if (b == b) then { // 19
+            read p3; // 20
+            p3 = p - 3; // 21
+        } else {
+            a = 2; //22
+            c = a - p3; // 23
+        }
+    } else {
+        else = 1; // 24
+    }
+}

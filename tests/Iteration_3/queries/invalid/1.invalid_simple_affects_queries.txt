@@ -1,0 +1,855 @@
+1 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,p)
+
+5000
+2 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(v,v)
+
+5000
+3 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Affects(c,c)
+
+5000
+4 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Affects(c,c)
+
+5000
+5 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(pr,pr)
+FALSE
+5000
+6 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(w,w)
+FALSE
+5000
+7 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(ifs,ifs)
+FALSE
+5000
+8 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s,r> such that Affects(r,r)
+
+5000
+9 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s,cp> such that Affects(cp,cp)
+
+5000
+10 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,v)
+
+5000
+11 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,c)
+
+5000
+12 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,s)
+
+5000
+13 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,r)
+
+5000
+14 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,pr)
+
+5000
+15 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,cp)
+
+5000
+16 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,w)
+
+5000
+17 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,ifs)
+
+5000
+18 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,a)
+
+5000
+19 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,n)
+
+5000
+20 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(v,c)
+
+5000
+21 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(v,s)
+
+5000
+22 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(v,r)
+
+5000
+23 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(v,pr)
+
+5000
+24 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(v,cp)
+
+5000
+25 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(v,w)
+
+5000
+26 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(v,ifs)
+
+5000
+27 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(v,a)
+
+5000
+28 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(v,n)
+
+5000
+29 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Affects(c,s)
+
+5000
+30 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Affects(c,r)
+
+5000
+31 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Affects(c,pr)
+
+5000
+32 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Affects(c,cp)
+
+5000
+33 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Affects(c,w)
+
+5000
+34 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Affects(c,ifs)
+
+5000
+35 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Affects(c,a)
+
+5000
+36 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(s,r)
+
+5000
+37 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(s,pr)
+
+5000
+38 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(s,cp)
+
+5000
+39 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(s,w)
+
+5000
+40 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(s,ifs)
+
+5000
+41 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Affects(r,p)
+
+5000
+42 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Affects(r,v)
+
+5000
+43 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Affects(r,c)
+
+5000
+44 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Affects(r,s)
+
+5000
+45 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.varName such that Affects(r,s)
+
+5000
+46 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(r,s)
+
+5000
+47 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r,s> such that Affects(r,s)
+
+5000
+48 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r.varName,s> such that Affects(r,s)
+
+5000
+49 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Affects(r,pr)
+
+5000
+50 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Affects(r,w)
+
+5000
+51 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Affects(r,ifs)
+
+5000
+52 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Affects(r,a)
+
+5000
+53 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects(r,a)
+
+5000
+54 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r,a> such that Affects(r,a)
+
+5000
+55 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(r,cp)
+FALSE
+5000
+56 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Affects(r,cp)
+
+5000
+57 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Affects(pr,p)
+
+5000
+58 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(pr,v)
+FALSE
+5000
+59 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Affects(pr,c)
+
+5000
+60 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(pr,s)
+FALSE
+5000
+61 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Affects(pr,r)
+
+5000
+62 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Affects(pr,cp)
+
+5000
+63 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Affects(pr,w)
+
+5000
+64 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Affects(pr,ifs)
+
+5000
+65 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Affects(pr,a)
+
+5000
+66 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Affects(pr,n)
+
+5000
+67 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,p)
+
+5000
+68 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,v)
+
+5000
+69 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,c)
+
+5000
+70 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,r)
+
+5000
+71 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,pr)
+
+5000
+72 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,s)
+
+5000
+73 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,n)
+
+5000
+74 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,w)
+
+5000
+75 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,ifs)
+
+5000
+76 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,a)
+
+5000
+77 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,n)
+
+5000
+78 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(w,p)
+
+5000
+79 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(w,v)
+
+5000
+80 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(w,c)
+
+5000
+81 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(w,s)
+
+5000
+82 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(w,r)
+
+5000
+83 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(w,pr)
+
+5000
+84 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(w,cp)
+
+5000
+85 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(w,ifs)
+
+5000
+86 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(w,a)
+
+5000
+87 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(w,n)
+
+5000
+88 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(ifs,p)
+
+5000
+89 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(ifs,v)
+
+5000
+90 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(ifs,c)
+
+5000
+91 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(ifs,s)
+
+5000
+92 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(ifs,r)
+
+5000
+93 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(ifs,pr)
+
+5000
+94 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(ifs,cp)
+
+5000
+95 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(ifs,w)
+
+5000
+96 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(ifs,a)
+
+5000
+97 - Invalid Affects, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(ifs,n)
+
+5000
+98 - Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(p,_)
+
+5000
+99 - Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(v,_)
+
+5000
+100 - Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Affects(c,_)
+
+5000
+101 - Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Affects(pr,_)
+
+5000
+102 - Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(cp,_)
+
+5000
+103 - Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(w,_)
+
+5000
+104 - Invalid Affects, syn on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(ifs,_)
+
+5000
+105 - Invalid Affects, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(s,3)
+FALSE
+5000
+106 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(s,5)
+
+5000
+107 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(s,9)
+
+5000
+108 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(s,12)
+
+5000
+109 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(s,17)
+
+5000
+110 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(s,24)
+
+5000
+111 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects(a,3)
+
+5000
+112 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects(a,5)
+
+5000
+113 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects(a,9)
+
+5000
+114 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects(a,12)
+
+5000
+115 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects(a,17)
+
+5000
+116 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Affects(a,24)
+
+5000
+117 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(n,3)
+
+5000
+118 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(n,5)
+
+5000
+119 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(n,9)
+
+5000
+120 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(n,12)
+
+5000
+121 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(n,17)
+
+5000
+122 - Invalid Affects, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(n,24)
+
+5000
+123 - Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(_,p)
+
+5000
+124 - Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Affects(_,v)
+
+5000
+125 - Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Affects(_,c)
+
+5000
+126 - Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Affects(_,r)
+
+5000
+127 - Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Affects(_,pr)
+
+5000
+128 - Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(_,cp)
+
+5000
+129 - Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Affects(_,w)
+
+5000
+130 - Invalid Affects, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Affects(_,ifs)
+
+5000
+131 - Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(_,3)
+
+5000
+132 - Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(_,5)
+
+5000
+133 - Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(_,9)
+
+5000
+134 - Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(_,12)
+
+5000
+135 - Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(_,17)
+
+5000
+136 - Invalid Affects, wildcard on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Affects(_,24)
+
+5000
+137 - Invalid Affects, INTEGER on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(1,3)
+FALSE
+5000
+138 - Invalid Affects, INTEGER on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(1,12)
+FALSE
+5000
+139 - Invalid Affects, INTEGER on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(3,3)
+FALSE
+5000
+140 - Invalid Affects, INTEGER on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(6,9)
+FALSE
+5000
+141 - Invalid Affects, INTEGER on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(5,5)
+FALSE
+5000
+142 - Invalid Affects, INTEGER on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(6,5)
+FALSE
+5000
+143 - Invalid Affects, INTEGER on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(8,23)
+FALSE
+5000
+144 - Invalid Affects, INTEGER on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(24,26)
+FALSE
+5000
+145 - Invalid Affects, INTEGER on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(16,26)
+FALSE
+5000
+146 - Invalid Affects, INTEGER on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(21,15)
+FALSE
+5000
+147 - Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(3,s)
+
+5000
+148 - Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(5,s)
+
+5000
+149 - Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(9,s)
+
+5000
+150 - Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(19,s)
+
+5000
+151 - Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(23,s)
+
+5000
+152 - Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Affects(27,s)
+
+5000
+153 - Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Affects(1,p)
+
+5000
+154 - Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(1,pr)
+
+5000
+155 - Invalid Affects, INTEGER on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Affects(1,cp)
+
+5000
+156 - Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(3,_)
+FALSE
+5000
+157 - Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(5,_)
+FALSE
+5000
+158 - Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(12,_)
+FALSE
+5000
+159 - Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(17,_)
+FALSE
+5000
+160 - Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(19,_)
+FALSE
+5000
+161 - Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(23,_)
+FALSE
+5000
+162 - Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(24,_)
+FALSE
+5000
+163 - Invalid Affects, INTEGER on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(27,_)
+FALSE
+5000
+164 - Invalid Affects, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(6,"6")
+
+5000
+165 - Invalid Affects, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(6,"10")
+
+5000
+166 - Invalid Affects, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(10,"7")
+
+5000
+167 - Invalid Affects, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects("snow",15)
+
+5000
+168 - Invalid Affects, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects("beauty",15)
+
+5000
+169 - Invalid Affects, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Affects(a,_"disney"_)
+
+5000
+170 - Valid Affects, syntactically invalid, wrong design abstraction name
+assign a,a1;
+Select a such that affects(a,a1)
+
+5000
+171 - Valid Affects, syntactically invalid
+assign a,a1;
+Select a Affects(a,a1)
+
+5000

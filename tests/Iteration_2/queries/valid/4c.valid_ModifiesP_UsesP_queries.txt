@@ -1,0 +1,530 @@
+1 - Valid ModifiesP, syn on both args
+procedure p;variable v;
+Select p such that Modifies(p,v)
+KPOP, groups, BlackPink, Twice, dance, sing, performance
+5000
+2 - Valid ModifiesP, IDENT on lhs and wildcard on rhs
+procedure p; variable v;
+Select v such that Modifies(p,v)
+kpop,performance,sing,dance,count,groups,group,playlist,songlist,ddudu,kill,song,Icecream,ratings,fan,Twice,money,youtube,crazy,mood,complex,steps,quit,role,female,ticket,drinks,merchandise,gift,dream,a,b,c
+5000
+3 - Valid ModifiesP, IDENT on lhs and wildcard on rhs
+procedure p;variable v;
+Select <p.procName, v.varName> such that Modifies(p,v)
+KPOP kpop,KPOP performance,KPOP sing,KPOP dance,KPOP count,KPOP groups,KPOP group,KPOP complex,KPOP steps,KPOP quit,KPOP role,KPOP female,KPOP ticket,KPOP drinks,KPOP merchandise,KPOP gift,KPOP dream,KPOP a,KPOP b,KPOP c,KPOP fan,KPOP Twice,KPOP money,KPOP youtube,KPOP crazy,KPOP mood,KPOP playlist,KPOP songlist,KPOP ddudu,KPOP kill,KPOP song,KPOP Icecream,KPOP ratings,groups groups,groups group,groups complex,groups steps,groups quit,groups sing,groups role,groups female,groups ticket,groups drinks,groups merchandise,groups gift,groups dream,groups a,groups b,groups c,groups fan,groups Twice,groups money,groups youtube,groups crazy,groups mood,BlackPink playlist,BlackPink songlist,BlackPink ddudu,BlackPink kill,BlackPink song,BlackPink Icecream,BlackPink ratings,BlackPink performance,BlackPink groups,BlackPink group,BlackPink complex,BlackPink steps,BlackPink quit,BlackPink sing,BlackPink role,BlackPink female,BlackPink ticket,BlackPink drinks,BlackPink merchandise,BlackPink gift,BlackPink dream,BlackPink a,BlackPink b,BlackPink c,BlackPink fan,BlackPink Twice,BlackPink money,BlackPink youtube,BlackPink crazy,BlackPink mood,Twice fan,Twice Twice,Twice money,Twice youtube,Twice crazy,Twice mood,Twice ticket,Twice drinks,Twice merchandise,Twice gift,Twice dream,Twice a,Twice b,Twice c,dance complex,dance steps,dance quit,dance sing,dance role,dance female,dance ticket,dance drinks,dance merchandise,dance gift,dance dream,dance a,dance b,dance c,dance fan,dance Twice,dance money,dance youtube,dance crazy,dance mood,sing role,sing female,sing ticket,sing drinks,sing merchandise,sing gift,sing dream,sing a,sing b,sing c,sing fan,sing Twice,sing money,sing youtube,sing crazy,sing mood,performance ticket,performance drinks,performance merchandise,performance gift,performance dream,performance a,performance b,performance c,
+5000
+4 - Valid ModifiesP, syn on lhs and wildcard on rhs
+procedure p;
+Select p such that Modifies(p,_)
+KPOP, groups, BlackPink, Twice, dance, sing, performance
+5000
+5 - Valid ModifiesP, syn on both args
+call cp; variable v;
+Select cp such that Modifies(cp,v)
+3,5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+6 - Valid ModifiesP, syn on both args
+call cp; variable v;
+Select cp.procName such that Modifies(cp,v)
+groups, BlackPink, Twice, dance, sing, performance
+5000
+7 - Valid ModifiesP, syn on both args
+call cp; variable v;
+Select v such that Modifies(cp,v)
+sing,groups,group,playlist,songlist,performance,ddudu,kill,song,Icecream,ratings,fan,Twice,money,youtube,crazy,mood,complex,steps,quit,role,female,ticket,drinks,merchandise,gift,dream,a,b,c
+5000
+8 - Valid ModifiesP, syn on both args
+call cp; variable v;
+Select <cp.procName,v.varName> such that Modifies(cp,v)
+groups groups,groups group,groups complex,groups steps,groups quit,groups sing,groups role,groups female,groups ticket,groups drinks,groups merchandise,groups gift,groups dream,groups a,groups b,groups c,groups fan,groups Twice,groups money,groups youtube,groups crazy,groups mood,BlackPink playlist,BlackPink songlist,BlackPink ddudu,BlackPink kill,BlackPink song,BlackPink Icecream,BlackPink ratings,BlackPink performance,BlackPink groups,BlackPink group,BlackPink complex,BlackPink steps,BlackPink quit,BlackPink sing,BlackPink role,BlackPink female,BlackPink ticket,BlackPink drinks,BlackPink merchandise,BlackPink gift,BlackPink dream,BlackPink a,BlackPink b,BlackPink c,BlackPink fan,BlackPink Twice,BlackPink money,BlackPink youtube,BlackPink crazy,BlackPink mood,Twice fan,Twice Twice,Twice money,Twice youtube,Twice crazy,Twice mood,Twice ticket,Twice drinks,Twice merchandise,Twice gift,Twice dream,Twice a,Twice b,Twice c,dance complex,dance steps,dance quit,dance sing,dance role,dance female,dance ticket,dance drinks,dance merchandise,dance gift,dance dream,dance a,dance b,dance c,dance fan,dance Twice,dance money,dance youtube,dance crazy,dance mood,sing role,sing female,sing ticket,sing drinks,sing merchandise,sing gift,sing dream,sing a,sing b,sing c,sing fan,sing Twice,sing money,sing youtube,sing crazy,sing mood,performance ticket,performance drinks,performance merchandise,performance gift,performance dream,performance a,performance b,performance c,
+5000
+9 - Valid ModifiesP, syn on both args
+call cp; variable v;
+Select <cp,v> such that Modifies(cp,v)
+3 groups,3 group,3 complex,3 steps,3 quit,3 sing,3 role,3 female,3 ticket,3 drinks,3 merchandise,3 gift,3 dream,3 a,3 b,3 c,3 fan,3 Twice,3 money,3 youtube,3 crazy,3 mood,5 ticket,5 drinks,5 merchandise,5 gift,5 dream,5 a,5 b,5 c,8 playlist,8 songlist,8 ddudu,8 kill,8 song,8 Icecream,8 ratings,8 performance,8 groups,8 group,8 complex,8 steps,8 quit,8 sing,8 role,8 female,8 ticket,8 drinks,8 merchandise,8 gift,8 dream,8 a,8 b,8 c,8 fan,8 Twice,8 money,8 youtube,8 crazy,8 mood,9 fan,9 Twice,9 money,9 youtube,9 crazy,9 mood,9 ticket,9 drinks,9 merchandise,9 gift,9 dream,9 a,9 b,9 c,21 complex,21 steps,21 quit,21 sing,21 role,21 female,21 ticket,21 drinks,21 merchandise,21 gift,21 dream,21 a,21 b,21 c,21 fan,21 Twice,21 money,21 youtube,21 crazy,21 mood,22 role,22 female,22 ticket,22 drinks,22 merchandise,22 gift,22 dream,22 a,22 b,22 c,22 fan,22 Twice,22 money,22 youtube,22 crazy,22 mood,33 groups,33 group,33 complex,33 steps,33 quit,33 sing,33 role,33 female,33 ticket,33 drinks,33 merchandise,33 gift,33 dream,33 a,33 b,33 c,33 fan,33 Twice,33 money,33 youtube,33 crazy,33 mood,34 groups,34 group,34 complex,34 steps,34 quit,34 sing,34 role,34 female,34 ticket,34 drinks,34 merchandise,34 gift,34 dream,34 a,34 b,34 c,34 fan,34 Twice,34 money,34 youtube,34 crazy,34 mood,44 ticket,44 drinks,44 merchandise,44 gift,44 dream,44 a,44 b,44 c,53 role,53 female,53 ticket,53 drinks,53 merchandise,53 gift,53 dream,53 a,53 b,53 c,53 fan,53 Twice,53 money,53 youtube,53 crazy,53 mood,58 role,58 female,58 ticket,58 drinks,58 merchandise,58 gift,58 dream,58 a,58 b,58 c,58 fan,58 Twice,58 money,58 youtube,58 crazy,58 mood,68 fan,68 Twice,68 money,68 youtube,68 crazy,68 mood,68 ticket,68 drinks,68 merchandise,68 gift,68 dream,68 a,68 b,68 c,69 ticket,69 drinks,69 merchandise,69 gift,69 dream,69 a,69 b,69 c,70 fan,70 Twice,70 money,70 youtube,70 crazy,70 mood,70 ticket,70 drinks,70 merchandise,70 gift,70 dream,70 a,70 b,70 c
+5000
+10 - Valid ModifiesP, syn on lhs and wildcard on rhs
+call cp;
+Select cp such that Modifies(cp,_)
+3,5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+11 - Valid ModifiesP, IDENT on both args, no result
+
+Select BOOLEAN such that Modifies("KPOP","love")
+FALSE
+5000
+12 - Valid ModifiesP,IDENT on both args, no result
+
+Select BOOLEAN such that Modifies("KPOP","kpop")
+TRUE
+5000
+13 - Valid ModifiesP,IDENT on both args
+
+Select BOOLEAN such that Modifies("KPOP","performance")
+TRUE
+5000
+14 - Valid ModifiesP,IDENT on both args
+
+Select BOOLEAN such that Modifies("KPOP","count")
+TRUE
+5000
+15 - Valid ModifiesP,IDENT on both args
+
+Select BOOLEAN such that Modifies("groups","groups")
+TRUE
+5000
+16 - Valid ModifiesP,IDENT on both args
+
+Select BOOLEAN such that Modifies("groups","group")
+TRUE
+5000
+17 - Valid ModifiesP,IDENT on both args
+
+Select BOOLEAN such that Modifies("BlackPink","playlist")
+TRUE
+5000
+18 - Valid ModifiesP,IDENT on both args, no result
+
+Select BOOLEAN such that Modifies("groups","ddudu")
+FALSE
+5000
+19 - Valid ModifiesP,IDENT on both args, no result
+
+Select BOOLEAN such that Modifies("groups","kill")
+FALSE
+5000
+20 - Valid ModifiesP,IDENT on both args, no result
+
+Select BOOLEAN such that Modifies("groups","song")
+FALSE
+5000
+21 - Valid ModifiesP,IDENT on both args, no result
+
+Select BOOLEAN such that Modifies("groups","performance")
+FALSE
+5000
+22 - Valid ModifiesP,IDENT on both args
+
+Select BOOLEAN such that Modifies("groups","groups")
+TRUE
+5000
+23 - Valid ModifiesP,IDENT on both args
+
+Select BOOLEAN such that Modifies("groups","group")
+TRUE
+5000
+24 - Valid ModifiesP,IDENT on both args
+
+Select BOOLEAN such that Modifies("BlackPink","playlist")
+TRUE
+5000
+25 - Valid ModifiesP,IDENT on both args
+
+Select BOOLEAN such that Modifies("BlackPink","songlist")
+TRUE
+5000
+26 - Valid ModifiesP, IDENT on both args
+
+Select BOOLEAN such that Modifies("BlackPink","ratings")
+TRUE
+5000
+27 - Valid ModifiesP,IDENT on both args
+
+Select BOOLEAN such that Modifies("BlackPink","fan")
+TRUE
+5000
+28 - Valid ModifiesP, IDENT on both args
+
+Select BOOLEAN such that Modifies("Twice","fan")
+TRUE
+5000
+29 - Valid ModifiesP, IDENT on both args
+
+Select BOOLEAN such that Modifies("Twice","Twice")
+TRUE
+5000
+30 - Valid ModifiesP, IDENT on both args
+
+Select BOOLEAN such that Modifies("Twice","youtube")
+TRUE
+5000
+31 - Valid ModifiesP, IDENT on both args
+
+Select BOOLEAN such that Modifies("dance","money")
+TRUE
+5000
+32 - Valid ModifiesP, IDENT on lhs and wildcard on rhs
+
+Select BOOLEAN such that Modifies("sing",_)
+TRUE
+5000
+33 - Valid ModifiesP, IDENT on lhs and wildcard on rhs
+
+Select BOOLEAN such that Modifies("performance",_)
+TRUE
+5000
+34 - Valid ModifiesP, IDENT on lhs and syn on rhs
+variable v;
+Select v such that Modifies("KPOP",v)
+kpop,performance,sing,dance,count,groups,group,complex,steps,quit,role,female,ticket,drinks,merchandise,gift,dream,a,b,c,fan,Twice,money,youtube,crazy,mood,playlist,songlist,ddudu,kill,song,Icecream,ratings
+5000
+35 - Valid ModifiesP,IDENT on lhs and syn on rhs
+variable v;
+Select v such that Modifies("groups",v)
+groups,group,complex,steps,quit,sing,role,female,ticket,drinks,merchandise,gift,dream,a,b,c,fan,Twice,money,youtube,crazy,mood
+5000
+36 -  Valid ModifiesS, INTEGER on lhs and IDENT on rhs
+variable v;
+Select BOOLEAN such that Modifies(3,"group")
+TRUE
+5000
+37 - Valid ModifiesS, INTEGER on lhs and IDENT on rhs
+variable v;
+Select BOOLEAN such that Modifies(8,"playlist")
+TRUE
+5000
+38 - Valid ModifiesP, syn on lhs and IDENT on rhs
+procedure p;
+Select p such that Modifies(p,"playlist")
+BlackPink, KPOP
+5000
+39 - Valid ModifiesP, syn on lhs and IDENT on rhs
+procedure p;
+Select p such that Modifies(p,"Twice")
+Twice,KPOP,sing,dance,groups,BlackPink
+5000
+40 - Valid ModifiesP, syn on lhs and IDENT on rhs
+procedure p;
+Select p such that Modifies(p,"sing")
+dance,groups,KPOP,BlackPink
+5000
+41 - Valid ModifiesP, syn on lhs and IDENT on rhs
+procedure p;
+Select p such that Modifies(p,"role")
+sing,groups,dance,BlackPink,KPOP
+5000
+42 - Valid ModifiesP, syn on lhs and IDENT on rhs
+procedure p;
+Select p such that Modifies(p,"ticket")
+performance,KPOP,Twice,sing,groups,BlackPink,dance
+5000
+43 - Valid ModifiesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp such that Modifies(cp,"role")
+22,53,58,21,3,33,34,8
+5000
+44 - Valid ModifiesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp.procName such that Modifies(cp,"role")
+sing, dance,groups,BlackPink
+5000
+45 - Valid ModifiesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp.stmt# such that Modifies(cp,"ticket")
+3,5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+46 - Valid ModifiesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp.stmt# such that Modifies(cp,"kpop")
+
+5000
+47 - Valid ModifiesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp.stmt# such that Modifies(cp,"sing")
+21,3,33,34,8
+5000
+48 - Valid ModifiesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp.procName such that Modifies(cp,"sing")
+dance,groups,BlackPink
+5000
+49 - Valid ModifiesS, syn on both args
+call cp; procedure p;
+Select BOOLEAN such that Modifies(1,_)
+TRUE
+5000
+50 - Valid UsesP,  syn on both args
+procedure p; variable v;
+Select p such that Uses(p,v)
+KPOP,groups,BlackPink,Twice,dance,sing,performance
+5000
+51 - Valid UsesP,  syn on both args
+procedure p; variable v;
+Select v such that Uses(p,v)
+love,in, korea,performance,money,die,count,end,groups,blackpink,twice,group,BTS,songlist,category,edm,ddudu,remix,this,others,not,category2,cute,cuteSong,ratings,boys,happiness,happy,level,very,beginner,intermediate,advanced,pro,noob,a,b,c,sing, dance,gender,key,c4,bass,tenor,alto,good,role,sop,everything,you,rich,coke,ticket,merchandise,crushed,boy
+5000
+52 - Valid UsesP, syn on both args
+procedure p;variable v;
+Select <p.procName, v.varName> such that Uses(p,v)
+KPOP love,KPOP in,KPOP korea,KPOP performance,KPOP money,KPOP die,KPOP count,KPOP end,KPOP blackpink,KPOP twice,KPOP group,KPOP BTS,KPOP groups,KPOP beginner,KPOP intermediate,KPOP advanced,KPOP pro,KPOP level,KPOP noob,KPOP a,KPOP b,KPOP c,KPOP sing,KPOP dance,KPOP gender,KPOP boy,KPOP key,KPOP c4,KPOP bass,KPOP tenor,KPOP alto,KPOP good,KPOP role,KPOP sop,KPOP everything,KPOP boys,KPOP happiness,KPOP happy,KPOP very,KPOP you,KPOP rich,KPOP coke,KPOP ticket,KPOP merchandise,KPOP crushed,KPOP songlist,KPOP category,KPOP edm,KPOP ddudu,KPOP remix,KPOP this,KPOP others,KPOP not,KPOP category2,KPOP cute,KPOP cuteSong,KPOP ratings,groups blackpink,groups twice,groups group,groups BTS,groups groups,groups beginner,groups intermediate,groups advanced,groups pro,groups level,groups noob,groups sing,groups dance,groups money,groups you,groups rich,groups coke,groups ticket,groups merchandise,groups crushed,groups a,groups b,groups c,groups love,groups boys,groups happiness,groups happy,groups very,groups gender,groups boy,groups key,groups c4,groups bass,groups tenor,groups alto,groups good,groups role,groups sop,groups everything,BlackPink songlist,BlackPink category,BlackPink edm,BlackPink ddudu,BlackPink remix,BlackPink this,BlackPink love,BlackPink others,BlackPink not,BlackPink category2,BlackPink cute,BlackPink cuteSong,BlackPink end,BlackPink ratings,BlackPink blackpink,BlackPink twice,BlackPink group,BlackPink BTS,BlackPink groups,BlackPink beginner,BlackPink intermediate,BlackPink advanced,BlackPink pro,BlackPink level,BlackPink noob,BlackPink a,BlackPink b,BlackPink c,BlackPink sing,BlackPink dance,BlackPink money,BlackPink gender,BlackPink boy,BlackPink key,BlackPink c4,BlackPink bass,BlackPink tenor,BlackPink alto,BlackPink good,BlackPink role,BlackPink sop,BlackPink everything,BlackPink you,BlackPink rich,BlackPink coke,BlackPink ticket,BlackPink merchandise,BlackPink crushed,BlackPink boys,BlackPink happiness,BlackPink happy,BlackPink very,Twice twice,Twice love,Twice boys,Twice happiness,Twice happy,Twice money,Twice level,Twice very,Twice you,Twice rich,Twice coke,Twice ticket,Twice merchandise,Twice crushed,Twice a,Twice b,Twice c,dance beginner,dance intermediate,dance advanced,dance pro,dance level,dance noob,dance a,dance b,dance c,dance sing,dance dance,dance money,dance gender,dance boy,dance key,dance c4,dance bass,dance tenor,dance alto,dance good,dance role,dance sop,dance everything,dance you,dance rich,dance coke,dance ticket,dance merchandise,dance crushed,dance twice,dance love,dance boys,dance happiness,dance happy,dance very,sing gender,sing boy,sing key,sing c4,sing bass,sing tenor,sing alto,sing good,sing role,sing sop,sing everything,sing you,sing rich,sing money,sing coke,sing ticket,sing merchandise,sing crushed,sing a,sing b,sing c,sing twice,sing love,sing boys,sing happiness,sing happy,sing level,sing very,performance you,performance rich,performance money,performance coke,performance ticket,performance merchandise,performance crushed,performance a,performance b,performance c,
+5000
+53 - Valid UsesP, syn on both args
+call cp; variable v;
+Select cp such that Uses(cp,v)
+3,5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+54 - Valid UsesP, syn on both args
+call cp; variable v;
+Select cp.procName such that Uses(cp,v)
+groups, BlackPink, Twice, dance, sing, performance
+5000
+55 - Valid UsesP, syn on both args
+call cp; variable v;
+Select v such that Uses(cp,v)
+love,money,end,groups,blackpink,twice,group,BTS,songlist,category,edm,ddudu,remix,this,others,not,category2,cute,cuteSong,ratings,boys,happiness,happy,level,very,beginner,intermediate,advanced,pro,noob,a,b,c,sing, dance,gender,key,c4,bass,tenor,alto,good,role,sop,everything,you,rich,coke,ticket,merchandise,crushed,boy
+5000
+56 - Valid UsesP, syn on both args
+call cp; variable v;
+Select <cp.procName,v.varName> such that Uses(cp,v)
+groups blackpink,groups twice,groups group,groups BTS,groups groups,groups beginner,groups intermediate,groups advanced,groups pro,groups level,groups noob,groups sing,groups dance,groups money,groups you,groups rich,groups coke,groups ticket,groups merchandise,groups crushed,groups a,groups b,groups c,groups love,groups boys,groups happiness,groups happy,groups very,groups gender,groups boy,groups key,groups c4,groups bass,groups tenor,groups alto,groups good,groups role,groups sop,groups everything,BlackPink songlist,BlackPink category,BlackPink edm,BlackPink ddudu,BlackPink remix,BlackPink this,BlackPink love,BlackPink others,BlackPink not,BlackPink category2,BlackPink cute,BlackPink cuteSong,BlackPink end,BlackPink ratings,BlackPink blackpink,BlackPink twice,BlackPink group,BlackPink BTS,BlackPink groups,BlackPink beginner,BlackPink intermediate,BlackPink advanced,BlackPink pro,BlackPink level,BlackPink noob,BlackPink a,BlackPink b,BlackPink c,BlackPink sing,BlackPink dance,BlackPink money,BlackPink gender,BlackPink boy,BlackPink key,BlackPink c4,BlackPink bass,BlackPink tenor,BlackPink alto,BlackPink good,BlackPink role,BlackPink sop,BlackPink everything,BlackPink you,BlackPink rich,BlackPink coke,BlackPink ticket,BlackPink merchandise,BlackPink crushed,BlackPink boys,BlackPink happiness,BlackPink happy,BlackPink very,Twice twice,Twice love,Twice boys,Twice happiness,Twice happy,Twice money,Twice level,Twice very,Twice you,Twice rich,Twice coke,Twice ticket,Twice merchandise,Twice crushed,Twice a,Twice b,Twice c,dance beginner,dance intermediate,dance advanced,dance pro,dance level,dance noob,dance a,dance b,dance c,dance sing,dance dance,dance money,dance gender,dance boy,dance key,dance c4,dance bass,dance tenor,dance alto,dance good,dance role,dance sop,dance everything,dance you,dance rich,dance coke,dance ticket,dance merchandise,dance crushed,dance twice,dance love,dance boys,dance happiness,dance happy,dance very,sing gender,sing boy,sing key,sing c4,sing bass,sing tenor,sing alto,sing good,sing role,sing sop,sing everything,sing you,sing rich,sing money,sing coke,sing ticket,sing merchandise,sing crushed,sing a,sing b,sing c,sing twice,sing love,sing boys,sing happiness,sing happy,sing level,sing very,performance you,performance rich,performance money,performance coke,performance ticket,performance merchandise,performance crushed,performance a,performance b,performance c,
+5000
+57 - Valid UsesP, syn on both args
+call cp; variable v;
+Select <cp,v> such that Uses(cp,v)
+3 love,3 money,3 blackpink,3 twice,3 group,3 BTS,3 groups,3 beginner,3 intermediate,3 advanced,3 pro,3 level,3 noob,3 a,3 b,3 c,3 sing,3 dance,3 gender,3 boy,3 key,3 c4,3 bass,3 tenor,3 alto,3 good,3 role,3 sop,3 everything,3 boys,3 happiness,3 happy,3 very,3 you,3 rich,3 coke,3 ticket,3 merchandise,3 crushed,5 you,5 rich,5 money,5 coke,5 ticket,5 merchandise,5 crushed,5 a,5 b,5 c,8 songlist,8 category,8 edm,8 ddudu,8 remix,8 this,8 love,8 others,8 not,8 category2,8 cute,8 cuteSong,8 end,8 ratings,8 blackpink,8 twice,8 group,8 BTS,8 groups,8 beginner,8 intermediate,8 advanced,8 pro,8 level,8 noob,8 a,8 b,8 c,8 sing,8 dance,8 money,8 gender,8 boy,8 key,8 c4,8 bass,8 tenor,8 alto,8 good,8 role,8 sop,8 everything,8 you,8 rich,8 coke,8 ticket,8 merchandise,8 crushed,8 boys,8 happiness,8 happy,8 very,9 twice,9 love,9 boys,9 happiness,9 happy,9 money,9 level,9 very,9 you,9 rich,9 coke,9 ticket,9 merchandise,9 crushed,9 a,9 b,9 c,21 beginner,21 intermediate,21 advanced,21 pro,21 level,21 noob,21 a,21 b,21 c,21 sing,21 dance,21 money,21 gender,21 boy,21 key,21 c4,21 bass,21 tenor,21 alto,21 good,21 role,21 sop,21 everything,21 you,21 rich,21 coke,21 ticket,21 merchandise,21 crushed,21 twice,21 love,21 boys,21 happiness,21 happy,21 very,22 gender,22 boy,22 key,22 c4,22 bass,22 tenor,22 alto,22 good,22 role,22 sop,22 everything,22 you,22 rich,22 money,22 coke,22 ticket,22 merchandise,22 crushed,22 a,22 b,22 c,22 twice,22 love,22 boys,22 happiness,22 happy,22 level,22 very,33 blackpink,33 twice,33 group,33 BTS,33 groups,33 beginner,33 intermediate,33 advanced,33 pro,33 level,33 noob,33 sing,33 dance,33 money,33 you,33 rich,33 coke,33 ticket,33 merchandise,33 crushed,33 a,33 b,33 c,33 love,33 boys,33 happiness,33 happy,33 very,33 gender,33 boy,33 key,33 c4,33 bass,33 tenor,33 alto,33 good,33 role,33 sop,33 everything,34 blackpink,34 twice,34 group,34 BTS,34 groups,34 beginner,34 intermediate,34 advanced,34 pro,34 level,34 noob,34 sing,34 dance,34 money,34 you,34 rich,34 coke,34 ticket,34 merchandise,34 crushed,34 a,34 b,34 c,34 love,34 boys,34 happiness,34 happy,34 very,34 gender,34 boy,34 key,34 c4,34 bass,34 tenor,34 alto,34 good,34 role,34 sop,34 everything,44 you,44 rich,44 money,44 coke,44 ticket,44 merchandise,44 crushed,44 a,44 b,44 c,53 gender,53 boy,53 key,53 c4,53 bass,53 tenor,53 alto,53 good,53 role,53 sop,53 everything,53 you,53 rich,53 money,53 coke,53 ticket,53 merchandise,53 crushed,53 a,53 b,53 c,53 twice,53 love,53 boys,53 happiness,53 happy,53 level,53 very,58 gender,58 boy,58 key,58 c4,58 bass,58 tenor,58 alto,58 good,58 role,58 sop,58 everything,58 you,58 rich,58 money,58 coke,58 ticket,58 merchandise,58 crushed,58 a,58 b,58 c,58 twice,58 love,58 boys,58 happiness,58 happy,58 level,58 very,68 twice,68 love,68 boys,68 happiness,68 happy,68 money,68 level,68 very,68 you,68 rich,68 coke,68 ticket,68 merchandise,68 crushed,68 a,68 b,68 c,69 you,69 rich,69 money,69 coke,69 ticket,69 merchandise,69 crushed,69 a,69 b,69 c,70 twice,70 love,70 boys,70 happiness,70 happy,70 money,70 level,70 very,70 you,70 rich,70 coke,70 ticket,70 merchandise,70 crushed,70 a,70 b,70 c,
+5000
+58 - Valid UsesP, syn on lhs and wildcard on rhs
+procedure p;
+Select p such that Uses(p,_)
+KPOP, groups, BlackPink, Twice, dance, sing, performance
+5000
+59 - Valid UsesP, IDENT on both args
+
+Select BOOLEAN such that Uses("KPOP","love")
+TRUE
+5000
+60 - Valid UsesP, IDENT on both args
+
+Select BOOLEAN such that Uses("KPOP","money")
+TRUE
+5000
+61 - Valid UsesP, IDENT on both args
+
+Select BOOLEAN such that Uses("Twice","money")
+TRUE
+5000
+62 - Valid UsesP, IDENT on both args
+
+Select BOOLEAN such that Uses("groups","group")
+TRUE
+5000
+63 - Valid UsesP, IDENT on both args
+
+Select BOOLEAN such that Uses("sing","key")
+TRUE
+5000
+64 - Valid UsesP, IDENT on both args
+
+Select BOOLEAN such that Uses("BlackPink","cuteSong")
+TRUE
+5000
+65 - Valid UsesP, IDENT on both args
+
+Select BOOLEAN such that Uses("KPOP","groups")
+TRUE
+5000
+66 - Valid UsesP, IDENT on both args
+
+Select BOOLEAN such that Uses("KPOP","sing")
+TRUE
+5000
+67 - Valid UsesP, IDENT on both args
+
+Select BOOLEAN such that Uses("KPOP","rich")
+TRUE
+5000
+68 - Valid UsesP, IDENT on both args, no result
+
+Select BOOLEAN such that Uses("performance","dream")
+FALSE
+5000
+69 - Valid UsesP, IDENT on lhs and wildcard on rhs
+
+Select BOOLEAN such that Uses("KPOP",_)
+TRUE
+5000
+70 - Valid UsesP, IDENT on lhs and wildcard on rhs
+
+Select BOOLEAN such that Uses("groups",_)
+TRUE
+5000
+71 - Valid UsesP, IDENT on lhs and wildcard on rhs
+
+Select BOOLEAN such that Uses("BlackPink",_)
+TRUE
+5000
+72 - Valid UsesP, IDENT on lhs and wildcard on rhs
+
+Select BOOLEAN such that Uses("Twice",_)
+TRUE
+5000
+73 - Valid UsesP, IDENT on lhs and wildcard on rhs
+
+Select BOOLEAN such that Uses("dance",_)
+TRUE
+5000
+74 - Valid UsesP, IDENT on lhs and wildcard on rhs
+
+Select BOOLEAN such that Uses("sing",_)
+TRUE
+5000
+75 - Valid UsesP, IDENT on lhs and wildcard on rhs
+
+Select BOOLEAN such that Uses("performance",_)
+TRUE
+5000
+76 - Valid UsesP, IDENT on lhs and syn on rhs
+variable v;
+Select v such that Uses("KPOP",v)
+love,in,korea,performance,money,die,count,end,blackpink,twice,group,BTS,groups,beginner,intermediate,advanced,pro,level,noob,a,b,c,sing,dance,gender,boy,key,c4,bass,tenor,alto,good,role,sop,everything,boys,happiness,happy,very,you,rich,coke,ticket,merchandise,crushed,songlist,category,edm,ddudu,remix,this,others,not,category2,cute,cuteSong,ratings,
+5000
+77 - Valid UsesP, IDENT on lhs and syn on rhs
+variable v;
+Select v such that Uses("groups",v)
+blackpink,twice,group,BTS,groups,beginner,intermediate,advanced,pro,level,noob,sing,dance,money,you,rich,coke,ticket,merchandise,crushed,a,b,c,love,boys,happiness,happy,very,gender,boy,key,c4,bass,tenor,alto,good,role,sop,everything,
+5000
+78 - Valid UsesP, IDENT on lhs and syn on rhs
+variable v;
+Select v such that Uses("BlackPink",v)
+songlist,category,edm,ddudu,remix,this,love,others,not,category2,cute,cuteSong,end,ratings,blackpink,twice,group,BTS,groups,beginner,intermediate,advanced,pro,level,noob,a,b,c,sing,dance,money,gender,boy,key,c4,bass,tenor,alto,good,role,sop,everything,you,rich,coke,ticket,merchandise,crushed,boys,happiness,happy,very,
+5000
+79 - Valid UsesP, IDENT on lhs and syn on rhs
+variable v;
+Select v such that Uses("Twice",v)
+twice,love,boys,happiness,happy,money,level,very,you,rich,coke,ticket,merchandise,crushed,a,b,c,
+5000
+80 - Valid UsesP, IDENT on lhs and syn on rhs
+variable v;
+Select v such that Uses("dance",v)
+beginner,intermediate,advanced,pro,level,noob,a,b,c,sing,dance,money,gender,boy,key,c4,bass,tenor,alto,good,role,sop,everything,you,rich,coke,ticket,merchandise,crushed,twice,love,boys,happiness,happy,very,
+5000
+81 - Valid UsesP, IDENT on lhs and syn on rhs
+variable v;
+Select v such that Uses("sing",v)
+gender,boy,key,c4,bass,tenor,alto,good,role,sop,everything,you,rich,money,coke,ticket,merchandise,crushed,a,b,c,twice,love,boys,happiness,happy,level,very,
+5000
+82 - Valid UsesP, IDENT on lhs and syn on rhs
+variable v;
+Select v such that Uses("performance",v)
+you,rich,money,coke,ticket,merchandise,crushed,a,b,c,
+5000
+83 - Valid UsesP, IDENT on lhs and syn on rhs, no result
+variable v;
+Select BOOLEAN such that Uses("twice",v)
+FALSE
+5000
+84 - Valid UsesP, IDENT on lhs and syn on rhs, no result
+variable v;
+Select BOOLEAN such that Uses("sinG",v)
+FALSE
+5000
+85 - Valid UsesP, INTEGER on lhs and IDENT on rhs, no result
+variable v;
+Select BOOLEAN such that Uses(0,"love")
+FALSE
+5000
+86 - Valid UsesP, INTEGER on lhs and IDENT on rhs
+variable v;
+Select BOOLEAN such that Uses(1,"love")
+TRUE
+5000
+87 - Valid UsesP, INTEGER on lhs and IDENT on rhs, no result
+variable v;
+Select BOOLEAN such that Uses(2,"BTS")
+FALSE
+5000
+88 - Valid UsesP, INTEGER on lhs and IDENT on rhs
+variable v;
+Select BOOLEAN such that Uses(32,"cuteSong")
+TRUE
+5000
+89 - Valid UsesP, INTEGER on lhs and IDENT on rhs
+variable v;
+Select BOOLEAN such that Uses(38,"twice")
+TRUE
+5000
+90 - Valid UsesP, INTEGER on lhs and IDENT on rhs
+variable v;
+Select BOOLEAN such that Uses(50,"intermediate")
+TRUE
+5000
+91 - Valid UsesP, INTEGER on lhs and IDENT on rhs
+variable v;
+Select BOOLEAN such that Uses(59,"gender")
+TRUE
+5000
+92 - Valid UsesP, INTEGER on lhs and IDENT on rhs
+variable v;
+Select BOOLEAN such that Uses(3,"blackpink")
+TRUE
+5000
+93 - Valid UsesP, INTEGER on lhs and IDENT on rhs
+variable v;
+Select BOOLEAN such that Uses(8,"remix")
+TRUE
+5000
+94 - Valid UsesP, INTEGER on lhs and IDENT on rhs
+variable v;
+Select BOOLEAN such that Uses(9,"money")
+TRUE
+5000
+95 - Valid UsesP, INTEGER on lhs and IDENT on rhs
+variable v;
+Select BOOLEAN such that Uses(53,"alto")
+TRUE
+5000
+96 - Valid UsesP, syn on lhs and IDENT on rhs
+procedure p;
+Select p such that Uses(p,"money")
+performance,Twice,KPOP,groups,sing,BlackPink,dance
+5000
+97 - Valid UsesP, syn on lhs and IDENT on rhs
+procedure p;
+Select p such that Uses(p,"die")
+KPOP
+5000
+98 - Valid UsesP, syn on lhs and IDENT on rhs
+procedure p;
+Select p such that Uses(p,"rich")
+performance,KPOP,groups,Twice,BlackPink,dance,sing
+5000
+99 - Valid UsesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp such that Uses(cp,"rich")
+3,5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+100 - Valid UsesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp such that Uses(cp,"role")
+3,8,21,22,33,34,53,58
+5000
+101 - Valid UsesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp.procName such that Uses(cp,"role")
+sing,groups,BlackPink,dance
+5000
+102 - Valid UsesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp.stmt# such that Uses(cp,"ticket")
+3,5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+103 - Valid UsesP, syn on lhs and IDENT on rhs, no result
+call cp;
+Select cp.stmt# such that Uses(cp,"kpop")
+
+5000
+104 - Valid UsesP, syn on lhs and IDENT on rhs, no result
+call cp;
+Select cp.stmt# such that Uses(cp,"KPOP")
+
+5000
+105 - Valid UsesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp.stmt# such that Uses(cp,"sing")
+3,8,21,33,34
+5000
+106 - Valid UsesP, syn on lhs and IDENT on rhs
+call cp;
+Select cp.procName such that Uses(cp,"sing")
+dance,groups,BlackPink
+5000

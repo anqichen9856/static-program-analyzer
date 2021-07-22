@@ -1,0 +1,43 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>3.996000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" Nextstar="1" Uses="1" SuchThat="1" CondNum="4" RelNum="2" comment="Valid multiclauses">1</id><querystr><![CDATA[variable v; assign a; while w; Select v such that Uses(a,v) and Next*(w,a)]]></querystr>
+<stuans>count,depth,dist,rd,ro,x,y</stuans>
+<correct>x,dist,ro,rd,depth,count,y</correct>
+<time_taken>8.797000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" Uses="1" SuchThat="1" CondNum="4" RelNum="2" comment="Valid multiclauses">2</id><querystr><![CDATA[variable v; assign a; while w; Select v such that Uses(a,v) and Next(w,a)]]></querystr>
+<stuans>x</stuans>
+<correct>x</correct>
+<time_taken>7.772000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affects="1" Nextstar="1" SuchThat="1" CondNum="4" RelNum="2" comment="Valid multiclauses">3</id><querystr><![CDATA[assign a; read re; Select a such that Affects(a,a) and Next*(re,a)]]></querystr>
+<stuans>14,21</stuans>
+<correct>14,21</correct>
+<time_taken>8.444000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" Parentstar="1" SuchThat="1" CondNum="4" RelNum="2" comment="Valid multiclauses">4</id><querystr><![CDATA[assign a,a1; while w; Select <a,a1> such that Parent*(w,a1) and Affects*(a,a1)]]></querystr>
+<stuans>13 9,14 14,15 20,15 21,16 20,16 21,21 20,21 21,4 9,5 9</stuans>
+<correct>4 9,5 9,14 14,15 20,16 20,15 21,16 21,21 21,13 9,21 20</correct>
+<time_taken>9.024000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Affectsstar="1" Parent="1" SuchThat="1" CondNum="4" RelNum="2" comment="Valid multiclauses">5</id><querystr><![CDATA[assign a,a1; while w; Select <a,a1> such that Parent(w,a1) and Affects*(a,a1)]]></querystr>
+<stuans>13 9,14 14,15 20,15 21,16 20,16 21,21 20,21 21,4 9,5 9</stuans>
+<correct>15 20,16 20,15 21,16 21,21 21,13 9,21 20,14 14,4 9,5 9</correct>
+<time_taken>8.732000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

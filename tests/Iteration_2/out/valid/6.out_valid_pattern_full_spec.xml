@@ -1,0 +1,1331 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>10.380000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern while, syn on lhs and wildcard on rhs">1</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w pattern w(v,_)]]></querystr>
+<stuans>10,16,19,2,21,23,7</stuans>
+<correct>2,7,10,16,19,21,23</correct>
+<time_taken>8.920000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern while, syn on lhs and wildcard on rhs">2</id><querystr><![CDATA[while w,w1; variable v; Select w1 pattern w(v,_)]]></querystr>
+<stuans>10,16,19,2,21,23,7</stuans>
+<correct>2,7,10,16,19,21,23</correct>
+<time_taken>5.554000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern while, syn on lhs and wildcard on rhs">3</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern w(v,_)]]></querystr>
+<stuans>a,aa,d,e,f,i,j,left,max,q,right,s,stage,sum,superNoob,true,v1,v2,w</stuans>
+<correct>v1,v2,stage,superNoob,j,max,sum,i,a,s,d,f,aa,true,q,w,e,left,right</correct>
+<time_taken>9.140000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern while, syn on lhs and wildcard on rhs">4</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <w,v> pattern w(v,_)]]></querystr>
+<stuans>10 j,10 max,10 sum,16 i,16 j,19 a,19 aa,19 d,19 e,19 f,19 q,19 s,19 true,19 w,2 v1,2 v2,21 left,21 right,23 i,23 true,7 stage,7 superNoob</stuans>
+<correct>2 v1,2 v2,7 stage,7 superNoob,10 j,10 max,10 sum,16 i,16 j,19 a,19 s,19 d,19 f,19 aa,19 true,19 q,19 w,19 e,21 left,21 right,23 i,23 true</correct>
+<time_taken>8.696000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern while, syn on lhs and wildcard on rhs">5</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w pattern w  (v,_)]]></querystr>
+<stuans>10,16,19,2,21,23,7</stuans>
+<correct>2,7,10,16,19,21,23</correct>
+<time_taken>8.316000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern while, syn on lhs and wildcard on rhs">6</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v    pattern w          (        v,                   _)]]></querystr>
+<stuans>a,aa,d,e,f,i,j,left,max,q,right,s,stage,sum,superNoob,true,v1,v2,w</stuans>
+<correct>v1,v2,stage,superNoob,j,max,sum,i,a,s,d,f,aa,true,q,w,e,left,right</correct>
+<time_taken>9.775000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern while, syn on lhs and wildcard on rhs">7</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <w,v> pattern w              (v,_)]]></querystr>
+<stuans>10 j,10 max,10 sum,16 i,16 j,19 a,19 aa,19 d,19 e,19 f,19 q,19 s,19 true,19 w,2 v1,2 v2,21 left,21 right,23 i,23 true,7 stage,7 superNoob</stuans>
+<correct>2 v1,2 v2,7 stage,7 superNoob,10 j,10 max,10 sum,16 i,16 j,19 a,19 s,19 d,19 f,19 aa,19 true,19 q,19 w,19 e,21 left,21 right,23 i,23 true</correct>
+<time_taken>9.948000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern while, wildcard on both args">8</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w.stmt# pattern w(_,_)]]></querystr>
+<stuans>10,16,19,2,21,23,7</stuans>
+<correct>2,7,10,16,19,21,23</correct>
+<time_taken>9.134000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern while, ident on lhs and wildcard on rhs">9</id><querystr><![CDATA[while w; Select w.stmt# pattern w("v1",_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>5.691000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern while, ident on lhs and wildcard on rhs">10</id><querystr><![CDATA[while w; Select w.stmt# pattern w("v2",_)]]></querystr>
+<stuans>2</stuans>
+<correct>2</correct>
+<time_taken>5.898000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern while, ident on lhs and wildcard on rhs">11</id><querystr><![CDATA[while w; Select w.stmt# pattern w("stage",_)]]></querystr>
+<stuans>7</stuans>
+<correct>7</correct>
+<time_taken>6.495000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern while, ident on lhs and wildcard on rhs">12</id><querystr><![CDATA[while w; Select w.stmt# pattern w("superNoob",_)]]></querystr>
+<stuans>7</stuans>
+<correct>7</correct>
+<time_taken>6.802000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">13</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs(v,_,_)]]></querystr>
+<stuans>12,14,22,25,4</stuans>
+<correct>4,12,14,22,25</correct>
+<time_taken>9.145000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">14</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern ifs(v,_,_)]]></querystr>
+<stuans>a,d,e,easy,else,f,g,h,if,j,level,sum,v100,what,x</stuans>
+<correct>easy,what,level,v100,sum,x,a,j,d,e,f,g,h,if,else</correct>
+<time_taken>8.910000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">15</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v.varName pattern ifs(v,_,_)]]></querystr>
+<stuans>a,d,e,easy,else,f,g,h,if,j,level,sum,v100,what,x</stuans>
+<correct>easy,what,level,v100,sum,x,a,j,d,e,f,g,h,if,else</correct>
+<time_taken>9.777000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">16</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <ifs,v> pattern ifs(v,_,_)]]></querystr>
+<stuans>12 sum,12 v100,14 a,14 j,14 x,22 d,22 e,22 f,22 g,22 h,25 else,25 if,4 easy,4 level,4 what</stuans>
+<correct>4 easy,4 what,4 level,12 v100,12 sum,14 x,14 a,14 j,22 d,22 e,22 f,22 g,22 h,25 if,25 else</correct>
+<time_taken>9.327000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">17</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <ifs.stmt#,v.varName> pattern ifs(v,_,_)]]></querystr>
+<stuans>12 sum,12 v100,14 a,14 j,14 x,22 d,22 e,22 f,22 g,22 h,25 else,25 if,4 easy,4 level,4 what</stuans>
+<correct>4 easy,4 what,4 level,12 v100,12 sum,14 x,14 a,14 j,22 d,22 e,22 f,22 g,22 h,25 if,25 else</correct>
+<time_taken>10.846000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">18</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("easy",_,_)]]></querystr>
+<stuans>4</stuans>
+<correct>4</correct>
+<time_taken>10.477000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">19</id><querystr><![CDATA[if ifs; Select ifs pattern ifs("what",_,_)]]></querystr>
+<stuans>4</stuans>
+<correct>4</correct>
+<time_taken>8.117000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">20</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("level",_,_)]]></querystr>
+<stuans>4</stuans>
+<correct>4</correct>
+<time_taken>11.773000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">21</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("v100",_,_)]]></querystr>
+<stuans>12</stuans>
+<correct>12</correct>
+<time_taken>12.963000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">22</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("j",_,_)]]></querystr>
+<stuans>14</stuans>
+<correct>14</correct>
+<time_taken>12.326000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">23</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("x",_,_)]]></querystr>
+<stuans>14</stuans>
+<correct>14</correct>
+<time_taken>11.682000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">24</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("a",_,_)]]></querystr>
+<stuans>14</stuans>
+<correct>14</correct>
+<time_taken>10.348000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">25</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("d",_,_)]]></querystr>
+<stuans>22</stuans>
+<correct>22</correct>
+<time_taken>9.507000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">26</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("e",_,_)]]></querystr>
+<stuans>22</stuans>
+<correct>22</correct>
+<time_taken>11.428000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">27</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("f",_,_)]]></querystr>
+<stuans>22</stuans>
+<correct>22</correct>
+<time_taken>12.585000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">28</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("g",_,_)]]></querystr>
+<stuans>22</stuans>
+<correct>22</correct>
+<time_taken>12.508000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">29</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("if",_,_)]]></querystr>
+<stuans>25</stuans>
+<correct>25</correct>
+<time_taken>12.680000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, syn,wildcard,wilcard on args">30</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("else",_,_)]]></querystr>
+<stuans>25</stuans>
+<correct>25</correct>
+<time_taken>12.650000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">31</id><querystr><![CDATA[assign a; Select a pattern a(_, "value - diferent")]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>8.768000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">32</id><querystr><![CDATA[assign a; Select a pattern a(_, "(easy + question) / mark")]]></querystr>
+<stuans>5</stuans>
+<correct>5</correct>
+<time_taken>9.968000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">33</id><querystr><![CDATA[assign a; Select a pattern a(_, "error * 10000")]]></querystr>
+<stuans>9</stuans>
+<correct>9</correct>
+<time_taken>8.433000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">34</id><querystr><![CDATA[assign a; Select a pattern a(_, "1 + 2 + 3 + g2*8 + g3/9 + g4%3")]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>11.216000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">35</id><querystr><![CDATA[assign a; Select a pattern a(_, "i-j+k/30*25 + l")]]></querystr>
+<stuans>13</stuans>
+<correct>13</correct>
+<time_taken>9.012000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">36</id><querystr><![CDATA[assign a; Select a pattern a(_, "count + 15")]]></querystr>
+<stuans>15</stuans>
+<correct>15</correct>
+<time_taken>8.137000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">37</id><querystr><![CDATA[assign a; Select a pattern a(_, "b%c")]]></querystr>
+<stuans>17</stuans>
+<correct>17</correct>
+<time_taken>7.515000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">38</id><querystr><![CDATA[assign a; Select a pattern a(_, "(while + ((d + sum) / f)) - 20")]]></querystr>
+<stuans>18</stuans>
+<correct>18</correct>
+<time_taken>10.515000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">39</id><querystr><![CDATA[assign a; Select a pattern a(_, "exactRight")]]></querystr>
+<stuans>24</stuans>
+<correct>24</correct>
+<time_taken>8.516000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">40</id><querystr><![CDATA[assign a; Select a pattern a(_, "else / ((((2+3)-four)/five)*((six+six2)%seven))")]]></querystr>
+<stuans>26</stuans>
+<correct>26</correct>
+<time_taken>12.439000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">41</id><querystr><![CDATA[assign a; Select a pattern a(_, "left % (middle -(right * (left + (middle/(left + (middle - right) * right)))))")]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>16.132000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">42</id><querystr><![CDATA[assign a; Select a pattern a(_, "else + 10")]]></querystr>
+<stuans>28</stuans>
+<correct>28</correct>
+<time_taken>8.475000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">43</id><querystr><![CDATA[assign a,a1; Select a1.stmt# pattern a(_, "else + 10")]]></querystr>
+<stuans>1,11,13,15,17,18,20,24,26,27,28,29,3,30,31,32,33,5,8,9</stuans>
+<correct>1,3,5,8,9,11,13,15,17,18,20,24,26,27,28,29,30,31,32,33</correct>
+<time_taken>9.249000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">44</id><querystr><![CDATA[assign a,a1; Select a1.stmt# pattern a(_, "else+10")]]></querystr>
+<stuans>1,11,13,15,17,18,20,24,26,27,28,29,3,30,31,32,33,5,8,9</stuans>
+<correct>1,3,5,8,9,11,13,15,17,18,20,24,26,27,28,29,30,31,32,33</correct>
+<time_taken>9.181000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">45</id><querystr><![CDATA[assign a,a1; Select a1.stmt# pattern a(_, "      else+10")]]></querystr>
+<stuans>1,11,13,15,17,18,20,24,26,27,28,29,3,30,31,32,33,5,8,9</stuans>
+<correct>1,3,5,8,9,11,13,15,17,18,20,24,26,27,28,29,30,31,32,33</correct>
+<time_taken>9.079000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">46</id><querystr><![CDATA[assign a,a1; Select a1.stmt# pattern a(_, "else+10               ")]]></querystr>
+<stuans>1,11,13,15,17,18,20,24,26,27,28,29,3,30,31,32,33,5,8,9</stuans>
+<correct>1,3,5,8,9,11,13,15,17,18,20,24,26,27,28,29,30,31,32,33</correct>
+<time_taken>9.554000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">47</id><querystr><![CDATA[assign a; Select a pattern a(_, "beforeWhile - 0")]]></querystr>
+<stuans>20,29</stuans>
+<correct>20,29</correct>
+<time_taken>8.932000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">48</id><querystr><![CDATA[assign a; Select a pattern a(_, "         beforeWhile - 0")]]></querystr>
+<stuans>20,29</stuans>
+<correct>20,29</correct>
+<time_taken>9.185000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">49</id><querystr><![CDATA[assign a; Select a pattern a(_, "e + 12")]]></querystr>
+<stuans>30</stuans>
+<correct>30</correct>
+<time_taken>7.969000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">50</id><querystr><![CDATA[assign a; Select a pattern a(_, "(2+3)-4*(5+6)+8*(10%2)")]]></querystr>
+<stuans>31</stuans>
+<correct>31</correct>
+<time_taken>9.587000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">51</id><querystr><![CDATA[assign a; Select a pattern a(_, "(i*(i-(i/2))+i)+3")]]></querystr>
+<stuans>32</stuans>
+<correct>32</correct>
+<time_taken>9.054000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">52</id><querystr><![CDATA[assign a; Select a pattern a(_, "complicated + here + ltr")]]></querystr>
+<stuans>33</stuans>
+<correct>33</correct>
+<time_taken>10.019000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">53</id><querystr><![CDATA[assign a; variable v; Select v pattern a(_, "complicated + here + ltr")]]></querystr>
+<stuans>a,aa,add,afterWhile,b,beforeWhile,c,complicated,count,d,diferent,e,easy,else,error,exactLeft,exactLeft1,exactRight,exit,f,five,four,g,g1,g2,g3,g4,h,here,i,if,insideWhile,j,k,l,left,level,ltr,mark,max,middle,q,question,right,s,same,seven,six,six2,stage,sum,superNoob,throw,too,true,v1,v100,v2,value,w,what,while,x</stuans>
+<correct>a,v1,v2,same,value,diferent,easy,what,level,too,question,mark,stage,superNoob,exit,throw,error,j,max,sum,g1,g2,g3,g4,v100,x,i,k,l,count,b,c,if,while,d,f,s,aa,true,q,w,e,insideWhile,beforeWhile,left,right,g,h,exactLeft,exactRight,else,exactLeft1,four,five,six,six2,seven,middle,afterWhile,add,complicated,here,ltr</correct>
+<time_taken>10.884000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">54</id><querystr><![CDATA[assign a; Select a pattern a("same", "value - diferent")]]></querystr>
+<stuans>3</stuans>
+<correct>3</correct>
+<time_taken>10.041000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">55</id><querystr><![CDATA[assign a; Select a pattern a("too", "(easy + question) / mark")]]></querystr>
+<stuans>5</stuans>
+<correct>5</correct>
+<time_taken>10.519000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">56</id><querystr><![CDATA[assign a; Select a pattern a("exit", "1")]]></querystr>
+<stuans>8</stuans>
+<correct>8</correct>
+<time_taken>7.997000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">57</id><querystr><![CDATA[assign a; Select a pattern a("throw", "error * 10000")]]></querystr>
+<stuans>9</stuans>
+<correct>9</correct>
+<time_taken>9.320000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">58</id><querystr><![CDATA[assign a; Select a pattern a("g1", "1 + 2 + 3 + g2*8 + g3/9 + g4%3")]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>11.415000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">59</id><querystr><![CDATA[assign a; Select a pattern a("x", "i-j+k/30*25 + l")]]></querystr>
+<stuans>13</stuans>
+<correct>13</correct>
+<time_taken>9.850000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">60</id><querystr><![CDATA[assign a; Select a pattern a("count", "count + 15")]]></querystr>
+<stuans>15</stuans>
+<correct>15</correct>
+<time_taken>8.922000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">61</id><querystr><![CDATA[assign a; Select a pattern a("a", "b%c")]]></querystr>
+<stuans>17</stuans>
+<correct>17</correct>
+<time_taken>7.749000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">62</id><querystr><![CDATA[assign a; Select a pattern a("if", "(while + ((d + sum) / f)) - 20")]]></querystr>
+<stuans>18</stuans>
+<correct>18</correct>
+<time_taken>11.199000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">63</id><querystr><![CDATA[assign a; Select a pattern a("insideWhile", "beforeWhile - 0")]]></querystr>
+<stuans>20</stuans>
+<correct>20</correct>
+<time_taken>10.535000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">64</id><querystr><![CDATA[assign a; Select a pattern a("exactLeft", "exactRight")]]></querystr>
+<stuans>24</stuans>
+<correct>24</correct>
+<time_taken>9.310000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">65</id><querystr><![CDATA[assign a; Select a pattern a("exactLeft1", "else / ((((2+3)-four)/five)*((six+six2)%seven))")]]></querystr>
+<stuans>26</stuans>
+<correct>26</correct>
+<time_taken>13.575000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">66</id><querystr><![CDATA[assign a; Select a pattern a("left", "left % (middle -(right * (left + (middle/(left + (middle - right) * right)))))")]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>16.497000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">67</id><querystr><![CDATA[assign a; Select a pattern a("else", "else + 10")]]></querystr>
+<stuans>28</stuans>
+<correct>28</correct>
+<time_taken>8.624000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS, no result">68</id><querystr><![CDATA[assign a,a1; Select a1.stmt# pattern a("f", "else + 10")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.892000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">69</id><querystr><![CDATA[assign a; Select a pattern a("f", "beforeWhile - 0")]]></querystr>
+<stuans>29</stuans>
+<correct>29</correct>
+<time_taken>8.791000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">70</id><querystr><![CDATA[assign a; Select a pattern a("f", "         beforeWhile - 0")]]></querystr>
+<stuans>29</stuans>
+<correct>29</correct>
+<time_taken>8.523000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">71</id><querystr><![CDATA[assign a; Select a pattern a("f", "e + 12")]]></querystr>
+<stuans>30</stuans>
+<correct>30</correct>
+<time_taken>6.399000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">72</id><querystr><![CDATA[assign a; Select a pattern a("g", "(2+3)-4*(5+6)+8*(10%2)")]]></querystr>
+<stuans>31</stuans>
+<correct>31</correct>
+<time_taken>7.508000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">73</id><querystr><![CDATA[assign a; Select a pattern a("afterWhile", "(i*(i-(i/2))+i)+3")]]></querystr>
+<stuans>32</stuans>
+<correct>32</correct>
+<time_taken>7.903000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">74</id><querystr><![CDATA[assign a; Select a pattern a("add", "complicated + here + ltr")]]></querystr>
+<stuans>33</stuans>
+<correct>33</correct>
+<time_taken>7.731000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Exact Pattern Match on RHS">75</id><querystr><![CDATA[assign a; variable v; Select v pattern a("add", "complicated + here + ltr")]]></querystr>
+<stuans>a,aa,add,afterWhile,b,beforeWhile,c,complicated,count,d,diferent,e,easy,else,error,exactLeft,exactLeft1,exactRight,exit,f,five,four,g,g1,g2,g3,g4,h,here,i,if,insideWhile,j,k,l,left,level,ltr,mark,max,middle,q,question,right,s,same,seven,six,six2,stage,sum,superNoob,throw,too,true,v1,v100,v2,value,w,what,while,x</stuans>
+<correct>a,v1,v2,same,value,diferent,easy,what,level,too,question,mark,stage,superNoob,exit,throw,error,j,max,sum,g1,g2,g3,g4,v100,x,i,k,l,count,b,c,if,while,d,f,s,aa,true,q,w,e,insideWhile,beforeWhile,left,right,g,h,exactLeft,exactRight,else,exactLeft1,four,five,six,six2,seven,middle,afterWhile,add,complicated,here,ltr</correct>
+<time_taken>8.224000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">76</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "value - diferent")]]></querystr>
+<stuans>same</stuans>
+<correct>same</correct>
+<time_taken>11.049000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">77</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "(easy + question) / mark")]]></querystr>
+<stuans>too</stuans>
+<correct>too</correct>
+<time_taken>11.239000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">78</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "1")]]></querystr>
+<stuans>exit</stuans>
+<correct>exit</correct>
+<time_taken>11.392000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">79</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "error * 10000")]]></querystr>
+<stuans>throw</stuans>
+<correct>throw</correct>
+<time_taken>12.771000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">80</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "1 + 2 + 3 + g2*8 + g3/9 + g4%3")]]></querystr>
+<stuans>g1</stuans>
+<correct>g1</correct>
+<time_taken>13.839000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">81</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "i-j+k/30*25 + l")]]></querystr>
+<stuans>x</stuans>
+<correct>x</correct>
+<time_taken>12.537000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">82</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "count + 15")]]></querystr>
+<stuans>count</stuans>
+<correct>count</correct>
+<time_taken>12.781000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">83</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "b%c")]]></querystr>
+<stuans>a</stuans>
+<correct>a</correct>
+<time_taken>11.866000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">84</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "(while + ((d + sum) / f)) - 20")]]></querystr>
+<stuans>if</stuans>
+<correct>if</correct>
+<time_taken>13.007000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">85</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "beforeWhile - 0")]]></querystr>
+<stuans>f,insideWhile</stuans>
+<correct>insideWhile,f</correct>
+<time_taken>10.362000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">86</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "exactRight")]]></querystr>
+<stuans>exactLeft</stuans>
+<correct>exactLeft</correct>
+<time_taken>11.642000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">87</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "else / ((((2+3)-four)/five)*((six+six2)%seven))")]]></querystr>
+<stuans>exactLeft1</stuans>
+<correct>exactLeft1</correct>
+<time_taken>14.918000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">88</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "left % (middle -(right * (left + (middle/(left + (middle - right) * right)))))")]]></querystr>
+<stuans>left</stuans>
+<correct>left</correct>
+<time_taken>15.270000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">89</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "else + 10")]]></querystr>
+<stuans>else</stuans>
+<correct>else</correct>
+<time_taken>9.462000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">90</id><querystr><![CDATA[assign a,a1; variable v; Select a1.stmt# pattern a(v, "else + 10")]]></querystr>
+<stuans>1,11,13,15,17,18,20,24,26,27,28,29,3,30,31,32,33,5,8,9</stuans>
+<correct>1,3,5,8,9,11,13,15,17,18,20,24,26,27,28,29,30,31,32,33</correct>
+<time_taken>7.447000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">91</id><querystr><![CDATA[assign a; variable v; constant c; Select c.value pattern a(v, "else + 10")]]></querystr>
+<stuans>0,1,10,10000,11,12,13,15,2,20,22,25,3,30,4,44,5,55,6,66,8,9</stuans>
+<correct>10,2,12,13,55,66,0,11,22,44,4,1,10000,3,8,9,30,25,15,20,5,6</correct>
+<time_taken>7.557000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">92</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "beforeWhile - 0")]]></querystr>
+<stuans>f,insideWhile</stuans>
+<correct>insideWhile,f</correct>
+<time_taken>10.004000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">93</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "         beforeWhile - 0")]]></querystr>
+<stuans>f,insideWhile</stuans>
+<correct>insideWhile,f</correct>
+<time_taken>10.079000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">94</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "e + 12")]]></querystr>
+<stuans>f</stuans>
+<correct>f</correct>
+<time_taken>9.910000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">95</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "(2+3)-4*(5+6)+8*(10%2)")]]></querystr>
+<stuans>g</stuans>
+<correct>g</correct>
+<time_taken>10.603000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">96</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "(i*(i-(i/2))+i)+3")]]></querystr>
+<stuans>afterWhile</stuans>
+<correct>afterWhile</correct>
+<time_taken>11.693000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">97</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a(v, "complicated + here + ltr")]]></querystr>
+<stuans>add</stuans>
+<correct>add</correct>
+<time_taken>11.912000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">98</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v pattern a("add", "complicated + here + ltr")]]></querystr>
+<stuans>a,aa,add,afterWhile,b,beforeWhile,c,complicated,count,d,diferent,e,easy,else,error,exactLeft,exactLeft1,exactRight,exit,f,five,four,g,g1,g2,g3,g4,h,here,i,if,insideWhile,j,k,l,left,level,ltr,mark,max,middle,q,question,right,s,same,seven,six,six2,stage,sum,superNoob,throw,too,true,v1,v100,v2,value,w,what,while,x</stuans>
+<correct>a,v1,v2,same,value,diferent,easy,what,level,too,question,mark,stage,superNoob,exit,throw,error,j,max,sum,g1,g2,g3,g4,v100,x,i,k,l,count,b,c,if,while,d,f,s,aa,true,q,w,e,insideWhile,beforeWhile,left,right,g,h,exactLeft,exactRight,else,exactLeft1,four,five,six,six2,seven,middle,afterWhile,add,complicated,here,ltr</correct>
+<time_taken>14.374000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">99</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "value - diferent")]]></querystr>
+<stuans>3 same</stuans>
+<correct>3 same</correct>
+<time_taken>14.526000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">100</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "(easy + question) / mark")]]></querystr>
+<stuans>5 too</stuans>
+<correct>5 too</correct>
+<time_taken>14.683000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">101</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "1")]]></querystr>
+<stuans>8 exit</stuans>
+<correct>8 exit</correct>
+<time_taken>12.243000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">102</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "error * 10000")]]></querystr>
+<stuans>9 throw</stuans>
+<correct>9 throw</correct>
+<time_taken>13.818000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">103</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "1 + 2 + 3 + g2*8 + g3/9 + g4%3")]]></querystr>
+<stuans>11 g1</stuans>
+<correct>11 g1</correct>
+<time_taken>16.622000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">104</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "i-j+k/30*25 + l")]]></querystr>
+<stuans>13 x</stuans>
+<correct>13 x</correct>
+<time_taken>13.709000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">105</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "count + 15")]]></querystr>
+<stuans>15 count</stuans>
+<correct>15 count</correct>
+<time_taken>11.552000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">106</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "b%c")]]></querystr>
+<stuans>17 a</stuans>
+<correct>17 a</correct>
+<time_taken>9.849000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">107</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <v,a> pattern a(v, "(while + ((d + sum) / f)) - 20")]]></querystr>
+<stuans>if 18</stuans>
+<correct>if 18</correct>
+<time_taken>11.822000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">108</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "beforeWhile - 0")]]></querystr>
+<stuans>20 insideWhile,29 f</stuans>
+<correct>20 insideWhile,29 f</correct>
+<time_taken>10.929000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">109</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "exactRight")]]></querystr>
+<stuans>24 exactLeft</stuans>
+<correct>24 exactLeft</correct>
+<time_taken>9.886000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">110</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "else / ((((2+3)-four)/five)*((six+six2)%seven))")]]></querystr>
+<stuans>26 exactLeft1</stuans>
+<correct>26 exactLeft1</correct>
+<time_taken>13.376000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">111</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "left % (middle -(right * (left + (middle/(left + (middle - right) * right)))))")]]></querystr>
+<stuans>27 left</stuans>
+<correct>27 left</correct>
+<time_taken>18.223000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">112</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "else + 10")]]></querystr>
+<stuans>28 else</stuans>
+<correct>28 else</correct>
+<time_taken>12.678000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">113</id><querystr><![CDATA[assign a,a1; variable v; Select a1.stmt# pattern a(v, "else + 10")]]></querystr>
+<stuans>1,11,13,15,17,18,20,24,26,27,28,29,3,30,31,32,33,5,8,9</stuans>
+<correct>1,3,5,8,9,11,13,15,17,18,20,24,26,27,28,29,30,31,32,33</correct>
+<time_taken>9.239000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">114</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "beforeWhile - 0")]]></querystr>
+<stuans>20 insideWhile,29 f</stuans>
+<correct>20 insideWhile,29 f</correct>
+<time_taken>11.019000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">115</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "         beforeWhile - 0")]]></querystr>
+<stuans>20 insideWhile,29 f</stuans>
+<correct>20 insideWhile,29 f</correct>
+<time_taken>10.820000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">116</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "e + 12")]]></querystr>
+<stuans>30 f</stuans>
+<correct>30 f</correct>
+<time_taken>9.876000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">117</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "(2+3)-4*(5+6)+8*(10%2)")]]></querystr>
+<stuans>31 g</stuans>
+<correct>31 g</correct>
+<time_taken>11.256000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">118</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "(i*(i-(i/2))+i)+3")]]></querystr>
+<stuans>32 afterWhile</stuans>
+<correct>32 afterWhile</correct>
+<time_taken>13.516000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Exact Pattern Match on RHS">119</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, "complicated + here + ltr")]]></querystr>
+<stuans>33 add</stuans>
+<correct>33 add</correct>
+<time_taken>13.693000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">120</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"c"_)]]></querystr>
+<stuans>1,17</stuans>
+<correct>1,17</correct>
+<time_taken>9.021000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">121</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"easy + question"_)]]></querystr>
+<stuans>5</stuans>
+<correct>5</correct>
+<time_taken>10.577000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">122</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"1+2"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.479000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">123</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"1+2+3"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.375000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">124</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"g2*8"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.634000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">125</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"g3/9"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.606000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">126</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"g4%3"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>9.461000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">127</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"1 + 2 + 3 + g2*8"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>11.046000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">128</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"1+2+3+g2*8"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>10.976000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">129</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"1+2+3+g2*8+g3/9"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>13.052000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">130</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"1 + 2 + 3 + g2*8 + g3/9 + g4%3"_)]]></querystr>
+<stuans>11</stuans>
+<correct>11</correct>
+<time_taken>14.135000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">131</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, _"3+g2"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.605000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">132</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, _"9+g4"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.756000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">133</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, _"1+2+3+g2"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.897000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">134</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, _"g3/9 + g4%3"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.477000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">135</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, _"2 + 3 + g2*8"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>12.592000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">136</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"i-j"_)]]></querystr>
+<stuans>13</stuans>
+<correct>13</correct>
+<time_taken>11.565000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">137</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"k/30*25"_)]]></querystr>
+<stuans>13</stuans>
+<correct>13</correct>
+<time_taken>9.643000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">138</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"l"_)]]></querystr>
+<stuans>13</stuans>
+<correct>13</correct>
+<time_taken>8.774000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">139</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"i-j+k/30*25 + l"_)]]></querystr>
+<stuans>13</stuans>
+<correct>13</correct>
+<time_taken>10.619000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">140</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"k       /    30"_)]]></querystr>
+<stuans>13</stuans>
+<correct>13</correct>
+<time_taken>9.632000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">141</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"i-j+k/30*25"_)]]></querystr>
+<stuans>13</stuans>
+<correct>13</correct>
+<time_taken>10.698000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">142</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"30*25"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.368000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">143</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"i-j+k"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.681000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">144</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"i-j+k/30"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.350000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">145</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"j+k"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.029000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">146</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, _"j+k/30"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>12.291000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">147</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, _"j+k/30*25"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>11.167000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">148</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, _"k/30*25 + l"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.404000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">149</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, _"25+l"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.252000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">150</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"while"_)]]></querystr>
+<stuans>18</stuans>
+<correct>18</correct>
+<time_taken>9.516000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">151</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"d + sum"_)]]></querystr>
+<stuans>18</stuans>
+<correct>18</correct>
+<time_taken>9.323000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">152</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"(d + sum)"_)]]></querystr>
+<stuans>18</stuans>
+<correct>18</correct>
+<time_taken>9.881000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">153</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"(d + sum) / f"_)]]></querystr>
+<stuans>18</stuans>
+<correct>18</correct>
+<time_taken>9.916000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">154</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"(while + ((d + sum) / f)) - 20"_)]]></querystr>
+<stuans>18</stuans>
+<correct>18</correct>
+<time_taken>11.443000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">155</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"while + d + sum"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.510000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">156</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, _"d + sum / f"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.582000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Partial Pattern Match on RHS">157</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, _"(((2+3)-four)/five)"_)]]></querystr>
+<stuans>26 exactLeft1</stuans>
+<correct>26 exactLeft1</correct>
+<time_taken>11.280000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Partial Pattern Match on RHS">158</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, _"(((2+3)-four)/five)"_)]]></querystr>
+<stuans>26 exactLeft1</stuans>
+<correct>26 exactLeft1</correct>
+<time_taken>10.879000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Partial Pattern Match on RHS">159</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, _"((2+3)-four)/five"_)]]></querystr>
+<stuans>26 exactLeft1</stuans>
+<correct>26 exactLeft1</correct>
+<time_taken>10.779000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Partial Pattern Match on RHS">160</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, _"(six+six2)%seven"_)]]></querystr>
+<stuans>26 exactLeft1</stuans>
+<correct>26 exactLeft1</correct>
+<time_taken>10.303000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Partial Pattern Match on RHS">161</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(v, _"(((((six+six2)%seven))))"_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>11.135000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">162</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(v, _"2+3-four/five"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.654000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, no result">163</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(v, _"2+3-four/five"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.293000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid Pattern Assign: syn on LHS, Partial Pattern Match on RHS">164</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <v,a> pattern a(v, _"beforeWhile-0"_)]]></querystr>
+<stuans>f 29,insideWhile 20</stuans>
+<correct>insideWhile 20,f 29</correct>
+<time_taken>10.385000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">165</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"left % (middle -(right * (left + (middle/(left + (middle - right) * right)))))"_)]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>15.693000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">166</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"middle - right"_)]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>10.545000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">167</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"(middle - right) * right"_)]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>11.646000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">168</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"left + (middle - right) * right"_)]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>11.564000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">169</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"middle/(left + (middle - right) * right)"_)]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>12.922000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">170</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"left + (middle/(left + (middle - right) * right))"_)]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>13.507000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">171</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"(right * (left + (middle/(left + (middle - right) * right))))"_)]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>15.445000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">172</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"right * (left + (middle/(left + (middle - right) * right)))"_)]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>14.214000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">173</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"right * (left + (middle/(left + (middle - right) * right)))"_)]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>14.257000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">174</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"middle -(right * (left + (middle/(left + (middle - right) * right))))"_)]]></querystr>
+<stuans>27</stuans>
+<correct>27</correct>
+<time_taken>15.319000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, no result">175</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"left-right"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.107000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, no result">176</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"middle/left"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.222000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">177</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("g", _"2+3"_)]]></querystr>
+<stuans>31</stuans>
+<correct>31</correct>
+<time_taken>9.054000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">178</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("g", _"5+6"_)]]></querystr>
+<stuans>31</stuans>
+<correct>31</correct>
+<time_taken>10.144000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">179</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("g", _"4*(5+6)"_)]]></querystr>
+<stuans>31</stuans>
+<correct>31</correct>
+<time_taken>10.484000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">180</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("g", _"10%2"_)]]></querystr>
+<stuans>31</stuans>
+<correct>31</correct>
+<time_taken>9.377000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">181</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("g", _"8*(10%2)"_)]]></querystr>
+<stuans>31</stuans>
+<correct>31</correct>
+<time_taken>9.635000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">182</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("g", _"(2+3)-4*(5+6)"_)]]></querystr>
+<stuans>31</stuans>
+<correct>31</correct>
+<time_taken>10.286000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, no result">183</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a("g", _"8*(2+3)-4*(5+6)"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.934000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">184</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("g", _"(2+3)-4*(5+6)+8*(10%2)"_)]]></querystr>
+<stuans>31</stuans>
+<correct>31</correct>
+<time_taken>10.798000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, no result">185</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("g", _"(2+3)-4"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.361000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, no result">186</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("g", _"(5+6)+8*(10%2)"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.269000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">187</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("insideWhile", _"beforeWhile-0"_)]]></querystr>
+<stuans>20</stuans>
+<correct>20</correct>
+<time_taken>10.972000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">188</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("f", _"beforeWhile-0"_)]]></querystr>
+<stuans>29</stuans>
+<correct>29</correct>
+<time_taken>9.718000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Valid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, no result">189</id><querystr><![CDATA[assign a; Select BOOLEAN pattern a("g", _"beforeWhile-0"_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.016000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

@@ -1,0 +1,110 @@
+1- Multiclauses without synonym, such that clauses
+stmt s1;
+Select s1 such that Follows(1,2) and Follows*(1,6)
+1,10,100,101,102,103,104,105,106,107,108,109,11,110,111,112,113,114,115,116,117,118,119,12,120,121,122,123,124,125,126,127,128,129,13,130,131,132,133,134,135,136,137,138,139,14,140,141,142,143,144,145,146,147,148,149,15,150,151,152,153,154,155,156,157,158,159,16,160,161,162,163,164,165,166,167,168,169,17,170,171,172,173,174,175,176,177,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,46,47,48,49,5,50,51,52,53,54,55,56,57,58,59,6,60,61,62,63,64,65,66,67,68,69,7,70,71,72,73,74,75,76,77,78,79,8,80,81,82,83,84,85,86,87,88,89,9,90,91,92,93,94,95,96,97,98,99
+5000
+2- Multiclauses without synonym, such that clauses
+procedure p1;
+Select p1 such that Parent(10,11) and Parent*(54,59)
+BlackPink,CoMpLeX,KPOP,Main,Twice,dance,groups,p1,p2,p3,patternSuchThat,performance,sing
+5000
+3- Multiclauses without synonym, such that clauses
+stmt s1;
+Select s1 such that Follows(1,2) and Follows*(1,6) and Follows(24,44)
+1,10,100,101,102,103,104,105,106,107,108,109,11,110,111,112,113,114,115,116,117,118,119,12,120,121,122,123,124,125,126,127,128,129,13,130,131,132,133,134,135,136,137,138,139,14,140,141,142,143,144,145,146,147,148,149,15,150,151,152,153,154,155,156,157,158,159,16,160,161,162,163,164,165,166,167,168,169,17,170,171,172,173,174,175,176,177,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,46,47,48,49,5,50,51,52,53,54,55,56,57,58,59,6,60,61,62,63,64,65,66,67,68,69,7,70,71,72,73,74,75,76,77,78,79,8,80,81,82,83,84,85,86,87,88,89,9,90,91,92,93,94,95,96,97,98,99
+5000
+4- Multiclauses without synonym, such that clauses
+stmt s1;
+Select s1 such that Follows(1,2) and Follows*(1,6) and Follows(24,44) such that Follows*(120,134)
+1,10,100,101,102,103,104,105,106,107,108,109,11,110,111,112,113,114,115,116,117,118,119,12,120,121,122,123,124,125,126,127,128,129,13,130,131,132,133,134,135,136,137,138,139,14,140,141,142,143,144,145,146,147,148,149,15,150,151,152,153,154,155,156,157,158,159,16,160,161,162,163,164,165,166,167,168,169,17,170,171,172,173,174,175,176,177,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,46,47,48,49,5,50,51,52,53,54,55,56,57,58,59,6,60,61,62,63,64,65,66,67,68,69,7,70,71,72,73,74,75,76,77,78,79,8,80,81,82,83,84,85,86,87,88,89,9,90,91,92,93,94,95,96,97,98,99
+5000
+5- Multiclauses without synonym, such that clauses
+stmt s1;
+Select s1 such that Follows(1,2) and Follows*(1,6) and Follows(24,44) such that Follows*(120,134) such that Follows(157,159)
+1,10,100,101,102,103,104,105,106,107,108,109,11,110,111,112,113,114,115,116,117,118,119,12,120,121,122,123,124,125,126,127,128,129,13,130,131,132,133,134,135,136,137,138,139,14,140,141,142,143,144,145,146,147,148,149,15,150,151,152,153,154,155,156,157,158,159,16,160,161,162,163,164,165,166,167,168,169,17,170,171,172,173,174,175,176,177,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,46,47,48,49,5,50,51,52,53,54,55,56,57,58,59,6,60,61,62,63,64,65,66,67,68,69,7,70,71,72,73,74,75,76,77,78,79,8,80,81,82,83,84,85,86,87,88,89,9,90,91,92,93,94,95,96,97,98,99
+5000
+6- Multiclauses without synonym, such that clauses
+stmt s1;
+Select s1 such that Follows(1,2) and Follows*(1,6) and Follows(24,44) such that Follows*(120,134) such that Follows(157,159) such that Follows(143,144) such that Follows(170,171)
+1,10,100,101,102,103,104,105,106,107,108,109,11,110,111,112,113,114,115,116,117,118,119,12,120,121,122,123,124,125,126,127,128,129,13,130,131,132,133,134,135,136,137,138,139,14,140,141,142,143,144,145,146,147,148,149,15,150,151,152,153,154,155,156,157,158,159,16,160,161,162,163,164,165,166,167,168,169,17,170,171,172,173,174,175,176,177,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,46,47,48,49,5,50,51,52,53,54,55,56,57,58,59,6,60,61,62,63,64,65,66,67,68,69,7,70,71,72,73,74,75,76,77,78,79,8,80,81,82,83,84,85,86,87,88,89,9,90,91,92,93,94,95,96,97,98,99
+5000
+7- Multiclauses without synonym, such that clauses
+procedure p1;
+Select p1 such that Parent(10,11) and Parent*(54,59)
+BlackPink,CoMpLeX,KPOP,Main,Twice,dance,groups,p1,p2,p3,patternSuchThat,performance,sing
+5000
+8- Multiclauses without synonym, such that clauses
+procedure p1;
+Select p1 such that Parent(10,11) and Parent*(54,59) such that Parent*(44,48) and Parent*(32,39)
+BlackPink,CoMpLeX,KPOP,Main,Twice,dance,groups,p1,p2,p3,patternSuchThat,performance,sing
+5000
+9- Multiclauses without synonym, such that clauses
+
+Select BOOLEAN such that Follows(1,2) and Follows*(1,6) and Parent(10,11) and Parent*(54,59)
+TRUE
+5000
+10- Multiclauses without synonym, such that clauses
+
+Select BOOLEAN such that Follows(1,2) and Follows*(1,6) and Parent(10,11) and Parent*(54,59) such that Parent*(44,48) and Parent*(32,39)
+TRUE
+5000
+11- Multiclauses without synonym, such that clauses
+procedure p1;
+Select p1 such that Next(10,11) and Next*(54,59) such that Next*(44,48) and Next*(32,39) and Next(1,2) and Next*(1,6) and Next*(24,44)
+BlackPink,CoMpLeX,KPOP,Main,Twice,dance,groups,p1,p2,p3,patternSuchThat,performance,sing
+5000
+12- Multiclauses without synonym, such that clauses
+procedure p1,p2,p3,p4,p5,p6;
+Select p1 such that Calls("KPOP",_) and Calls("CoMpLeX", "patternSuchThat") such that Calls*("p1",_) and Calls("p1","p2") and Calls*("p2","p3")
+BlackPink,CoMpLeX,KPOP,Main,Twice,dance,groups,p1,p2,p3,patternSuchThat,performance,sing
+5000
+13- Multiclauses without synonym, such that clauses
+procedure p1,p2,p3,p4,p5,p6;
+Select BOOLEAN such that Modifies(44,"insideWhile") and Modifies(59,"i") and Modifies(59, "x") and Modifies(54,"read")
+TRUE
+5000
+14- Multiclauses without synonym, such that clauses
+procedure p1,p2,p3,p4,p5,p6;
+Select BOOLEAN such that Uses(76,"p2") and Uses(82,"k") and Uses(91, "a") and Uses(91,"b") and Uses(148,"noob")
+TRUE
+5000
+15- Multiclauses without synonym, such that clauses
+procedure p1,p2,p3,p4,p5,p6;
+Select BOOLEAN such that Affects*(85,85) and Affects(60,60) and Affects(45,50) and Affects(11,16) and Affects*(22,23)
+TRUE
+5000
+16- Multiclauses with clauses, disconnected
+procedure p1,p2,p3,p4,p5,p6; stmt s1,s2; variable v;
+Select BOOLEAN with p1.procName = "KPOP" and s1.stmt# = 72 and s2.stmt# = 73 and v.varName = "end"
+TRUE
+5000
+17- Multiclauses with clauses, disconnected
+procedure p1,p2,p3,p4,p5,p6; stmt s1,s2; variable v;
+Select BOOLEAN with p1.procName = "KPOP" and s1.stmt# = 72 and s2.stmt# = 73 and v.varName = "end"
+TRUE
+5000
+18- Multiclauses without synonym, pattern clauses
+assign a1,a2; while w; if ifs;
+Select BOOLEAN pattern a1("end",_) pattern a1("end",_"b+c"_) pattern a2(_,_) pattern w("f",_) pattern ifs("var1",_,_)
+TRUE
+5000
+19- Multiclauses without synonym, pattern clauses
+assign a1,a2; while w; if ifs;
+Select BOOLEAN pattern a1("end",_) and a1("end",_"b+c"_) and a2(_,_) and w("f",_) and ifs("var1",_,_)
+TRUE
+5000
+20- Multiclauses without synonym, pattern clauses
+assign a1,a2; while w; if ifs;
+Select BOOLEAN pattern a1("end",_) pattern a1("end",_)
+TRUE
+5000
+21- Multiclauses without synonym, different type of clauses
+assign a1,a2; while w; if ifs; procedure p1;
+Select BOOLEAN pattern a1("p1",_"p2"_) pattern a2("end",_) with p1.procName = "KPOP" such that Affects*(85,85) and Affects(60,60) and Affects(45,50) and Parent*(44,48) and Parent*(32,39)pattern ifs("var1",_,_)
+TRUE
+5000
+22- Multiclauses without synonym, different type of clauses
+assign a1,a2; while w; if ifs; procedure p1; stmt s1; prog_line n;
+Select BOOLEAN with s1.stmt# = 4 and n = 4 such that Calls*("KPOP", "dance") and Affects(95,96) and Uses(84,"j") and Uses("p3", "b") and Modifies("p2","a")
+TRUE
+5000

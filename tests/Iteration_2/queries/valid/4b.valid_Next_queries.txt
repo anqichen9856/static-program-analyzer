@@ -1,0 +1,2570 @@
+1 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s,s1; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(s,s1)
+1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,57,59,60,61,62,63,64,65,66,67,68,69,71,72,73,74,75,76,77,78,79
+5000
+2 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(s,n)
+2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,77,78,79,80
+5000
+3 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(s,r)
+1,9,10,11,23,30,35,39,43,55
+5000
+4 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,r)
+1,23,39,55
+5000
+5 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next(pr,r)
+10,35
+5000
+6 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next(cp,r)
+9
+5000
+7 - Valid Next, syn on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,r)
+
+5000
+8 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next(ifs,r)
+31,46
+5000
+9 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(n,r)
+1,9,10,11,23,30,35,39,43,55
+5000
+10 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s.stmt#,pr.varName> such that Next(s,pr)
+6 die,4 end,16 blackpink,17 twice,28 end,31 cuteSong,32 end,33 end,34 end,40 happiness,46 money,56 money
+5000
+11 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,pr)
+28
+5000
+12 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next(pr,a)
+47
+5000
+13 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next(r,pr)
+31,40,46,56
+5000
+14 - Valid Next, syn on both args
+print pr, pr1;
+Select <pr1,pr.stmt#> such that Next(pr1,pr)
+32 35,17 18
+5000
+15 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp.stmt# such that Next(cp,pr)
+33,34
+5000
+16 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp.stmt# such that Next(pr,cp)
+21,58
+5000
+17 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,pr)
+4
+5000
+18 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next(pr,w)
+41
+5000
+19 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs, pr> such that Next(ifs,pr)
+16 17,6 10
+5000
+20 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr,ifs> such that Next(pr,ifs)
+
+5000
+21 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <n, pr.varName> such that Next(n,pr)
+6 die,4 end,16 blackpink,17 twice,28 end,31 cuteSong,32 end,33 end,34 end,40 happiness,46 money,56 money
+5000
+22 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.stmt#,n> such that Next(pr,n)
+10 11,17 18, 18 21,32 35,35 36,41 38,47 49,57 58
+5000
+23 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(cp,p)
+FALSE
+5000
+24 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(cp,v)
+FALSE
+5000
+25 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(cp,c)
+FALSE
+5000
+26 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName, s> such that Next(cp,s)
+groups 4, performance 6, BlackPink 9, Twice 11,dance 22,groups 35,performance 45, sing 54,Twice 69, performance 70
+5000
+27 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s, cp> such that Next(s,cp)
+2 3,4 5,7 8,8 9,18 21,20 21,21 22,30 33,25 34,43 44,52 53,54 58,57 58,67 68,62 69,68 69,69 70
+5000
+28 - Valid Next, syn on both args
+call cp1, cp;
+Select cp1 such that Next(cp1,cp)
+8,21,68,69
+5000
+29 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,cp)
+4,62
+5000
+30 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp, w> such that Next(cp,w)
+3 4
+5000
+31 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs, cp> such that Next(ifs,cp)
+30 33,25 34,43 44
+5000
+32 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp, ifs> such that Next(cp,ifs)
+5 6
+5000
+33 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next(r,cp)
+2
+5000
+34 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next(cp,r)
+11
+5000
+35 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next(pr,cp)
+18,57
+5000
+36 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp, pr> such that Next(cp,pr)
+33 35,34 35
+5000
+37 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a, cp> such that Next(a,cp)
+7 8,20 21,52 53,54 58,67 68
+5000
+38 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a, cp> such that Next(cp,a)
+45 44, 54 53
+5000
+39 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next(cp,n)
+3,5,8,9,21,33,34,44,53,68,69
+5000
+40 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next(n,cp)
+3,5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+41 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,p)
+
+5000
+42 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(v,w)
+
+5000
+43 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(c,w)
+
+5000
+44 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s,w> such that Next(s,w)
+3 4,13 4,41 38,59 60,61 60,60 62,65 62,66 62,71 72,76 72
+5000
+45 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <w,s> such that Next(w,s)
+4 5,4 14,38 39,38 42,60 61,60 62,62 63,62 69,72 73
+5000
+46 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next(w,r)
+
+5000
+47 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next(r,w)
+
+5000
+48 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <w,pr> such that Next(w,pr)
+4 14
+5000
+49 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr,w> such that Next(pr,w)
+41 38
+5000
+50 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <w,cp.procName> such that Next(w,cp)
+4 performance,62 performance
+5000
+51 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName,w> such that Next(cp,w)
+groups 4
+5000
+52 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w,w1; if ifs; assign a; prog_line n;
+Select <w,w1.stmt#> such that Next(w,w1)
+60 62
+5000
+53 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <w,ifs.stmt#> such that Next(w,ifs)
+38 42
+5000
+54 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs.stmt#,w> such that Next(ifs,w)
+71 72,59 60
+5000
+55 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <w,a.stmt#> such that Next(w,a)
+38 39,60 61,62 63,72 73
+5000
+56 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a,w> such that Next(a,w)
+13 4,61 60,65 62,66 62,76 72
+5000
+57 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(w,n)
+TRUE
+5000
+58 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(n,w)
+TRUE
+5000
+59 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s,ifs> such that Next(s,ifs)
+5 6,15 16,24 25,25 26,29 30,38 42,42 43,50 51,63 64
+5000
+60 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs,s> such that Next(ifs,s)
+6 7,6 10,16 17,16 19,25 26,25 34,26 27,26 29,30 31,30 33,42 43,42 48,43 44, 43 46,51 52, 51 55,59 60,59 67,64 65,64 66,71 72,71 77
+5000
+61 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs,r> such that Next(ifs,r)
+30 31,43 46
+5000
+62 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r.stmt#, r.varName> such that Next(r,ifs)
+24 songlist
+5000
+63 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs,pr.varName> such that Next(ifs,pr)
+6 die,16 blackpink
+5000
+64 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.varName,ifs> such that Next(pr,ifs)
+
+5000
+65 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs,cp.procName> such that Next(ifs,cp)
+25 groups,30 groups,43 performance
+5000
+66 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName,ifs> such that Next(cp,ifs)
+performance 6
+5000
+67 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w,w1; if ifs,ifs1; assign a; prog_line n;
+Select <ifs,ifs1.stmt#> such that Next(ifs,ifs1)
+25 26,42 43
+5000
+68 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs,a.stmt#> such that Next(ifs,a)
+6 7,16 19,26 27,26 29,42 48,51 52,51 55,59 67,64 65, 64 66,71 77
+5000
+69 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a,ifs> such that Next(a,ifs)
+15 16,29 30,50 51,63 64
+5000
+70 - Valid Next, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(ifs,n)
+TRUE
+5000
+71 -  Valid Next, args on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(ifs,w)
+TRUE
+5000
+72 -  Valid Next, args on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a,n> such that Next(a,n)
+1 2, 7 8,13 4,15 16,19 20,20 21,23 24,27 28,28 35,29 30,39 40,45 49,48 49,50 51,52 53,54 58,55 56,61 60,63 64,65 62,66 62,67 68,73 74,74 75, 75 76,76 72,77 78,78 79,79 80
+5000
+73 -  Valid Next, args on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <n,a.stmt#> such that Next(n,a)
+6 7,12 13,16 19,19 20,26 27,27 28,26 29,36 37,38 39,44 45,42 48,45 49,47 49,48 49,51 52,53 54,51 55,60 61,62 63,64 65,64 66,59 67,72 73,73 74,74 75,75 76,71 77,77 78,78 79,79 80
+5000
+74 -  Valid Next, args on both args
+assign a,a1;
+Select <a,a1> such that Next(a,a1)
+19 20,27 28,48 49,45 49,73 74,74 75,75 76,77 78, 78 79,79 80
+5000
+75 -  Valid Next, args on both args
+prog_line n, n1;
+Select <n,n1> such that Next(n,n1)
+1 2,2 3,3 4,4 5,4 14,5 6,6 7,6 10,7 8,8 9,9 11,10 11,11 12,12 13,13 4,15 16,16 17, 16 19,17 18,18 21,19 20,20 21,21 22,23 24,24 25,25 26,25 34,26 27,26 29,27 28,28 35,29 30,30 31,30 33,31 32,32 35,33 35,34 35,35 36,36 37,38 39,38 42,39 40,40 41,41 38,42 43,42 48,43 44,43 46,44 45,45 49,46 47,47 49,48 49,50 51,51 52,51 55,52 53,53 54,54 58,55 56,56 57,57 58,59 60,59 67,60 61,60 62,61 60,62 63,62 69,63 64,64 65,64 66,65 62,66 62,67 68,68 69,69 70,71 72,71 77,72 73,73 74,74 75,75 76,76 72,77 78,78 79,79 80
+5000
+76 - Valid Next, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(s,_)
+1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,57,59,60,61,62,63,64,65,66,67,68,69,71,72,73,74,75,76,77,78,79
+5000
+77 - Valid Next, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.varName such that Next(r,_)
+kpop, sing, dance,songlist,Icecream,ratings,Twice,youtube
+5000
+78 - Valid Next, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr.varName such that Next(pr,_)
+die, blackpink, twice,cuteSong,end,happiness,money
+5000
+79 - Valid Next, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next(cp,_)
+3,5,8,9,21,33,34,44,53,68,69
+5000
+80 - Valid Next, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,_)
+4,38,60,62,72
+5000
+81 - Valid Next, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(ifs,_)
+6,16,25,26,30,42,43,51,59,64,71
+5000
+82 - Valid Next, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,_)
+1,7,13,15,19,20,23,27,28,29,39,45,48,50,52,54,55,61,63,65,66,67,73,74,75,76,77,78,79
+5000
+83 - Valid Next, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(n,_)
+1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,57,59,60,61,62,63,64,65,66,67,68,69,71,72,73,74,75,76,77,78,79
+5000
+84 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(s,2)
+TRUE
+5000
+85 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s.stmt# such that Next(s,4)
+3,13
+5000
+86 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s.stmt# such that Next(s,38)
+41
+5000
+87 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s.stmt# such that Next(s,62)
+60,65,66
+5000
+88 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s.stmt# such that Next(s,69)
+62,68
+5000
+89 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next(r,31)
+
+5000
+90 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(r,31)
+FALSE
+5000
+91 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.varName such that Next(r,32)
+Icecream
+5000
+92 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.varName such that Next(r,57)
+sing
+5000
+93 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next(pr,57)
+
+5000
+94 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(pr,57)
+FALSE
+5000
+95 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next(pr,11)
+10
+5000
+96 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next(pr,18)
+17
+5000
+97 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next(pr,35)
+32
+5000
+98 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next(pr,38)
+41
+5000
+99 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(cp,2)
+FALSE
+5000
+100 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next(cp,4)
+3
+5000
+101 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next(cp,11)
+9
+5000
+102 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(cp,23)
+FALSE
+5000
+103 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next(cp,23)
+
+5000
+104 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next(cp,35)
+33,34
+5000
+105 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,14)
+4
+5000
+106 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,5)
+4
+5000
+107 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,42)
+38
+5000
+108 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,62)
+60
+5000
+109 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,69)
+62
+5000
+110 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,73)
+72
+5000
+111 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(ifs,10)
+6
+5000
+112 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(ifs,21)
+
+5000
+113 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(ifs,26)
+25
+5000
+114 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(ifs,30)
+
+5000
+115 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(ifs,47)
+FALSE
+5000
+116 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(ifs,46)
+43
+5000
+117 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(ifs,60)
+59
+5000
+118 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(ifs,61)
+
+5000
+119 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(ifs,62)
+
+5000
+120 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(ifs,80)
+FALSE
+5000
+121 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,2)
+1
+5000
+122 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,4)
+13
+5000
+123 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,20)
+19
+5000
+124 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,30)
+29
+5000
+125 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,49)
+48,45
+5000
+126 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,51)
+50
+5000
+127 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,35)
+28
+5000
+128 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,53)
+52
+5000
+129 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(a,69)
+FALSE
+5000
+130 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,58)
+54
+5000
+131 - Valid Next, syn on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,14)
+
+5000
+132 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,72)
+76
+5000
+133 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,62)
+65,66
+5000
+134 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(a,60)
+61
+5000
+135 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(n,2)
+TRUE
+5000
+136 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(n,4)
+3,13
+5000
+137 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(n,38)
+41
+5000
+138 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(n,62)
+60,65,66
+5000
+139 - Valid Next, syn on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(n,69)
+62,68
+5000
+140 - Valid Next, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Next(_,_)
+KPOP, groups,BlackPink,Twice,dance,sing,performance
+5000
+141 - Valid Next, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Next(_,_)
+kpop, love, in, korea, performance, money, die, sing, dance,count, end, groups, blackpink,twice,group, BTS,playlist,songlist,category,ddudu,remix,kill,this,others,song,not,edm,category2,cute,Icecream,cuteSong,ratings,Twice,happiness,boys,happy,youtube,crazy,level,very,mood,complex,beginner,intermediate,advanced,pro,noob,steps,a,b,c,gender,boy,key,c4,role,bass,tenor,alto,good,sop,female,everything,you,rich,ticket,drinks,coke,merchandise,gift,dream,crushed,fan,quit
+5000
+142 - Valid Next, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Next(_,_)
+1000,1,2,0,10,10000000000000000000000000000,1000000,2000,11,100,200,300,400
+5000
+143 - Valid Next, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(_,_)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80
+5000
+144 - Valid Next, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r, r.varName> such that Next(_,_)
+2 kpop, 11 sing,12 dance,24 songlist,31 Icecream,36 ratings,40 Twice,46 youtube,56 sing
+5000
+145 - Valid Next, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr,pr.varName> such that Next(_,_)
+10 die,14 end,17 blackpink,18 twice,32 cuteSong,35 end,41 happiness,47 money,57 money
+5000
+146 - Valid Next, wildcard on both args
+print pr, pr1;
+Select <pr,pr1.varName> such that Next(_,_)
+10 die,10 end,10 blackpink,10 twice,10 cuteSong,10 happiness,10 money,14 die,14 end,14 blackpink,14 twice,14 cuteSong,14 happiness,14 money,17 die,17 end,17 blackpink,17 twice,17 cuteSong,17 happiness,17 money,18 die,18 end,18 blackpink,18 twice,18 cuteSong,18 happiness,18 money,32 die,32 end,32 blackpink,32 twice,32 cuteSong,32 happiness,32 money,35 die,35 end,35 blackpink,35 twice,35 cuteSong,35 happiness,35 money,41 die,41 end,41 blackpink,41 twice,41 cuteSong,41 happiness,41 money,47 die,47 end,47 blackpink,47 twice,47 cuteSong,47 happiness,47 money,57 die,57 end,57 blackpink,57 twice,57 cuteSong,57 happiness,57 money
+5000
+147 - Valid Next, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next(_,_)
+3,5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+148 - Valid Next, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(_,_)
+4,38,60,62,72
+5000
+149 - Valid Next, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(_,_)
+6,16,25,26,30,42,43,51,59,64,71
+5000
+150 - Valid Next, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(_,_)
+1,7,13,15,19,20,23,27,28,29,37,39,45,48,49,50,52,54,55,61,63,65,66,67,73,74,75,76,77,78,79,80
+5000
+151 - Valid Next, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(_,_)
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80
+5000
+152 - Valid Next, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(_,s)
+2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,77,78,79,80
+5000
+153 - Valid Next, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next(_,r)
+2,11,12,24,31,36,40,46,56
+5000
+154 - Valid Next,w ildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,pr)
+TRUE
+5000
+155 - Valid Next, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,cp)
+TRUE
+5000
+156 - Valid Next, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,w)
+TRUE
+5000
+157 - Valid Next, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,ifs)
+TRUE
+5000
+158 - Valid Next, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(_,ifs)
+6,16,25,26,30,42,43,51,64
+5000
+159 - Valid Next, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(_,a)
+7,13,19,20,27,28,29,37,39,45,48,49,52,54,55,61,63,65,66,67,73,74,75,76,77,78,79,80
+5000
+160 - Valid Next, wildcard on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,1)
+FALSE
+5000
+161 - Valid Next, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,14)
+TRUE
+5000
+162 - Valid Next, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,10)
+TRUE
+5000
+163 - Valid Next, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,35)
+TRUE
+5000
+164 - Valid Next, wildcard on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,71)
+FALSE
+5000
+165 - Valid Next, wildcard on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,50)
+FALSE
+5000
+166 - Valid Next, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(1,1)
+FALSE
+5000
+167 - Valid Next, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(62,62)
+FALSE
+5000
+168 - Valid Next, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(60,62)
+TRUE
+5000
+169 - Valid Next, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(66,62)
+TRUE
+5000
+170 - Valid Next, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(66,69)
+FALSE
+5000
+171 - Valid Next, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(71,77)
+TRUE
+5000
+172 - Valid Next, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(76,72)
+TRUE
+5000
+173 - Valid Next, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(72,80)
+FALSE
+5000
+174 - Valid Next, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(76,77)
+FALSE
+5000
+175 - Valid Next, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(45,46)
+FALSE
+5000
+176 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(1,_)
+TRUE
+5000
+177 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(2,_)
+TRUE
+5000
+178 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(3,_)
+TRUE
+5000
+179 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(4,_)
+TRUE
+5000
+180 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(5,_)
+TRUE
+5000
+181 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(6,_)
+TRUE
+5000
+182 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(7,_)
+TRUE
+5000
+183 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(8,_)
+TRUE
+5000
+184 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(9,_)
+TRUE
+5000
+185 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(10,_)
+TRUE
+5000
+186 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(11,_)
+TRUE
+5000
+187 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(12,_)
+TRUE
+5000
+188 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(13,_)
+TRUE
+5000
+189 - Valid Next, INTEGER on lhs and wildcard on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(14,_)
+FALSE
+5000
+190 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(15,_)
+TRUE
+5000
+191 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(16,_)
+TRUE
+5000
+192 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(17,_)
+TRUE
+5000
+193 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(18,_)
+TRUE
+5000
+194 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(19,_)
+TRUE
+5000
+195 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(20,_)
+TRUE
+5000
+196 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(21,_)
+TRUE
+5000
+197 - Valid Next, INTEGER on lhs and wildcard on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(22,_)
+FALSE
+5000
+198 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(23,_)
+TRUE
+5000
+199 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(24,_)
+TRUE
+5000
+200 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(25,_)
+TRUE
+5000
+201 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(26,_)
+TRUE
+5000
+202 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(27,_)
+TRUE
+5000
+203 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(28,_)
+TRUE
+5000
+204 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(29,_)
+TRUE
+5000
+205 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(30,_)
+TRUE
+5000
+206 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(1,_)
+TRUE
+5000
+207 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(31,_)
+TRUE
+5000
+208 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(32,_)
+TRUE
+5000
+209 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(33,_)
+TRUE
+5000
+210 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(34,_)
+TRUE
+5000
+211 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(35,_)
+TRUE
+5000
+212 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(36,_)
+TRUE
+5000
+213 - Valid Next, INTEGER on lhs and wildcard on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(37,_)
+FALSE
+5000
+214 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(38,_)
+TRUE
+5000
+215 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(39,_)
+TRUE
+5000
+216 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(40,_)
+TRUE
+5000
+217 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(41,_)
+TRUE
+5000
+218 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(42,_)
+TRUE
+5000
+219 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(43,_)
+TRUE
+5000
+220 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(44,_)
+TRUE
+5000
+221 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(45,_)
+TRUE
+5000
+222 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(46,_)
+TRUE
+5000
+223 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(47,_)
+TRUE
+5000
+224 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(48,_)
+TRUE
+5000
+225 - Valid Next, INTEGER on lhs and wildcard on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(49,_)
+FALSE
+5000
+226 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(50,_)
+TRUE
+5000
+227 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(51,_)
+TRUE
+5000
+228 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(52,_)
+TRUE
+5000
+229 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(53,_)
+TRUE
+5000
+230 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(54,_)
+TRUE
+5000
+231 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(55,_)
+TRUE
+5000
+232 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(56,_)
+TRUE
+5000
+233 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(57,_)
+TRUE
+5000
+234 - Valid Next, INTEGER on lhs and wildcard on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(58,_)
+FALSE
+5000
+235 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(59,_)
+TRUE
+5000
+236 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(60,_)
+TRUE
+5000
+237 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(61,_)
+TRUE
+5000
+238 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(62,_)
+TRUE
+5000
+239 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(63,_)
+TRUE
+5000
+240 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(64,_)
+TRUE
+5000
+241 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(65,_)
+TRUE
+5000
+242 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(66,_)
+TRUE
+5000
+243 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(67,_)
+TRUE
+5000
+244 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(68,_)
+TRUE
+5000
+245 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(69,_)
+TRUE
+5000
+246 - Valid Next, INTEGER on lhs and wildcard on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(70,_)
+FALSE
+5000
+247 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(71,_)
+TRUE
+5000
+248 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(72,_)
+TRUE
+5000
+249 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(73,_)
+TRUE
+5000
+250 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(74,_)
+TRUE
+5000
+251 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(75,_)
+TRUE
+5000
+252 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(76,_)
+TRUE
+5000
+253 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(77,_)
+TRUE
+5000
+254 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(78,_)
+TRUE
+5000
+255 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(79,_)
+TRUE
+5000
+256 - Valid Next, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(80,_)
+FALSE
+5000
+257 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(1,s)
+2
+5000
+258 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(4,s)
+5,14
+5000
+259 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(6,s)
+7,10
+5000
+260 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(25,s)
+26,34
+5000
+261 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(38,s)
+39,42
+5000
+262 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(62,s)
+63,69
+5000
+263 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next(80,s)
+
+5000
+264 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r.varName> such that Next(9,r)
+sing
+5000
+265 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r.varName> such that Next(43,r)
+youtube
+5000
+266 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r.varName> such that Next(51,r)
+
+5000
+267 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.varName> such that Next(6,pr)
+die
+5000
+268 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.varName> such that Next(31,pr)
+cuteSong
+5000
+269 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.varName> such that Next(26,pr)
+
+5000
+270 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.varName> such that Next(30,pr)
+
+5000
+271 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.varName> such that Next(25,pr)
+
+5000
+272 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.varName> such that Next(38,pr)
+
+5000
+273 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName> such that Next(0,cp)
+
+5000
+274 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName> such that Next(4,cp)
+performance
+5000
+275 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName> such that Next(18,cp)
+dance
+5000
+276 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName> such that Next(21,cp)
+sing
+5000
+277 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName> such that Next(57,cp)
+sing
+5000
+278 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp> such that Next(62,cp)
+69
+5000
+279 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next(33,cp)
+
+5000
+280 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName> such that Next(51,cp)
+
+5000
+281 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName> such that Next(42,cp)
+
+5000
+282 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName> such that Next(45,cp)
+
+5000
+283 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp.procName> such that Next(32,cp)
+
+5000
+284 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(37,w)
+
+5000
+285 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(61,w)
+60
+5000
+286 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(66,w)
+62
+5000
+287 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(65,w)
+62
+5000
+288 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(59,w)
+60
+5000
+289 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(60,w)
+62
+5000
+290 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(1,w)
+
+5000
+291 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(75,w)
+
+5000
+292 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(37,w)
+
+5000
+293 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(5,ifs)
+6
+5000
+294 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(25,ifs)
+26
+5000
+295 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(38,ifs)
+42
+5000
+296 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(70,ifs)
+
+5000
+297 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(77,ifs)
+
+5000
+298 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(72,ifs)
+
+5000
+299 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(41,ifs)
+
+5000
+300 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(52,ifs)
+
+5000
+301 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(62,ifs)
+
+5000
+302 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(58,ifs)
+
+5000
+303 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(1,a)
+
+5000
+304 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(25,a)
+
+5000
+305 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(80,a)
+
+5000
+306 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(6,a)
+7
+5000
+307 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a.value such that Next(75,a)
+
+5000
+308 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(42,a)
+48
+5000
+309 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(51,a)
+52,55
+5000
+310 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next(59,a)
+67
+5000
+311 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(59,n)
+60,67
+5000
+312 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(1,n)
+2
+5000
+313 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(4,n)
+5,14
+5000
+314 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(6,n)
+7,10
+5000
+315 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(25,n)
+26,34
+5000
+316 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(38,n)
+39,42
+5000
+317 - Valid Next, INTEGER on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(62,n)
+63,69
+5000
+318 - Valid Next, INTEGER on lhs and syn on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(80,n)
+
+5000
+319 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(s,s)
+4,5,6,7,8,9,10,11,12,13,38,39,40,41,60,61,62,63,64,65,66,72,73,74,75,76
+5000
+320 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(r,r)
+11,12,40
+5000
+321 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next*(pr,pr)
+10,41
+5000
+322 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(cp,cp)
+5,8,9
+5000
+323 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(w,w)
+4,38,60,62,72
+5000
+324 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(ifs,ifs)
+6,64
+5000
+325 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next*(a,a)
+7,13,39,61,63,65,66,73,74,75,76
+5000
+326 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(n,n)
+TRUE
+5000
+327 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(s,r)
+TRUE
+5000
+328 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(s,r)
+1,2,3,4,5,6,7,8,9,10,11,12,13,23,24,25,26,29,30,27,28,31,32,33,34,35,38,39,40,41,42,43,50,51,55
+5000
+329 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(r,s)
+3,4,5,6,7,8,9,10,11,12,13,14,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,57,58
+5000
+330 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s.stmt#,r> such that Next*(s,r)
+1 2,1 11,1 12,2 11,2 12,3 11,3 12,4 11,4 12,5 11,5 12,6 11,6 12,7 11,7 12,8 11,8 12,9 11, 9 12,10 11,10 12,11 11,11 12,12 11,12 12,13 11, 13 12,23 24, 23 31,23 36,24 31,24 36,25 31,25 36,26 31,26 36,27 36,28 36,29 31,29 36,30 31,30 36,31 36,32 36,33 36,34 36,35 36,38 40,38 46,39 40,39 46,40 40, 40 46,41 40,41 46,42 46,43 46,50 56,51 56,55 56
+5000
+331 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s.stmt# such that Next*(s,r)
+1,2,3,4,5,6,7,8,9,10,11,12,13,23,24,25,26,27,28,29,30,31,32,33,34,35,38,39,40,41,42,43,50,51,55
+5000
+332 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r.varName such that Next*(s,r)
+kpop,sing,dance,songlist,Icecream,ratings,Twice,youtube
+5000
+333 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s.stmt#,r.varName> such that Next*(s,r)
+1 kpop,1 sing,1 dance,2 sing,2 dance,3 sing,3 dance,4 sing,4 dance,5 sing,5 dance,6 sing,6 dance,7 sing,7 dance,8 sing,8 dance,9 sing,9 dance,10 sing,10 dance,11 sing,11 dance,12 sing,12 dance,13 sing, 13 dance,23 songlist, 23 Icecream,23 ratings,24 Icecream,24 ratings,25 Icecream,25 ratings,26 Icecream,26 ratings,27 ratings,28 ratings,29 Icecream,29 ratings,30 Icecream,30 ratings,31 ratings,32 ratings,33 ratings,34 ratings,35 ratings,38 Twice,38 youtube,39 Twice,39 youtube,40 Twice, 40 youtube,41 Twice,41 youtube,42 youtube,43 youtube,50 sing,51 sing,55 sing
+5000
+334 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(s,pr)
+1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,23,24,25,26,27,28,29,30,31,32,33,34,38,39,40,41,42,43,46,50,51,55,56
+5000
+335 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(pr,s)
+10,11,12,13,14,4,5,6,7,8,9,18,21,22,35,36,37,41,38,39,40,42,43,44,45,46,47,48,49,58,
+5000
+336 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s.stmt#,pr> such that Next*(s,pr)
+1 10,1 14,2 10,2 14,3 10,3 14,4 10,4 14,5 10,5 14,6 10,6 14,7 10,7 14,8 10,8 14,9 10,9 14,10 10,10 14,11 10,11 14,12 10,12 14,13 10,13 14,15 17,15 18,16 17,16 18,17 18,23 32,23 35,24 32,24 35,25 32,25 35,26 32,26 35,27 35,28 35,29 32,29 35,30 32,30 35,31 32,31 35,32 35,33 35,34 35,38 41,38 47,39 41,39 47,40 41,40 47,41 41,41 47,42 47,43 47,46 47,50 57,51 57,55 57,56 57,
+5000
+337 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s.stmt#,pr.varName> such that Next*(s,pr)
+1 die, 1 end,2 die, 2 end,3 die, 3 end,4 die, 4 end,5 die, 5 end,6 die, 6 end,7 die, 7 end,8 die, 8 end,9 die, 9 end,10 die, 10 end,11 die, 11 end,12 die, 12 end,13 die, 13 end,15 blackpink, 15 twice,16 blackpink, 16 twice,17 twice,23 cuteSong, 23 end,24 cuteSong, 24 end,25 cuteSong, 25 end,26 cuteSong, 26 end,27 end,28 end,29 cuteSong, 29 end,30 cuteSong, 30 end,31 cuteSong, 31 end,32 end,33 end, 34 end,38 happiness,38 money,39 happiness,39 money,40 happiness,40 money,41 happiness,41 money,42 money,43 money,46 money,50 money,51 money,55 money,56 money
+5000
+338 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(s,cp)
+1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,23,24,25,26,29,30,38,39,40,41,42,43,50,51,52,53,54,55,56,57,59,60,61,62,63,64,65,66,67,68,69
+5000
+339 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(cp,s)
+4,5,6,7,8,9,10,11,12,13,14,22,35,36,37,45,49,54,58,69,70
+5000
+340 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s.stmt#,cp.stmt#> such that Next*(s,cp)
+1 3,1 5,1 8,1 9,2 3,2 5,2 8,2 9,3 5,3 8,3 9,4 5,4 8,4 9,5 5,5 8,5 9,6 5,6 8,6 9,7 5,7 8,7 9,8 5,8 8,8 9,9 5,9 8,9 9,10 5,10 8,10 9,11 5,11 8,11 9,12 5,12 8,12 9,13 5,13 8,13 9,15 21,15 22,16 21,16 22,17 21,17 22,18 21,18 22,19 21,19 22,20 21,20 22,21 22,23 33,23 34,24 33,24 34,25 33,25 34,26 33,29 33,30 33,38 44,39 44,40 44,41 44,42 44,43 44,50 53,50 58,51 53,51 58,52 53,52 58,53 58,54 58,55 58,56 58,57 58,59 68,59 69,59 70,60 69,60 70,61 69,61 70,62 69,62 70,63 69,63 70,64 69,64 70,65 69,65 70,66 69,66 70,67 68,67 69,67 70,68 69,68 70,69 70
+5000
+341 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s.stmt#,cp.procName> such that Next*(s,cp)
+1 groups,1 performance,1 BlackPink,1 Twice,2 groups,2 performance,2 BlackPink,2 Twice,3 performance,3 BlackPink,3 Twice,4 performance,4 BlackPink,4 Twice,5 performance,5 BlackPink,5 Twice,6 performance,6 BlackPink,6 Twice,7 performance,7 BlackPink,7 Twice,8 performance,8 BlackPink,8 Twice,9 performance,9 BlackPink,9 Twice,10 performance,10 BlackPink,10 Twice,11 performance,11 BlackPink,11 Twice,12 performance,12 BlackPink,12 Twice,13 performance,13 BlackPink,13 Twice,15 dance,15 sing,16 dance,16 sing,17 dance,17 sing,18 dance,18 sing,19 dance,19 sing,20 dance,20 sing,21 sing,23 groups,24 groups,25 groups,26 groups,29 groups,30 groups,38 performance,39 performance,40 performance,41 performance,42 performance,43 performance,50 sing,51 sing,52 sing,53 sing,54 sing,55 sing,56 sing,57 sing,59 Twice,59 performance,60 Twice,60 performance,61 Twice,61 performance,62 Twice,62 performance,63 Twice,63 performance,64 Twice,64 performance,65 Twice,65 performance,66 Twice,66 performance,67 Twice,67 performance,68 Twice,68 performance,69 Twice
+5000
+342 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(s,w)
+1,2,3,4,5,6,7,8,9,10,11,12,13,38,39,40,41,59,60,61,62,63,64,65,66,71,72,73,74,75,76
+5000
+343 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(w,s)
+4,5,6,7,8,9,10,11,12,13,14,38,39,40,41,42,43,44,45,46,47,48,49,60,61,62,63,64,65,66,69,70,72,73,74,75,76
+5000
+344 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s.stmt#,w> such that Next*(s,w)
+1 4,2 4,3 4,4 4,5 4,6 4,7 4,8 4,9 4,10 4,11 4,12 4,13 4,38 38,39 38,40 38,41 38,59 60,59 62,60 60,61 60,61 62,60 62,62 62,63 62,64 62,65 62,66 62,71 72,72 72,73 72,74 72,75 72,76 72
+5000
+345 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(s,ifs)
+1,2,3,4,5,6,7,8,9,10,11,12,13,15,23,24,25,26,29,38,39,40,41,42,50,59,60,61,62,63,64,65,66
+5000
+346 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(ifs,s)
+6,7,8,9,10,11,12,13,4,5,14,17,18,19,20,21,22,26,27,28,29,30,31,32,33,34,35,36,37,43,44,45,46,47,48,49,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,77,78,79,80
+5000
+347 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s.stmt#,ifs> such that Next*(s,ifs)
+1 6,2 6,3 6,4 6,5 6,6 6,7 6,8 6,9 6,10 6,11 6,12 6,13 6,15 16,23 25,23 26,23 30,24 25,24 26,24 30,25 26,25 30,26 30,29 30,38 42,38 43,39 42,39 43,40 42,40 43,41 42,41 43,42 43,50 51,59 64,60 64,61 64,62 64,63 64,64 64,65 64,66 64,
+5000
+348 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(s,a)
+1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,19,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,59,60,61,62,63,64,65,66,71,72,73,74,75,76,77,78,79
+5000
+349 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(a,s)
+2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,68,69,70,72,73,74,75,76,78,79,80
+5000
+350 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s.stmt#,a> such that Next*(s,a)
+1 7,1 13,7 7,7 13,13 7,13 13,15 19,19 20,23 27,23 28,23 29,23 37,27 28,27 37,28 37,29 37,39 39,39 45,39 48,39 49,45 49,48 49,50 52,50 54,50 55,52 54,61 61,61 63,61 65,61 66 ,63 63,63 65,63 66,65 65,65 63,65 66,66 66,66 63,66 65,73 73,73 74,73 75,73 76,74 73,74 74,74 75,74 76,75 73,75 74,75 75,75 76,76 73,76 74,76 75,76 76,77 78,77 79,77 80,78 79,78 80,79 80,10 13,10 7,11 13,11 7,12 13,12 7,15 20,16 19,16 20,2 13,2 7,24 27,24 28,24 29,24 37,25 27,25 28,25 29,25 37,26 27,26 28,26 29,26 37,3 13,3 7,30 37,31 37,32 37,33 37,34 37,35 37,36 37,38 39,38 45,38 48,38 49,4 13,4 7,40 39,40 45,40 48,40 49,41 39,41 45,41 48,41 49,42 45,42 48,42 49,43 45,43 49,44 45,44 49,46 49,47 49,5 13,5 7,51 52,51 54,51 55,53 54,59 61,59 63,59 65,59 66,59 67,6 13,6 7,60 61,60 63,60 65,60 66,62 63,62 65,62 66,64 63,64 65,64 66,71 73,71 74,71 75,71 76,71 77,71 78,71 79,71 80,72 73,72 74,72 75,72 76,8 13,8 7,9 13,9 7
+5000
+351 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s.stmt# such that Next*(s,n)
+1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,57,59,60,61,62,63,64,65,66,67,68,69,71,72,73,74,75,76,77,78,79
+5000
+352 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next*(s,n)
+2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,77,78,79,80
+5000
+353 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <s.stmt#,n> such that Next*(s,n)
+1 2,1 3,1 4,1 5,1 6,1 7,1 8,1 9,1 10,1 11,1 12,1 13,1 14,2 3,2 4,2 5,2 6,2 7,2 8,2 9,2 10,2 11,2 12,2 13,2 14,3 4,3 5,3 6,3 7,3 8,3 9,3 10,3 11,3 12,3 13,3 14,4 4,4 5,4 6,4 7,4 8,4 9,4 10,4 11,4 12,4 13,4 14,5 4,5 5,5 6,5 7,5 8,5 9,5 10,5 11,5 12,5 13,5 14,6 4,6 5,6 6,6 7,6 8,6 9,6 10,6 11,6 12,6 13,6 14,7 4,7 5,7 6,7 7,7 8,7 9,7 10,7 11,7 12,7 13,7 14,8 4,8 5,8 6,8 7,8 8,8 9,8 10,8 11,8 12,8 13,8 14,9 4,9 5,9 6,9 7,9 8,9 9,9 10,9 11,9 12,9 13,9 14,10 4,10 5,10 6,10 7,10 8,10 9,10 10,10 11,10 12,10 13,10 14,11 4,11 5,11 6,11 7,11 8,11 9,11 10,11 11,11 12,11 13,11 14,12 4,12 5,12 6,12 7,12 8,12 9,12 10,12 11,12 12,12 13,12 14,13 4,13 5,13 6,13 7,13 8,13 9,13 10,13 11,13 12,13 13,13 14,15 16,15 17,15 18,15 19,15 20,15 21,15 22,16 17,16 18,16 19,16 20,16 21,16 22,17 18,17 21,17 22,18 21,18 22,19 20,19 21,19 22,20 21,20 22,23 24,23 25,23 26,23 27,23 28,23 29,23 30,23 31,23 32,23 33,23 34,23 35,23 36,23 37,24 25,24 26,24 27,24 28,24 29,24 30,24 31,24 32,24 33,24 34,24 35,24 36,24 37,25 26,25 27,25 28,25 29,25 30,25 31,25 32,25 33,25 35,25 36,25 37,26 27,26 28,26 29,26 30,26 31,26 32,26 33,26 35,26 36,26 37,27 28,27 35,27 36,27 37,28 35,28 36,28 37,29 30,29 31,29 32,29 33,29 35,29 36,29 37,30 31,30 32,30 33,30 35,30 36,30 37,31 32,31 35,31 36,31 37,32 35,32 36,32 37,33 35,33 36,33 37,34 35,34 36,34 37,21 22,25 34,35 36,35 37,36 37,38 38,38 39,38 40,38 41,38 42,38 43,38 44,38 45,38 46,38 47,38 48,38 49,39 38,39 39,39 40,39 41,39 42,39 43,39 44,39 45,39 46,39 47,39 48,39 49,40 38,40 39,40 40,40 41,40 42,40 43,40 44,40 45,40 46,40 47,40 48,40 49,41 38,41 39,41 40,41 41,41 42,41 43,41 44,41 45,41 46,41 47,41 48,41 49,42 43,42 44,42 45,42 46,42 47,42 48,42 49,43 44,43 45,43 46,43 47,43 49,44 45,44 49,45 49,46 47,46 49,47 49,48 49,50 51,50 52,50 53,50 54,50 55,50 56,50 57,50 58,51 52,51 53,51 54,51 55,51 56,51 57,51 58,52 53,52 54,52 58,53 54,53 58,54 58,55 56,55 57,55 58,56 57,56 58,57 58,59 60,59 61,59 62,59 63,59 64,59 65,59 66,59 67,59 68,59 69,59 70,60 60,60 61,60 62,60 63,60 64,60 65,60 66,60 69,60 70,61 60,61 61,61 62,61 63,61 64,61 65,61 66,61 69,61 70,62 62,62 63,62 64,62 65,62 66,62 69,62 70,63 62,63 63,63 64,63 65,63 66,63 69,63 70,64 62,64 63,64 64,64 65,64 66,64 69,64 70,65 62,65 63,65 64,65 65,65 66,65 69,65 70,66 62,66 63,66 64,66 65,66 66,66 69,66 70,67 68,67 69,67 70,68 69,68 70,69 70,71 72,71 73,71 74,71 75,71 76,71 77,71 78,71 79,71 80,72 72,72 73,72 74,72 75,72 76,73 72,73 73,73 74,73 75,73 76,74 72,74 73,74 74,74 75,74 76,75 72,75 73,75 74,75 75,75 76,76 72,76 73,76 74,76 75,76 76,77 78,77 79,77 80,78 79,78 80,79 80
+5000
+354 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(r,pr)
+2,11,12,24,31,40,46,56
+5000
+355 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(pr,r)
+11,12,36,40,46
+5000
+356 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr,r> such that Next*(pr,r)
+10 11,10 12,32 36,35 36,41 40,41 46
+5000
+357 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(r,cp)
+2,11,12,24,40,56
+5000
+358 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(cp,r)
+11,12,36
+5000
+359 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp,r> such that Next*(cp,r)
+3 11,8 11,9 11,3 12,5 11,5 12,8 12,9 12,33 36,34 36
+5000
+360 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(r,w)
+2,11,12,40
+5000
+361 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(w,r)
+11,12,40,46
+5000
+362 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <w,r> such that Next*(w,r)
+4 11,4 12,38 40,38 46
+5000
+363 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(r,ifs)
+2,11,12,24,40
+5000
+364 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(ifs,r)
+11,12,31,36,46,56
+5000
+365 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs,r> such that Next*(ifs,r)
+6 11,6 12,25 31,25 36,26 31,26 36,30 31,30 36,42 46,43 46,51 56
+5000
+366 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(r,a)
+2,11,12,24,31,36,40,46
+5000
+367 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(a,r)
+2,11,12,24,31,36,40,46,56
+5000
+368 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a,r> such that Next*(a,r)
+1 2,1 11,1 12,7 11,7 12,13 11,13 12,23 24,23 31,29 31,23 36,27 36, 28 36,29 36,39 40,39 46,50 56,55 56
+5000
+369 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next*(pr,cp)
+10,17,18,41,57
+5000
+370 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next*(cp,pr)
+10,14,35
+5000
+371 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <cp,pr> such that Next*(cp,pr)
+3 10,5 10,8 10,9 10,3 14,5 14,8 14,9 14,33 35,34 35
+5000
+372 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr,cp> such that Next*(pr,cp)
+10 5,10 8,10 9,17 21,17 22,18 21,18 22,41 44,57 58
+5000
+373 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next*(pr,w)
+10,41
+5000
+374 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next*(w,pr)
+10,14,41,47
+5000
+375 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <w,pr> such that Next*(w, pr)
+4 10,4 14,38 41,38 47
+5000
+376 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next*(pr,ifs)
+10,41
+5000
+377 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next*(ifs,pr)
+10,14,17,18,32,35,47,57
+5000
+378 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs,pr> such that Next*(ifs, pr)
+6 10,6 14,16 17,16 18,25 32,26 32,30 32,25 35,26 35,30 35,42 47,43 47,51 57
+5000
+379 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next*(pr,a)
+10,32,35,41,47
+5000
+380 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next*(a,pr)
+10,14,17,18,32,35,41,47,57
+5000
+381 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a,pr> such that Next*(a, pr)
+1 10,7 10,1 14, 7 14,13 14,13 10,15 17,15 18,23 32,29 32,23 35,27 35,28 35,29 35,39 41,39 47,50 57,55 57
+5000
+382 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(cp,w)
+3,5,8,9
+5000
+383 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(w,cp)
+5,8,9,44,69,70
+5000
+384 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <w,cp> such that Next*(w, cp)
+4 5, 4 8, 4 9,38 44,60 69,60 70,62 69,62 70
+5000
+385 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(cp,ifs)
+3,5,8,9
+5000
+386 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(ifs,cp)
+5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+387 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs,cp> such that Next*(ifs, cp)
+6 8,6 9,6 5,16 21,16 22,25 33,26 33,30 33,25 34,42 44, 43 44,51 53,51 58,59 68,59 69, 64 69,59 70,64 70
+5000
+388 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(cp,a)
+3,5,8,9,33,34,44,53
+5000
+389 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(a,cp)
+3,5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+390 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a,cp> such that Next*(a, cp)
+1 3,1 5,1 8,1 9,7 5,13 5,7 8,13 8,7 9,13 9,15 21,19 21,20 21,15 22,19 22,20 22,23 33,29 33,23 34,39 44,50 53,52 53,50 58,52 58,54 58,55 58,67 68,61 69,63 69,65 69,66 69,67 69,61 70,63 70,65 70,66 70,67 70
+5000
+391 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(w,ifs)
+4,38,60,62
+5000
+392 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(ifs,w)
+4,60,62,72
+5000
+393 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <ifs,w> such that Next*(ifs, w)
+6 4,59 60,59 62,64 62,71 72
+5000
+394 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(w,a)
+4,38,60,62,72
+5000
+395 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(a,w)
+4,38,60,62,72
+5000
+396 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a,w> such that Next*(a, w)
+1 4,7 4,13 4,39 38,61 60,61 62,63 62,65 62,66 62,73 72,74 72,75 72,76 72
+5000
+397 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(ifs,a)
+6,16,25,26,30,42,43,51,59,64,71
+5000
+398 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(a,ifs)
+6,16,25,26,30,42,43,51,64
+5000
+399 - Valid Next*, syn on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <a,ifs> such that Next*(a, ifs)
+1 6,7 6,13 6,15 16,23 25,23 26,23 30,29 30,39 42,39 43,50 51,61 64,63 64,65 64,66 64
+5000
+400 - Valid Next*, syn on both args
+stmt s,s1;
+Select s such that Next*(s,s1)
+1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,57,59,60,61,62,63,64,65,66,67,68,69,71,72,73,74,75,76,77,78,79
+5000
+401 - Valid Next*, syn on both args
+read r,r1;
+Select r such that Next*(r,r1)
+2,11,12,24,31,40
+5000
+402 - Valid Next*, syn on both args
+print pr, pr1;
+Select pr such that Next*(pr,pr1)
+10,17,32,41
+5000
+403 - Valid Next*, syn on both args
+call cp, cp1;
+Select cp such that Next*(cp,cp1)
+3,5,8,9,21,53,68,69
+5000
+404 - Valid Next*, syn on both args
+while w; while w1;
+Select w such that Next*(w,w1)
+4,38,60,62,72
+5000
+405 - Valid Next*, syn on both args
+if ifs, ifs1;
+Select ifs such that Next*(ifs,ifs1)
+6,25,26,42,59,64
+5000
+406 - Valid Next*, syn on both args
+assign a,a1;
+Select a such that Next*(a,a1)
+1,7,13,15,19,23,27,28,29,39,45,48,50,52,61,63,65,66,73,74,75,76,77,78,79
+5000
+407 - Valid Next*, syn on both args
+prog_line n, n1;
+Select n1 such that Next*(n,n1)
+2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,77,78,79,80
+5000
+408 - Valid Next*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(s, _)
+1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,57,59,60,61,62,63,64,65,66,67,68,69,71,72,73,74,75,76,77,78,79
+5000
+409 - Valid Next*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(r, _)
+2,11,12,24,31,36,40,46,56
+5000
+410 - Valid Next*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next*(pr, _)
+10,17,18,32,35,41,47,57
+5000
+411 - Valid Next*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(cp, _)
+3,5,8,9,21,33,34,44,53,68,69
+5000
+412 - Valid Next*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(w, _)
+4,38,60,62,72
+5000
+413 - Valid Next*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(ifs, _)
+6,16,25,26,30,42,43,51,59,64,71
+5000
+414 - Valid Next*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next*(a, _)
+1,7,13,15,19,20,23,27,28,29,39,45,48,50,52,54,55,61,63,65,66,67,73,74,75,76,77,78,79
+5000
+415 - Valid Next*, syn on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next*(n, _)
+1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,57,59,60,61,62,63,64,65,66,67,68,69,71,72,73,74,75,76,77,78,79
+5000
+416 - Valid Next*, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(_, _)
+TRUE
+5000
+417 - Valid Next*, wildcard on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c.value such that Next*(_, _)
+1000,1,2,0,10,10000000000000000000000000000,1000000,2000,11,100,200,300,400
+5000
+418 - Valid Next*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(_, s)
+2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,77,78,79,80
+5000
+419 - Valid Next*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next*(_, r)
+2,11,12,24,31,36,40,46,56
+5000
+420 - Valid Next*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next*(_, pr)
+10,14,17,18,32,35,41,47,57
+5000
+421 - Valid Next*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(_, cp)
+3,5,8,9,21,22,33,34,44,53,58,68,69,70
+5000
+422 - Valid Next*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(_, w)
+4,38,60,62,72
+5000
+423 - Valid Next*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(_, ifs)
+6,16,25,26,30,42,43,51,64
+5000
+424 - Valid Next*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next*(_, a)
+7,13,19,20,27,28,29,37,39,45,48,49,52,54,55,61,63,65,66,67,73,74,75,76,77,78,79,80
+5000
+425 - Valid Next*, wildcard on lhs and syn on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next*(_, n)
+2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,77,78,79,80
+5000
+426 - Valid Next*, wildcard on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(_, 1)
+FALSE
+5000
+427 - Valid Next*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(_, 38)
+TRUE
+5000
+428 - Valid Next*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(_, 80)
+TRUE
+5000
+429 - Valid Next*, wildcard on lhs and INTEGER on rhs, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(_, 71)
+FALSE
+5000
+430 - Valid Next*, wildcard on lhs and INTEGER on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(_, 59)
+FALSE
+5000
+431 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(1,80)
+FALSE
+5000
+432 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(1,14)
+TRUE
+5000
+433 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(15,22)
+TRUE
+5000
+434 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(23,37)
+TRUE
+5000
+435 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(38,49)
+TRUE
+5000
+436 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(50,58)
+TRUE
+5000
+437 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(59,70)
+TRUE
+5000
+438 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(71,80)
+TRUE
+5000
+439 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(10,4)
+TRUE
+5000
+440 - Valid Next*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(14,1)
+FALSE
+5000
+441 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(17,21)
+TRUE
+5000
+442 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(16,19)
+TRUE
+5000
+443 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(25,28)
+TRUE
+5000
+444 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(25,33)
+TRUE
+5000
+445 - Valid Next*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(32,34)
+FALSE
+5000
+446 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(39,38)
+TRUE
+5000
+447 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(39,45)
+TRUE
+5000
+448 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(61,60)
+TRUE
+5000
+449 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(66,65)
+TRUE
+5000
+450 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(76,75)
+TRUE
+5000
+451 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(1,1)
+FALSE
+5000
+452 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(4,4)
+TRUE
+5000
+453 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(6,6)
+TRUE
+5000
+454 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(38,38)
+TRUE
+5000
+455 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(42,42)
+FALSE
+5000
+456 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(60,60)
+TRUE
+5000
+457 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(62,62)
+TRUE
+5000
+458 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(61,61)
+TRUE
+5000
+459 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(64,64)
+TRUE
+5000
+460 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(63,63)
+TRUE
+5000
+461 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(59,59)
+FALSE
+5000
+462 - Valid Next*, INTEGER on both args
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(67,67)
+FALSE
+5000
+463 - Valid Next*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(69,69)
+FALSE
+5000
+464 - Valid Next*, INTEGER on both args, no result
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(44,44)
+FALSE
+5000
+465 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s such that Next*(1,s)
+2,3,4,5,6,7,8,9,10,11,12,13,14
+5000
+466 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r.stmt#,r.varName> such that Next*(1,r)
+2 kpop,11 sing,12 dance
+5000
+467 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r.stmt#,r.varName> such that Next*(23,r)
+24 songlist,31 Icecream,36 ratings
+5000
+468 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <r.stmt#,r.varName> such that Next*(41,r)
+40 Twice,46 youtube
+5000
+469 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.stmt#,pr.varName> such that Next*(4,pr)
+10 die,14 end
+5000
+470 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.stmt#,pr.varName> such that Next*(15,pr)
+17 blackpink,18 twice
+5000
+471 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <pr.stmt#,pr.varName> such that Next*(23,pr)
+32 cuteSong,35 end
+5000
+472 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(59,w)
+60,62
+5000
+473 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(62,w)
+62
+5000
+474 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(60,w)
+60,62
+5000
+475 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(38,w)
+38
+5000
+476 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(72,w)
+72
+5000
+477 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next*(4,w)
+4
+5000
+478 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(6,ifs)
+6
+5000
+479 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(16,ifs)
+
+5000
+480 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(25,ifs)
+26,30
+5000
+481 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(42,ifs)
+43
+5000
+482 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(51,ifs)
+
+5000
+483 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(59,ifs)
+64
+5000
+484 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(64,ifs)
+64
+5000
+485 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(70,ifs)
+
+5000
+486 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next*(71,ifs)
+
+5000
+487 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next*(1,a)
+7,13
+5000
+488 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next*(15,a)
+19,20
+5000
+489 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next*(23,a)
+27,28,29,37
+5000
+490 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next*(39,a)
+39,45,48,49
+5000
+491 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next*(54,a)
+
+5000
+492 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next*(66,a)
+66,65,63
+5000
+493 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next*(76,a)
+76,75,74,73
+5000
+494 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select a such that Next*(66,a)
+66,65,63
+5000
+495 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(5,cp)
+5,8,9
+5000
+496 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(22,cp)
+
+5000
+497 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(21,cp)
+22
+5000
+498 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(33,cp)
+
+5000
+499 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(53,cp)
+58
+5000
+500 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next*(68,cp)
+69,70
+5000
+501 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next*(1,n)
+2,3,4,5,6,7,8,9,10,11,12,13,14
+5000
+502 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next*(80,n)
+
+5000
+503 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next*(70,n)
+
+5000
+504 - Valid Next*, INTEGER on lhs and syn on RHS
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next*(59,n)
+60,61,62,63,64,65,66,67,68,69,70
+5000
+505 - Valid Next*, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(1,_)
+TRUE
+5000
+506 - Valid Next*, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(4,_)
+TRUE
+5000
+507 - Valid Next*, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(6,_)
+TRUE
+5000
+508 - Valid Next*, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(10,_)
+TRUE
+5000
+509 - Valid Next*, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(14,_)
+FALSE
+5000
+510 - Valid Next*, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(37,_)
+FALSE
+5000
+511 - Valid Next*, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(33,_)
+TRUE
+5000
+512 - Valid Next*, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(29,_)
+TRUE
+5000
+513 - Valid Next*, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(26,_)
+TRUE
+5000
+514 - Valid Next*, INTEGER on lhs and wildcard on rhs
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(80,_)
+FALSE
+5000

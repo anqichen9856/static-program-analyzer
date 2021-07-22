@@ -1,0 +1,200 @@
+1 - Invalid Select, Missing RHS ref
+stmt s;
+Select s with "a"
+
+5000
+2 - Invalid Select, Missing RHS ref
+variable v;
+Select v with 2
+
+5000
+3 - Invalid Select, Missing RHS ref
+constant c; variable v;
+Select v with c.value
+
+5000
+4 - Invalid Select, Missing RHS ref
+constant c;
+Select c with c
+
+5000
+5 - Invalid Select, Missing RHS ref
+constant c;
+Select v with c.value
+
+5000
+6 - Invalid Select, semantically invalid
+procedure p;
+Select p.varName
+
+5000
+7 - Invalid Select, semantically invalid
+procedure p;
+Select p.value
+
+5000
+8 - Invalid Select, semantically invalid
+procedure p;
+Select p.stmt#
+
+5000
+9 - Invalid Select, semantically invalid
+variable v;
+Select v.procName
+
+5000
+10 - Invalid Select, semantically invalid
+variable v;
+Select v.value
+
+5000
+11 - Invalid Select, semantically invalid
+variable v;
+Select v.stmt#
+
+5000
+12 - Invalid Select, semantically invalid
+constant c;
+Select c.procName
+
+5000
+13 - Invalid Select, semantically invalid
+constant c;
+Select c.varName
+
+5000
+14 - Invalid Select, semantically invalid
+constant c;
+Select c.stmt#
+
+5000
+15 - Invalid Select, semantically invalid
+stmt s;
+Select s.procName
+
+5000
+16 - Invalid Select, semantically invalid
+stmt s;
+Select s.varName
+
+5000
+17 - Invalid Select, semantically invalid
+stmt s;
+Select s.value
+
+5000
+18 - Invalid Select, semantically invalid
+read r;
+Select r.procName
+
+5000
+19 - Invalid Select, semantically invalid
+read r;
+Select r.value
+
+5000
+20 - Invalid Select, semantically invalid
+print pr;
+Select pr.procName
+
+5000
+21 - Invalid Select, semantically invalid
+print pr;
+Select pr.value
+
+5000
+22 - Invalid Select, semantically invalid
+call cp;
+Select cp.varName
+
+5000
+23 - Invalid Select, semantically invalid
+call cp;
+Select cp.value
+
+5000
+24 - Invalid Select, semantically invalid
+while w;
+Select w.procName
+
+5000
+25 - Invalid Select, semantically invalid
+while w;
+Select w.varName
+
+5000
+26 - Invalid Select, semantically invalid
+while w;
+Select w.value
+
+5000
+27 - Invalid Select, semantically invalid
+if ifs;
+Select ifs.procName
+
+5000
+28 - Invalid Select, semantically invalid
+if ifs;
+Select ifs.varName
+
+5000
+29 - Invalid Select, semantically invalid
+if ifs;
+Select ifs.value
+
+5000
+30 - Invalid Select, semantically invalid
+assign a;
+Select a.procName
+
+5000
+31 - Invalid Select, semantically invalid
+assign a;
+Select a.varName
+
+5000
+32 - Invalid Select, semantically invalid
+assign a;
+Select a.value
+
+5000
+33 - Invalid Select, semantically invalid
+prog_line n;
+Select n.procName
+
+5000
+34 - Invalid Select, semantically invalid
+prog_line n;
+Select n.varName
+
+5000
+35 - Invalid Select, semantically invalid
+prog_line n;
+Select n.value
+
+5000
+36 - Invalid Select, semantically invalid
+prog_line n;
+Select n.stmt#
+
+5000
+37 - Invalid Select, syntactically invalid
+prog_line stmt_number;
+Select stmt_number
+
+5000
+38 - Valid Select, syntactically invalid
+procedure p;
+SeLect p.procName
+
+5000
+39 - Valid Select, syntactically invalid
+procedure p;
+SELECT p.procName
+
+5000
+39 - Valid Select, syntactically invalid
+stmt s;
+Select S
+
+5000

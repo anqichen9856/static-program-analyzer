@@ -1,0 +1,274 @@
+procedure Main {
+    read a; \\ 1
+    b = 20; \\ 2
+    print c; \\ 3
+    d = 10; \\ 4
+    read e; \\ 5
+    if (f==1) then { \\ 6
+        while(g!=f) { \\ 7
+            a = b + c; \\ 8
+            g = f + 2; \\ 9
+        }
+    } else {
+        while((h != 0)&&(i!=0)) { \\ 10
+            h = i / j; \\ 11
+            while (h!=2) { \\ 12
+                print j; \\ 13
+                if (a==a) then { \\ 14
+                    read b; \\ 15
+                } else {
+                   h = h - g; \\ 16
+                }
+                c = 3; \\ 17
+           }
+        }
+        k = k + 10; \\ 18
+        l = l / 4 + k * 2; \\ 19
+    }
+    print a; \\ 20
+    call CoMpLeX; \\ 21
+    b = 2; \\ 22
+    c = b + a; \\ 23
+}
+procedure CoMpLeX {
+    if(longLeft < 12345678910000) then { \\ 24
+        longNum = 1234567891000023123124314515125151; \\ 25
+        if (a2<=a2) then { \\ 26
+            if (a3>=a3)then  { \\ 27
+                nested = if + 2; \\ 28
+            } else {
+                else = 3; \\ 29
+            }
+        } else {
+            while = else + sum; \\ 30
+            secondStmt = read; \\ 31
+        }
+    } else {
+        if (1==1) then          { \\ 32
+            if (2<=2) then { \\ 33
+                if (3>=3)then  { \\ 34
+                    if (4!=4) then { \\ 35
+                        if (5> 12314124141) then { \\ 36
+                            print a1234567891000023123124314515125151; \\ 37
+                            call patternSuchThat; \\ 38
+                        } else {
+                            else = 1; \\ 39
+                        }
+                    } else {
+                        else = 2; \\ 40
+                    }
+                } else {
+                    else = 3; \\ 41
+                }
+            } else {
+                while = else + sum; \\ 42
+            }
+        } else {
+            print normal; \\ 43
+        }
+    }
+    while (((a<s)&&((d>f)||((55/aa       )<=66)))   && (((!(true==(a+2))) && (0==0)) && (11>=(q*(22+44)/w%e)))) { \\ 44
+        insideWhile = beforeWhile - 0; \\ 45
+        while (left<=       right) { \\ 46
+            while (left1           >=right1 ) { \\ 47
+                while((left2*90) != 180) { \\ 48
+                    insideWhile = 91; \\ 49
+                }
+            }
+            afterWhile = insideWhile; \\ 50
+        }
+    }
+    sum = (((z+x)*c)/(v%m)+x) + 0; \\ 51
+}
+procedure patternSuchThat {
+    select = select*while+if-assign / stmt % stmtList; \\ 52
+    true = false; \\ 53
+    if ( constant != 0 ) then { \\ 54
+        read read; \\ 55
+        if (if != Follows) then { \\ 56
+            print print; \\ 57
+            Pattern = (2*while) / (f / (a + b)); \\ 58
+        } else {
+            while((x!=0) && (y!=0)) { \\ 59
+                i = i + 1; \\ 60
+                x = 0; \\ 61
+                y = 0; \\ 62
+            }
+            exit = 1; \\ 63
+        }
+        read n1; \\ 64
+    } else {
+        else = then + 20; \\ 65
+        while(boolean == true) { \\ 66
+            while (false == while) { \\ 67
+                while (if == pred) { \\ 68
+                    end = nested; \\ 69
+                }
+            }
+            boolean = false; \\ 70
+            while (i == 0) { \\ 71
+                end = a*(b+c)*p*d; \\ 72
+            }
+        }
+    }
+}
+procedure p1 {
+    a = (b + 2) / c * d; \\ 73
+    read var1; \\ 74
+    call p2; \\ 75
+    if (var1 > e) then { \\ 76
+        call p3; \\ 77
+        call patternSuchThat; \\ 78
+        h = 10; \\ 79
+    } else {
+        p1 = p2 + p3; \\ 80
+    }
+    print g; \\ 81
+}
+procedure p2 {
+    while (f != 0) { \\ 82
+        call p3; \\ 83
+        while (i <= j) { \\ 84
+            k = k + 20; \\ 85
+            read a; \\ 86
+            read b; \\ 87
+            print c; \\ 88
+            call p3; \\ 89
+        }
+    }
+}
+procedure p3 {
+    print p1; \\ 90
+    if (a==a) then { \\ 91
+        if (b == b) then { \\ 92
+            read p3; \\ 93
+            p3 = p - 3; \\ 94
+        } else {
+            a = 2; \\ 95
+            c = a - p3; \\ 96
+        }
+    } else {
+        else = 1; \\ 97
+    }
+}
+procedure KPOP {
+    kpop = love; \\ 98
+    read kpop; \\ 99
+    call groups; \\ 100
+    while (in == korea) { \\ 101
+        call performance; \\ 102
+        if (performance == love) then { \\ 103
+            performance = money * 1000; \\ 104
+            call BlackPink; \\ 105
+            call Twice; \\ 106
+        } else {
+            print die; \\ 107
+        }
+        read sing; \\ 108
+        read dance; \\ 109
+        count = count + 1 + (money - 1000); \\ 110
+    }
+    print end; \\ 111
+}
+procedure groups {
+    groups = 2; \\ 112
+    if (groups == 2) then { \\ 113
+        print blackpink; \\ 114
+        print twice; \\ 115
+    } else {
+        group = 0; \\ 116
+        group = group + BTS; \\ 117
+    }
+    call dance; \\ 118
+    call sing; \\ 119
+}
+procedure BlackPink {
+    playlist = 1000; \\ 120
+    read songlist; \\ 121
+    if (songlist >= 0) then { \\ 122
+        if (category == edm) then { \\ 123
+            ddudu = ddudu * 10 + remix; \\ 124
+            kill = (this + love) - others; \\ 125
+        } else {
+            song = not + edm; \\ 126
+            if (category2 == cute) then{ \\ 127
+                  read Icecream; \\ 128
+                  print cuteSong; \\ 129
+            } else {
+                call groups; \\ 130
+            }
+        }
+    } else {
+        call groups; \\ 131
+    }
+    print end; \\ 132
+    read ratings; \\ 133
+    performance = ratings; \\ 134
+}
+procedure Twice {
+    while((twice==love) && (boys>=2)) { \\ 135
+        fan = 10000000000000000000000000000; \\ 136
+        read Twice; \\ 137
+        print happiness; \\ 138
+    }
+    if (boys != happy) then { \\ 139
+        if (money >= 1000) then { \\ 140
+            call performance; \\ 141
+            money = money - 1000000 * 2000; \\ 142
+        } else {
+            read youtube; \\ 143
+            print money; \\ 144
+        }
+    } else {
+        crazy = level * 2 + 10/(11+very+happy); \\ 145
+    }
+    mood = happy; \\ 146
+}
+procedure dance {
+    complex = beginner + intermediate - advanced % pro; \\ 147
+    if (!(level==noob)) then{ \\ 148
+        steps = a + b * c; \\ 149
+        call sing; \\ 150
+        steps = sing + dance; \\ 151
+    } else {
+        quit = 100; \\ 152
+        read sing; \\ 153
+        print money; \\ 154
+    }
+    call sing; \\ 155
+}
+procedure sing {
+    if (gender == boy) then{ \\ 156
+        while(key < c4) { \\ 157
+            role = bass + tenor; \\ 158
+        }
+        while (key >c4){ \\ 159
+            role = alto; \\ 160
+            if (alto == good) then { \\ 161
+                role = role + sop + 2; \\ 162
+            } else {
+                role = role + bass / tenor; \\ 163
+            }
+        }
+    } else {
+        female = everything; \\ 164
+        call Twice; \\ 165
+    }
+    call performance; \\ 166
+    call Twice; \\ 167
+}
+procedure performance {
+    if (you == rich) then { \\ 168
+        while (money != 0) { \\ 169
+            ticket = 100; \\ 170
+            drinks = coke + 10; \\ 171
+            merchandise = ticket + merchandise * 2; \\ 172
+            gift = 200; \\ 173
+        }
+    } else {
+        dream = crushed; \\ 174
+        a = 300; \\ 175
+        b = a + b; \\ 176
+        c = c + 400; \\ 177
+    }
+}

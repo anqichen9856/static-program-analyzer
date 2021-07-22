@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>1152.120000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="nested stress test on source">1</id><querystr><![CDATA[variable v; Select v]]></querystr>
+<stuans>A0,ABC,AbC,C,D,DA,EW,F,GE,I,R,S,SD,T,TT,U,V,X,XA,Y,Z9,a,abc,b,c,d,e,f,g,h,i,j,k,l,m,n,x</stuans>
+<correct>A0,ABC,AbC,C,D,DA,EW,F,GE,I,R,S,SD,T,TT,U,V,X,XA,Y,Z9,a,abc,b,c,d,e,f,g,h,i,j,k,l,m,n,x</correct>
+<time_taken>3.665000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="nested stress test on source">1</id><querystr><![CDATA[constant c; Select c]]></querystr>
+<stuans>0,1,10,123123123123123131231,12321331231,2,3,4,5</stuans>
+<correct>0,1,10,123123123123123131231,12321331231,2,3,4,5</correct>
+<time_taken>3.048000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

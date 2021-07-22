@@ -1,0 +1,125 @@
+1 - Invalid Calls, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Calls(p,p)
+
+5000
+2 - Invalid Calls, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Calls(v,v)
+
+5000
+3 - Invalid Calls, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls(c,c)
+FALSE
+5000
+4 - Invalid Calls, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls(s,s)
+FALSE
+5000
+5 - Invalid Calls, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls(r,r)
+FALSE
+5000
+6- Invalid Calls, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls(pr,pr)
+FALSE
+5000
+7 - Invalid Calls, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls(cp,cp)
+FALSE
+5000
+8 - Invalid Calls, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls(p,w)
+
+5000
+9 - Invalid Calls, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls(p,ifs)
+
+5000
+10 - Invalid Calls, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls(p,a)
+
+5000
+11- Invalid Calls, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Calls(_,v)
+
+5000
+12- Invalid Calls, semantically invalid, no declaration of syn q
+procedure p;
+Select BOOLEAN such that Calls(_,q)
+FALSE
+5000
+13- Invalid Calls, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Calls(_,c)
+
+5000
+14- Invalid Calls, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls(_,s)
+FALSE
+5000
+15- Invalid Calls, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Calls(_,r)
+
+5000
+16- Invalid Calls, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls(_,pr)
+FALSE
+5000
+17- Invalid Calls, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls(1,2)
+
+5000
+18- Invalid Calls, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls(1,_)
+
+5000
+20- Invalid Calls*, args on both args, semantically invalid
+procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select <p.procName, q.procName> such that Calls*(p,p)
+
+5000
+21- Invalid Calls*, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls*(p,s)
+FALSE
+5000
+22- Invalid Calls*, args on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls*(p,n)
+FALSE
+5000
+23- Invalid Calls*, syn on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Calls*(a,_)
+
+5000
+24- Invalid Calls*, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp.stmt# such that Calls*(_,cp)
+
+5000
+25- Invalid Calls*, IDENT on lhs and syn on RHS, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p.procName such that Calls*("sing", cp)
+
+5000
+26- Invalid Calls*, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Calls*(1, 2)
+
+5000

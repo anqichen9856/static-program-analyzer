@@ -1,0 +1,5 @@
+1 - Invalid Multiclauses
+assign a; variable v;
+Select a such that Uses (a, v) and pattern a (_, _"x"_)
+
+5000

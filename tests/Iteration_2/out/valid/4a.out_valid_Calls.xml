@@ -1,0 +1,414 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>26.763000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, args on both args">1</id><querystr><![CDATA[procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls(p,q)]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,sing</stuans>
+<correct>KPOP,groups,BlackPink,Twice,dance,sing</correct>
+<time_taken>13.032000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, args on both args">2</id><querystr><![CDATA[procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select q.procName such that Calls(p,q)]]></querystr>
+<stuans>BlackPink,Twice,dance,groups,performance,sing</stuans>
+<correct>groups,BlackPink,Twice,dance,sing,performance</correct>
+<time_taken>12.915000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, args on both args">3</id><querystr><![CDATA[procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p.procName, q.procName> such that Calls(p,q)]]></querystr>
+<stuans>BlackPink groups,KPOP BlackPink,KPOP Twice,KPOP groups,KPOP performance,Twice performance,dance sing,groups dance,groups sing,sing Twice,sing performance</stuans>
+<correct>KPOP groups,KPOP performance,KPOP BlackPink,KPOP Twice,groups dance,groups sing,BlackPink groups,Twice performance,dance sing,sing Twice,sing performance</correct>
+<time_taken>13.996000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls, syn on lhs and wildcard on rhs">4</id><querystr><![CDATA[procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p.procName, q.procName> such that Calls(p,_)]]></querystr>
+<stuans>BlackPink BlackPink,BlackPink KPOP,BlackPink Twice,BlackPink dance,BlackPink groups,BlackPink performance,BlackPink sing,KPOP BlackPink,KPOP KPOP,KPOP Twice,KPOP dance,KPOP groups,KPOP performance,KPOP sing,Twice BlackPink,Twice KPOP,Twice Twice,Twice dance,Twice groups,Twice performance,Twice sing,dance BlackPink,dance KPOP,dance Twice,dance dance,dance groups,dance performance,dance sing,groups BlackPink,groups KPOP,groups Twice,groups dance,groups groups,groups performance,groups sing,sing BlackPink,sing KPOP,sing Twice,sing dance,sing groups,sing performance,sing sing</stuans>
+<correct>KPOP KPOP,KPOP groups,KPOP BlackPink,KPOP Twice,KPOP dance,KPOP sing,KPOP performance,groups KPOP,groups groups,groups BlackPink,groups Twice,groups dance,groups sing,groups performance,BlackPink KPOP,BlackPink groups,BlackPink BlackPink,BlackPink Twice,BlackPink dance,BlackPink sing,BlackPink performance,Twice KPOP,Twice groups,Twice BlackPink,Twice Twice,Twice dance,Twice sing,Twice performance,dance KPOP,dance groups,dance BlackPink,dance Twice,dance dance,dance sing,dance performance,sing KPOP,sing groups,sing BlackPink,sing Twice,sing dance,sing sing,sing performance</correct>
+<time_taken>14.203000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls, syn on lhs and wildcard on rhs">5</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls(p,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>11.999000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls, syn on lhs and wildcard on rhs">6</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls(p,_)]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,sing</stuans>
+<correct>KPOP,groups,BlackPink,Twice,dance,sing</correct>
+<time_taken>12.412000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, syn on lhs and IDENT on rhs">7</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls(p,"sing")]]></querystr>
+<stuans>dance,groups</stuans>
+<correct>groups,dance</correct>
+<time_taken>12.145000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, syn on lhs and IDENT on rhs">8</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls(p,"performance")]]></querystr>
+<stuans>KPOP,Twice,sing</stuans>
+<correct>KPOP,Twice,sing</correct>
+<time_taken>13.544000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, syn on lhs and IDENT on rhs, no result">9</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls(p,"twice")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.612000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls, wildcard on both args">10</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls(_,_)]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,performance,sing</stuans>
+<correct>KPOP,groups,BlackPink,Twice,dance,sing,performance</correct>
+<time_taken>12.715000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls, wildcard on both args">11</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Calls(_,_)]]></querystr>
+<stuans>1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,46,47,48,49,5,50,51,52,53,54,55,56,57,58,59,6,60,61,62,63,64,65,66,67,68,69,7,70,71,72,73,74,75,76,77,78,79,8,80,9</stuans>
+<correct>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80</correct>
+<time_taken>12.175000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls, wildcard on lhs and syn on rhs">12</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p.procName> such that Calls(_,p)]]></querystr>
+<stuans>BlackPink,Twice,dance,groups,performance,sing</stuans>
+<correct>groups,performance,BlackPink,Twice,dance,sing</correct>
+<time_taken>12.696000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls, wildcard on lhs and IDENT on rhs">13</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls(_,"performance")]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>12.787000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls, wildcard on lhs and IDENT on rhs">14</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a.stmt#> such that Calls(_,"sing")]]></querystr>
+<stuans>1,13,15,19,20,23,27,28,29,37,39,45,48,49,50,52,54,55,61,63,65,66,67,7,73,74,75,76,77,78,79,80</stuans>
+<correct>1,7,13,15,19,20,23,27,28,29,37,39,45,48,49,50,52,54,55,61,63,65,66,67,73,74,75,76,77,78,79,80</correct>
+<time_taken>13.090000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, IDENT on both args, no result">15</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a.stmt# such that Calls("performance","sing")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.277000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, IDENT on both args">16</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v.varName such that Calls("dance","sing")]]></querystr>
+<stuans>BTS,Icecream,Twice,a,advanced,alto,b,bass,beginner,blackpink,boy,boys,c,c4,category,category2,coke,complex,count,crazy,crushed,cute,cuteSong,dance,ddudu,die,dream,drinks,edm,end,everything,fan,female,gender,gift,good,group,groups,happiness,happy,in,intermediate,key,kill,korea,kpop,level,love,merchandise,money,mood,noob,not,others,performance,playlist,pro,quit,ratings,remix,rich,role,sing,song,songlist,sop,steps,tenor,this,ticket,twice,very,you,youtube</stuans>
+<correct>kpop,love,in,korea,performance,money,die,sing,dance,count,end,groups,blackpink,twice,group,BTS,playlist,songlist,category,ddudu,remix,kill,this,others,song,not,edm,category2,cute,Icecream,cuteSong,ratings,Twice,happiness,boys,happy,youtube,crazy,level,very,mood,complex,beginner,intermediate,advanced,pro,noob,steps,a,b,c,gender,boy,key,c4,role,bass,tenor,alto,good,sop,female,everything,you,rich,ticket,drinks,coke,merchandise,gift,dream,crushed,fan,quit</correct>
+<time_taken>13.936000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, IDENT on both args, no result">17</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls("kpop","sing")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>13.181000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, IDENT on both args">18</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Calls("groups","dance")]]></querystr>
+<stuans>0,1,10,100,1000,1000000,10000000000000000000000000000,11,2,200,2000,300,400</stuans>
+<correct>1000,1,2,0,10,10000000000000000000000000000,1000000,2000,11,100,200,300,400</correct>
+<time_taken>12.827000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, IDENT on lhs and syn on rhs">19</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Calls("groups", p)]]></querystr>
+<stuans>dance,sing</stuans>
+<correct>dance,sing</correct>
+<time_taken>12.580000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, IDENT on lhs and syn on rhs">20</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Calls("KPOP", p)]]></querystr>
+<stuans>BlackPink,Twice,groups,performance</stuans>
+<correct>groups,Twice,BlackPink,performance</correct>
+<time_taken>12.704000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, IDENT on lhs and syn on rhs">21</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Calls("Twice", p)]]></querystr>
+<stuans>performance</stuans>
+<correct>performance</correct>
+<time_taken>12.454000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, IDENT on lhs and syn on rhs">22</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls("BlackPink", p)]]></querystr>
+<stuans>groups</stuans>
+<correct>groups</correct>
+<time_taken>13.727000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, IDENT on lhs and syn on rhs">23</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls("dance", p)]]></querystr>
+<stuans>sing</stuans>
+<correct>sing</correct>
+<time_taken>12.946000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, IDENT on lhs and syn on rhs">24</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p.procName> such that Calls("sing", p)]]></querystr>
+<stuans>Twice,performance</stuans>
+<correct>Twice,performance</correct>
+<time_taken>12.951000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls, IDENT on lhs and syn on rhs">25</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Calls("performance", p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.683000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls, IDENT on lhs and syn on rhs">26</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r.varName such that Calls("KPOP", _)]]></querystr>
+<stuans>Icecream,Twice,dance,kpop,ratings,sing,songlist,youtube</stuans>
+<correct>kpop,sing,dance,songlist,Icecream,ratings,Twice,youtube</correct>
+<time_taken>12.695000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls, IDENT on lhs and syn on rhs">27</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp.stmt# such that Calls("groups", _)]]></querystr>
+<stuans>21,22,3,33,34,44,5,53,58,68,69,70,8,9</stuans>
+<correct>3,5,8,9,21,22,33,34,44,53,58,68,69,70</correct>
+<time_taken>12.874000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Calls="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls, IDENT on lhs and syn on rhs">28</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w.stmt# such that Calls("BlackPink", _)]]></querystr>
+<stuans>38,4,60,62,72</stuans>
+<correct>4,38,60,62,72</correct>
+<time_taken>12.733000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls*, syn on lhs and wildcard on rhs">29</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls*(p,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>14.468000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls*, syn on lhs and wildcard on rhs">30</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Calls*(p,_)]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,sing</stuans>
+<correct>KPOP,groups,Twice,BlackPink,dance,sing</correct>
+<time_taken>12.199000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, syn on lhs and IDENT on rhs">31</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Calls*(p,    "performance")]]></querystr>
+<stuans>BlackPink,KPOP,Twice,dance,groups,sing</stuans>
+<correct>KPOP,groups,Twice,BlackPink,dance,sing</correct>
+<time_taken>12.871000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, syn on lhs and IDENT on rhs">32</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*(p,    "sing")]]></querystr>
+<stuans>BlackPink,KPOP,dance,groups</stuans>
+<correct>dance,groups,KPOP,BlackPink</correct>
+<time_taken>12.841000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, syn on lhs and IDENT on rhs">33</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*(p,    "dance")]]></querystr>
+<stuans>BlackPink,KPOP,groups</stuans>
+<correct>groups,KPOP,BlackPink</correct>
+<time_taken>13.028000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, syn on lhs and IDENT on rhs">34</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*(p,    "BlackPink")]]></querystr>
+<stuans>KPOP</stuans>
+<correct>KPOP</correct>
+<time_taken>13.329000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, syn on lhs and IDENT on rhs">35</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*(p,    "Twice")]]></querystr>
+<stuans>BlackPink,KPOP,dance,groups,sing</stuans>
+<correct>KPOP,sing,dance,groups,BlackPink</correct>
+<time_taken>12.828000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, syn on lhs and IDENT on rhs">36</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select          p.procName such that Calls*(p,"groups")]]></querystr>
+<stuans>BlackPink,KPOP</stuans>
+<correct>KPOP,BlackPink</correct>
+<time_taken>11.524000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, syn on lhs and IDENT on rhs, no result">37</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*(p,"KPOP")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.294000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls*, wildcard on both args">38</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs.stmt# such that Calls*(_,_)]]></querystr>
+<stuans>16,25,26,30,42,43,51,59,6,64,71</stuans>
+<correct>6,16,25,26,30,42,43,51,59,64,71</correct>
+<time_taken>10.345000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls*, wildcard on lhs and syn on rhs">39</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*(_,p)]]></querystr>
+<stuans>BlackPink,Twice,dance,groups,performance,sing</stuans>
+<correct>groups,Twice,BlackPink,dance,sing,performance</correct>
+<time_taken>12.114000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, IDENT on both args">40</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Calls*("KPOP", "sing")]]></querystr>
+<stuans>1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,46,47,48,49,5,50,51,52,53,54,55,56,57,58,59,6,60,61,62,63,64,65,66,67,68,69,7,70,71,72,73,74,75,76,77,78,79,8,80,9</stuans>
+<correct>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80</correct>
+<time_taken>13.051000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, IDENT on both args">41</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p.procName, c.value> such that Calls*("groups", "performance")]]></querystr>
+<stuans>BlackPink 0,BlackPink 1,BlackPink 10,BlackPink 100,BlackPink 1000,BlackPink 1000000,BlackPink 10000000000000000000000000000,BlackPink 11,BlackPink 2,BlackPink 200,BlackPink 2000,BlackPink 300,BlackPink 400,KPOP 0,KPOP 1,KPOP 10,KPOP 100,KPOP 1000,KPOP 1000000,KPOP 10000000000000000000000000000,KPOP 11,KPOP 2,KPOP 200,KPOP 2000,KPOP 300,KPOP 400,Twice 0,Twice 1,Twice 10,Twice 100,Twice 1000,Twice 1000000,Twice 10000000000000000000000000000,Twice 11,Twice 2,Twice 200,Twice 2000,Twice 300,Twice 400,dance 0,dance 1,dance 10,dance 100,dance 1000,dance 1000000,dance 10000000000000000000000000000,dance 11,dance 2,dance 200,dance 2000,dance 300,dance 400,groups 0,groups 1,groups 10,groups 100,groups 1000,groups 1000000,groups 10000000000000000000000000000,groups 11,groups 2,groups 200,groups 2000,groups 300,groups 400,performance 0,performance 1,performance 10,performance 100,performance 1000,performance 1000000,performance 10000000000000000000000000000,performance 11,performance 2,performance 200,performance 2000,performance 300,performance 400,sing 0,sing 1,sing 10,sing 100,sing 1000,sing 1000000,sing 10000000000000000000000000000,sing 11,sing 2,sing 200,sing 2000,sing 300,sing 400</stuans>
+<correct>KPOP 1000,KPOP 1,KPOP 2,KPOP 0,KPOP 10,KPOP 10000000000000000000000000000,KPOP 1000000,KPOP 2000,KPOP 11,KPOP 100,KPOP 200,KPOP 300,KPOP 400,groups 1000,groups 1,groups 2,groups 0,groups 10,groups 10000000000000000000000000000,groups 1000000,groups 2000,groups 11,groups 100,groups 200,groups 300,groups 400,Twice 1000,Twice 1,Twice 2,Twice 0,Twice 10,Twice 10000000000000000000000000000,Twice 1000000,Twice 2000,Twice 11,Twice 100,Twice 200,Twice 300,Twice 400,BlackPink 1000,BlackPink 1,BlackPink 2,BlackPink 0,BlackPink 10,BlackPink 10000000000000000000000000000,BlackPink 1000000,BlackPink 2000,BlackPink 11,BlackPink 100,BlackPink 200,BlackPink 300,BlackPink 400,dance 1000,dance 1,dance 2,dance 0,dance 10,dance 10000000000000000000000000000,dance 1000000,dance 2000,dance 11,dance 100,dance 200,dance 300,dance 400,sing 1000,sing 1,sing 2,sing 0,sing 10,sing 10000000000000000000000000000,sing 1000000,sing 2000,sing 11,sing 100,sing 200,sing 300,sing 400,performance 1000,performance 1,performance 2,performance 0,performance 10,performance 10000000000000000000000000000,performance 1000000,performance 2000,performance 11,performance 100,performance 200,performance 300,performance 400</correct>
+<time_taken>16.463000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, IDENT on both args">42</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr.varName such that Calls*("dance", "Twice")]]></querystr>
+<stuans>blackpink,cuteSong,die,end,happiness,money,twice</stuans>
+<correct>die,end,blackpink,twice,cuteSong,happiness,money</correct>
+<time_taken>13.955000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, IDENT on both args, no result">43</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r.stmt# such that Calls*("performance", "sing")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.850000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, IDENT on both args, no result">44</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls*("groups", "BlackPink")]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>14.167000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, IDENT on lhs and syn on RHS">45</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*("KPOP", p)]]></querystr>
+<stuans>BlackPink,Twice,dance,groups,performance,sing</stuans>
+<correct>groups,Twice,BlackPink,performance,dance,sing</correct>
+<time_taken>13.258000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, IDENT on lhs and syn on RHS">46</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*("groups", p)]]></querystr>
+<stuans>Twice,dance,performance,sing</stuans>
+<correct>dance,sing,Twice,performance</correct>
+<time_taken>13.466000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, IDENT on lhs and syn on RHS">47</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*("Twice", p)]]></querystr>
+<stuans>performance</stuans>
+<correct>performance</correct>
+<time_taken>13.417000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, IDENT on lhs and syn on RHS">48</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*("BlackPink", p)]]></querystr>
+<stuans>Twice,dance,groups,performance,sing</stuans>
+<correct>groups,dance,sing,Twice,performance</correct>
+<time_taken>13.401000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, IDENT on lhs and syn on RHS">49</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*("dance", p)]]></querystr>
+<stuans>Twice,performance,sing</stuans>
+<correct>sing,Twice,performance</correct>
+<time_taken>13.093000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, IDENT on lhs and syn on RHS">50</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*("sing", p)]]></querystr>
+<stuans>Twice,performance</stuans>
+<correct>Twice,performance</correct>
+<time_taken>12.956000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls*, IDENT on lhs and wildcard on RHS">51</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <r.varName,pr.varName> such that Calls*("KPOP", _)]]></querystr>
+<stuans>Icecream blackpink,Icecream cuteSong,Icecream die,Icecream end,Icecream happiness,Icecream money,Icecream twice,Twice blackpink,Twice cuteSong,Twice die,Twice end,Twice happiness,Twice money,Twice twice,dance blackpink,dance cuteSong,dance die,dance end,dance happiness,dance money,dance twice,kpop blackpink,kpop cuteSong,kpop die,kpop end,kpop happiness,kpop money,kpop twice,ratings blackpink,ratings cuteSong,ratings die,ratings end,ratings happiness,ratings money,ratings twice,sing blackpink,sing cuteSong,sing die,sing end,sing happiness,sing money,sing twice,songlist blackpink,songlist cuteSong,songlist die,songlist end,songlist happiness,songlist money,songlist twice,youtube blackpink,youtube cuteSong,youtube die,youtube end,youtube happiness,youtube money,youtube twice</stuans>
+<correct>kpop die,sing die,dance die,songlist die,Icecream die,ratings die,Twice die,youtube die,kpop end,sing end,dance end,songlist end,Icecream end,ratings end,Twice end,youtube end,kpop blackpink,sing blackpink,dance blackpink,songlist blackpink,Icecream blackpink,ratings blackpink,Twice blackpink,youtube blackpink,kpop twice,sing twice,dance twice,songlist twice,Icecream twice,ratings twice,Twice twice,youtube twice,kpop cuteSong,sing cuteSong,dance cuteSong,songlist cuteSong,Icecream cuteSong,ratings cuteSong,Twice cuteSong,youtube cuteSong,kpop happiness,sing happiness,dance happiness,songlist happiness,Icecream happiness,ratings happiness,Twice happiness,youtube happiness,kpop money,sing money,dance money,songlist money,Icecream money,ratings money,Twice money,youtube money</correct>
+<time_taken>14.573000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls*, IDENT on lhs and wildcard on RHS">52</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <w.stmt#,ifs.stmt#> such that Calls*("groups", _)]]></querystr>
+<stuans>38 16,38 25,38 26,38 30,38 42,38 43,38 51,38 59,38 6,38 64,38 71,4 16,4 25,4 26,4 30,4 42,4 43,4 51,4 59,4 6,4 64,4 71,60 16,60 25,60 26,60 30,60 42,60 43,60 51,60 59,60 6,60 64,60 71,62 16,62 25,62 26,62 30,62 42,62 43,62 51,62 59,62 6,62 64,62 71,72 16,72 25,72 26,72 30,72 42,72 43,72 51,72 59,72 6,72 64,72 71</stuans>
+<correct>4 6,4 16,4 25,4 26,4 30,4 42,4 43,4 51,4 59,4 64,4 71,38 6,38 16,38 25,38 26,38 30,38 42,38 43,38 51,38 59,38 64,38 71,60 6,60 16,60 25,60 26,60 30,60 42,60 43,60 51,60 59,60 64,60 71,62 6,62 16,62 25,62 26,62 30,62 42,62 43,62 51,62 59,62 64,62 71,72 6,72 16,72 25,72 26,72 30,72 42,72 43,72 51,72 59,72 64,72 71</correct>
+<time_taken>14.590000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls*, IDENT on lhs and wildcard on RHS">53</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Calls*("Twice", _)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>12.698000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls*, IDENT on lhs and wildcard on RHS">54</id><querystr><![CDATA[procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p.procName,q.procName> such that Calls*("BlackPink", _)]]></querystr>
+<stuans>BlackPink BlackPink,BlackPink KPOP,BlackPink Twice,BlackPink dance,BlackPink groups,BlackPink performance,BlackPink sing,KPOP BlackPink,KPOP KPOP,KPOP Twice,KPOP dance,KPOP groups,KPOP performance,KPOP sing,Twice BlackPink,Twice KPOP,Twice Twice,Twice dance,Twice groups,Twice performance,Twice sing,dance BlackPink,dance KPOP,dance Twice,dance dance,dance groups,dance performance,dance sing,groups BlackPink,groups KPOP,groups Twice,groups dance,groups groups,groups performance,groups sing,performance BlackPink,performance KPOP,performance Twice,performance dance,performance groups,performance performance,performance sing,sing BlackPink,sing KPOP,sing Twice,sing dance,sing groups,sing performance,sing sing</stuans>
+<correct>KPOP KPOP,groups KPOP,Twice KPOP,BlackPink KPOP,dance KPOP,sing KPOP,performance KPOP,KPOP groups,groups groups,Twice groups,BlackPink groups,dance groups,sing groups,performance groups,KPOP Twice,groups Twice,Twice Twice,BlackPink Twice,dance Twice,sing Twice,performance Twice,KPOP BlackPink,groups BlackPink,Twice BlackPink,BlackPink BlackPink,dance BlackPink,sing BlackPink,performance BlackPink,KPOP dance,groups dance,Twice dance,BlackPink dance,dance dance,sing dance,performance dance,KPOP sing,groups sing,Twice sing,BlackPink sing,dance sing,sing sing,performance sing,KPOP performance,groups performance,Twice performance,BlackPink performance,dance performance,sing performance,performance performance</correct>
+<time_taken>15.173000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls*, IDENT on lhs and wildcard on RHS">55</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p.procName, p.procName> such that Calls*("dance", _)]]></querystr>
+<stuans>BlackPink BlackPink,KPOP KPOP,Twice Twice,dance dance,groups groups,performance performance,sing sing</stuans>
+<correct>KPOP KPOP,groups groups,Twice Twice,BlackPink BlackPink,dance dance,sing sing,performance performance</correct>
+<time_taken>15.344000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls*, IDENT on lhs and wildcard on RHS">56</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <s> such that Calls*("sing", _)]]></querystr>
+<stuans>1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,46,47,48,49,5,50,51,52,53,54,55,56,57,58,59,6,60,61,62,63,64,65,66,67,68,69,7,70,71,72,73,74,75,76,77,78,79,8,80,9</stuans>
+<correct>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80</correct>
+<time_taken>13.342000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Valid Calls*, IDENT on lhs and wildcard on RHS, no result">57</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p.procName such that Calls*("performance", _)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.302000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Callsstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Calls*, args on both args">58</id><querystr><![CDATA[procedure p,q; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <p.procName, q.procName> such that Calls*(p,q)]]></querystr>
+<stuans>BlackPink Twice,BlackPink dance,BlackPink groups,BlackPink performance,BlackPink sing,KPOP BlackPink,KPOP Twice,KPOP dance,KPOP groups,KPOP performance,KPOP sing,Twice performance,dance Twice,dance performance,dance sing,groups Twice,groups dance,groups performance,groups sing,sing Twice,sing performance</stuans>
+<correct>KPOP groups,KPOP Twice,KPOP BlackPink,KPOP performance,KPOP dance,KPOP sing,groups dance,groups sing,groups Twice,groups performance,Twice performance,BlackPink groups,BlackPink dance,BlackPink sing,BlackPink Twice,BlackPink performance,dance sing,dance Twice,dance performance,sing Twice,sing performance</correct>
+<time_taken>14.556000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

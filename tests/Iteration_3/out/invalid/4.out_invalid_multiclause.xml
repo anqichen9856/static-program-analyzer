@@ -1,0 +1,71 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>47.588000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" Modifies="1" Nextstar="1" Parentstar="1" SuchThat="2" CondNum="6" RelNum="3" comment="Invalid multiclause, incorrect and connection placement, syntactically invalid">1</id><querystr><![CDATA[assign a; while w; Select a such that Parent* (w, a) and Modifies (a, "insideWhile") and such that Next* (45, a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.940000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Nextstar="1" Parentstar="1" UnnamedVar="1" Pattern="1" SuchThat="2" CondNum="7" RelNum="2" comment="Invalid multiclause, incorrect and connection placement, syntactically invalid">2</id><querystr><![CDATA[assign a; while w; Select a such that Parent* (w, a) and pattern a ("afterWhile", _) such that Next* (45, a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.329000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Nextstar="1" Parentstar="1" UnnamedVar="1" Pattern="1" SuchThat="1" CondNum="6" RelNum="2" comment="Invalid multiclause, incorrect and connection placement, syntactically invalid">3</id><querystr><![CDATA[assign a; while w; Select a such that Parent* (w, a) pattern a ("afterWhile", _) and Next* (45, a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>13.919000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Modifies="1" Nextstar="1" Parentstar="1" SuchThat="2" CondNum="6" RelNum="3" comment="Invalid multiclause, incorrect and connection placement, syntactically invalid">4</id><querystr><![CDATA[assign a; while w; Select BOOLEAN such that Parent* (w, a) and Modifies (a, "insideWhile") and such that Next* (45, a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.147000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Nextstar="1" Parentstar="1" UnnamedVar="1" Pattern="1" SuchThat="2" CondNum="7" RelNum="2" comment="Invalid multiclause, incorrect and connection placement, syntactically invalid">5</id><querystr><![CDATA[assign a; while w; Select BOOLEAN such that Parent* (w, a) and pattern a ("afterWhile", _) such that Next* (45, a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.909000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Nextstar="1" Parentstar="1" UnnamedVar="1" Pattern="1" SuchThat="1" CondNum="6" RelNum="2" comment="Invalid multiclause, incorrect and connection placement, syntactically invalid">6</id><querystr><![CDATA[assign a; while w; Select BOOLEAN such that Parent* (w, a) pattern a ("afterWhile", _) and Next* (45, a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.815000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Nextstar="1" Parentstar="1" UnnamedVar="1" Pattern="1" SuchThat="2" With="1" CondNum="8" RelNum="2" comment="Invalid multiclause, incorrect and connection placement, syntactically invalid">7</id><querystr><![CDATA[assign a; while w; stmt s; Select BOOLEAN such that Parent* (w, a) pattern a ("afterWhile", _) such that Next* (45, a) and with s.stmt# = 1]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>16.412000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Nextstar="1" Parentstar="1" UnnamedVar="1" Pattern="1" SuchThat="1" With="1" CondNum="7" RelNum="2" comment="Invalid multiclause, incorrect and connection placement, syntactically invalid">8</id><querystr><![CDATA[assign a; while w; stmt s; Select BOOLEAN such that Parent* (w, a) pattern a ("afterWhile", _) Next* (45, a) with s.stmt# == 1]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.763000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Nextstar="1" Parentstar="1" UnnamedVar="2" Pattern="2" SuchThat="2" With="1" CondNum="10" RelNum="2" comment="Invalid multiclause, incorrect and connection placement, syntactically invalid">9</id><querystr><![CDATA[assign a; while w; stmt s; Select BOOLEAN such that Parent* (w, a) pattern a ("afterWhile", _) and pattern w("left",_) such that Next* (45, a) with s.stmt# = 1]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>16.294000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

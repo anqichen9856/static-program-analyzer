@@ -1,0 +1,195 @@
+1 - Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Next(p,p)
+
+5000
+2 - Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Next(v,v)
+
+5000
+3 - Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Next(c,c)
+
+5000
+4 - Invalid Next, syn on both args, semantically invalid
+stmt s;
+Select s such that Next(s,s)
+
+5000
+5 - Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select r such that Next(r,r)
+
+5000
+6 - Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select pr such that Next(pr,pr)
+
+5000
+7 - Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select cp such that Next(cp,cp)
+
+5000
+8 - Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(w,w)
+FALSE
+5000
+9 - Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(ifs,ifs)
+FALSE
+5000
+10 - Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(a,a)
+FALSE
+5000
+11 - Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(n,n)
+FALSE
+5000
+12- Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Next(p,n)
+
+5000
+13 - Invalid Next, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(ifs,p)
+
+5000
+14 - Valid Next,  syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(v,ifs)
+
+5000
+15 - Valid Next,  syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select ifs such that Next(c,ifs)
+
+5000
+16 - Invalid Next, syn on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Next(p,_)
+
+5000
+17 Invalid Next, syn on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Next(v,_)
+
+5000
+18 - Invalid Next, syn on lhs and wildcard on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Next(c,_)
+
+5000
+19 - Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Next(p,1)
+
+5000
+20 - Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Next(v,2)
+
+5000
+21 - Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Next(c,3)
+
+5000
+22 - Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select s.stmt# such that Next(s,81)
+
+5000
+23 - Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(s,81)
+FALSE
+5000
+24 - Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(w,0)
+
+5000
+25 - Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(a,123)
+FALSE
+5000
+26 - Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select n such that Next(n,81)
+
+5000
+27 - Invalid Next, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,p)
+FALSE
+5000
+28 - Invalid Next, wildcard on lhs and syn on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Next(_,v)
+
+5000
+29 - Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Next(_,c)
+
+5000
+30 - Invalid Next, wildcard on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,81)
+FALSE
+5000
+31 - Invalid Next, wildcard on lhs and INTEGER on rhs, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(_,0)
+FALSE
+5000
+32 - Invalid Next, INTEGER on lhs and syn on rhs, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select w such that Next(59.5,w)
+
+5000
+33 - Invalid Next, INTEGER on lhs and syn on rhs, syntactically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next(59.5,w)
+
+5000
+34 - Invalid Next*, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select p such that Next*(p,p)
+
+5000
+35 - Invalid Next*, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select v such that Next*(v,v)
+
+5000
+36 - Invalid Next*, syn on both args, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select c such that Next*(c,c)
+
+5000
+37 - Invalid Next*, INTEGER on lhs and syn on RHS, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(1,p)
+FALSE
+5000
+38 - Invalid Next*, INTEGER on lhs and syn on RHS, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(1,v)
+FALSE
+5000
+39 - Invalid Next*, INTEGER on lhs and syn on RHS, semantically invalid
+procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n;
+Select BOOLEAN such that Next*(1,c)
+FALSE
+5000

@@ -1,0 +1,288 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>4.260000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Invalid Select, Missing RHS ref">1</id><querystr><![CDATA[stmt s; Select s with "a"]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.376000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Invalid Select, Missing RHS ref">2</id><querystr><![CDATA[variable v; Select v with 2]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.328000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Invalid Select, Missing RHS ref">3</id><querystr><![CDATA[constant c; variable v; Select v with c.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.290000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Invalid Select, Missing RHS ref">4</id><querystr><![CDATA[constant c; Select c with c]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.222000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" With="1" CondNum="2" RelNum="0" comment="Invalid Select, Missing RHS ref">5</id><querystr><![CDATA[constant c; Select v with c.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.686000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">6</id><querystr><![CDATA[procedure p; Select p.varName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.902000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">7</id><querystr><![CDATA[procedure p; Select p.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.718000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">8</id><querystr><![CDATA[procedure p; Select p.stmt#]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.105000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">9</id><querystr><![CDATA[variable v; Select v.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>3.936000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">10</id><querystr><![CDATA[variable v; Select v.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.122000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">11</id><querystr><![CDATA[variable v; Select v.stmt#]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.481000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">12</id><querystr><![CDATA[constant c; Select c.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.291000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">13</id><querystr><![CDATA[constant c; Select c.varName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.338000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">14</id><querystr><![CDATA[constant c; Select c.stmt#]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.974000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">15</id><querystr><![CDATA[stmt s; Select s.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.326000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">16</id><querystr><![CDATA[stmt s; Select s.varName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.210000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">17</id><querystr><![CDATA[stmt s; Select s.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.819000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">18</id><querystr><![CDATA[read r; Select r.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.191000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">19</id><querystr><![CDATA[read r; Select r.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.812000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">20</id><querystr><![CDATA[print pr; Select pr.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.993000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">21</id><querystr><![CDATA[print pr; Select pr.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.280000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">22</id><querystr><![CDATA[call cp; Select cp.varName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.400000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">23</id><querystr><![CDATA[call cp; Select cp.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.426000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">24</id><querystr><![CDATA[while w; Select w.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.096000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">25</id><querystr><![CDATA[while w; Select w.varName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.291000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">26</id><querystr><![CDATA[while w; Select w.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.959000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">27</id><querystr><![CDATA[if ifs; Select ifs.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.417000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">28</id><querystr><![CDATA[if ifs; Select ifs.varName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.255000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">29</id><querystr><![CDATA[if ifs; Select ifs.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.138000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">30</id><querystr><![CDATA[assign a; Select a.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.182000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">31</id><querystr><![CDATA[assign a; Select a.varName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.175000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Invalid Select, semantically invalid">32</id><querystr><![CDATA[assign a; Select a.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.929000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" CondNum="2" RelNum="0" comment="Invalid Select, semantically invalid">33</id><querystr><![CDATA[prog_line n; Select n.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.265000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" CondNum="2" RelNum="0" comment="Invalid Select, semantically invalid">34</id><querystr><![CDATA[prog_line n; Select n.varName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.207000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" CondNum="2" RelNum="0" comment="Invalid Select, semantically invalid">35</id><querystr><![CDATA[prog_line n; Select n.value]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.057000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" CondNum="2" RelNum="0" comment="Invalid Select, semantically invalid">36</id><querystr><![CDATA[prog_line n; Select n.stmt#]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.190000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" CondNum="4" RelNum="0" comment="Invalid Select, syntactically invalid">37</id><querystr><![CDATA[prog_line stmt_number; Select stmt_number]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>1.310000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Valid Select, syntactically invalid">38</id><querystr><![CDATA[procedure p; SeLect p.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>1.228000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Valid Select, syntactically invalid">39</id><querystr><![CDATA[procedure p; SELECT p.procName]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>1.140000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Valid Select, syntactically invalid">39</id><querystr><![CDATA[stmt s; Select S]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.134000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

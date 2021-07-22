@@ -1,0 +1,28 @@
+procedure one {
+    read a; // 1
+    read b; // 2
+    print a; // 3
+    print b; // 4
+    c = a + 24; // 5
+    d = 10; // 6
+    call two;} // 7
+
+procedure two {
+    if  (a==c) then { // 8
+        e = f * g- h + i; // 9
+        while(f==z) { // 10
+            if (f>=0) then { // 11
+                read z; // 12
+                a = z* j + i;} // 13
+            else {
+                if (a==1) then { // 14
+                    print a;} // 15
+                else {
+                    a = a - b / c;}}}} // 16
+    else {
+        j = j / 2; // 17
+        while(j>=0){ // 18
+            d = d*c; // 19
+            j = j / 2;} // 20
+        print d; // 21
+    d = 0;}} // 22

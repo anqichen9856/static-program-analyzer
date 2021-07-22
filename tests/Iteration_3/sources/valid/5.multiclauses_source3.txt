@@ -1,0 +1,274 @@
+procedure Main {
+    read a;
+    b = 20;
+    print c;
+    d = 10;
+    read e;
+    if (f==1) then {
+        while(g!=f) {
+            a = b + c;
+            g = f + 2;
+        }
+    } else {
+        while((h != 0)&&(i!=0)) {
+            h = i / j;
+            while (h!=2) {
+                print j;
+                if (a==a) then {
+                    read b;
+                } else {
+                   h = h - g;
+                }
+                c = 3;
+           }
+        }
+        k = k + 10;
+        l = l / 4 + k * 2;
+    }
+    print a;
+    call CoMpLeX;
+    b = 2;
+    c = b + a;
+}
+procedure CoMpLeX {
+    if(longLeft < 12345678910000) then {
+        longNum = 1234567891000023123124314515125151;
+        if (a2<=a2) then {
+            if (a3>=a3)then  {
+                nested = if + 2;
+            } else {
+                else = 3;
+            }
+        } else {
+            while = else + sum;
+            secondStmt = read;
+        }
+    } else {
+        if (1==1) then          {
+            if (2<=2) then {
+                if (3>=3)then  {
+                    if (4!=4) then {
+                        if (5> 12314124141) then {
+                            print a1234567891000023123124314515125151;
+                            call patternSuchThat;
+                        } else {
+                            else = 1;
+                        }
+                    } else {
+                        else = 2;
+                    }
+                } else {
+                    else = 3;
+                }
+            } else {
+                while = else + sum;
+            }
+        } else {
+            print normal;
+        }
+    }
+    while (((a<s)&&((d>f)||((55/aa       )<=66)))   && (((!(true==(a+2))) && (0==0)) && (11>=(q*(22+44)/w%e)))) {
+        insideWhile = beforeWhile - 0;
+        while (left<=       right) {
+            while (left1           >=right1 ) {
+                while((left2*90) != 180) {
+                    insideWhile = 91;
+                }
+            }
+            afterWhile = insideWhile;
+        }
+    }
+    sum = (((z+x)*c)/(v%m)+x) + 0;
+}
+procedure patternSuchThat {
+    select = select*while+if-assign / stmt % stmtList;
+    true = false;
+    if ( constant != 0 ) then {
+        read read;
+        if (if != Follows) then {
+            print print;
+            Pattern = (2*while) / (f / (a + b));
+        } else {
+            while((x!=0) && (y!=0)) {
+                i = i + 1;
+                x = 0;
+                y = 0;
+            }
+            exit = 1;
+        }
+        read n1;
+    } else {
+        else = then + 20;
+        while(boolean == true) {
+            while (false == while) {
+                while (if == procedure) {
+                    end = nested;
+                }
+            }
+            boolean = false;
+            while (i == 0) {
+                end = a*(b+c)*p*d;
+            }
+        }
+    }
+}
+procedure p1 {
+    a = (b + 2) / c * d;
+    read var1;
+    call p2;
+    if (var1 > e) then {
+        call p3;
+        call patternSuchThat;
+        h = 10;
+    } else {
+        p1 = p2 + p3;
+    }
+    print g;
+}
+procedure p2 {
+    while (f != 0) {
+        call p3;
+        while (i <= j) {
+            k = k + 20;
+            read a;
+            read b;
+            print c;
+            call p3;
+        }
+    }
+}
+procedure p3 {
+    print p1;
+    if (a==a) then {
+        if (b == b) then {
+            read p3;
+            p3 = p - 3;
+        } else {
+            a = 2;
+            c = a - p3;
+        }
+    } else {
+        else = 1;
+    }
+}
+procedure KPOP {
+    kpop = love;
+    read kpop;
+    call groups;
+    while (in == korea) {
+        call performance;
+        if (performance == love) then {
+            performance = money * 1000;
+            call BlackPink;
+            call Twice;
+        } else {
+            print die;
+        }
+        read sing;
+        read dance;
+        count = count + 1 + (money - 1000);
+    }
+    print end;
+}
+procedure groups {
+    groups = 2;
+    if (groups == 2) then {
+        print blackpink;
+        print twice;
+    } else {
+        group = 0;
+        group = group + BTS;
+    }
+    call dance;
+    call sing;
+}
+procedure BlackPink {
+    playlist = 1000;
+    read songlist;
+    if (songlist >= 0) then {
+        if (category == edm) then {
+            ddudu = ddudu * 10 + remix;
+            kill = (this + love) - others;
+        } else {
+            song = not + edm;
+            if (category2 == cute) then{
+                  read Icecream;
+                  print cuteSong;
+            } else {
+                call groups;
+            }
+        }
+    } else {
+        call groups;
+    }
+    print end;
+    read ratings;
+    performance = ratings;
+}
+procedure Twice {
+    while((twice==love) && (boys>=2)) {
+        fan = 10000000000000000000000000000;
+        read Twice;
+        print happiness;
+    }
+    if (boys != happy) then {
+        if (money >= 1000) then {
+            call performance;
+            money = money - 1000000 * 2000;
+        } else {
+            read youtube;
+            print money;
+        }
+    } else {
+        crazy = level * 2 + 10/(11+very+happy);
+    }
+    mood = happy;
+}
+procedure dance {
+    complex = beginner + intermediate - advanced % pro;
+    if (!(level==noob)) then{
+        steps = a + b * c;
+        call sing;
+        steps = sing + dance;
+    } else {
+        quit = 100;
+        read sing;
+        print money;
+    }
+    call sing;
+}
+procedure sing {
+    if (gender == boy) then{
+        while(key < c4) {
+            role = bass + tenor;
+        }
+        while (key >c4){
+            role = alto;
+            if (alto == good) then {
+                role = role + sop + 2;
+            } else {
+                role = role + bass / tenor;
+            }
+        }
+    } else {
+        female = everything;
+        call Twice;
+    }
+    call performance;
+    call Twice;
+}
+procedure performance {
+    if (you == rich) then {
+        while (money != 0) {
+            ticket = 100;
+            drinks = coke + 10;
+            merchandise = ticket + merchandise * 2;
+            gift = 200;
+        }
+    } else {
+        dream = crushed;
+        a = 300;
+        b = a + b;
+        c = c + 400;
+    }
+}

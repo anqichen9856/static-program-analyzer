@@ -1,0 +1,645 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>10.285000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs">1</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w pattern w(p,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.902000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs, syntactically valid but semantically invalid">2</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern w(c,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.755000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs, syntactically valid but semantically invalid">3</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern w(c,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.323000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs, syntactically valid but semantically invalid">4</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern w(c,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.820000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs">5</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w pattern w(r,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.762000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs">6</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w pattern w(pr,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.598000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs">7</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w pattern w(cp,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.676000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs">8</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w pattern w(w,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.547000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs">9</id><querystr><![CDATA[while w;while w1; Select w pattern w(w1,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.537000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs">10</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w pattern w(ifs,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.431000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs">11</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w pattern w(a,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.835000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, syn on lhs and wildcard on rhs">12</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w pattern w(n,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.333000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, wildcard on both args">13</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w.varName pattern w(_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.049000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" CondNum="3" RelNum="0" comment="Invalid pattern while, wildcard on both args">14</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w patternw(_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.763000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern while, ident on lhs and wildcard on rhs">15</id><querystr><![CDATA[while w; Select BOOLEAN pattern w("noVar",_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>6.158000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern while, ident on lhs and wildcard on rhs, syntactically incorrect as ident can only be name">16</id><querystr><![CDATA[while w; Select BOOLEAN pattern w("_",_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.309000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern while, ident on lhs and wildcard on rhs,syntactically incorrect as ident can only be name">17</id><querystr><![CDATA[while w; Select BOOLEAN pattern w("4",_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.432000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern while, wildcard on lhs and syn on rhs">18</id><querystr><![CDATA[while w; assign a; Select BOOLEAN pattern w(_,a)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.322000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern while, wildcard on lhs and syn on rhs">19</id><querystr><![CDATA[while w; variable v; Select BOOLEAN pattern w(_,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.339000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern while, wildcard on lhs and syn on rhs">20</id><querystr><![CDATA[while w; constant c; Select BOOLEAN pattern w(_,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.401000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern while, wildcard on lhs and syn on rhs">21</id><querystr><![CDATA[while w; stmt s; Select BOOLEAN pattern w(_,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.354000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern while, syn on both args">22</id><querystr><![CDATA[while w; stmt s; prog_line n; Select BOOLEAN pattern w(s,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.023000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern while, syn on lhs and ident on rhs, syntactically invalid">23</id><querystr><![CDATA[while w; stmt s; prog_line n; variable v; Select BOOLEAN pattern w(v,"v1")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.605000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern while, syn on lhs and ident on rhs on both args, syntactically invalid">24</id><querystr><![CDATA[while w; stmt s; prog_line n; variable v; Select BOOLEAN pattern w(v,"superNoob")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.795000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, integer on lhs and wildcard on rhs, syntactically invalid">25</id><querystr><![CDATA[while w; stmt s; prog_line n; Select BOOLEAN pattern w(1,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.912000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, integer on lhs and wildcard on rhs, syntactically invalid">26</id><querystr><![CDATA[while w; stmt s; prog_line n; Select BOOLEAN pattern w(2,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.904000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern while, integer on lhs and wildcard on rhs, syntactically invalid">27</id><querystr><![CDATA[while w; stmt s; prog_line n; Select BOOLEAN pattern w(4,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>4.578000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args, syntactically valid but semantically invalid">28</id><querystr><![CDATA[if ifs; constant c; Select c.value pattern ifs(c,_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.159000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args, syntactically valid but semantically invalid">29</id><querystr><![CDATA[if ifs; constant c; Select BOOLEAN pattern ifs(c,_,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>7.389000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">30</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <ifs,c.value> pattern ifs(c,_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.550000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">31</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs(p,_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.376000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">32</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs(s,_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.195000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">33</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs(r,_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.906000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">34</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs.varName pattern ifs(pr,_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.100000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">35</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs(cp,_,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.383000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">36</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs(w,_,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>11.961000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">37</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs(ifs,_,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.495000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">38</id><querystr><![CDATA[if ifs1,ifs2; Select BOOLEAN pattern ifs(ifs2,_,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>5.086000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">39</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs(a,_,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.757000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">40</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs(n,_,_)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.329000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Valid pattern if, wildcard on all args">41</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <ifs> pattern ifs(_,_,_)]]></querystr>
+<stuans>12,14,22,25,4</stuans>
+<correct>4,12,14,22,25</correct>
+<time_taken>9.083000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, wildcard on all args, syntactically invalid as IDENT should only be name">42</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs("_",_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.016000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syntactically invalid">43</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs(_,"_",_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.455000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syntactically invalid">44</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs(_,_,"_")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.686000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syntactically invalid">45</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs(_,"easy","level")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.703000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syntactically invalid">46</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs(_,"easy",_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.488000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syntactically invalid">47</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs(_,_,"level")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.046000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args">48</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern ifs("while",_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.421000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args, syntactically invalid">49</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs("4",_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.666000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args, syntactically invalid">50</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs("2",_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.411000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid pattern if, syn,wildcard,wilcard on args, syntactically invalid">51</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern ifs(2,_,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.461000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">52</id><querystr><![CDATA[assign a; Select a pattern a(_, "b")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.555000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">53</id><querystr><![CDATA[assign a; Select a pattern a(_, "b")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.238000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">54</id><querystr><![CDATA[assign a; Select a pattern a(_, "c")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.691000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">55</id><querystr><![CDATA[assign a; Select a pattern a(_, "b")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>5.759000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: wildcard on LHS, Exact Pattern Match on RHS">56</id><querystr><![CDATA[assign a; Select a pattern a(_, "complicated")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.015000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS">57</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p pattern a(p, "complicated + here + ltr")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.380000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS">58</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c pattern a(c, "complicated + here + ltr")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.974000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS">59</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s pattern a(s, "complicated + here + ltr")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.234000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS">60</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r pattern a(r, "complicated + here + ltr")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.194000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS">61</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr pattern a(pr, "complicated + here + ltr")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.424000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS">62</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp pattern a(cp, "complicated + here + ltr")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.752000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS">63</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w pattern a(w, "complicated + here + ltr")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.386000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS">64</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs pattern a(ifs, "complicated + here + ltr")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.581000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS">65</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(a, "complicated + here + ltr")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.790000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Pattern="1" CondNum="2" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS">66</id><querystr><![CDATA[assign a, a1; Select a1 pattern a(a1, "complicated + here + ltr")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.801000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="1" Pattern="1" CondNum="3" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS">67</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n pattern a(n, "complicated + here + ltr")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.431000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid">68</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, "easy + question) / mark")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.834000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid">69</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, "while + ((d + sum) / f)) - 20")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.867000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid">70</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, "else / ((((2+3)-four)/five)*((six+six2)%seven")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.829000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid">71</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, "left % (middle -(right * (left + (middle/(left + (middle - right) * right")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>15.169000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid">72</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, "left % (middle -(right * (left + (middle/(left + (middle - right) * right)")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>15.015000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid">73</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, "left % (middle -(right * (left + (middle/(left + (middle - right) * right))")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>15.219000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid">74</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, "left % (middle -(right * (left + (middle/(left + (middle - right) * right)))")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>19.950000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid">75</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, "left % (middle -(right * (left + (middle/(left + (middle - right) * right))))")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>16.270000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid">76</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, "2+3)-4*(5+6)+8*(10%2)")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.720000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid">77</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, "(2+3)-4*(5+6)+8*(10%2")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.445000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="2" Pattern="1" CondNum="4" RelNum="0" comment="Invalid Pattern Assign: invalid syn on LHS, Exact Pattern Match on RHS, syntactically invalid">78</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(_, "i*(i-(i/2))+i)+3")]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.216000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Invalid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS, syntactically invalid">79</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"while + ((d + sum) / f"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.514000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="4" Pattern="1" CondNum="6" RelNum="0" comment="Invalid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">80</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(_, _"while + ((d + sum)"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.343000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Invalid Pattern Assign: syn on LHS, Partial Pattern Match on RHS, syntactically invalid">81</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select <a,v> pattern a(v, _"((2+3)-four)/five)"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.239000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Invalid Pattern Assign: syn on LHS, Partial Pattern Match on RHS, syntactically invalid">82</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(v, _"2+3)-four)/five"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.687000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Invalid Pattern Assign: syn on LHS, Partial Pattern Match on RHS, syntactically invalid">83</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(v, _"six+six2)%seven"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.846000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Invalid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">84</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a(v, _"four)/five)*((six+six2"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.396000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Invalid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">85</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(v, _"four)/five)*((six+six2"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.456000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Invalid Pattern Assign: wildcard on LHS, Partial Pattern Match on RHS">86</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a(v, _"else / ((((2+3)-four)/five)"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.119000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Invalid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, syntactically invalid">87</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN pattern a("left", _"left % (middle -(right * (left + (middle/(left + (middle - right) * right)"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>15.790000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Invalid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, syntactically invalid">88</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"middle/(left + (middle - right) * right"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.659000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Invalid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS,  syntactically invalid">89</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"middle/(left + (middle - right) * right)))"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>12.338000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Invalid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS">90</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("left", _"middle/(left + (middle - right) * right))))))))))))))))))))))"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>14.043000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" UnnamedVar="3" Pattern="1" CondNum="5" RelNum="0" comment="Invalid Pattern Assign: IDENT on LHS, Partial Pattern Match on RHS, syntactically invalid">91</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select a pattern a("g", _"2+3)-4*(5+6)+8*(10%2"_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.587000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

@@ -1,0 +1,281 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>19.855000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">1</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Next(p,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.259000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">2</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Next(v,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.552000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">3</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Next(c,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.752000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" SuchThat="1" CondNum="3" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">4</id><querystr><![CDATA[stmt s; Select s such that Next(s,s)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>6.159000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">5</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select r such that Next(r,r)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.731000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">6</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select pr such that Next(pr,pr)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.007000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">7</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select cp such that Next(cp,cp)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.724000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">8</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next(w,w)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.955000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">9</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next(ifs,ifs)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>11.024000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">10</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next(a,a)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.562000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">11</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next(n,n)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.273000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">12</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Next(p,n)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.431000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on both args, semantically invalid">13</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Next(ifs,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.737000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Next,  syn on both args, semantically invalid">14</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Next(v,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.751000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Valid Next,  syn on both args, semantically invalid">15</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select ifs such that Next(c,ifs)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.063000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Next, syn on lhs and wildcard on rhs, semantically invalid">16</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Next(p,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.970000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" >17</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Next(v,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>11.250000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Next, syn on lhs and wildcard on rhs, semantically invalid">18</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Next(c,_)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.960000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid">19</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Next(p,1)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.875000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid">20</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Next(v,2)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.649000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid">21</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Next(c,3)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.343000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid">22</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select s.stmt# such that Next(s,81)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.173000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid">23</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next(s,81)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.022000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid">24</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Next(w,0)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.736000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid">25</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next(a,123)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.990000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid">26</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select n such that Next(n,81)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>8.814000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Next="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Next, wildcard on lhs and syn on rhs, semantically invalid">27</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next(_,p)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.265000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Next, wildcard on lhs and syn on rhs, semantically invalid">28</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Next(_,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.199000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Next, syn on lhs and INTEGER on rhs, semantically invalid">29</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Next(_,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.249000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Next="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Next, wildcard on lhs and INTEGER on rhs, semantically invalid">30</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next(_,81)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.459000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Next="1" UnnamedVar="2" SuchThat="1" CondNum="5" RelNum="1" comment="Invalid Next, wildcard on lhs and INTEGER on rhs, semantically invalid">31</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next(_,0)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>8.351000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, INTEGER on lhs and syn on rhs, syntactically invalid">32</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select w such that Next(59.5,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.733000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Next="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next, INTEGER on lhs and syn on rhs, syntactically invalid">33</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next(59.5,w)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>7.402000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Nextstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next*, syn on both args, semantically invalid">34</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select p such that Next*(p,p)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.850000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Nextstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next*, syn on both args, semantically invalid">35</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select v such that Next*(v,v)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>10.290000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Nextstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next*, syn on both args, semantically invalid">36</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select c such that Next*(c,c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>9.984000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Nextstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next*, INTEGER on lhs and syn on RHS, semantically invalid">37</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next*(1,p)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>9.935000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Nextstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next*, INTEGER on lhs and syn on RHS, semantically invalid">38</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next*(1,v)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.311000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Nextstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="Invalid Next*, INTEGER on lhs and syn on RHS, semantically invalid">39</id><querystr><![CDATA[procedure p; variable v; constant c; stmt s; read r; print pr; call cp; while w; if ifs; assign a; prog_line n; Select BOOLEAN such that Next*(1,c)]]></querystr>
+<stuans>FALSE</stuans>
+<correct>FALSE</correct>
+<time_taken>10.201000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

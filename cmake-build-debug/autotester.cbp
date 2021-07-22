@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="autotester"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\src\;CMake Files\src\spa\;CMake Files\src\autotester\;CMake Files\src\unit_testing\;CMake Files\src\integration_testing\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spa">
+				<Option output="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa/libspa.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/lib"/>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa/Makefile&quot;  VERBOSE=1 spa"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spa/fast">
+				<Option output="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa/libspa.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/lib"/>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa/Makefile&quot;  VERBOSE=1 spa/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/spa/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="autotester">
+				<Option output="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester/autotester" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/lib"/>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester/Makefile&quot;  VERBOSE=1 autotester"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="autotester/fast">
+				<Option output="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester/autotester" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/lib"/>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester/Makefile&quot;  VERBOSE=1 autotester/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/autotester/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="unit_testing">
+				<Option output="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing/unit_testing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/lib"/>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing/Makefile&quot;  VERBOSE=1 unit_testing"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="unit_testing/fast">
+				<Option output="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing/unit_testing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/lib"/>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing/Makefile&quot;  VERBOSE=1 unit_testing/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/unit_testing/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="integration_testing">
+				<Option output="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing/integration_testing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/lib"/>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing/Makefile&quot;  VERBOSE=1 integration_testing"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="integration_testing/fast">
+				<Option output="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing/integration_testing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/lib"/>
+					<Add directory="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing/Makefile&quot;  VERBOSE=1 integration_testing/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/acciopacus/Desktop/NUS/AY20:21\ Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake-build-debug/src/integration_testing/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/autotester/src/TestWrapper.cpp">
+			<Option target="autotester"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/autotester/src/TestWrapper.h">
+			<Option target="autotester"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/frontend_pkb/TestFrontEndPKB.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/main.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/TestPatternAssignEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/TestPatternIfEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_pattern_clauses/TestPatternWhileEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestAffectsEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestCalls.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestCallsStar.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestFollowsEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestFollowsStarEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestModifiesEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestNextEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestNextStarEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestParentEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestParentStarEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_suchthat_clauses/TestUsesEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/evaluator_with_clauses/TestWithEval.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/src/pkb_pql/utils/CompareVector.cpp">
+			<Option target="integration_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/AffectsClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/AffectsClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/AffectsStarClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/AffectsStarClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/CallsClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/CallsClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/CallsStarClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/CallsStarClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/Clause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/Clause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/FollowsClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/FollowsClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/FollowsStarClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/FollowsStarClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/IntRelClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/IntRelClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/ModifiesClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/ModifiesClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/MultiStatementRelClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/MultiStatementRelClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/NamesRelClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/NamesRelClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/NextClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/NextClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/NextStarClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/NextStarClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/ParentClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/ParentClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/ParentStarClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/ParentStarClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/PatternAssign.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/PatternAssign.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/PatternClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/PatternClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/PatternIf.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/PatternIf.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/PatternWhile.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/PatternWhile.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/RelClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/RelClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/UsesClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/UsesClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/WithClause.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/clauses/WithClause.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/exceptions/SPAException.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/exceptions/SPAException.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/front_end/parser/Parser.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/front_end/parser/Parser.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/front_end/parser/TNode.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/front_end/parser/TNode.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/front_end/tokenizer/Token.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/front_end/tokenizer/Token.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/front_end/tokenizer/Tokenizer.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/front_end/tokenizer/Tokenizer.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/program_knowledge_base/design_extractor/DesignExtractor.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/program_knowledge_base/pkb_storage/PKB.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/program_knowledge_base/pkb_storage/PKB.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/Query.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_evaluator/QueryEvaluator.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_evaluator/QueryEvaluator.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_evaluator/QueryResult.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_evaluator/QueryResult.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_optimizer/QueryOptimizer.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_optimizer/QueryOptimizer.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_preprocessor/QueryParser.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_preprocessor/QueryParser.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_preprocessor/QueryPreProcessor.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_preprocessor/QueryPreProcessor.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_preprocessor/QuerySyntaxChecker.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_preprocessor/QuerySyntaxChecker.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_result_projector/QueryResultProjector.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/query_processor/query_result_projector/QueryResultProjector.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/spa_controller/SPAController.cpp">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/spa_controller/SPAController.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/utils/Constants.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/src/utils/SPAEnums.h">
+			<Option target="spa"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/clauses/TestCallsClause.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/clauses/TestCallsStarClause.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/clauses/TestClause.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/clauses/TestFollowsClause.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/clauses/TestFollowsStarClause.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/clauses/TestModifiesClause.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/clauses/TestParentClause.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/clauses/TestParentStarClause.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/clauses/TestPatternClause.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/clauses/TestUsesClause.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/clauses/TestWithClause.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/front_end/parser/TestAST.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/front_end/parser/TestParser.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/front_end/tokenizer/TestToken.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/front_end/tokenizer/TestTokenizer.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/front_end/tokenizer/TestTokenizer.h">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/main.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/program_knowledge_base/TestPKB.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/program_knowledge_base/TestPKB.h">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/query_processor/query_evaluator/TestQueryEvaluator.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/query_processor/query_optimizer/TestQueryOptimizer.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/query_processor/query_preprocessor/TestQueryParser.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/query_processor/query_preprocessor/TestQueryPreProcessor.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/query_processor/query_preprocessor/TestQuerySyntaxChecker.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/query_processor/query_result_projector/TestQueryResult.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/query_processor/query_result_projector/TestQueryResultProjector.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/src/spa_controller/TestSPAController.cpp">
+			<Option target="unit_testing"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/cmake/FindAUTOTESTER.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/spa/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\spa\"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/autotester/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\autotester\"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/unit_testing/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\unit_testing\"/>
+		</Unit>
+		<Unit filename="/Users/acciopacus/Desktop/NUS/AY20:21 Sem1/CS3203/team21-cp-spa-20s1/Team21/Code21/src/integration_testing/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\integration_testing\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

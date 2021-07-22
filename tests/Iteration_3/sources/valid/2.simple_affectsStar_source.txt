@@ -1,0 +1,64 @@
+procedure p1 {
+    read a;
+    read x;
+    call p2;
+}
+
+procedure p2 {
+    a = 1;
+    z = 2;
+    while (z != 0) {
+        a = a + 3*z;
+        call p3;
+        z = z - 4;
+    }
+    if (a==5) then {
+        a = a/6;
+    } else {
+        x = 7;
+    }
+    x = x + a + 8;
+    c = x * 9;
+    a = a*c%x;
+}
+
+procedure p3 {
+    x = 2;
+    v = x;
+    d = 10;
+    d = d*11;
+    while (z ==0) {
+        d = d%12 + 13;
+    }
+    while( f < 14) {
+        d = d - 15;
+    }
+    d = d + 1;
+    print v;
+    third = third-3;
+    call p4;
+    read z;
+    g = third;
+}
+
+procedure p4 {
+    aa = ss;
+    dd = aa;
+    ff = dd;
+    while (zz == 0) {
+        if (zz == 1) then {
+            ff = dd + 2;
+        } else {
+            gg = dd;
+            zxc = zxc;
+        }
+        hh = ff;
+        jj = gg;
+
+        while (kk == kk) {
+            kk = jj + hh + aa;
+            bb = dd + ff + kk;
+            ff = hh + bb;
+        }
+    }
+}

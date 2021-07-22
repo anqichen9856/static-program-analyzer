@@ -1,0 +1,127 @@
+procedure KPOP {
+    kpop = love;
+    read kpop;
+    call groups;
+    while (in == korea) {
+        call performance;
+        if (performance == love) then {
+            performance = money * 1000;
+            call BlackPink;
+            call Twice;
+        } else {
+            print die;
+        }
+        read sing;
+        read dance;
+        count = count + 1 + (money - 1000);
+    }
+    print end;
+}
+
+procedure groups {
+    groups = 2;
+    if (groups == 2) then {
+        print blackpink;
+        print twice;
+    } else {
+        group = 0;
+        group = group + BTS;
+    }
+    call dance;
+    call sing;
+}
+
+procedure BlackPink {
+    playlist = 1000;
+    read songlist;
+    if (songlist >= 0) then {
+        if (category == edm) then {
+            ddudu = ddudu * 10 + remix;
+            kill = (this + love) - others;
+        } else {
+            song = not + edm;
+            if (category2 == cute) then{
+                  read Icecream;
+                  print cuteSong;
+            } else {
+                call groups;
+            }
+        }
+    } else {
+        call groups;
+    }
+    print end;
+    read ratings;
+    performance = ratings;
+}
+
+procedure Twice {
+    while((twice==love) && (boys>=2)) {
+        fan = 10000000000000000000000000000;
+        read Twice;
+        print happiness;
+    }
+    if (boys != happy) then {
+        if (money >= 1000) then {
+            call performance;
+            money = money - 1000000 * 2000;
+        } else {
+            read youtube;
+            print money;
+        }
+    } else {
+        crazy = level * 2 + 10/(11+very+happy);
+    }
+    mood = happy;
+}
+
+procedure dance {
+    complex = beginner + intermediate - advanced % pro;
+    if (!(level==noob)) then{
+        steps = a + b * c;
+        call sing;
+        steps = sing + dance;
+    } else {
+        quit = 100;
+        read sing;
+        print money;
+    }
+    call sing;
+}
+
+procedure sing {
+    if (gender == boy) then{
+        while(key < c4) {
+            role = bass + tenor;
+        }
+        while (key >c4){
+            role = alto;
+            if (alto == good) then {
+                role = role + sop + 2;
+            } else {
+                role = role + bass / tenor;
+            }
+        }
+    } else {
+        female = everything;
+        call Twice;
+    }
+    call performance;
+    call Twice;
+}
+
+procedure performance {
+    if (you == rich) then {
+        while (money != 0) {
+            ticket = 100;
+            drinks = coke + 10;
+            merchandise = ticket + merchandise * 2;
+            gift = 200;
+        }
+    } else {
+        dream = crushed;
+        a = 300;
+        b = a + b;
+        c = c + 400;
+    }
+}
